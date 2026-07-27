@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Login | GripCore</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="login.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+  <!-- =========================================
+        BACKGROUND DECORATIONS
+  ========================================= -->
+
+  <div class="login-decoration decoration-one"></div>
+  <div class="login-decoration decoration-two"></div>
+
+
+  <!-- =========================================
+        TOP CONTROLS
+  ========================================= -->
+
+  <div class="login-controls">
+
+    <!-- Dark Mode -->
+    <button
+      type="button"
+      class="control-btn"
+      id="themeToggle"
+      aria-label="Toggle dark mode"
+    >
+      <i data-lucide="moon"></i>
+    </button>
+
+
+    <!-- RTL -->
+    <button
+      type="button"
+      class="control-btn"
+      id="rtlToggle"
+      aria-label="Toggle RTL"
+    >
+      <i data-lucide="arrow-left-right"></i>
+    </button>
+
+  </div>
+
+
+  <!-- =========================================
+        LOGIN PAGE
+  ========================================= -->
+
+  <main class="login-page">
+
+    <div class="login-card">
+
+
+      <!-- =====================================
+            LOGO
+      ====================================== -->
+
+      
+
+        <!-- <a href="index.html">
+
+          <img
+            src="images/logo-dark.png"
+            alt="GripCore Premium Tyre & Wheel Alignment Center"
+            class="logo-dark"
+          />
+
+          <img
+            src="images/logo-light.png"
+            alt="GripCore Premium Tyre & Wheel Alignment Center"
+            class="logo-light"
+          />
+
+        </a> -->
+
+  <div class="auth-logo-wrapper">
+  <img
+    id="pageLogo"
+    src="../images/logo-light.png"
+    alt="GripCore"
+  />
+</div>
+
+      
+
+
+      <!-- =====================================
+            HEADING
+      ====================================== -->
+
+      <div class="login-heading">
+
+        <span class="login-tag">
+          WELCOME BACK
+        </span>
+
+        <h1>
+          Welcome To
+          <span>GripCore.</span>
+        </h1>
+
+        <p>
+          Sign in to manage your appointments,
+          services, and vehicle care with ease.
+        </p>
+
+      </div>
+
+
+      <!-- =====================================
+            LOGIN FORM
+      ====================================== -->
+
+      <form
+        class="login-form"
+        id="loginForm"
+      >
+
+
+        <!-- EMAIL -->
+
+        <div class="form-group">
+
+          <label for="email">
+            Email Address
+          </label>
+
+          <div class="input-wrapper">
+
+            <i data-lucide="mail"></i>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              autocomplete="email"
+              required
+            />
+
+          </div>
+
+        </div>
+
+
+        <!-- PASSWORD -->
+
+        <div class="form-group">
+
+          <div class="label-row">
+
+            <label for="password">
+              Password
+            </label>
+
+            <a href="#">
+              Forgot Password?
+            </a>
+
+          </div>
+
+
+          <div class="input-wrapper">
+
+            <i data-lucide="lock-keyhole"></i>
+
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+              required
+            />
+
+            <button
+              type="button"
+              class="password-toggle"
+              id="passwordToggle"
+              aria-label="Show password"
+            >
+              <i data-lucide="eye"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- REMEMBER -->
+
+        <div class="login-options">
+
+          <label class="remember-me">
+
+            <input
+              type="checkbox"
+              id="rememberMe"
+            />
+
+            <span class="custom-checkbox"></span>
+
+            <span>
+              Remember me
+            </span>
+
+          </label>
+
+        </div>
+
+
+        <!-- LOGIN BUTTON -->
+
+        <button
+          type="submit"
+          class="login-btn"
+        >
+
+          <span>
+             LogIn
+          </span>
+
+          <i data-lucide="arrow-up-right"></i>
+
+        </button>
+
+
+        <!-- DIVIDER -->
+
+        <div class="login-divider">
+
+          <span></span>
+
+          <p>
+            OR CONTINUE WITH
+          </p>
+
+          <span></span>
+
+        </div>
+
+
+        <!-- SOCIAL LOGIN -->
+
+        <div class="social-login">
+
+          <button
+            type="button"
+            class="social-btn"
+          >
+            <i data-lucide="chrome"></i>
+            Google
+          </button>
+
+          <button
+            type="button"
+            class="social-btn"
+          >
+            <i data-lucide="apple"></i>
+            Apple
+          </button>
+
+        </div>
+
+
+        <!-- SIGN UP -->
+
+        <p class="signup-text">
+
+          Don't have an account?
+
+          <a href="signup.html">
+            Create Account
+          </a>
+
+        </p>
+
+      </form>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================================
+        JAVASCRIPT
+  ========================================= -->
+
+  <script src="login.js"></script>
+
+</body>
+</html>

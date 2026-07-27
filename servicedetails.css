@@ -1,0 +1,1784 @@
+/* =========================================================
+   GRIPCORE SERVICE DETAILS PAGE
+   PREMIUM HERO SECTION
+   LIGHT MODE DEFAULT
+========================================================= */
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  color: #111111;
+}
+
+/* =========================================================
+   SERVICE DETAILS HERO
+========================================================= */
+
+.service-details-hero {
+  position: relative;
+  width: 100%;
+  min-height: 820px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background: #111111;
+}
+
+/* =========================================================
+   HERO BACKGROUND IMAGE
+========================================================= */
+
+.service-hero-image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+}
+
+.service-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  animation: heroZoom 12s ease-in-out infinite alternate;
+}
+
+/* =========================================================
+   HERO IMAGE ZOOM
+========================================================= */
+
+@keyframes heroZoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.08);
+  }
+}
+
+/* =========================================================
+   HERO OVERLAY
+========================================================= */
+
+.service-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  z-index: 2;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.92) 0%,
+    rgba(0, 0, 0, 0.78) 40%,
+    rgba(0, 0, 0, 0.45) 70%,
+    rgba(0, 0, 0, 0.55) 100%
+  );
+}
+
+/* =========================================================
+   HERO CONTAINER
+========================================================= */
+
+.service-hero-container {
+  position: relative;
+
+  z-index: 3;
+
+  width: 90%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  padding: 120px 0 100px;
+
+  display: grid;
+
+  grid-template-columns: 1.5fr 0.7fr;
+
+  gap: 100px;
+
+  align-items: center;
+}
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.service-hero-content {
+  max-width: 760px;
+
+  animation: heroContentReveal 1s ease forwards;
+}
+
+/* =========================================================
+   HERO CONTENT ANIMATION
+========================================================= */
+
+@keyframes heroContentReveal {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   HERO EYEBROW
+========================================================= */
+
+.service-hero-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 25px;
+
+  color: #d4af37;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+}
+
+.service-hero-eyebrow span {
+  width: 45px;
+  height: 1px;
+
+  background: #d4af37;
+}
+
+/* =========================================================
+   HERO HEADING
+========================================================= */
+
+.service-hero-content h1 {
+  margin-bottom: 28px;
+
+  color: #ffffff;
+
+  font-size: clamp(48px, 6vw, 78px);
+
+  line-height: 1.08;
+
+  font-weight: 500;
+
+  letter-spacing: -2px;
+}
+
+.service-hero-content h1 span {
+  display: block;
+
+  color: #d4af37;
+}
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.service-hero-content > p {
+  max-width: 680px;
+
+  margin-bottom: 40px;
+
+  color: #d1d1d1;
+
+  font-size: 14px;
+
+  line-height: 1.9;
+
+  font-weight: 300;
+}
+
+/* =========================================================
+   HERO ACTIONS
+========================================================= */
+
+.service-hero-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.service-primary-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 15px 24px;
+
+  background: #d4af37;
+
+  color: #111111;
+
+  border: 1px solid #d4af37;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.service-primary-btn svg {
+  width: 17px;
+  height: 17px;
+
+  transition: transform 0.3s ease;
+}
+
+.service-primary-btn:hover {
+  background: #ffffff;
+
+  border-color: #ffffff;
+
+  transform: translateY(-3px);
+}
+
+.service-primary-btn:hover svg {
+  transform: translateY(3px);
+}
+
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
+
+.service-secondary-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 15px 24px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  backdrop-filter: blur(8px);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.service-secondary-btn svg {
+  width: 17px;
+  height: 17px;
+
+  transition: transform 0.3s ease;
+}
+
+.service-secondary-btn:hover {
+  background: #ffffff;
+
+  color: #111111;
+
+  border-color: #ffffff;
+
+  transform: translateY(-3px);
+}
+
+.service-secondary-btn:hover svg {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   HERO SIDE INFORMATION
+========================================================= */
+
+.service-hero-side {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 25px;
+
+  padding-left: 35px;
+
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* =========================================================
+   HERO SIDE ITEM
+========================================================= */
+
+.hero-side-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 18px;
+
+  padding-bottom: 22px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero-side-item:last-child {
+  padding-bottom: 0;
+
+  border-bottom: none;
+}
+
+/* Number */
+
+.hero-side-item > span {
+  color: #d4af37;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+}
+
+/* Side Title */
+
+.hero-side-item strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 500;
+}
+
+/* Side Description */
+
+.hero-side-item p {
+  color: #bdbdbd;
+
+  font-size: 11px;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   SCROLL INDICATOR
+========================================================= */
+
+.service-hero-scroll {
+  position: absolute;
+
+  left: 50%;
+
+  bottom: 30px;
+
+  z-index: 4;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 10px;
+
+  transform: translateX(-50%);
+
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+}
+
+.service-hero-scroll svg {
+  width: 18px;
+  height: 18px;
+
+  color: #d4af37;
+
+  animation: scrollArrow 1.8s ease-in-out infinite;
+}
+
+/* =========================================================
+   SCROLL ARROW ANIMATION
+========================================================= */
+
+@keyframes scrollArrow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 1050px) {
+  .service-details-hero {
+    min-height: 850px;
+  }
+
+  .service-hero-container {
+    width: 90%;
+
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+
+    padding: 120px 0 100px;
+  }
+
+  .service-hero-content {
+    max-width: 700px;
+  }
+
+  .service-hero-side {
+    max-width: 700px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    padding-left: 0;
+
+    border-left: none;
+  }
+
+  .hero-side-item {
+    padding: 0;
+
+    border-bottom: none;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .hero-side-item:last-child {
+    border-right: none;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 600px) {
+  .service-details-hero {
+    min-height: 900px;
+  }
+
+  .service-hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.92)
+    );
+  }
+
+  .service-hero-container {
+    width: 90%;
+
+    padding: 110px 0 90px;
+
+    gap: 50px;
+  }
+
+  .service-hero-eyebrow {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+  }
+
+  .service-hero-eyebrow span {
+    width: 30px;
+  }
+
+  .service-hero-content h1 {
+    font-size: 42px;
+
+    letter-spacing: -1px;
+  }
+
+  .service-hero-content > p {
+    font-size: 13px;
+
+    line-height: 1.8;
+  }
+
+  .service-hero-actions {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .service-primary-btn,
+  .service-secondary-btn {
+    width: 100%;
+
+    padding: 14px 20px;
+  }
+
+  .service-hero-side {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  .hero-side-item {
+    padding-bottom: 18px;
+
+    border-right: none;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .hero-side-item:last-child {
+    padding-bottom: 0;
+
+    border-bottom: none;
+  }
+
+  .service-hero-scroll {
+    display: none;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media screen and (max-width: 380px) {
+  .service-details-hero {
+    min-height: 920px;
+  }
+
+  .service-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .service-hero-content > p {
+    font-size: 12px;
+  }
+}
+
+/* =========================================================
+   SERVICE DETAIL SECTION
+========================================================= */
+
+.service-detail-section {
+  position: relative;
+
+  padding: 140px 0;
+
+  background: #ffffff;
+
+  color: #111111;
+
+  overflow: hidden;
+}
+
+.service-detail-container {
+  width: 90%;
+
+  max-width: 1400px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 100px;
+
+  align-items: center;
+}
+
+/* =========================================================
+   SERVICE DETAIL IMAGE
+========================================================= */
+
+.service-detail-image {
+  position: relative;
+
+  height: 620px;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+
+  background: #111111;
+}
+
+.service-detail-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+.service-detail-image:hover img {
+  transform: scale(1.05);
+}
+
+/* =========================================================
+   IMAGE BADGE
+========================================================= */
+
+.service-image-badge {
+  position: absolute;
+
+  left: 25px;
+
+  bottom: 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 13px 18px;
+
+  background: rgba(0, 0, 0, 0.78);
+
+  color: #ffffff;
+
+  border-radius: 40px;
+
+  backdrop-filter: blur(10px);
+
+  font-size: 10px;
+
+  font-weight: 500;
+
+  letter-spacing: 2px;
+}
+
+.service-image-badge svg {
+  width: 18px;
+
+  height: 18px;
+
+  color: #d4af37;
+}
+
+/* =========================================================
+   SERVICE DETAIL CONTENT
+========================================================= */
+
+.service-detail-content {
+  max-width: 620px;
+}
+
+.service-detail-number {
+  margin-bottom: 25px;
+
+  color: #d4af37;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+}
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.service-detail-content .section-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 22px;
+
+  color: #d4af37;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 2.5px;
+}
+
+.service-detail-content .section-eyebrow span {
+  width: 35px;
+
+  height: 1px;
+
+  background: #d4af37;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.service-detail-content h2 {
+  margin-bottom: 25px;
+
+  color: #111111;
+
+  font-size: clamp(38px, 4vw, 58px);
+
+  line-height: 1.15;
+
+  font-weight: 500;
+
+  letter-spacing: -1.5px;
+}
+
+.service-detail-content h2 span {
+  display: block;
+
+  color: #d4af37;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.service-detail-description {
+  margin-bottom: 40px;
+
+  color: #666666;
+
+  font-size: 14px;
+
+  line-height: 1.9;
+}
+
+/* =========================================================
+   SERVICE FEATURES
+========================================================= */
+
+.service-detail-features {
+  display: grid;
+
+  gap: 22px;
+
+  margin-bottom: 40px;
+}
+
+.service-feature {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 16px;
+}
+
+.service-feature-icon {
+  flex-shrink: 0;
+
+  width: 45px;
+
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #111111;
+
+  color: #d4af37;
+
+  border-radius: 50%;
+}
+
+.service-feature-icon svg {
+  width: 19px;
+
+  height: 19px;
+}
+
+.service-feature h4 {
+  margin-bottom: 4px;
+
+  color: #111111;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+.service-feature p {
+  color: #777777;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   SERVICE BUTTON
+========================================================= */
+
+.service-detail-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 15px 24px;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.service-detail-btn svg {
+  width: 17px;
+
+  height: 17px;
+
+  transition: transform 0.3s ease;
+}
+
+.service-detail-btn:hover {
+  background: #d4af37;
+
+  color: #111111;
+
+  transform: translateY(-3px);
+}
+
+.service-detail-btn:hover svg {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 1000px) {
+  .service-detail-section {
+    padding: 110px 0;
+  }
+
+  .service-detail-container {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+
+  .service-detail-image {
+    height: 550px;
+  }
+
+  .service-detail-content {
+    max-width: 750px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 600px) {
+  .service-detail-section {
+    padding: 80px 0;
+  }
+
+  .service-detail-container {
+    width: 90%;
+
+    gap: 45px;
+  }
+
+  .service-detail-image {
+    height: 420px;
+
+    border-radius: 20px;
+  }
+
+  .service-image-badge {
+    left: 18px;
+
+    bottom: 18px;
+
+    padding: 11px 15px;
+
+    font-size: 8px;
+  }
+
+  .service-detail-content h2 {
+    font-size: 36px;
+
+    letter-spacing: -1px;
+  }
+
+  .service-detail-description {
+    font-size: 13px;
+
+    line-height: 1.8;
+  }
+
+  .service-feature h4 {
+    font-size: 14px;
+  }
+
+  .service-feature p {
+    font-size: 11px;
+  }
+
+  .service-detail-btn {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   PREMIUM APPOINTMENT SECTION
+========================================================= */
+
+.appointment-section {
+  position: relative;
+
+  padding: 140px 0;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   DECORATIVE GOLD ORBIT
+========================================================= */
+
+.appointment-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 650px;
+
+  height: 650px;
+
+  top: -350px;
+
+  right: -250px;
+
+  border: 1px solid rgba(212, 175, 55, 0.15);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.appointment-section::after {
+  content: "";
+
+  position: absolute;
+
+  width: 450px;
+
+  height: 450px;
+
+  bottom: -280px;
+
+  left: -220px;
+
+  border: 1px solid rgba(212, 175, 55, 0.1);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.appointment-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: 90%;
+
+  max-width: 1400px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 100px;
+
+  align-items: center;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.appointment-content {
+  max-width: 600px;
+}
+
+.appointment-content .section-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 25px;
+
+  color: #d4af37;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 2.5px;
+}
+
+.appointment-content .section-eyebrow span {
+  width: 35px;
+
+  height: 1px;
+
+  background: #d4af37;
+}
+
+.appointment-content h2 {
+  margin-bottom: 25px;
+
+  color: #ffffff;
+
+  font-size: clamp(40px, 4vw, 60px);
+
+  line-height: 1.15;
+
+  font-weight: 500;
+
+  letter-spacing: -1.5px;
+}
+
+.appointment-content h2 span {
+  display: block;
+
+  color: #d4af37;
+}
+
+.appointment-content > p {
+  max-width: 560px;
+
+  margin-bottom: 45px;
+
+  color: #bdbdbd;
+
+  font-size: 14px;
+
+  line-height: 1.9;
+}
+
+/* =========================================================
+   APPOINTMENT HIGHLIGHTS
+========================================================= */
+
+.appointment-highlights {
+  display: grid;
+
+  gap: 25px;
+}
+
+.appointment-highlight {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 16px;
+}
+
+.appointment-highlight-icon {
+  flex-shrink: 0;
+
+  width: 45px;
+
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(212, 175, 55, 0.12);
+
+  color: #d4af37;
+
+  border-radius: 50%;
+}
+
+.appointment-highlight-icon svg {
+  width: 19px;
+
+  height: 19px;
+}
+
+.appointment-highlight h4 {
+  margin-bottom: 4px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.appointment-highlight p {
+  color: #999999;
+
+  font-size: 11px;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   FORM WRAPPER
+========================================================= */
+
+.appointment-form-wrapper {
+  padding: 45px;
+
+  background: #ffffff;
+
+  border-radius: 25px;
+
+  color: #111111;
+
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================================================
+   FORM HEADER
+========================================================= */
+
+.appointment-form-header {
+  margin-bottom: 30px;
+}
+
+.appointment-form-header > span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #d4af37;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+.appointment-form-header h3 {
+  margin-bottom: 8px;
+
+  color: #111111;
+
+  font-size: 28px;
+
+  font-weight: 500;
+}
+
+.appointment-form-header p {
+  color: #777777;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   FORM GRID
+========================================================= */
+
+.appointment-form {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.form-group-full {
+  grid-column: span 2;
+}
+
+/* =========================================================
+   FORM LABEL
+========================================================= */
+
+.form-group label {
+  color: #333333;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+/* =========================================================
+   INPUT / SELECT / TEXTAREA
+========================================================= */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+
+  padding: 14px 15px;
+
+  background: #f7f7f7;
+
+  color: #111111;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.form-group textarea {
+  resize: vertical;
+
+  min-height: 100px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999999;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  background: #ffffff;
+
+  border-color: #d4af37;
+
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.appointment-submit-btn {
+  grid-column: span 2;
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 16px 25px;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  border: none;
+
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.appointment-submit-btn svg {
+  width: 17px;
+
+  height: 17px;
+
+  transition: transform 0.3s ease;
+}
+
+.appointment-submit-btn:hover {
+  background: #d4af37;
+
+  color: #111111;
+
+  transform: translateY(-3px);
+}
+
+.appointment-submit-btn:hover svg {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   FORM MESSAGE
+========================================================= */
+
+.appointment-form-message {
+  grid-column: span 2;
+
+  text-align: center;
+
+  color: #d4af37;
+
+  font-size: 12px;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 1000px) {
+  .appointment-section {
+    padding: 110px 0;
+  }
+
+  .appointment-container {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+
+  .appointment-content {
+    max-width: 750px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 600px) {
+  .appointment-section {
+    padding: 80px 0;
+  }
+
+  .appointment-container {
+    width: 90%;
+
+    gap: 45px;
+  }
+
+  .appointment-content h2 {
+    font-size: 36px;
+  }
+
+  .appointment-content > p {
+    font-size: 13px;
+  }
+
+  .appointment-form-wrapper {
+    padding: 28px 20px;
+
+    border-radius: 20px;
+  }
+
+  .appointment-form {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .form-group-full {
+    grid-column: span 1;
+  }
+
+  .appointment-submit-btn {
+    grid-column: span 1;
+  }
+
+  .appointment-form-message {
+    grid-column: span 1;
+  }
+}
+
+
+/* =========================================================
+   DARK MODE — SERVICE DETAILS PAGE
+========================================================= */
+
+
+/* =========================================================
+   SERVICE DETAIL SECTIONS
+========================================================= */
+
+body.dark-mode .service-detail-section {
+  background: #111111;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   SERVICE DETAIL HEADING
+========================================================= */
+
+body.dark-mode .service-detail-content h2 {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   SERVICE DETAIL DESCRIPTION
+========================================================= */
+
+body.dark-mode .service-detail-description {
+  color: #bdbdbd;
+}
+
+
+/* =========================================================
+   SERVICE FEATURE TITLE
+========================================================= */
+
+body.dark-mode .service-feature h4 {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   SERVICE FEATURE DESCRIPTION
+========================================================= */
+
+body.dark-mode .service-feature p {
+  color: #999999;
+}
+
+
+/* =========================================================
+   FEATURE ICON
+========================================================= */
+
+body.dark-mode .service-feature-icon {
+  background: #ffffff;
+
+  color: #d4af37;
+}
+
+
+/* =========================================================
+   SERVICE DETAIL BUTTON
+========================================================= */
+
+body.dark-mode .service-detail-btn {
+  background: #ffffff;
+
+  color: #111111;
+}
+
+
+body.dark-mode .service-detail-btn:hover {
+  background: #d4af37;
+
+  color: #111111;
+}
+
+
+/* =========================================================
+   APPOINTMENT SECTION
+========================================================= */
+
+body.dark-mode .appointment-section {
+  background: #050505;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   APPOINTMENT CONTENT
+========================================================= */
+
+body.dark-mode .appointment-content h2 {
+  color: #ffffff;
+}
+
+
+body.dark-mode .appointment-content > p {
+  color: #bdbdbd;
+}
+
+
+/* =========================================================
+   APPOINTMENT HIGHLIGHTS
+========================================================= */
+
+body.dark-mode .appointment-highlight h4 {
+  color: #ffffff;
+}
+
+
+body.dark-mode .appointment-highlight p {
+  color: #999999;
+}
+
+
+/* =========================================================
+   APPOINTMENT ICON
+========================================================= */
+
+body.dark-mode .appointment-highlight-icon {
+  background: rgba(212, 175, 55, 0.15);
+
+  color: #d4af37;
+}
+
+
+/* =========================================================
+   APPOINTMENT FORM WRAPPER
+========================================================= */
+
+body.dark-mode .appointment-form-wrapper {
+  background: #1a1a1a;
+
+  color: #ffffff;
+
+  border: 1px solid #2b2b2b;
+}
+
+
+/* =========================================================
+   APPOINTMENT FORM HEADER
+========================================================= */
+
+body.dark-mode .appointment-form-header h3 {
+  color: #ffffff;
+}
+
+
+body.dark-mode .appointment-form-header p {
+  color: #999999;
+}
+
+
+/* =========================================================
+   FORM LABEL
+========================================================= */
+
+body.dark-mode .form-group label {
+  color: #dddddd;
+}
+
+
+/* =========================================================
+   FORM INPUTS
+========================================================= */
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group select,
+body.dark-mode .form-group textarea {
+  background: #111111;
+
+  color: #ffffff;
+
+  border-color: #333333;
+}
+
+
+body.dark-mode .form-group input::placeholder,
+body.dark-mode .form-group textarea::placeholder {
+  color: #777777;
+}
+
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group select:focus,
+body.dark-mode .form-group textarea:focus {
+  background: #151515;
+
+  border-color: #d4af37;
+
+  box-shadow:
+    0 0 0 3px rgba(212, 175, 55, 0.12);
+}
+
+
+/* =========================================================
+   SELECT OPTIONS
+========================================================= */
+
+body.dark-mode .form-group select option {
+  background: #111111;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+body.dark-mode .appointment-submit-btn {
+  background: #ffffff;
+
+  color: #111111;
+}
+
+
+body.dark-mode .appointment-submit-btn:hover {
+  background: #d4af37;
+
+  color: #111111;
+}
+
+
+/* =========================================================
+   DARK MODE TRANSITIONS
+========================================================= */
+
+.service-detail-section,
+.service-detail-content h2,
+.service-detail-description,
+.service-feature h4,
+.service-feature p,
+.service-feature-icon,
+.service-detail-btn,
+.appointment-section,
+.appointment-content h2,
+.appointment-content > p,
+.appointment-highlight h4,
+.appointment-highlight p,
+.appointment-highlight-icon,
+.appointment-form-wrapper,
+.appointment-form-header h3,
+.appointment-form-header p,
+.form-group label,
+.form-group input,
+.form-group select,
+.form-group textarea,
+.appointment-submit-btn {
+  transition:
+    background 0.4s ease,
+    color 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}

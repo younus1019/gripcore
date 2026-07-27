@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Book Appointment | GripCore</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="bookappointment.css" />
+</head>
+
+<body>
+
+  <!-- =========================================
+       BOOK APPOINTMENT PAGE
+  ========================================== -->
+
+  <section class="appointment-page">
+
+    <!-- =========================================
+         DECORATIVE BACKGROUND
+    ========================================== -->
+
+    <div class="appointment-shape shape-one"></div>
+    <div class="appointment-shape shape-two"></div>
+    <div class="appointment-shape shape-three"></div>
+
+
+    <!-- =========================================
+         TOP RIGHT CONTROLS
+    ========================================== -->
+
+    <div class="appointment-controls">
+
+      <button
+        type="button"
+        id="themeToggle"
+        class="appointment-control-btn"
+        aria-label="Toggle dark mode"
+      >
+        <i data-lucide="moon"></i>
+      </button>
+
+      <button
+        type="button"
+        id="rtlToggle"
+        class="appointment-control-btn"
+        aria-label="Toggle RTL"
+      >
+        <i data-lucide="arrow-right-left"></i>
+      </button>
+
+    </div>
+
+
+    <!-- =========================================
+         APPOINTMENT CARD
+    ========================================== -->
+
+    <div class="appointment-card">
+
+
+      <!-- =========================================
+           LOGO
+      ========================================== -->
+
+      
+
+      <div class="auth-logo-wrapper">
+  <img
+    id="pageLogo"
+    src="../images/logo-light.png"
+    alt="GripCore"
+  />
+</div>
+
+
+      <!-- =========================================
+           HEADING
+      ========================================== -->
+
+      <div class="appointment-heading">
+
+        <span class="appointment-tag">
+          BOOK YOUR SERVICE
+        </span>
+
+        <h1>
+          Book Your
+          <span>Appointment.</span>
+        </h1>
+
+        <p>
+          Schedule your vehicle service with our expert
+          technicians and experience premium automotive care.
+        </p>
+
+      </div>
+
+
+      <!-- =========================================
+           FORM
+      ========================================== -->
+
+      <form
+        class="appointment-form"
+        id="appointmentForm"
+      >
+
+
+        <!-- =========================================
+             VEHICLE INFORMATION
+        ========================================== -->
+
+        <div class="form-section-title">
+
+          <i data-lucide="car-front"></i>
+
+          <h3>
+            Vehicle Information
+          </h3>
+
+        </div>
+
+
+        <div class="form-row">
+
+
+          <!-- Vehicle Brand -->
+
+          <div class="input-group">
+
+            <label>
+              Vehicle Brand
+            </label>
+
+            <div class="input-box">
+
+              <i data-lucide="car"></i>
+
+              <select required>
+
+                <option value="">
+                  Select Brand
+                </option>
+
+                <option>
+                  Toyota
+                </option>
+
+                <option>
+                  Honda
+                </option>
+
+                <option>
+                  Hyundai
+                </option>
+
+                <option>
+                  Kia
+                </option>
+
+                <option>
+                  BMW
+                </option>
+
+                <option>
+                  Mercedes-Benz
+                </option>
+
+                <option>
+                  Audi
+                </option>
+
+                <option>
+                  Other
+                </option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+
+          <!-- Vehicle Model -->
+
+          <div class="input-group">
+
+            <label>
+              Vehicle Model
+            </label>
+
+            <div class="input-box">
+
+              <i data-lucide="car-front"></i>
+
+              <input
+                type="text"
+                placeholder="Enter vehicle model"
+                required
+              />
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+
+          <!-- Registration Number -->
+
+          <div class="input-group">
+
+            <label>
+              Vehicle Number
+            </label>
+
+            <div class="input-box">
+
+              <i data-lucide="hash"></i>
+
+              <input
+                type="text"
+                placeholder="Enter vehicle number"
+                required
+              />
+
+            </div>
+
+          </div>
+
+
+          <!-- Vehicle Year -->
+
+          <div class="input-group">
+
+            <label>
+              Vehicle Year
+            </label>
+
+            <div class="input-box">
+
+              <i data-lucide="calendar"></i>
+
+              <input
+                type="number"
+                placeholder="e.g. 2022"
+                min="1900"
+                max="2099"
+                required
+              />
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- =========================================
+             CUSTOMER INFORMATION
+        ========================================== -->
+
+        <div class="form-section-title">
+
+          <i data-lucide="user-round"></i>
+
+          <h3>
+            Your Information
+          </h3>
+
+        </div>
+
+
+        <div class="form-row">
+
+
+          <!-- Full Name -->
+
+          <div class="input-group">
+
+            <label>
+              Full Name
+            </label>
+
+            <div class="input-box">
+
+              <i data-lucide="user"></i>
+
+              <input
+                type="text"
+                placeholder="Enter your full name"
+                required
+              />
+
+            </div>
+
+          </div>
+
+
+          <!-- Email -->
+
+          <div class="input-group">
+
+            <label>
+              Email Address
+            </label>
+
+            <div class="input-box">
+
+              <i data-lucide="mail"></i>
+
+              <input
+                type="email"
+                placeholder="Enter your email"
+                required
+              />
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Phone -->
+
+        <div class="input-group">
+
+          <label>
+            Phone Number
+          </label>
+
+          <div class="input-box">
+
+            <i data-lucide="phone"></i>
+
+            <input
+              type="tel"
+              placeholder="+91 98765 43210"
+              required
+            />
+
+          </div>
+
+        </div>
+
+
+        <!-- =========================================
+             SERVICE DETAILS
+        ========================================== -->
+
+        <div class="form-section-title">
+
+          <i data-lucide="wrench"></i>
+
+          <h3>
+            Service Details
+          </h3>
+
+        </div>
+
+
+        <div class="form-row">
+
+
+          <!-- Service -->
+
+          <div class="input-group">
+
+            <label>
+              Select Service
+            </label>
+
+            <div class="input-box">
+
+              <i data-lucide="settings-2"></i>
+
+              <select required>
+
+                <option value="">
+                  Choose a service
+                </option>
+
+                <option>
+                  Wheel Alignment
+                </option>
+
+                <option>
+                  Wheel Balancing
+                </option>
+
+                <option>
+                  Tyre Services
+                </option>
+
+                <option>
+                  Vehicle Inspection
+                </option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+
+          <!-- Date -->
+
+          <div class="input-group">
+
+            <label>
+              Preferred Date
+            </label>
+
+            <div class="input-box">
+
+              <i data-lucide="calendar-days"></i>
+
+              <input
+                type="date"
+                required
+              />
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+
+          <!-- Time -->
+
+          <div class="input-group">
+
+            <label>
+              Preferred Time
+            </label>
+
+            <div class="input-box">
+
+              <i data-lucide="clock-3"></i>
+
+              <select required>
+
+                <option value="">
+                  Select time
+                </option>
+
+                <option>
+                  09:00 AM - 10:00 AM
+                </option>
+
+                <option>
+                  10:00 AM - 11:00 AM
+                </option>
+
+                <option>
+                  11:00 AM - 12:00 PM
+                </option>
+
+                <option>
+                  02:00 PM - 03:00 PM
+                </option>
+
+                <option>
+                  03:00 PM - 04:00 PM
+                </option>
+
+                <option>
+                  04:00 PM - 05:00 PM
+                </option>
+
+                <option>
+                  05:00 PM - 06:00 PM
+                </option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+
+          <!-- Service Type -->
+
+          <div class="input-group">
+
+            <label>
+              Service Type
+            </label>
+
+            <div class="input-box">
+
+              <i data-lucide="circle-check"></i>
+
+              <select required>
+
+                <option value="">
+                  Select type
+                </option>
+
+                <option>
+                  Regular Service
+                </option>
+
+                <option>
+                  Premium Service
+                </option>
+
+                <option>
+                  Emergency Service
+                </option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- =========================================
+             MESSAGE
+        ========================================== -->
+
+        <div class="input-group">
+
+          <label>
+            Additional Message
+          </label>
+
+          <div class="textarea-box">
+
+            <i data-lucide="message-square"></i>
+
+            <textarea
+              placeholder="Tell us anything we should know about your vehicle..."
+            ></textarea>
+
+          </div>
+
+        </div>
+
+
+        <!-- =========================================
+             TERMS
+        ========================================== -->
+
+        <div class="appointment-terms">
+
+          <label>
+
+            <input
+              type="checkbox"
+              required
+            />
+
+            <span>
+              I agree to the appointment terms and
+              conditions.
+            </span>
+
+          </label>
+
+        </div>
+
+
+        <!-- =========================================
+             SUBMIT BUTTON
+        ========================================== -->
+
+        <button
+          type="submit"
+          class="appointment-submit"
+        >
+
+          <span>
+            Book Appointment
+          </span>
+
+          <i data-lucide="arrow-up-right"></i>
+
+        </button>
+
+
+        <!-- =========================================
+             LOGIN LINK
+        ========================================== -->
+
+        <div class="appointment-login">
+
+          Already have an account?
+
+          <a href="login.html">
+            Login
+          </a>
+
+        </div>
+
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================
+       JAVASCRIPT
+  ========================================== -->
+
+  <script src="bookappointment.js"></script>
+
+</body>
+</html>

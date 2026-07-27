@@ -1,0 +1,905 @@
+/* =========================================
+   GOOGLE FONT
+========================================= */
+
+@import url(
+  "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+);
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  min-height: 100vh;
+
+  font-family: "Poppins", sans-serif;
+
+  background: #f5f5f3;
+
+  color: #111111;
+
+  overflow-x: hidden;
+
+  transition:
+    background 0.4s ease,
+    color 0.4s ease;
+}
+
+
+/* =========================================
+   LOGIN PAGE
+========================================= */
+
+.login-page {
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px 20px;
+}
+
+
+/* =========================================
+   DECORATIVE BACKGROUND
+========================================= */
+
+.login-decoration {
+  position: fixed;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  z-index: -1;
+
+  filter: blur(1px);
+}
+
+
+.decoration-one {
+  width: 350px;
+  height: 350px;
+
+  top: -180px;
+  left: -150px;
+
+  border: 1px solid rgba(212, 175, 55, 0.18);
+}
+
+
+.decoration-two {
+  width: 450px;
+  height: 450px;
+
+  right: -250px;
+  bottom: -250px;
+
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+
+/* =========================================
+   TOP CONTROLS
+========================================= */
+
+.login-controls {
+  position: fixed;
+
+  top: 25px;
+  right: 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  z-index: 100;
+}
+
+
+.control-btn {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  color: #111111;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.control-btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+
+.control-btn:hover {
+  background: #d4af37;
+
+  color: #111111;
+
+  border-color: #d4af37;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+
+.login-card {
+  width: 100%;
+
+  max-width: 550px;
+
+  padding: 45px 50px;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  border: 1px solid #e8e8e8;
+
+  border-radius: 4px;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.08);
+
+  backdrop-filter: blur(10px);
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+/* =========================================
+   GRIPCORE AUTH LOGO
+========================================= */
+
+.auth-logo-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 35px 0;
+  padding: 0;
+  overflow: visible;
+}
+
+.auth-logo-wrapper img#pageLogo {
+  width: 190px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+
+/* =========================================
+   LOGIN HEADING
+========================================= */
+
+.login-heading {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+
+.login-tag {
+  display: inline-block;
+
+  margin-bottom: 10px;
+
+  color: #d4af37;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+
+.login-heading h1 {
+  color: #111111;
+
+  font-size: 32px;
+
+  line-height: 1.2;
+
+  font-weight: 600;
+
+  letter-spacing: -1px;
+}
+
+
+.login-heading h1 span {
+  color: #d4af37;
+}
+
+
+.login-heading p {
+  max-width: 420px;
+
+  margin: 12px auto 0;
+
+  color: #777777;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.login-form {
+  width: 100%;
+}
+
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #333333;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+
+.label-row {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+
+.label-row a {
+  color: #d4af37;
+
+  font-size: 10px;
+
+  font-weight: 500;
+
+  text-decoration: none;
+}
+
+
+.label-row a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.input-wrapper {
+  position: relative;
+
+  width: 100%;
+}
+
+
+.input-wrapper > svg {
+  position: absolute;
+
+  top: 50%;
+  left: 16px;
+
+  width: 16px;
+  height: 16px;
+
+  color: #999999;
+
+  transform: translateY(-50%);
+
+  pointer-events: none;
+
+  transition: color 0.3s ease;
+}
+
+
+.input-wrapper input {
+  width: 100%;
+
+  height: 52px;
+
+  padding: 0 45px;
+
+  background: #fafafa;
+
+  color: #111111;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 3px;
+
+  outline: none;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.input-wrapper input::placeholder {
+  color: #aaaaaa;
+}
+
+
+.input-wrapper input:focus {
+  background: #ffffff;
+
+  border-color: #d4af37;
+
+  box-shadow:
+    0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+
+.input-wrapper:focus-within > svg {
+  color: #d4af37;
+}
+
+
+/* =========================================
+   PASSWORD TOGGLE
+========================================= */
+
+.password-toggle {
+  position: absolute;
+
+  top: 50%;
+  right: 15px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  background: transparent;
+
+  color: #999999;
+
+  border: none;
+
+  cursor: pointer;
+
+  transform: translateY(-50%);
+}
+
+
+.password-toggle svg {
+  width: 16px;
+  height: 16px;
+}
+
+
+.password-toggle:hover {
+  color: #d4af37;
+}
+
+
+/* =========================================
+   LOGIN OPTIONS
+========================================= */
+
+.login-options {
+  margin: 5px 0 22px;
+}
+
+
+.remember-me {
+  display: flex !important;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin: 0 !important;
+
+  color: #666666 !important;
+
+  font-size: 11px !important;
+
+  font-weight: 400 !important;
+
+  cursor: pointer;
+}
+
+
+.remember-me input {
+  display: none;
+}
+
+
+.custom-checkbox {
+  width: 16px;
+  height: 16px;
+
+  display: inline-block;
+
+  border: 1px solid #cccccc;
+
+  border-radius: 2px;
+
+  transition: 0.3s;
+}
+
+
+.remember-me input:checked + .custom-checkbox {
+  background: #d4af37;
+
+  border-color: #d4af37;
+
+  box-shadow:
+    inset 0 0 0 3px #ffffff;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-btn {
+  width: 100%;
+
+  min-height: 52px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  border: 1px solid #111111;
+
+  border-radius: 3px;
+
+  cursor: pointer;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.login-btn svg {
+  width: 17px;
+  height: 17px;
+
+  transition: transform 0.3s ease;
+}
+
+
+.login-btn:hover {
+  background: #d4af37;
+
+  color: #111111;
+
+  border-color: #d4af37;
+
+  transform: translateY(-3px);
+}
+
+
+.login-btn:hover svg {
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.login-divider {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin: 28px 0;
+}
+
+
+.login-divider span {
+  flex: 1;
+
+  height: 1px;
+
+  background: #e5e5e5;
+}
+
+
+.login-divider p {
+  color: #999999;
+
+  font-size: 9px;
+
+  font-weight: 500;
+
+  letter-spacing: 1px;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   SOCIAL LOGIN
+========================================= */
+
+.social-login {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+}
+
+
+.social-btn {
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  background: #ffffff;
+
+  color: #333333;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 3px;
+
+  cursor: pointer;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.social-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+
+.social-btn:hover {
+  border-color: #d4af37;
+
+  background: #fffdf5;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   SIGN UP
+========================================= */
+
+.signup-text {
+  margin-top: 25px;
+
+  text-align: center;
+
+  color: #888888;
+
+  font-size: 11px;
+}
+
+
+.signup-text a {
+  color: #d4af37;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+body.dark-mode {
+  background: #080808;
+
+  color: #ffffff;
+}
+
+
+body.dark-mode .login-card {
+  background: #111111;
+
+  border-color: #222222;
+
+  box-shadow:
+    0 20px 70px rgba(0, 0, 0, 0.4);
+}
+
+
+body.dark-mode .control-btn {
+  background: #151515;
+
+  color: #ffffff;
+
+  border-color: #292929;
+}
+
+
+body.dark-mode .login-heading h1 {
+  color: #ffffff;
+}
+
+
+body.dark-mode .login-heading p {
+  color: #999999;
+}
+
+
+body.dark-mode .form-group label {
+  color: #dddddd;
+}
+
+
+body.dark-mode .input-wrapper input {
+  background: #151515;
+
+  color: #ffffff;
+
+  border-color: #2c2c2c;
+}
+
+
+body.dark-mode .input-wrapper input:focus {
+  background: #181818;
+
+  border-color: #d4af37;
+}
+
+
+body.dark-mode .input-wrapper input::placeholder {
+  color: #777777;
+}
+
+
+body.dark-mode .remember-me {
+  color: #999999 !important;
+}
+
+
+body.dark-mode .custom-checkbox {
+  border-color: #444444;
+}
+
+
+body.dark-mode .login-divider span {
+  background: #292929;
+}
+
+
+body.dark-mode .social-btn {
+  background: #151515;
+
+  color: #ffffff;
+
+  border-color: #2c2c2c;
+}
+
+
+body.dark-mode .social-btn:hover {
+  background: #1c1c1c;
+
+  border-color: #d4af37;
+}
+
+
+/* =========================================
+   RTL
+========================================= */
+
+body.rtl {
+  direction: rtl;
+}
+
+
+body.rtl .login-controls {
+  right: auto;
+
+  left: 30px;
+}
+
+
+body.rtl .input-wrapper > svg {
+  left: auto;
+
+  right: 16px;
+}
+
+
+body.rtl .input-wrapper input {
+  padding-left: 45px;
+
+  padding-right: 45px;
+}
+
+
+body.rtl .password-toggle {
+  right: auto;
+
+  left: 15px;
+}
+
+
+body.rtl .label-row {
+  flex-direction: row-reverse;
+}
+
+
+body.rtl .remember-me {
+  flex-direction: row-reverse;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+  .login-page {
+    padding: 80px 20px 40px;
+  }
+
+  .login-card {
+    max-width: 500px;
+
+    padding: 40px 35px;
+  }
+
+  .login-controls {
+    top: 18px;
+
+    right: 20px;
+  }
+
+  body.rtl .login-controls {
+    left: 20px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media screen and (max-width: 480px) {
+
+  .login-page {
+    padding: 80px 15px 30px;
+  }
+
+  .login-card {
+    padding: 35px 22px;
+  }
+
+  .login-logo img {
+    width: 165px;
+  }
+
+  .login-heading h1 {
+    font-size: 27px;
+  }
+
+  .login-heading p {
+    font-size: 12px;
+  }
+
+  .social-login {
+    grid-template-columns: 1fr;
+  }
+
+  .login-controls {
+    right: 15px;
+  }
+
+  body.rtl .login-controls {
+    left: 15px;
+  }
+
+}
+

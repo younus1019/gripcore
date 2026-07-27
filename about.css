@@ -1,0 +1,762 @@
+/* =========================================
+   ABOUT PAGE
+========================================= */
+.about-hero,
+.about-story,
+.precision-section,
+.approach-section,
+.why-section,
+.commitment-section,
+.about-cta {
+  transition: 0.4s ease;
+}
+
+.about-container,
+.precision-container,
+.why-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+
+/* =========================================
+   COMMON
+========================================= */
+
+.section-tag {
+  display: inline-block;
+  color: #d4af37;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.about-story h2,
+.precision-content h2,
+.approach-header h2,
+.why-content h2,
+.commitment-container h2,
+.about-cta h2 {
+  font-size: 52px;
+  line-height: 1.15;
+  font-weight: 600;
+  color: #111;
+}
+
+.about-story h2 span,
+.precision-content h2 span,
+.approach-header h2 span,
+.why-content h2 span,
+.commitment-container h2 span,
+.about-cta h2 span {
+  color: #d4af37;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.about-hero {
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.about-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.8)
+    );
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.about-hero-content .about-tag {
+  color: #d4af37;
+  font-size: 13px;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+
+.about-hero-content h1 {
+  color: #fff;
+  font-size: 72px;
+  line-height: 1.1;
+  font-weight: 600;
+  margin: 20px 0 25px;
+}
+
+.about-hero-content h1 span {
+  color: #d4af37;
+}
+
+.about-hero-content p {
+  max-width: 650px;
+  margin: auto;
+  color: #ddd;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+
+/* =========================================
+   OUR STORY
+========================================= */
+
+.about-story {
+  padding: 140px 0;
+  background: #fff;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.story-image {
+  position: relative;
+}
+
+.story-image img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.story-badge {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 25px;
+  background: #111;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.story-badge svg {
+  color: #d4af37;
+}
+
+.story-badge strong {
+  display: block;
+  color: #d4af37;
+  font-size: 25px;
+}
+
+.story-badge span {
+  font-size: 12px;
+  color: #bbb;
+}
+
+.story-content p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.story-highlight {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  padding: 20px;
+  border-left: 3px solid #d4af37;
+  background: #f7f7f7;
+}
+
+.story-highlight svg {
+  color: #d4af37;
+  min-width: 22px;
+}
+
+
+/* =========================================
+   PRECISION
+========================================= */
+
+.precision-section {
+  padding: 140px 0;
+  background: #f7f7f7;
+}
+
+.precision-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.precision-content p {
+  color: #666;
+  line-height: 1.9;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.precision-points {
+  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+}
+
+.precision-point {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.precision-point > svg {
+  width: 28px;
+  color: #d4af37;
+}
+
+.precision-point h4 {
+  color: #111;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.precision-point p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.precision-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.precision-image img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+
+.precision-overlay {
+  position: absolute;
+  left: 35px;
+  bottom: 35px;
+  color: #fff;
+}
+
+.precision-overlay span {
+  color: #d4af37;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+
+.precision-overlay h3 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+
+/* =========================================
+   APPROACH
+========================================= */
+
+.approach-section {
+  padding: 140px 5%;
+  background: #fff;
+}
+
+.approach-header {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.approach-header p {
+  color: #666;
+  margin-top: 20px;
+}
+
+.approach-grid {
+  max-width: 1400px;
+  margin: 70px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.approach-card {
+  position: relative;
+  padding: 45px 30px;
+  background: #f7f7f7;
+  border-radius: 25px;
+  transition: 0.4s ease;
+}
+
+.approach-card:hover {
+  transform: translateY(-12px);
+  background: #111;
+}
+
+.card-number {
+  color: #d4af37;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.approach-icon {
+  margin: 40px 0 25px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #d4af37;
+}
+
+.approach-icon svg {
+  color: #111;
+}
+
+.approach-card h3 {
+  color: #111;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.approach-card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.approach-card:hover h3 {
+  color: #fff;
+}
+
+.approach-card:hover p {
+  color: #aaa;
+}
+
+
+/* =========================================
+   WHY GRIPCORE
+========================================= */
+
+.why-section {
+  padding: 140px 0;
+  background: #f7f7f7;
+}
+
+.why-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.why-image img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.why-content p {
+  color: #666;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+.why-list {
+  margin-top: 35px;
+  display: grid;
+  gap: 18px;
+}
+
+.why-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #333;
+}
+
+.why-item svg {
+  color: #d4af37;
+}
+
+
+/* =========================================
+   COMMITMENT
+========================================= */
+
+/* =========================================
+   COMMITMENT
+========================================= */
+
+.commitment-section {
+  padding: 140px 20px;
+  background: #ffffff;
+  text-align: center;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.commitment-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.commitment-container h2 {
+  color: #111111;
+  transition: color 0.4s ease;
+}
+
+.commitment-container h2 span {
+  color: #d4af37;
+}
+
+.commitment-container p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.9;
+  margin: 30px auto;
+  transition: color 0.4s ease;
+}
+
+.commitment-line {
+  width: 80px;
+  height: 2px;
+  background: #d4af37;
+  margin: 40px auto;
+}
+
+.commitment-container h3 {
+  color: #111111;
+  font-size: 25px;
+  font-weight: 400;
+  transition: color 0.4s ease;
+}
+
+.commitment-container h3 span {
+  color: #d4af37;
+}
+
+
+/* =========================================
+   COMMITMENT - DARK MODE
+========================================= */
+
+body.dark-mode .commitment-section {
+  background: #111111;
+}
+
+body.dark-mode .commitment-container h2 {
+  color: #ffffff;
+}
+
+body.dark-mode .commitment-container p {
+  color: #aaaaaa;
+}
+
+body.dark-mode .commitment-container h3 {
+  color: #ffffff;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.about-cta {
+  padding: 140px 20px;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.about-cta-content {
+  max-width: 850px;
+  margin: auto;
+}
+
+.about-cta p {
+  max-width: 700px;
+  margin: 25px auto 40px;
+  color: #666;
+  line-height: 1.9;
+}
+
+.about-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.about-btn.primary {
+  background: #d4af37;
+  color: #111;
+}
+
+.about-btn.secondary {
+  border: 1px solid #111;
+  color: #111;
+}
+
+.about-btn:hover {
+  transform: translateY(-5px);
+}
+
+.about-btn.secondary:hover {
+  background: #111;
+  color: #fff;
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+body.dark-mode .about-story,
+body.dark-mode .approach-section,
+body.dark-mode .about-cta {
+  background: #080808;
+}
+
+body.dark-mode .precision-section,
+body.dark-mode .why-section {
+  background: #0e0e0e;
+}
+
+body.dark-mode .about-story h2,
+body.dark-mode .precision-content h2,
+body.dark-mode .approach-header h2,
+body.dark-mode .why-content h2 {
+  color: #fff;
+}
+
+body.dark-mode .about-story p,
+body.dark-mode .precision-content p,
+body.dark-mode .approach-header p,
+body.dark-mode .why-content p,
+body.dark-mode .about-cta p {
+  color: #aaa;
+}
+
+body.dark-mode .story-highlight {
+  background: #151515;
+}
+
+body.dark-mode .precision-point h4 {
+  color: #fff;
+}
+
+body.dark-mode .approach-card {
+  background: #151515;
+}
+
+body.dark-mode .approach-card h3 {
+  color: #fff;
+}
+
+body.dark-mode .approach-card p {
+  color: #aaa;
+}
+
+body.dark-mode .why-item {
+  color: #ddd;
+}
+
+body.dark-mode .about-btn.secondary {
+  border-color: #d4af37;
+  color: #d4af37;
+}
+
+body.dark-mode .about-btn.secondary:hover {
+  background: #d4af37;
+  color: #111;
+}
+
+
+/* =========================================
+   RTL
+========================================= */
+
+body.rtl .about-container,
+body.rtl .precision-container,
+body.rtl .why-container {
+  direction: rtl;
+}
+
+body.rtl .story-highlight {
+  border-left: none;
+  border-right: 3px solid #d4af37;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+  .about-hero-content h1 {
+    font-size: 55px;
+  }
+
+  .about-container,
+  .precision-container,
+  .why-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .approach-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-story h2,
+  .precision-content h2,
+  .approach-header h2,
+  .why-content h2,
+  .commitment-container h2,
+  .about-cta h2 {
+    font-size: 44px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .about-hero {
+    min-height: 600px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 38px;
+  }
+
+  .about-hero-content p {
+    font-size: 15px;
+  }
+
+  .about-story,
+  .precision-section,
+  .approach-section,
+  .why-section,
+  .commitment-section,
+  .about-cta {
+    padding: 90px 20px;
+  }
+
+  .story-image img,
+  .precision-image img,
+  .why-image img {
+    height: 450px;
+  }
+
+  .about-story h2,
+  .precision-content h2,
+  .approach-header h2,
+  .why-content h2,
+  .commitment-container h2,
+  .about-cta h2 {
+    font-size: 32px;
+  }
+
+  .approach-grid {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+
+  .approach-card {
+    padding: 35px 25px;
+  }
+
+  .about-cta-buttons {
+    flex-direction: column;
+  }
+
+  .about-btn {
+    width: 100%;
+  }
+
+}
+
+/* =========================================
+   ABOUT CTA - DARK MODE FIX
+========================================= */
+
+body.dark-mode .about-cta {
+  background: #080808;
+}
+
+body.dark-mode .about-cta h2 {
+  color: #ffffff !important;
+}
+
+body.dark-mode .about-cta h2 span {
+  color: #d4af37 !important;
+}
+
+body.dark-mode .about-cta p {
+  color: #aaaaaa !important;
+}
+
+body.dark-mode .about-btn.secondary {
+  border-color: #d4af37;
+  color: #d4af37;
+}
+
+body.dark-mode .about-btn.secondary:hover {
+  background: #d4af37;
+  color: #111111;
+}

@@ -1,0 +1,2571 @@
+/* =========================================================
+   GRIPCORE PRICING HERO
+========================================================= */
+
+.pricing-hero {
+  position: relative;
+
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 100px 5%;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   DECORATIVE ORBITS
+========================================================= */
+
+.pricing-hero-orbit {
+  position: absolute;
+
+  border: 1px solid rgba(212, 175, 55, 0.15);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.pricing-hero-orbit-one {
+  width: 650px;
+  height: 650px;
+
+  top: -350px;
+  right: -200px;
+}
+
+.pricing-hero-orbit-two {
+  width: 450px;
+  height: 450px;
+
+  bottom: -300px;
+  left: -200px;
+}
+
+/* =========================================================
+   HERO CONTAINER
+========================================================= */
+
+.pricing-hero-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  max-width: 1400px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1.2fr 0.8fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.pricing-hero-content {
+  max-width: 760px;
+}
+
+.pricing-hero-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 25px;
+
+  color: #d4af37;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+}
+
+.pricing-hero-eyebrow span {
+  width: 35px;
+
+  height: 1px;
+
+  background: #d4af37;
+}
+
+.pricing-hero-content h1 {
+  margin: 0 0 25px;
+
+  color: #ffffff;
+
+  font-size: clamp(45px, 6vw, 76px);
+
+  line-height: 1.08;
+
+  font-weight: 600;
+
+  letter-spacing: -2px;
+}
+
+.pricing-hero-content h1 strong {
+  display: block;
+
+  color: #d4af37;
+
+  font-weight: 600;
+}
+
+.pricing-hero-content p {
+  max-width: 650px;
+
+  margin: 0 0 40px;
+
+  color: #aaaaaa;
+
+  font-size: 14px;
+
+  line-height: 1.9;
+}
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.pricing-hero-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+}
+
+.pricing-hero-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  min-height: 52px;
+
+  padding: 14px 24px;
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.pricing-hero-btn svg {
+  width: 16px;
+
+  height: 16px;
+
+  transition: transform 0.3s ease;
+}
+
+/* PRIMARY */
+
+.pricing-hero-btn.primary {
+  background: #d4af37;
+
+  color: #111111;
+
+  border: 1px solid #d4af37;
+}
+
+.pricing-hero-btn.primary:hover {
+  background: #ffffff;
+
+  border-color: #ffffff;
+
+  transform: translateY(-4px);
+}
+
+.pricing-hero-btn.primary:hover svg {
+  transform: translate(3px, -3px);
+}
+
+/* SECONDARY */
+
+.pricing-hero-btn.secondary {
+  background: transparent;
+
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pricing-hero-btn.secondary:hover {
+  background: #d4af37;
+
+  color: #111111;
+
+  border-color: #d4af37;
+
+  transform: translateY(-4px);
+}
+
+.pricing-hero-btn.secondary:hover svg {
+  transform: translateY(4px);
+}
+
+/* =========================================================
+   HERO VISUAL
+========================================================= */
+
+.pricing-hero-visual {
+  min-height: 450px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+/* =========================================================
+   OUTER CIRCLE
+========================================================= */
+
+.pricing-hero-circle {
+  position: relative;
+
+  width: 380px;
+
+  height: 380px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid rgba(212, 175, 55, 0.4);
+
+  border-radius: 50%;
+}
+
+/* ROTATING RING */
+
+.pricing-hero-circle::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 25px;
+
+  border: 1px dashed rgba(212, 175, 55, 0.35);
+
+  border-radius: 50%;
+
+  animation: pricingHeroRotate 25s linear infinite;
+}
+
+@keyframes pricingHeroRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================================
+   INNER CIRCLE
+========================================================= */
+
+.pricing-hero-circle-inner {
+  position: relative;
+
+  z-index: 2;
+
+  width: 260px;
+
+  height: 260px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  background: #d4af37;
+
+  color: #111111;
+
+  border-radius: 50%;
+
+  box-shadow: 0 25px 70px rgba(212, 175, 55, 0.2);
+}
+
+.pricing-hero-circle-inner svg {
+  width: 38px;
+
+  height: 38px;
+
+  margin-bottom: 15px;
+}
+
+.pricing-hero-circle-inner span {
+  margin-bottom: 10px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+.pricing-hero-circle-inner strong {
+  font-size: 24px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 1100px) {
+  .pricing-hero {
+    padding: 100px 5%;
+  }
+
+  .pricing-hero-container {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+
+    text-align: center;
+  }
+
+  .pricing-hero-content {
+    max-width: 800px;
+
+    margin: auto;
+  }
+
+  .pricing-hero-eyebrow {
+    justify-content: center;
+  }
+
+  .pricing-hero-content p {
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+  .pricing-hero-actions {
+    justify-content: center;
+  }
+
+  .pricing-hero-visual {
+    min-height: 380px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 768px) {
+  .pricing-hero {
+    min-height: auto;
+
+    padding: 90px 6%;
+  }
+
+  .pricing-hero-content h1 {
+    font-size: 42px;
+
+    letter-spacing: -1px;
+  }
+
+  .pricing-hero-content p {
+    font-size: 13px;
+  }
+
+  .pricing-hero-actions {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .pricing-hero-btn {
+    width: 100%;
+  }
+
+  .pricing-hero-visual {
+    min-height: 330px;
+  }
+
+  .pricing-hero-circle {
+    width: 290px;
+
+    height: 290px;
+  }
+
+  .pricing-hero-circle-inner {
+    width: 205px;
+
+    height: 205px;
+  }
+
+  .pricing-hero-circle-inner strong {
+    font-size: 19px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media screen and (max-width: 480px) {
+  .pricing-hero {
+    padding: 80px 20px;
+  }
+
+  .pricing-hero-content h1 {
+    font-size: 34px;
+  }
+
+  .pricing-hero-eyebrow {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+  }
+
+  .pricing-hero-circle {
+    width: 250px;
+
+    height: 250px;
+  }
+
+  .pricing-hero-circle-inner {
+    width: 175px;
+
+    height: 175px;
+  }
+
+  .pricing-hero-circle-inner svg {
+    width: 28px;
+
+    height: 28px;
+  }
+
+  .pricing-hero-circle-inner strong {
+    font-size: 16px;
+  }
+}
+
+/* =========================================================
+   GRIPCORE PREMIUM SERVICE PACKAGES
+========================================================= */
+
+.gripcore-pricing-section {
+  position: relative;
+  padding: 120px 5%;
+  background: #f7f7f7;
+  overflow: hidden;
+
+  transition:
+    background 0.4s ease,
+    color 0.4s ease;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.pricing-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.pricing-section-header {
+  max-width: 760px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.pricing-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  margin-bottom: 20px;
+
+  color: #d4af37;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+}
+
+.pricing-eyebrow span {
+  width: 35px;
+  height: 1px;
+
+  background: #d4af37;
+}
+
+.pricing-section-header h2 {
+  margin: 0 0 20px;
+
+  color: #111111;
+
+  font-size: clamp(38px, 5vw, 60px);
+  line-height: 1.1;
+
+  font-weight: 600;
+  letter-spacing: -1.5px;
+}
+
+.pricing-section-header h2 strong {
+  display: block;
+
+  color: #d4af37;
+
+  font-weight: 600;
+}
+
+.pricing-section-header p {
+  max-width: 650px;
+  margin: auto;
+
+  color: #666666;
+
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* =========================================================
+   PRICING GRID
+========================================================= */
+
+.gripcore-pricing-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+  align-items: stretch;
+}
+
+/* =========================================================
+   PRICE CARD
+========================================================= */
+
+.gripcore-price-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 45px 35px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 12px;
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    border-color 0.4s ease,
+    background 0.4s ease;
+}
+
+.gripcore-price-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(212, 175, 55, 0.5);
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================================
+   FEATURED CARD
+========================================================= */
+
+.gripcore-price-card.featured {
+  border: 1px solid #d4af37;
+
+  box-shadow: 0 20px 50px rgba(212, 175, 55, 0.12);
+
+  transform: translateY(-10px);
+}
+
+.gripcore-price-card.featured:hover {
+  transform: translateY(-18px);
+}
+
+/* =========================================================
+   POPULAR BADGE
+========================================================= */
+
+.popular-badge {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  padding: 7px 18px;
+
+  background: #d4af37;
+  color: #111111;
+
+  border-radius: 30px;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.price-card-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 28px;
+
+  background: #faf6e8;
+
+  color: #d4af37;
+
+  border-radius: 50%;
+}
+
+.price-card-icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.price-card-label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #d4af37;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.price-card-content h3 {
+  margin: 0 0 15px;
+
+  color: #111111;
+
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.price-card-description {
+  min-height: 80px;
+
+  margin: 0;
+
+  color: #777777;
+
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.price-card-divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 25px 0;
+
+  background: #eeeeee;
+}
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.price-card-content ul {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  margin: 0 0 35px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.price-card-content ul li {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #555555;
+
+  font-size: 12px;
+}
+
+.price-card-content ul li svg {
+  width: 16px;
+  height: 16px;
+
+  flex-shrink: 0;
+
+  color: #d4af37;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.pricing-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  width: 100%;
+
+  margin-top: auto;
+
+  padding: 15px 22px;
+
+  background: #111111;
+  color: #ffffff;
+
+  border: 1px solid #111111;
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.pricing-btn svg {
+  width: 16px;
+  height: 16px;
+
+  transition: transform 0.3s ease;
+}
+
+.pricing-btn:hover {
+  background: #d4af37;
+  color: #111111;
+
+  border-color: #d4af37;
+
+  transform: translateY(-3px);
+}
+
+.pricing-btn:hover svg {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   FEATURED BUTTON
+========================================================= */
+
+.featured-btn {
+  background: #d4af37;
+  color: #111111;
+
+  border-color: #d4af37;
+}
+
+.featured-btn:hover {
+  background: #111111;
+  color: #ffffff;
+
+  border-color: #111111;
+}
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .gripcore-pricing-section {
+  background: #080808;
+}
+
+body.dark-mode .pricing-section-header h2 {
+  color: #ffffff;
+}
+
+body.dark-mode .pricing-section-header p {
+  color: #999999;
+}
+
+body.dark-mode .gripcore-price-card {
+  background: #111111;
+
+  border-color: #252525;
+}
+
+body.dark-mode .gripcore-price-card:hover {
+  border-color: rgba(212, 175, 55, 0.5);
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-mode .gripcore-price-card.featured {
+  border-color: #d4af37;
+}
+
+body.dark-mode .price-card-content h3 {
+  color: #ffffff;
+}
+
+body.dark-mode .price-card-description {
+  color: #999999;
+}
+
+body.dark-mode .price-card-divider {
+  background: #292929;
+}
+
+body.dark-mode .price-card-content ul li {
+  color: #bbbbbb;
+}
+
+body.dark-mode .price-card-icon {
+  background: #1c1a14;
+}
+
+body.dark-mode .pricing-btn {
+  background: #ffffff;
+  color: #111111;
+
+  border-color: #ffffff;
+}
+
+body.dark-mode .pricing-btn:hover {
+  background: #d4af37;
+  color: #111111;
+
+  border-color: #d4af37;
+}
+
+body.dark-mode .featured-btn {
+  background: #d4af37;
+  color: #111111;
+
+  border-color: #d4af37;
+}
+
+body.dark-mode .featured-btn:hover {
+  background: #ffffff;
+  color: #111111;
+
+  border-color: #ffffff;
+}
+
+/* =========================================================
+   RTL
+========================================================= */
+
+body.rtl .gripcore-pricing-grid,
+body.rtl .price-card-content {
+  direction: rtl;
+}
+
+body.rtl .pricing-eyebrow {
+  flex-direction: row-reverse;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 1100px) {
+  .gripcore-pricing-section {
+    padding: 100px 5%;
+  }
+
+  .gripcore-pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gripcore-price-card.featured {
+    transform: none;
+  }
+
+  .gripcore-price-card.featured:hover {
+    transform: translateY(-8px);
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 768px) {
+  .gripcore-pricing-section {
+    padding: 80px 6%;
+  }
+
+  .pricing-section-header {
+    margin-bottom: 55px;
+  }
+
+  .pricing-section-header h2 {
+    font-size: 38px;
+  }
+
+  .gripcore-pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .gripcore-price-card {
+    padding: 38px 28px;
+  }
+
+  .price-card-description {
+    min-height: auto;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media screen and (max-width: 480px) {
+  .gripcore-pricing-section {
+    padding: 70px 20px;
+  }
+
+  .pricing-section-header h2 {
+    font-size: 32px;
+  }
+
+  .pricing-section-header p {
+    font-size: 13px;
+  }
+
+  .gripcore-price-card {
+    padding: 35px 25px;
+  }
+}
+
+/* =========================================================
+   COMPARE SERVICES
+========================================================= */
+
+.compare-section {
+  padding: 120px 5%;
+  background: #f7f7f7;
+  transition: background 0.4s ease;
+}
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.compare-section .section-title {
+  max-width: 750px;
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.compare-section .section-title span {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: #d4af37;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.compare-section .section-title h2 {
+  margin-bottom: 18px;
+
+  color: #111111;
+
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.2;
+
+  font-weight: 600;
+}
+
+.compare-section .section-title p {
+  color: #777777;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.comparison-table-wrapper {
+  width: 100%;
+
+  max-width: 1400px;
+
+  margin: auto;
+
+  overflow-x: auto;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 14px;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.comparison-table {
+  width: 100%;
+
+  min-width: 900px;
+
+  border-collapse: collapse;
+}
+
+/* =========================================================
+   TABLE HEADER
+========================================================= */
+
+.comparison-table thead {
+  background: #111111;
+
+  color: #ffffff;
+}
+
+.comparison-table th {
+  padding: 20px 24px;
+
+  text-align: left;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   TABLE BODY
+========================================================= */
+
+.comparison-table td {
+  padding: 24px;
+
+  border-bottom: 1px solid #eeeeee;
+
+  color: #666666;
+
+  font-size: 13px;
+
+  vertical-align: middle;
+}
+
+.comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table tbody tr {
+  transition: background 0.3s ease;
+}
+
+.comparison-table tbody tr:hover {
+  background: #faf8ef;
+}
+
+/* =========================================================
+   SERVICE NAME
+========================================================= */
+
+.service-name {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: #111111;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.service-name svg {
+  width: 20px;
+  height: 20px;
+
+  color: #d4af37;
+}
+
+/* =========================================================
+   RECOMMENDED BADGE
+========================================================= */
+
+.recommended {
+  display: inline-block;
+
+  padding: 7px 12px;
+
+  background: #faf6e8;
+
+  color: #9a7a18;
+
+  border-radius: 30px;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   BOOK BUTTON
+========================================================= */
+
+.compare-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 10px 16px;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  border: 1px solid #111111;
+
+  border-radius: 4px;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition: 0.3s ease;
+}
+
+.compare-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.compare-btn:hover {
+  background: #d4af37;
+
+  color: #111111;
+
+  border-color: #d4af37;
+
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .compare-section {
+  background: #080808;
+}
+
+body.dark-mode .compare-section .section-title h2 {
+  color: #ffffff;
+}
+
+body.dark-mode .compare-section .section-title p {
+  color: #999999;
+}
+
+body.dark-mode .comparison-table-wrapper {
+  background: #111111;
+
+  border-color: #292929;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .comparison-table thead {
+  background: #d4af37;
+
+  color: #111111;
+}
+
+body.dark-mode .comparison-table td {
+  border-color: #292929;
+
+  color: #999999;
+}
+
+body.dark-mode .comparison-table tbody tr:hover {
+  background: #171717;
+}
+
+body.dark-mode .service-name {
+  color: #ffffff;
+}
+
+body.dark-mode .recommended {
+  background: rgba(212, 175, 55, 0.12);
+
+  color: #d4af37;
+}
+
+body.dark-mode .compare-btn {
+  background: #d4af37;
+
+  color: #111111;
+
+  border-color: #d4af37;
+}
+
+body.dark-mode .compare-btn:hover {
+  background: #ffffff;
+
+  border-color: #ffffff;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 900px) {
+  .compare-section {
+    padding: 100px 5%;
+  }
+
+  .compare-section .section-title {
+    margin-bottom: 50px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 600px) {
+  .compare-section {
+    padding: 80px 20px;
+  }
+
+  .compare-section .section-title h2 {
+    font-size: 30px;
+  }
+
+  .compare-section .section-title p {
+    font-size: 13px;
+  }
+
+  .comparison-table-wrapper {
+    border-radius: 10px;
+  }
+}
+
+/* =========================================================
+   PRICING FAQ
+========================================================= */
+
+.pricing-faq {
+  padding: 120px 5%;
+  background: #ffffff;
+
+  transition:
+    background 0.4s ease,
+    color 0.4s ease;
+}
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.pricing-faq .section-title {
+  max-width: 750px;
+
+  margin: 0 auto 65px;
+
+  text-align: center;
+}
+
+.pricing-faq .section-title span {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: #d4af37;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.pricing-faq .section-title h2 {
+  margin-bottom: 18px;
+
+  color: #111111;
+
+  font-size: clamp(32px, 4vw, 48px);
+
+  line-height: 1.2;
+
+  font-weight: 600;
+}
+
+.pricing-faq .section-title p {
+  color: #777777;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   FAQ WRAPPER
+========================================================= */
+
+.faq-wrapper {
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: auto;
+}
+
+/* =========================================================
+   FAQ ITEM
+========================================================= */
+
+.faq-item {
+  margin-bottom: 16px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: rgba(212, 175, 55, 0.5);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================================
+   FAQ SUMMARY
+========================================================= */
+
+.faq-item summary {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 23px 25px;
+
+  cursor: pointer;
+
+  list-style: none;
+
+  color: #111111;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+/* =========================================================
+   PLUS ICON
+========================================================= */
+
+.faq-item summary svg {
+  width: 20px;
+
+  height: 20px;
+
+  flex-shrink: 0;
+
+  color: #d4af37;
+
+  transition: transform 0.3s ease;
+}
+
+/* Rotate when open */
+
+.faq-item[open] summary svg {
+  transform: rotate(45deg);
+}
+
+/* =========================================================
+   FAQ ANSWER
+========================================================= */
+
+.faq-answer {
+  padding: 0 25px 25px;
+}
+
+.faq-answer p {
+  max-width: 750px;
+
+  margin: 0;
+
+  color: #777777;
+
+  font-size: 13px;
+
+  line-height: 1.9;
+}
+
+/* =========================================================
+   OPEN FAQ
+========================================================= */
+
+.faq-item[open] {
+  border-color: #d4af37;
+}
+
+.faq-item[open] summary {
+  color: #111111;
+}
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .pricing-faq {
+  background: #080808;
+}
+
+body.dark-mode .pricing-faq .section-title h2 {
+  color: #ffffff;
+}
+
+body.dark-mode .pricing-faq .section-title p {
+  color: #999999;
+}
+
+body.dark-mode .faq-item {
+  background: #111111;
+
+  border-color: #292929;
+}
+
+body.dark-mode .faq-item:hover {
+  border-color: rgba(212, 175, 55, 0.6);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .faq-item summary {
+  color: #ffffff;
+}
+
+body.dark-mode .faq-answer p {
+  color: #999999;
+}
+
+body.dark-mode .faq-item[open] {
+  border-color: #d4af37;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 900px) {
+  .pricing-faq {
+    padding: 100px 5%;
+  }
+
+  .pricing-faq .section-title {
+    margin-bottom: 50px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 600px) {
+  .pricing-faq {
+    padding: 80px 20px;
+  }
+
+  .pricing-faq .section-title h2 {
+    font-size: 30px;
+  }
+
+  .pricing-faq .section-title p {
+    font-size: 13px;
+  }
+
+  .faq-item summary {
+    padding: 20px;
+
+    font-size: 13px;
+  }
+
+  .faq-answer {
+    padding: 0 20px 20px;
+  }
+
+  .faq-answer p {
+    font-size: 12px;
+  }
+}
+
+
+
+/* =========================================================
+   PRICING FINAL CTA
+========================================================= */
+
+.pricing-final-cta {
+  position: relative;
+  width: 100%;
+
+  padding: 110px 5%;
+
+  background: #111111;
+  color: #ffffff;
+
+  overflow: hidden;
+
+  transition:
+    background 0.4s ease,
+    color 0.4s ease;
+}
+
+
+/* =========================================================
+   CTA CONTAINER
+========================================================= */
+
+.pricing-cta-container {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.2fr)
+    minmax(360px, 0.8fr);
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.pricing-cta-content {
+  width: 100%;
+  max-width: 750px;
+}
+
+
+/* =========================================================
+   CTA TAG
+========================================================= */
+
+.pricing-cta-tag {
+  display: block;
+
+  margin-bottom: 22px;
+
+  color: #d4af37;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.pricing-cta-content h2 {
+  margin: 0 0 25px;
+
+  color: #ffffff;
+
+  font-size: clamp(
+    42px,
+    5vw,
+    68px
+  );
+
+  line-height: 1.08;
+
+  font-weight: 600;
+
+  letter-spacing: -2px;
+}
+
+
+.pricing-cta-content h2 span {
+  display: block;
+
+  color: #d4af37;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.pricing-cta-content p {
+  max-width: 680px;
+
+  margin: 0 0 38px;
+
+  color: #aaaaaa;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   BUTTON WRAPPER
+========================================================= */
+
+.pricing-cta-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   COMMON BUTTON
+========================================================= */
+
+.pricing-cta-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  min-height: 54px;
+
+  padding: 15px 25px;
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* =========================================================
+   BUTTON ICON
+========================================================= */
+
+.pricing-cta-btn svg {
+  width: 17px;
+  height: 17px;
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.pricing-cta-btn.primary {
+  background: #d4af37;
+
+  color: #111111;
+
+  border: 1px solid #d4af37;
+}
+
+
+.pricing-cta-btn.primary:hover {
+  background: #ffffff;
+
+  color: #111111;
+
+  border-color: #ffffff;
+
+  transform: translateY(-4px);
+}
+
+
+.pricing-cta-btn.primary:hover svg {
+  transform: translate(
+    4px,
+    -4px
+  );
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
+
+.pricing-cta-btn.secondary {
+  background: transparent;
+
+  color: #ffffff;
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.35
+    );
+}
+
+
+.pricing-cta-btn.secondary:hover {
+  background: #d4af37;
+
+  color: #111111;
+
+  border-color: #d4af37;
+
+  transform: translateY(-4px);
+}
+
+
+.pricing-cta-btn.secondary:hover svg {
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   RIGHT VISUAL
+========================================================= */
+
+.pricing-cta-visual {
+  width: 100%;
+
+  min-height: 420px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* =========================================================
+   OUTER CIRCLE
+========================================================= */
+
+.pricing-cta-ring {
+  position: relative;
+
+  width: 360px;
+  height: 360px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(
+      212,
+      175,
+      55,
+      0.4
+    );
+
+  border-radius: 50%;
+}
+
+
+/* =========================================================
+   ROTATING INNER RING
+========================================================= */
+
+.pricing-cta-ring::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 25px;
+
+  border:
+    1px dashed
+    rgba(
+      212,
+      175,
+      55,
+      0.35
+    );
+
+  border-radius: 50%;
+
+  animation:
+    pricingCtaRotate
+    25s
+    linear
+    infinite;
+}
+
+
+@keyframes pricingCtaRotate {
+
+  from {
+    transform:
+      rotate(0deg);
+  }
+
+  to {
+    transform:
+      rotate(360deg);
+  }
+
+}
+
+
+/* =========================================================
+   INNER GOLD CIRCLE
+========================================================= */
+
+.pricing-cta-inner {
+  position: relative;
+
+  z-index: 2;
+
+  width: 220px;
+  height: 220px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  background: #d4af37;
+
+  color: #111111;
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 20px 60px
+    rgba(
+      212,
+      175,
+      55,
+      0.2
+    );
+}
+
+
+/* =========================================================
+   INNER ICON
+========================================================= */
+
+.pricing-cta-inner svg {
+  width: 34px;
+  height: 34px;
+
+  margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   INNER TEXT
+========================================================= */
+
+.pricing-cta-inner strong {
+  display: block;
+
+  font-size: 20px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+.pricing-cta-inner strong span {
+  display: block;
+}
+
+
+/* =========================================================
+   LIGHT MODE
+========================================================= */
+
+body:not(.dark-mode) .pricing-final-cta {
+  background: #f7f7f7;
+
+  color: #111111;
+}
+
+
+body:not(.dark-mode)
+.pricing-cta-content h2 {
+  color: #111111;
+}
+
+
+body:not(.dark-mode)
+.pricing-cta-content p {
+  color: #666666;
+}
+
+
+body:not(.dark-mode)
+.pricing-cta-btn.secondary {
+  background: transparent;
+
+  color: #111111;
+
+  border-color: #111111;
+}
+
+
+body:not(.dark-mode)
+.pricing-cta-btn.secondary:hover {
+  background: #111111;
+
+  color: #ffffff;
+
+  border-color: #111111;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .pricing-final-cta {
+  background: #080808;
+
+  color: #ffffff;
+}
+
+
+body.dark-mode
+.pricing-cta-content h2 {
+  color: #ffffff;
+}
+
+
+body.dark-mode
+.pricing-cta-content p {
+  color: #999999;
+}
+
+
+body.dark-mode
+.pricing-cta-btn.secondary {
+  background: transparent;
+
+  color: #ffffff;
+
+  border-color:
+    rgba(
+      255,
+      255,
+      255,
+      0.3
+    );
+}
+
+
+body.dark-mode
+.pricing-cta-btn.secondary:hover {
+  background: #d4af37;
+
+  color: #111111;
+
+  border-color: #d4af37;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 1100px) {
+
+  .pricing-final-cta {
+    padding: 90px 5%;
+  }
+
+
+  .pricing-cta-container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+
+  .pricing-cta-content {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+
+  .pricing-cta-content p {
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+
+  .pricing-cta-buttons {
+    justify-content: center;
+  }
+
+
+  .pricing-cta-visual {
+    min-height: 380px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  .pricing-final-cta {
+    padding: 80px 20px;
+  }
+
+
+  .pricing-cta-content h2 {
+    font-size: 40px;
+
+    letter-spacing: -1px;
+  }
+
+
+  .pricing-cta-content p {
+    font-size: 14px;
+  }
+
+
+  .pricing-cta-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+
+  .pricing-cta-btn {
+    width: 100%;
+  }
+
+
+  .pricing-cta-visual {
+    min-height: 320px;
+  }
+
+
+  .pricing-cta-ring {
+    width: 290px;
+
+    height: 290px;
+  }
+
+
+  .pricing-cta-inner {
+    width: 190px;
+
+    height: 190px;
+  }
+
+
+  .pricing-cta-inner strong {
+    font-size: 17px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media screen and (max-width: 480px) {
+
+  .pricing-final-cta {
+    padding: 70px 18px;
+  }
+
+
+  .pricing-cta-content h2 {
+    font-size: 34px;
+  }
+
+
+  .pricing-cta-ring {
+    width: 250px;
+
+    height: 250px;
+  }
+
+
+  .pricing-cta-inner {
+    width: 165px;
+
+    height: 165px;
+  }
+
+
+  .pricing-cta-inner svg {
+    width: 28px;
+
+    height: 28px;
+
+    margin-bottom: 10px;
+  }
+
+
+  .pricing-cta-inner strong {
+    font-size: 15px;
+  }
+
+}
+/* =========================================================
+   PRICING HERO — LIGHT MODE
+========================================================= */
+
+.pricing-hero {
+  background: #f7f7f7 !important;
+  color: #111111 !important;
+  transition:
+    background 0.4s ease,
+    color 0.4s ease;
+}
+
+.pricing-hero span {
+  color: #d4af37 !important;
+}
+
+.pricing-hero h1 {
+  color: #111111 !important;
+}
+
+.pricing-hero p {
+  color: #666666 !important;
+}
+
+/* =========================================================
+   PRICING CARDS — LIGHT MODE
+========================================================= */
+
+.pricing {
+  background: #f8f8f8 !important;
+}
+
+.price-card {
+  background: #ffffff !important;
+  color: #111111 !important;
+  border-color: #e5e7eb !important;
+}
+
+.price-card h3 {
+  color: #111111 !important;
+}
+
+.price-card p,
+.price-card li {
+  color: #666666 !important;
+}
+
+.price span {
+  color: #666666 !important;
+}
+
+/* =========================================================
+   COMPARISON SECTION — LIGHT MODE
+========================================================= */
+
+.compare-section {
+  background: #f8f8f8 !important;
+}
+
+.section-title h2 {
+  color: #111111 !important;
+}
+
+.section-title p {
+  color: #666666 !important;
+}
+
+.compare-form,
+.comparison-table {
+  background: #ffffff !important;
+}
+
+.compare-form h3 {
+  color: #111111 !important;
+}
+
+.input-group label {
+  color: #111111 !important;
+}
+
+.input-group select {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+
+/* =========================================================
+   FAQ — LIGHT MODE FIX
+========================================================= */
+
+body:not(.dark-mode) .faq-section {
+  background-color: #f8f8f8 !important;
+  color: #111111 !important;
+}
+
+body:not(.dark-mode) .faq-section .section-title h2 {
+  color: #111111 !important;
+}
+
+body:not(.dark-mode) .faq-section .section-title p {
+  color: #666666 !important;
+}
+
+body:not(.dark-mode) .faq-section .section-title span {
+  color: #d4af37 !important;
+}
+
+body:not(.dark-mode) .faq-section .faq-wrapper details {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  border-color: #e5e7eb !important;
+}
+
+body:not(.dark-mode) .faq-section .faq-wrapper summary {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+}
+
+body:not(.dark-mode) .faq-section .faq-wrapper details p {
+  background-color: #ffffff !important;
+  color: #666666 !important;
+}
+
+
+/* =========================================================
+   FAQ — DARK MODE
+========================================================= */
+
+body.dark-mode .faq-section {
+  background-color: #080808 !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .faq-section .section-title h2 {
+  color: #ffffff !important;
+}
+
+body.dark-mode .faq-section .section-title p {
+  color: #999999 !important;
+}
+
+body.dark-mode .faq-section .section-title span {
+  color: #d4af37 !important;
+}
+
+body.dark-mode .faq-section .faq-wrapper details {
+  background-color: #111111 !important;
+  color: #ffffff !important;
+  border-color: #292929 !important;
+}
+
+body.dark-mode .faq-section .faq-wrapper summary {
+  background-color: #111111 !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .faq-section .faq-wrapper details p {
+  background-color: #111111 !important;
+  color: #999999 !important;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode {
+  background: #080808;
+  color: #ffffff;
+}
+
+/* =========================================================
+   PRICING HERO — DARK MODE
+========================================================= */
+
+body.dark-mode .pricing-hero {
+  background: #080808 !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .pricing-hero h1 {
+  color: #ffffff !important;
+}
+
+body.dark-mode .pricing-hero p {
+  color: #999999 !important;
+}
+
+body.dark-mode .pricing-hero span {
+  color: #d4af37 !important;
+}
+
+/* =========================================================
+   PRICING CARDS — DARK MODE
+========================================================= */
+
+body.dark-mode .pricing {
+  background: #080808 !important;
+}
+
+body.dark-mode .price-card {
+  background: #111111 !important;
+  color: #ffffff !important;
+  border-color: #252525 !important;
+}
+
+body.dark-mode .price-card h3 {
+  color: #ffffff !important;
+}
+
+body.dark-mode .price-card p,
+body.dark-mode .price-card li {
+  color: #999999 !important;
+}
+
+body.dark-mode .price span {
+  color: #999999 !important;
+}
+
+/* =========================================================
+   COMPARISON — DARK MODE
+========================================================= */
+
+body.dark-mode .compare-section {
+  background: #080808 !important;
+}
+
+body.dark-mode .section-title h2 {
+  color: #ffffff !important;
+}
+
+body.dark-mode .section-title p {
+  color: #999999 !important;
+}
+
+body.dark-mode .compare-form,
+body.dark-mode .comparison-table {
+  background: #111111 !important;
+}
+
+body.dark-mode .compare-form h3 {
+  color: #ffffff !important;
+}
+
+body.dark-mode .input-group label {
+  color: #ffffff !important;
+}
+
+body.dark-mode .input-group select {
+  background: #151515 !important;
+  color: #ffffff !important;
+  border-color: #333333 !important;
+}
+
+body.dark-mode tbody tr:nth-child(even) {
+  background: #151515 !important;
+}
+
+body.dark-mode tbody td:first-child {
+  color: #ffffff !important;
+}
+
+/* =========================================================
+   FAQ — DARK MODE
+========================================================= */
+
+body.dark-mode .faq-section {
+  background: #080808 !important;
+}
+
+body.dark-mode .faq-wrapper details {
+  background: #111111 !important;
+  border-color: #292929 !important;
+}
+
+body.dark-mode summary {
+  color: #ffffff !important;
+}
+
+body.dark-mode details p {
+  color: #999999 !important;
+}
