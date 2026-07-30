@@ -181,56 +181,6 @@ if (statsSection) {
 }
 
 // =========================================
-// TESTIMONIAL SLIDER
-// =========================================
-
-const reviews = document.querySelectorAll(".review-slide");
-
-const nextReview = document.getElementById("nextReview");
-
-const prevReview = document.getElementById("prevReview");
-
-const currentReview = document.getElementById("currentReview");
-
-let reviewIndex = 0;
-
-// Show Review
-
-function showReview(index) {
-  reviews.forEach((review) => {
-    review.classList.remove("active");
-  });
-
-  reviews[index].classList.add("active");
-
-  currentReview.textContent = String(index + 1).padStart(2, "0");
-}
-
-// Next
-
-nextReview.addEventListener("click", () => {
-  reviewIndex++;
-
-  if (reviewIndex >= reviews.length) {
-    reviewIndex = 0;
-  }
-
-  showReview(reviewIndex);
-});
-
-// Previous
-
-prevReview.addEventListener("click", () => {
-  reviewIndex--;
-
-  if (reviewIndex < 0) {
-    reviewIndex = reviews.length - 1;
-  }
-
-  showReview(reviewIndex);
-});
-
-// =========================================
 // RTL MODE TOGGLE
 // =========================================
 

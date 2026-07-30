@@ -127,6 +127,37 @@
 }
 
 
+.about-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  color: #d4af37;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  text-align: center;
+}
+
+.about-tag::before {
+  content: "";
+
+  width: 70px;
+  height: 1px;
+
+  background: #d4af37;
+
+  display: block;
+
+  flex-shrink: 0;
+}
+
 /* =========================================
    OUR STORY
 ========================================= */
@@ -202,6 +233,37 @@
 .story-highlight svg {
   color: #d4af37;
   min-width: 22px;
+}
+
+.section-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  color: #d4af37;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  text-align: center;
+}
+
+.section-tag::before {
+  content: "";
+
+  width: 70px;
+  height: 1px;
+
+  background: #d4af37;
+
+  display: block;
+
+  flex-shrink: 0;
 }
 
 

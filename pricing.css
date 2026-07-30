@@ -1,2571 +1,1699 @@
-/* =========================================================
-   GRIPCORE PRICING HERO
-========================================================= */
+/*=========================================================
+                PRICING HERO
+=========================================================*/
 
-.pricing-hero {
-  position: relative;
-
-  min-height: 650px;
-
-  display: flex;
-  align-items: center;
-
-  padding: 100px 5%;
-
-  background: #111111;
-
-  color: #ffffff;
-
-  overflow: hidden;
+.pricing-hero{
+    position:relative;
+    padding:140px 8%;
+    background:#f7f7f7;
+    overflow:hidden;
 }
-
-/* =========================================================
-   DECORATIVE ORBITS
-========================================================= */
-
-.pricing-hero-orbit {
-  position: absolute;
 
-  border: 1px solid rgba(212, 175, 55, 0.15);
-
-  border-radius: 50%;
-
-  pointer-events: none;
+body.dark-mode .pricing-hero{
+    background:#080808;
 }
 
-.pricing-hero-orbit-one {
-  width: 650px;
-  height: 650px;
-
-  top: -350px;
-  right: -200px;
+.pricing-hero::before{
+    content:"";
+    position:absolute;
+    top:-250px;
+    right:-250px;
+    width:550px;
+    height:550px;
+    border-radius:50%;
+    background:rgba(212,175,55,.08);
+    filter:blur(90px);
+}
+
+.pricing-hero::after{
+    content:"";
+    position:absolute;
+    bottom:-220px;
+    left:-220px;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:rgba(212,175,55,.05);
+    filter:blur(100px);
 }
-
-.pricing-hero-orbit-two {
-  width: 450px;
-  height: 450px;
 
-  bottom: -300px;
-  left: -200px;
+.pricing-hero-container{
+    position:relative;
+    z-index:2;
+    max-width:1400px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    align-items:center;
+    gap:90px;
 }
-
-/* =========================================================
-   HERO CONTAINER
-========================================================= */
-
-.pricing-hero-container {
-  position: relative;
-
-  z-index: 2;
-
-  width: 100%;
 
-  max-width: 1400px;
+/*=========================================================
+                    LEFT CONTENT
+=========================================================*/
 
-  margin: auto;
-
-  display: grid;
-
-  grid-template-columns: 1.2fr 0.8fr;
-
-  gap: 80px;
-
-  align-items: center;
+.pricing-hero-content{
+    max-width:720px;
 }
 
-/* =========================================================
-   HERO CONTENT
-========================================================= */
-
-.pricing-hero-content {
-  max-width: 760px;
+.pricing-hero-eyebrow{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:25px;
+    color:#d4af37;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
 }
-
-.pricing-hero-eyebrow {
-  display: flex;
-
-  align-items: center;
-
-  gap: 12px;
 
-  margin-bottom: 25px;
-
-  color: #d4af37;
-
-  font-size: 10px;
-
-  font-weight: 600;
-
-  letter-spacing: 3px;
+.pricing-hero-eyebrow span{
+    width:60px;
+    height:2px;
+    background:#d4af37;
+    border-radius:50px;
 }
 
-.pricing-hero-eyebrow span {
-  width: 35px;
-
-  height: 1px;
-
-  background: #d4af37;
+.pricing-hero-content h1{
+    font-size:clamp(52px,6vw,78px);
+    line-height:1.08;
+    color:#111;
+    font-weight:700;
+    margin-bottom:28px;
 }
-
-.pricing-hero-content h1 {
-  margin: 0 0 25px;
-
-  color: #ffffff;
 
-  font-size: clamp(45px, 6vw, 76px);
-
-  line-height: 1.08;
-
-  font-weight: 600;
-
-  letter-spacing: -2px;
+body.dark-mode .pricing-hero-content h1{
+    color:#fff;
 }
-
-.pricing-hero-content h1 strong {
-  display: block;
 
-  color: #d4af37;
-
-  font-weight: 600;
+.pricing-hero-content h1 strong{
+    display:block;
+    color:#d4af37;
+    font-weight:700;
 }
-
-.pricing-hero-content p {
-  max-width: 650px;
-
-  margin: 0 0 40px;
-
-  color: #aaaaaa;
 
-  font-size: 14px;
-
-  line-height: 1.9;
+.pricing-hero-content p{
+    font-size:15px;
+    line-height:1.9;
+    color:#666;
+    margin-bottom:40px;
+    max-width:620px;
 }
-
-/* =========================================================
-   HERO BUTTONS
-========================================================= */
-
-.pricing-hero-actions {
-  display: flex;
-
-  align-items: center;
 
-  gap: 15px;
-
-  flex-wrap: wrap;
+body.dark-mode .pricing-hero-content p{
+    color:#9f9f9f;
 }
-
-.pricing-hero-btn {
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
 
-  gap: 10px;
+/*=========================================================
+                    BUTTONS
+=========================================================*/
 
-  min-height: 52px;
-
-  padding: 14px 24px;
-
-  border-radius: 5px;
-
-  text-decoration: none;
-
-  font-size: 11px;
-
-  font-weight: 600;
-
-  transition: 0.3s ease;
+.pricing-hero-actions{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
 }
-
-.pricing-hero-btn svg {
-  width: 16px;
-
-  height: 16px;
 
-  transition: transform 0.3s ease;
+.pricing-hero-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    height:55px;
+    padding:0 28px;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:700;
+    transition:.35s;
 }
 
-/* PRIMARY */
-
-.pricing-hero-btn.primary {
-  background: #d4af37;
-
-  color: #111111;
-
-  border: 1px solid #d4af37;
+.pricing-hero-btn svg{
+    width:18px;
+    height:18px;
+    transition:.35s;
 }
-
-.pricing-hero-btn.primary:hover {
-  background: #ffffff;
 
-  border-color: #ffffff;
+/* Gold Button */
 
-  transform: translateY(-4px);
+.pricing-hero-btn.primary{
+    background:#d4af37;
+    color:#111;
 }
 
-.pricing-hero-btn.primary:hover svg {
-  transform: translate(3px, -3px);
+.pricing-hero-btn.primary:hover{
+    transform:translateY(-5px);
+    background:#111;
+    color:#fff;
 }
 
-/* SECONDARY */
-
-.pricing-hero-btn.secondary {
-  background: transparent;
-
-  color: #ffffff;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
+.pricing-hero-btn.primary:hover svg{
+    transform:translateX(4px);
 }
-
-.pricing-hero-btn.secondary:hover {
-  background: #d4af37;
 
-  color: #111111;
+/* Outline Button */
 
-  border-color: #d4af37;
-
-  transform: translateY(-4px);
+.pricing-hero-btn.secondary{
+    border:1px solid #111;
+    color:#111;
 }
 
-.pricing-hero-btn.secondary:hover svg {
-  transform: translateY(4px);
+.pricing-hero-btn.secondary:hover{
+    background:#111;
+    color:#fff;
+    transform:translateY(-5px);
 }
-
-/* =========================================================
-   HERO VISUAL
-========================================================= */
-
-.pricing-hero-visual {
-  min-height: 450px;
-
-  display: flex;
 
-  align-items: center;
-
-  justify-content: center;
+body.dark-mode .pricing-hero-btn.secondary{
+    border-color:#fff;
+    color:#fff;
 }
-
-/* =========================================================
-   OUTER CIRCLE
-========================================================= */
-
-.pricing-hero-circle {
-  position: relative;
-
-  width: 380px;
 
-  height: 380px;
-
-  display: flex;
-
-  align-items: center;
+body.dark-mode .pricing-hero-btn.secondary:hover{
+    background:#d4af37;
+    color:#111;
+    border-color:#d4af37;
+}
 
-  justify-content: center;
+/*=========================================================
+                    RIGHT SIDE
+=========================================================*/
 
-  border: 1px solid rgba(212, 175, 55, 0.4);
+.pricing-hero-visual{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
-  border-radius: 50%;
+.pricing-hero-circle{
+    position:relative;
+    width:390px;
+    height:390px;
+    border-radius:50%;
+    border:1px solid rgba(212,175,55,.35);
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-/* ROTATING RING */
+.pricing-hero-circle::before{
+    content:"";
+    position:absolute;
+    inset:25px;
+    border-radius:50%;
+    border:1px dashed rgba(212,175,55,.4);
+    animation:heroRotate 25s linear infinite;
+}
 
-.pricing-hero-circle::before {
-  content: "";
+@keyframes heroRotate{
 
-  position: absolute;
+    from{
+        transform:rotate(0deg);
+    }
 
-  inset: 25px;
+    to{
+        transform:rotate(360deg);
+    }
 
-  border: 1px dashed rgba(212, 175, 55, 0.35);
+}
 
-  border-radius: 50%;
+.pricing-hero-circle-inner{
+    width:240px;
+    height:240px;
+    border-radius:50%;
+    background:#d4af37;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    box-shadow:0 20px 60px rgba(212,175,55,.25);
+}
 
-  animation: pricingHeroRotate 25s linear infinite;
+.pricing-hero-circle-inner svg{
+    width:40px;
+    height:40px;
+    margin-bottom:18px;
+    color:#111;
 }
 
-@keyframes pricingHeroRotate {
-  from {
-    transform: rotate(0deg);
-  }
+.pricing-hero-circle-inner span{
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:3px;
+    margin-bottom:10px;
+    color:#111;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.pricing-hero-circle-inner strong{
+    font-size:24px;
+    color:#111;
+    line-height:1.3;
 }
 
-/* =========================================================
-   INNER CIRCLE
-========================================================= */
+/*=========================================================
+                    TABLET
+=========================================================*/
 
-.pricing-hero-circle-inner {
-  position: relative;
+@media(max-width:1100px){
 
-  z-index: 2;
+.pricing-hero-container{
+grid-template-columns:1fr;
+text-align:center;
+gap:70px;
+}
 
-  width: 260px;
+.pricing-hero-content{
+margin:auto;
+}
 
-  height: 260px;
+.pricing-hero-eyebrow{
+justify-content:center;
+}
 
-  display: flex;
+.pricing-hero-content p{
+margin:auto auto 40px;
+}
 
-  flex-direction: column;
+.pricing-hero-actions{
+justify-content:center;
+}
 
-  align-items: center;
+}
 
-  justify-content: center;
+/*=========================================================
+                    MOBILE
+=========================================================*/
 
-  text-align: center;
+@media(max-width:768px){
 
-  background: #d4af37;
+.pricing-hero{
+padding:100px 6%;
+}
 
-  color: #111111;
+.pricing-hero-content h1{
+font-size:42px;
+}
 
-  border-radius: 50%;
+.pricing-hero-actions{
+flex-direction:column;
+}
 
-  box-shadow: 0 25px 70px rgba(212, 175, 55, 0.2);
+.pricing-hero-btn{
+width:100%;
 }
 
-.pricing-hero-circle-inner svg {
-  width: 38px;
+.pricing-hero-circle{
+width:300px;
+height:300px;
+}
 
-  height: 38px;
+.pricing-hero-circle-inner{
+width:190px;
+height:190px;
+}
 
-  margin-bottom: 15px;
+.pricing-hero-circle-inner strong{
+font-size:18px;
 }
 
-.pricing-hero-circle-inner span {
-  margin-bottom: 10px;
+}
 
-  font-size: 10px;
+/*=========================================================
+                    SMALL MOBILE
+=========================================================*/
 
-  font-weight: 700;
+@media(max-width:480px){
 
-  letter-spacing: 4px;
+.pricing-hero{
+padding:90px 20px;
 }
 
-.pricing-hero-circle-inner strong {
-  font-size: 24px;
-
-  line-height: 1.2;
-
-  font-weight: 700;
+.pricing-hero-content h1{
+font-size:34px;
+}
 
-  letter-spacing: 1px;
+.pricing-hero-circle{
+width:250px;
+height:250px;
 }
 
-/* =========================================================
-   TABLET
-========================================================= */
+.pricing-hero-circle-inner{
+width:165px;
+height:165px;
+}
 
-@media screen and (max-width: 1100px) {
-  .pricing-hero {
-    padding: 100px 5%;
-  }
+.pricing-hero-circle-inner svg{
+width:30px;
+height:30px;
+}
 
-  .pricing-hero-container {
-    grid-template-columns: 1fr;
+.pricing-hero-circle-inner strong{
+font-size:15px;
+}
 
-    gap: 60px;
+}
 
-    text-align: center;
-  }
+/*=========================================================
+                PRICING SECTION
+=========================================================*/
 
-  .pricing-hero-content {
-    max-width: 800px;
+.gripcore-pricing-section{
+    padding:120px 8%;
+    background:#ffffff;
+    position:relative;
+    overflow:hidden;
+}
 
-    margin: auto;
-  }
+body.dark-mode .gripcore-pricing-section{
+    background:#0d0d0d;
+}
 
-  .pricing-hero-eyebrow {
-    justify-content: center;
-  }
+.gripcore-pricing-section::before{
+    content:"";
+    position:absolute;
+    top:-250px;
+    left:-250px;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:rgba(212,175,55,.08);
+    filter:blur(90px);
+}
 
-  .pricing-hero-content p {
-    margin-left: auto;
+/*=========================================================
+                CONTAINER
+=========================================================*/
 
-    margin-right: auto;
-  }
+.pricing-container{
+    max-width:1400px;
+    margin:auto;
+    position:relative;
+    z-index:2;
+}
 
-  .pricing-hero-actions {
-    justify-content: center;
-  }
+/*=========================================================
+                TITLE
+=========================================================*/
 
-  .pricing-hero-visual {
-    min-height: 380px;
-  }
+.pricing-section-header{
+    max-width:760px;
+    margin:0 auto 70px;
+    text-align:center;
 }
-
-/* =========================================================
-   MOBILE
-========================================================= */
 
-@media screen and (max-width: 768px) {
-  .pricing-hero {
-    min-height: auto;
+.pricing-eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:14px;
+    color:#d4af37;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
 
-    padding: 90px 6%;
-  }
+.pricing-eyebrow span{
+    width:55px;
+    height:2px;
+    background:#d4af37;
+    border-radius:30px;
+}
 
-  .pricing-hero-content h1 {
-    font-size: 42px;
+.pricing-section-header h2{
+    font-size:clamp(40px,5vw,60px);
+    color:#111;
+    margin-bottom:20px;
+    line-height:1.15;
+}
 
-    letter-spacing: -1px;
-  }
+body.dark-mode .pricing-section-header h2{
+    color:#fff;
+}
 
-  .pricing-hero-content p {
-    font-size: 13px;
-  }
+.pricing-section-header h2 strong{
+    display:block;
+    color:#d4af37;
+}
 
-  .pricing-hero-actions {
-    flex-direction: column;
+.pricing-section-header p{
+    font-size:15px;
+    color:#666;
+    line-height:1.9;
+}
 
-    width: 100%;
-  }
+body.dark-mode .pricing-section-header p{
+    color:#999;
+}
 
-  .pricing-hero-btn {
-    width: 100%;
-  }
+/*=========================================================
+                GRID
+=========================================================*/
 
-  .pricing-hero-visual {
-    min-height: 330px;
-  }
+.gripcore-pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
 
-  .pricing-hero-circle {
-    width: 290px;
+/*=========================================================
+                CARD
+=========================================================*/
 
-    height: 290px;
-  }
+.gripcore-price-card{
+    position:relative;
+    background:#fff;
+    border:1px solid #ececec;
+    border-radius:18px;
+    padding:45px 35px;
+    transition:.4s;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+}
 
-  .pricing-hero-circle-inner {
-    width: 205px;
+body.dark-mode .gripcore-price-card{
+    background:#151515;
+    border-color:#282828;
+}
 
-    height: 205px;
-  }
+.gripcore-price-card:hover{
+    transform:translateY(-10px);
+    border-color:#d4af37;
+    box-shadow:0 25px 60px rgba(0,0,0,.08);
+}
 
-  .pricing-hero-circle-inner strong {
-    font-size: 19px;
-  }
+body.dark-mode .gripcore-price-card:hover{
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
 }
 
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
+/*=========================================================
+                FEATURED
+=========================================================*/
 
-@media screen and (max-width: 480px) {
-  .pricing-hero {
-    padding: 80px 20px;
-  }
+.gripcore-price-card.featured{
+    border:2px solid #d4af37;
+    transform:translateY(-12px);
+}
 
-  .pricing-hero-content h1 {
-    font-size: 34px;
-  }
+.gripcore-price-card.featured:hover{
+    transform:translateY(-18px);
+}
 
-  .pricing-hero-eyebrow {
-    font-size: 9px;
+/*=========================================================
+                BADGE
+=========================================================*/
 
-    letter-spacing: 2px;
-  }
+.popular-badge{
+    position:absolute;
+    top:22px;
+    right:22px;
+    background:#d4af37;
+    color:#111;
+    padding:8px 16px;
+    border-radius:30px;
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:1px;
+}
 
-  .pricing-hero-circle {
-    width: 250px;
+/*=========================================================
+                ICON
+=========================================================*/
 
-    height: 250px;
-  }
+.price-card-icon{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#faf6e8;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:28px;
+}
 
-  .pricing-hero-circle-inner {
-    width: 175px;
+body.dark-mode .price-card-icon{
+    background:#201d12;
+}
 
-    height: 175px;
-  }
+.price-card-icon svg{
+    width:30px;
+    height:30px;
+    color:#d4af37;
+}
 
-  .pricing-hero-circle-inner svg {
-    width: 28px;
+/*=========================================================
+                CONTENT
+=========================================================*/
 
-    height: 28px;
-  }
+.price-card-label{
+    display:block;
+    color:#d4af37;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
 
-  .pricing-hero-circle-inner strong {
-    font-size: 16px;
-  }
+.price-card-content h3{
+    font-size:30px;
+    margin-bottom:15px;
+    color:#111;
 }
 
-/* =========================================================
-   GRIPCORE PREMIUM SERVICE PACKAGES
-========================================================= */
+body.dark-mode .price-card-content h3{
+    color:#fff;
+}
 
-.gripcore-pricing-section {
-  position: relative;
-  padding: 120px 5%;
-  background: #f7f7f7;
-  overflow: hidden;
+.price-card-description{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:28px;
+}
 
-  transition:
-    background 0.4s ease,
-    color 0.4s ease;
+body.dark-mode .price-card-description{
+    color:#999;
 }
 
-/* =========================================================
-   CONTAINER
-========================================================= */
+/*=========================================================
+                DIVIDER
+=========================================================*/
 
-.pricing-container {
-  width: 100%;
-  max-width: 1400px;
-  margin: auto;
+.price-card-divider{
+    width:100%;
+    height:1px;
+    background:#ececec;
+    margin:25px 0;
 }
 
-/* =========================================================
-   SECTION HEADER
-========================================================= */
-
-.pricing-section-header {
-  max-width: 760px;
-  margin: 0 auto 70px;
-  text-align: center;
+body.dark-mode .price-card-divider{
+    background:#2d2d2d;
 }
 
-.pricing-eyebrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
+/*=========================================================
+                FEATURES
+=========================================================*/
 
-  margin-bottom: 20px;
+.price-card-content ul{
+    list-style:none;
+    padding:0;
+    margin:0 0 35px;
+}
 
-  color: #d4af37;
+.price-card-content ul li{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:16px;
+    color:#555;
+    font-size:14px;
+}
 
-  font-size: 11px;
-  font-weight: 600;
+body.dark-mode .price-card-content ul li{
+    color:#bdbdbd;
+}
 
-  letter-spacing: 3px;
+.price-card-content ul li svg{
+    width:18px;
+    height:18px;
+    color:#d4af37;
 }
 
-.pricing-eyebrow span {
-  width: 35px;
-  height: 1px;
+/*=========================================================
+                BUTTON
+=========================================================*/
 
-  background: #d4af37;
+.pricing-btn{
+    margin-top:auto;
+    height:55px;
+    border-radius:6px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    background:#111;
+    color:#fff;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:700;
+    transition:.35s;
 }
 
-.pricing-section-header h2 {
-  margin: 0 0 20px;
-
-  color: #111111;
+.pricing-btn svg{
+    width:18px;
+    height:18px;
+    transition:.35s;
+}
 
-  font-size: clamp(38px, 5vw, 60px);
-  line-height: 1.1;
+.pricing-btn:hover{
+    background:#d4af37;
+    color:#111;
+    transform:translateY(-4px);
+}
 
-  font-weight: 600;
-  letter-spacing: -1.5px;
+.pricing-btn:hover svg{
+    transform:translateX(4px);
 }
 
-.pricing-section-header h2 strong {
-  display: block;
+/* Featured Button */
 
-  color: #d4af37;
+.featured-btn{
+    background:#d4af37;
+    color:#111;
+}
 
-  font-weight: 600;
+.featured-btn:hover{
+    background:#111;
+    color:#fff;
 }
 
-.pricing-section-header p {
-  max-width: 650px;
-  margin: auto;
+/*=========================================================
+                TABLET
+=========================================================*/
 
-  color: #666666;
+@media(max-width:1100px){
 
-  font-size: 14px;
-  line-height: 1.9;
+.gripcore-pricing-grid{
+grid-template-columns:repeat(2,1fr);
 }
 
-/* =========================================================
-   PRICING GRID
-========================================================= */
+.gripcore-price-card.featured{
+transform:none;
+}
 
-.gripcore-pricing-grid {
-  display: grid;
+}
 
-  grid-template-columns: repeat(3, 1fr);
+/*=========================================================
+                MOBILE
+=========================================================*/
 
-  gap: 25px;
+@media(max-width:768px){
 
-  align-items: stretch;
+.gripcore-pricing-section{
+padding:90px 6%;
 }
-
-/* =========================================================
-   PRICE CARD
-========================================================= */
-
-.gripcore-price-card {
-  position: relative;
 
-  display: flex;
-  flex-direction: column;
+.gripcore-pricing-grid{
+grid-template-columns:1fr;
+gap:25px;
+}
 
-  padding: 45px 35px;
+.gripcore-price-card{
+padding:35px 28px;
+}
 
-  background: #ffffff;
+}
 
-  border: 1px solid #e5e5e5;
+/*=========================================================
+                SMALL MOBILE
+=========================================================*/
 
-  border-radius: 12px;
+@media(max-width:480px){
 
-  transition:
-    transform 0.4s ease,
-    box-shadow 0.4s ease,
-    border-color 0.4s ease,
-    background 0.4s ease;
+.gripcore-pricing-section{
+padding:80px 20px;
 }
-
-.gripcore-price-card:hover {
-  transform: translateY(-8px);
 
-  border-color: rgba(212, 175, 55, 0.5);
-
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+.pricing-section-header h2{
+font-size:32px;
 }
 
-/* =========================================================
-   FEATURED CARD
-========================================================= */
+.price-card-content h3{
+font-size:24px;
+}
 
-.gripcore-price-card.featured {
-  border: 1px solid #d4af37;
+}
 
-  box-shadow: 0 20px 50px rgba(212, 175, 55, 0.12);
+/*=========================================================
+                COMPARE SERVICES
+=========================================================*/
 
-  transform: translateY(-10px);
+.compare-section{
+    padding:120px 8%;
+    background:#f7f7f7;
+    position:relative;
+    overflow:hidden;
 }
 
-.gripcore-price-card.featured:hover {
-  transform: translateY(-18px);
+body.dark-mode .compare-section{
+    background:#0d0d0d;
 }
-
-/* =========================================================
-   POPULAR BADGE
-========================================================= */
 
-.popular-badge {
-  position: absolute;
+.compare-section::before{
+    content:"";
+    position:absolute;
+    top:-250px;
+    right:-250px;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:rgba(212,175,55,.07);
+    filter:blur(90px);
+}
 
-  top: 0;
-  left: 50%;
+.compare-container{
+    max-width:1400px;
+    margin:auto;
+    position:relative;
+    z-index:2;
+}
 
-  transform: translate(-50%, -50%);
+/*=========================================================
+                SECTION TITLE
+=========================================================*/
 
-  padding: 7px 18px;
+.compare-section .section-title{
+    max-width:760px;
+    margin:0 auto 70px;
+    text-align:center;
+}
 
-  background: #d4af37;
-  color: #111111;
+.compare-section .section-title span{
+    display:inline-flex;
+    align-items:center;
+    gap:14px;
+    color:#d4af37;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
 
-  border-radius: 30px;
+.compare-section .section-title span::before{
+    content:"";
+    width:55px;
+    height:2px;
+    background:#d4af37;
+    border-radius:30px;
+}
 
-  font-size: 9px;
-  font-weight: 700;
+.compare-section .section-title h2{
+    font-size:clamp(38px,5vw,58px);
+    color:#111;
+    margin-bottom:20px;
+    line-height:1.15;
+}
 
-  letter-spacing: 1.5px;
+body.dark-mode .compare-section .section-title h2{
+    color:#fff;
+}
 
-  white-space: nowrap;
+.compare-section .section-title p{
+    font-size:15px;
+    line-height:1.9;
+    color:#666;
 }
 
-/* =========================================================
-   ICON
-========================================================= */
+body.dark-mode .compare-section .section-title p{
+    color:#999;
+}
 
-.price-card-icon {
-  width: 58px;
-  height: 58px;
+/*=========================================================
+                TABLE WRAPPER
+=========================================================*/
 
-  display: flex;
+.comparison-table-wrapper{
+    background:#fff;
+    border-radius:18px;
+    overflow:auto;
+    border:1px solid #ececec;
+    box-shadow:0 20px 60px rgba(0,0,0,.06);
+}
 
-  align-items: center;
-  justify-content: center;
+body.dark-mode .comparison-table-wrapper{
+    background:#151515;
+    border-color:#292929;
+}
 
-  margin-bottom: 28px;
+/*=========================================================
+                TABLE
+=========================================================*/
 
-  background: #faf6e8;
+.comparison-table{
+    width:100%;
+    min-width:950px;
+    border-collapse:collapse;
+}
 
-  color: #d4af37;
+/*=========================================================
+                HEADER
+=========================================================*/
 
-  border-radius: 50%;
+.comparison-table thead{
+    background:#111;
 }
 
-.price-card-icon svg {
-  width: 25px;
-  height: 25px;
+.comparison-table th{
+    padding:22px 25px;
+    color:#fff;
+    text-align:left;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
 }
 
-/* =========================================================
-   CONTENT
-========================================================= */
+/*=========================================================
+                BODY
+=========================================================*/
 
-.price-card-label {
-  display: block;
+.comparison-table td{
+    padding:24px;
+    border-bottom:1px solid #ececec;
+    color:#666;
+    font-size:14px;
+}
 
-  margin-bottom: 8px;
+body.dark-mode .comparison-table td{
+    border-color:#2b2b2b;
+    color:#999;
+}
 
-  color: #d4af37;
+.comparison-table tbody tr{
+    transition:.3s;
+}
 
-  font-size: 10px;
-  font-weight: 700;
+.comparison-table tbody tr:hover{
+    background:#faf8ef;
+}
 
-  letter-spacing: 2px;
+body.dark-mode .comparison-table tbody tr:hover{
+    background:#1a1a1a;
 }
 
-.price-card-content h3 {
-  margin: 0 0 15px;
+.comparison-table tbody tr:last-child td{
+    border-bottom:none;
+}
 
-  color: #111111;
+/*=========================================================
+                SERVICE NAME
+=========================================================*/
 
-  font-size: 27px;
-  font-weight: 600;
+.service-name{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-weight:700;
+    color:#111;
 }
 
-.price-card-description {
-  min-height: 80px;
+body.dark-mode .service-name{
+    color:#fff;
+}
 
-  margin: 0;
+.service-name svg{
+    width:20px;
+    height:20px;
+    color:#d4af37;
+}
 
-  color: #777777;
+/*=========================================================
+                BADGE
+=========================================================*/
 
-  font-size: 13px;
-  line-height: 1.8;
+.recommended{
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:30px;
+    background:#faf6e8;
+    color:#9b7b16;
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:1px;
 }
 
-/* =========================================================
-   DIVIDER
-========================================================= */
-
-.price-card-divider {
-  width: 100%;
-  height: 1px;
+body.dark-mode .recommended{
+    background:rgba(212,175,55,.15);
+    color:#d4af37;
+}
 
-  margin: 25px 0;
+/*=========================================================
+                BUTTON
+=========================================================*/
 
-  background: #eeeeee;
+.compare-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:12px 18px;
+    background:#111;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+    font-size:11px;
+    font-weight:700;
+    transition:.35s;
 }
 
-/* =========================================================
-   FEATURES
-========================================================= */
+.compare-btn svg{
+    width:16px;
+    height:16px;
+    transition:.35s;
+}
 
-.price-card-content ul {
-  display: flex;
-  flex-direction: column;
+.compare-btn:hover{
+    background:#d4af37;
+    color:#111;
+    transform:translateY(-3px);
+}
 
-  gap: 15px;
+.compare-btn:hover svg{
+    transform:translateX(4px);
+}
 
-  margin: 0 0 35px;
-  padding: 0;
+body.dark-mode .compare-btn{
+    background:#d4af37;
+    color:#111;
+}
 
-  list-style: none;
+body.dark-mode .compare-btn:hover{
+    background:#fff;
 }
 
-.price-card-content ul li {
-  display: flex;
+/*=========================================================
+                TABLET
+=========================================================*/
 
-  align-items: center;
+@media(max-width:992px){
 
-  gap: 10px;
+.compare-section{
+padding:100px 6%;
+}
 
-  color: #555555;
+.compare-section .section-title{
+margin-bottom:55px;
+}
 
-  font-size: 12px;
 }
 
-.price-card-content ul li svg {
-  width: 16px;
-  height: 16px;
+/*=========================================================
+                MOBILE
+=========================================================*/
 
-  flex-shrink: 0;
+@media(max-width:768px){
 
-  color: #d4af37;
+.compare-section{
+padding:90px 6%;
 }
 
-/* =========================================================
-   BUTTON
-========================================================= */
-
-.pricing-btn {
-  display: inline-flex;
+.compare-section .section-title h2{
+font-size:34px;
+}
 
-  align-items: center;
-  justify-content: center;
+.compare-section .section-title p{
+font-size:14px;
+}
 
-  gap: 10px;
+}
 
-  width: 100%;
+/*=========================================================
+                SMALL MOBILE
+=========================================================*/
 
-  margin-top: auto;
+@media(max-width:480px){
 
-  padding: 15px 22px;
+.compare-section{
+padding:80px 20px;
+}
 
-  background: #111111;
-  color: #ffffff;
+.compare-section .section-title h2{
+font-size:30px;
+}
 
-  border: 1px solid #111111;
+}
 
-  border-radius: 5px;
+/*=========================================================
+                    PRICING FAQ
+=========================================================*/
 
-  text-decoration: none;
+.pricing-faq{
+    padding:120px 8%;
+    background:#ffffff;
+    position:relative;
+    overflow:hidden;
+}
 
-  font-size: 11px;
-  font-weight: 600;
+body.dark-mode .pricing-faq{
+    background:#0d0d0d;
+}
 
-  transition:
-    background 0.3s ease,
-    color 0.3s ease,
-    border-color 0.3s ease,
-    transform 0.3s ease;
+.pricing-faq::before{
+    content:"";
+    position:absolute;
+    top:-250px;
+    left:-250px;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:rgba(212,175,55,.07);
+    filter:blur(90px);
 }
 
-.pricing-btn svg {
-  width: 16px;
-  height: 16px;
+/*=========================================================
+                    CONTAINER
+=========================================================*/
 
-  transition: transform 0.3s ease;
+.pricing-faq .container{
+    max-width:1000px;
+    margin:auto;
+    position:relative;
+    z-index:2;
 }
-
-.pricing-btn:hover {
-  background: #d4af37;
-  color: #111111;
 
-  border-color: #d4af37;
+/*=========================================================
+                    SECTION TITLE
+=========================================================*/
 
-  transform: translateY(-3px);
+.pricing-faq .section-title{
+    max-width:760px;
+    margin:0 auto 70px;
+    text-align:center;
 }
 
-.pricing-btn:hover svg {
-  transform: translate(3px, -3px);
+.pricing-faq .section-title span{
+    display:inline-flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:18px;
+    color:#d4af37;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
 }
 
-/* =========================================================
-   FEATURED BUTTON
-========================================================= */
-
-.featured-btn {
-  background: #d4af37;
-  color: #111111;
-
-  border-color: #d4af37;
+.pricing-faq .section-title span::before{
+    content:"";
+    width:55px;
+    height:2px;
+    background:#d4af37;
+    border-radius:50px;
 }
 
-.featured-btn:hover {
-  background: #111111;
-  color: #ffffff;
-
-  border-color: #111111;
+.pricing-faq .section-title h2{
+    font-size:clamp(38px,5vw,58px);
+    color:#111;
+    margin-bottom:18px;
+    line-height:1.15;
 }
-
-/* =========================================================
-   DARK MODE
-========================================================= */
 
-body.dark-mode .gripcore-pricing-section {
-  background: #080808;
+body.dark-mode .pricing-faq .section-title h2{
+    color:#fff;
 }
 
-body.dark-mode .pricing-section-header h2 {
-  color: #ffffff;
+.pricing-faq .section-title p{
+    color:#666;
+    font-size:15px;
+    line-height:1.9;
 }
 
-body.dark-mode .pricing-section-header p {
-  color: #999999;
+body.dark-mode .pricing-faq .section-title p{
+    color:#999;
 }
 
-body.dark-mode .gripcore-price-card {
-  background: #111111;
+/*=========================================================
+                    FAQ WRAPPER
+=========================================================*/
 
-  border-color: #252525;
+.faq-wrapper{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
 }
 
-body.dark-mode .gripcore-price-card:hover {
-  border-color: rgba(212, 175, 55, 0.5);
+/*=========================================================
+                    FAQ ITEM
+=========================================================*/
 
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+.faq-item{
+    background:#fff;
+    border:1px solid #ececec;
+    border-radius:16px;
+    overflow:hidden;
+    transition:.35s;
 }
 
-body.dark-mode .gripcore-price-card.featured {
-  border-color: #d4af37;
+body.dark-mode .faq-item{
+    background:#151515;
+    border-color:#2a2a2a;
 }
 
-body.dark-mode .price-card-content h3 {
-  color: #ffffff;
+.faq-item:hover{
+    transform:translateY(-4px);
+    border-color:#d4af37;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
 }
 
-body.dark-mode .price-card-description {
-  color: #999999;
+body.dark-mode .faq-item:hover{
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
 }
 
-body.dark-mode .price-card-divider {
-  background: #292929;
+/*=========================================================
+                    SUMMARY
+=========================================================*/
+
+.faq-item summary{
+    list-style:none;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    padding:24px 28px;
+    font-size:15px;
+    font-weight:600;
+    color:#111;
 }
 
-body.dark-mode .price-card-content ul li {
-  color: #bbbbbb;
+body.dark-mode .faq-item summary{
+    color:#fff;
 }
 
-body.dark-mode .price-card-icon {
-  background: #1c1a14;
+.faq-item summary::-webkit-details-marker{
+    display:none;
 }
 
-body.dark-mode .pricing-btn {
-  background: #ffffff;
-  color: #111111;
+/*=========================================================
+                    ICON
+=========================================================*/
 
-  border-color: #ffffff;
+.faq-item summary svg{
+    width:22px;
+    height:22px;
+    color:#d4af37;
+    transition:.35s;
+    flex-shrink:0;
 }
-
-body.dark-mode .pricing-btn:hover {
-  background: #d4af37;
-  color: #111111;
 
-  border-color: #d4af37;
+.faq-item[open] summary svg{
+    transform:rotate(45deg);
 }
 
-body.dark-mode .featured-btn {
-  background: #d4af37;
-  color: #111111;
+/*=========================================================
+                    ANSWER
+=========================================================*/
 
-  border-color: #d4af37;
+.faq-answer{
+    padding:0 28px 28px;
 }
 
-body.dark-mode .featured-btn:hover {
-  background: #ffffff;
-  color: #111111;
+.faq-answer p{
+    color:#666;
+    font-size:14px;
+    line-height:1.9;
+}
 
-  border-color: #ffffff;
+body.dark-mode .faq-answer p{
+    color:#999;
 }
 
-/* =========================================================
-   RTL
-========================================================= */
+/*=========================================================
+                    OPEN STATE
+=========================================================*/
 
-body.rtl .gripcore-pricing-grid,
-body.rtl .price-card-content {
-  direction: rtl;
+.faq-item[open]{
+    border-color:#d4af37;
 }
 
-body.rtl .pricing-eyebrow {
-  flex-direction: row-reverse;
+.faq-item[open] summary{
+    color:#111;
 }
-
-/* =========================================================
-   TABLET
-========================================================= */
 
-@media screen and (max-width: 1100px) {
-  .gripcore-pricing-section {
-    padding: 100px 5%;
-  }
+body.dark-mode .faq-item[open] summary{
+    color:#fff;
+}
 
-  .gripcore-pricing-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+/*=========================================================
+                    TABLET
+=========================================================*/
 
-  .gripcore-price-card.featured {
-    transform: none;
-  }
+@media(max-width:992px){
 
-  .gripcore-price-card.featured:hover {
-    transform: translateY(-8px);
-  }
+.pricing-faq{
+padding:100px 6%;
 }
-
-/* =========================================================
-   MOBILE
-========================================================= */
 
-@media screen and (max-width: 768px) {
-  .gripcore-pricing-section {
-    padding: 80px 6%;
-  }
+}
 
-  .pricing-section-header {
-    margin-bottom: 55px;
-  }
+/*=========================================================
+                    MOBILE
+=========================================================*/
 
-  .pricing-section-header h2 {
-    font-size: 38px;
-  }
+@media(max-width:768px){
 
-  .gripcore-pricing-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
+.pricing-faq{
+padding:90px 6%;
+}
 
-  .gripcore-price-card {
-    padding: 38px 28px;
-  }
+.pricing-faq .section-title h2{
+font-size:34px;
+}
 
-  .price-card-description {
-    min-height: auto;
-  }
+.faq-item summary{
+padding:22px;
+font-size:14px;
 }
 
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
+.faq-answer{
+padding:0 22px 22px;
+}
 
-@media screen and (max-width: 480px) {
-  .gripcore-pricing-section {
-    padding: 70px 20px;
-  }
+}
 
-  .pricing-section-header h2 {
-    font-size: 32px;
-  }
+/*=========================================================
+                    SMALL MOBILE
+=========================================================*/
 
-  .pricing-section-header p {
-    font-size: 13px;
-  }
+@media(max-width:480px){
 
-  .gripcore-price-card {
-    padding: 35px 25px;
-  }
+.pricing-faq{
+padding:80px 20px;
 }
-
-/* =========================================================
-   COMPARE SERVICES
-========================================================= */
 
-.compare-section {
-  padding: 120px 5%;
-  background: #f7f7f7;
-  transition: background 0.4s ease;
+.pricing-faq .section-title h2{
+font-size:30px;
 }
 
-/* =========================================================
-   SECTION HEADER
-========================================================= */
-
-.compare-section .section-title {
-  max-width: 750px;
-  margin: 0 auto 65px;
-  text-align: center;
+.pricing-faq .section-title p{
+font-size:13px;
 }
 
-.compare-section .section-title span {
-  display: inline-block;
+}
 
-  margin-bottom: 15px;
+/*=========================================================
+                FINAL CTA
+=========================================================*/
 
-  color: #d4af37;
+.pricing-final-cta{
+    position:relative;
+    padding:120px 8%;
+    background:#111;
+    overflow:hidden;
+}
 
-  font-size: 11px;
-  font-weight: 700;
+body.dark-mode .pricing-final-cta{
+    background:#080808;
+}
 
-  letter-spacing: 2px;
+body:not(.dark-mode) .pricing-final-cta{
+    background:#f7f7f7;
 }
 
-.compare-section .section-title h2 {
-  margin-bottom: 18px;
+.pricing-final-cta::before{
+    content:"";
+    position:absolute;
+    top:-250px;
+    right:-250px;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:rgba(212,175,55,.08);
+    filter:blur(90px);
+}
 
-  color: #111111;
+/*=========================================================
+                CONTAINER
+=========================================================*/
 
-  font-size: clamp(32px, 4vw, 48px);
-  line-height: 1.2;
+.pricing-cta-container{
+    position:relative;
+    z-index:2;
+    max-width:1400px;
+    margin:auto;
 
-  font-weight: 600;
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    gap:90px;
+    align-items:center;
 }
 
-.compare-section .section-title p {
-  color: #777777;
+/*=========================================================
+                CONTENT
+=========================================================*/
 
-  font-size: 14px;
-  line-height: 1.8;
+.pricing-cta-content{
+    max-width:720px;
 }
-
-/* =========================================================
-   TABLE WRAPPER
-========================================================= */
 
-.comparison-table-wrapper {
-  width: 100%;
+.pricing-cta-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:14px;
 
-  max-width: 1400px;
+    margin-bottom:22px;
 
-  margin: auto;
+    color:#d4af37;
 
-  overflow-x: auto;
+    font-size:12px;
 
-  background: #ffffff;
+    font-weight:700;
 
-  border: 1px solid #e5e5e5;
+    letter-spacing:3px;
 
-  border-radius: 14px;
-
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+    text-transform:uppercase;
 }
-
-/* =========================================================
-   TABLE
-========================================================= */
 
-.comparison-table {
-  width: 100%;
-
-  min-width: 900px;
-
-  border-collapse: collapse;
+.pricing-cta-tag::before{
+    content:"";
+    width:55px;
+    height:2px;
+    background:#d4af37;
 }
 
-/* =========================================================
-   TABLE HEADER
-========================================================= */
+.pricing-cta-content h2{
+    font-size:clamp(42px,5vw,68px);
+    line-height:1.08;
+    margin-bottom:25px;
+    color:#fff;
+}
 
-.comparison-table thead {
-  background: #111111;
+body:not(.dark-mode) .pricing-cta-content h2{
+    color:#111;
+}
 
-  color: #ffffff;
+.pricing-cta-content h2 span{
+    display:block;
+    color:#d4af37;
 }
 
-.comparison-table th {
-  padding: 20px 24px;
+.pricing-cta-content p{
+    color:#aaa;
+    line-height:1.9;
+    margin-bottom:40px;
+    font-size:15px;
+}
 
-  text-align: left;
+body:not(.dark-mode) .pricing-cta-content p{
+    color:#666;
+}
 
-  font-size: 11px;
-  font-weight: 600;
+/*=========================================================
+                BUTTONS
+=========================================================*/
 
-  letter-spacing: 1px;
+.pricing-cta-buttons{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
 
-  text-transform: uppercase;
+.pricing-cta-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
 
-  white-space: nowrap;
-}
+    height:55px;
 
-/* =========================================================
-   TABLE BODY
-========================================================= */
+    padding:0 28px;
 
-.comparison-table td {
-  padding: 24px;
+    border-radius:6px;
 
-  border-bottom: 1px solid #eeeeee;
+    text-decoration:none;
 
-  color: #666666;
+    font-size:12px;
 
-  font-size: 13px;
+    font-weight:700;
 
-  vertical-align: middle;
+    transition:.35s;
 }
 
-.comparison-table tbody tr:last-child td {
-  border-bottom: none;
+.pricing-cta-btn svg{
+    width:18px;
+    height:18px;
+    transition:.35s;
 }
 
-.comparison-table tbody tr {
-  transition: background 0.3s ease;
-}
+/* Primary */
 
-.comparison-table tbody tr:hover {
-  background: #faf8ef;
+.pricing-cta-btn.primary{
+    background:#d4af37;
+    color:#111;
 }
-
-/* =========================================================
-   SERVICE NAME
-========================================================= */
 
-.service-name {
-  display: flex;
+.pricing-cta-btn.primary:hover{
+    background:#fff;
+    color:#111;
+    transform:translateY(-4px);
+}
 
-  align-items: center;
+.pricing-cta-btn.primary:hover svg{
+    transform:translateX(4px);
+}
 
-  gap: 12px;
+/* Secondary */
 
-  color: #111111;
+.pricing-cta-btn.secondary{
+    border:1px solid rgba(255,255,255,.35);
+    color:#fff;
+}
 
-  font-weight: 600;
+body:not(.dark-mode) .pricing-cta-btn.secondary{
+    border-color:#111;
+    color:#111;
+}
 
-  white-space: nowrap;
+.pricing-cta-btn.secondary:hover{
+    background:#d4af37;
+    color:#111;
+    border-color:#d4af37;
+    transform:translateY(-4px);
 }
 
-.service-name svg {
-  width: 20px;
-  height: 20px;
+/*=========================================================
+                RIGHT SIDE
+=========================================================*/
 
-  color: #d4af37;
+.pricing-cta-visual{
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-/* =========================================================
-   RECOMMENDED BADGE
-========================================================= */
+.pricing-cta-ring{
+    position:relative;
 
-.recommended {
-  display: inline-block;
+    width:380px;
+    height:380px;
 
-  padding: 7px 12px;
+    border-radius:50%;
 
-  background: #faf6e8;
+    border:1px solid rgba(212,175,55,.35);
 
-  color: #9a7a18;
-
-  border-radius: 30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
-  font-size: 10px;
+.pricing-cta-ring::before{
+    content:"";
+    position:absolute;
+    inset:25px;
+    border-radius:50%;
+    border:1px dashed rgba(212,175,55,.45);
+    animation:ctaRotate 25s linear infinite;
+}
 
-  font-weight: 600;
+@keyframes ctaRotate{
 
-  white-space: nowrap;
+from{
+transform:rotate(0deg);
 }
 
-/* =========================================================
-   BOOK BUTTON
-========================================================= */
+to{
+transform:rotate(360deg);
+}
 
-.compare-btn {
-  display: inline-flex;
+}
 
-  align-items: center;
-  justify-content: center;
+.pricing-cta-inner{
 
-  gap: 7px;
+    width:230px;
+    height:230px;
 
-  padding: 10px 16px;
+    border-radius:50%;
 
-  background: #111111;
+    background:#d4af37;
 
-  color: #ffffff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 
-  border: 1px solid #111111;
+    box-shadow:0 20px 60px rgba(212,175,55,.25);
 
-  border-radius: 4px;
+}
 
-  text-decoration: none;
+.pricing-cta-inner svg{
 
-  font-size: 10px;
+    width:40px;
+    height:40px;
 
-  font-weight: 600;
+    margin-bottom:16px;
 
-  white-space: nowrap;
+    color:#111;
 
-  transition: 0.3s ease;
 }
 
-.compare-btn svg {
-  width: 14px;
-  height: 14px;
-}
+.pricing-cta-inner strong{
 
-.compare-btn:hover {
-  background: #d4af37;
+    font-size:22px;
 
-  color: #111111;
+    color:#111;
 
-  border-color: #d4af37;
+    line-height:1.3;
 
-  transform: translateY(-2px);
 }
-
-/* =========================================================
-   DARK MODE
-========================================================= */
 
-body.dark-mode .compare-section {
-  background: #080808;
+.pricing-cta-inner strong span{
+    display:block;
 }
 
-body.dark-mode .compare-section .section-title h2 {
-  color: #ffffff;
-}
+/*=========================================================
+                TABLET
+=========================================================*/
 
-body.dark-mode .compare-section .section-title p {
-  color: #999999;
-}
+@media(max-width:1100px){
 
-body.dark-mode .comparison-table-wrapper {
-  background: #111111;
+.pricing-final-cta{
 
-  border-color: #292929;
+padding:100px 6%;
 
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
 
-body.dark-mode .comparison-table thead {
-  background: #d4af37;
+.pricing-cta-container{
 
-  color: #111111;
-}
+grid-template-columns:1fr;
 
-body.dark-mode .comparison-table td {
-  border-color: #292929;
+text-align:center;
 
-  color: #999999;
-}
+gap:70px;
 
-body.dark-mode .comparison-table tbody tr:hover {
-  background: #171717;
 }
 
-body.dark-mode .service-name {
-  color: #ffffff;
-}
+.pricing-cta-content{
 
-body.dark-mode .recommended {
-  background: rgba(212, 175, 55, 0.12);
+margin:auto;
 
-  color: #d4af37;
 }
 
-body.dark-mode .compare-btn {
-  background: #d4af37;
+.pricing-cta-buttons{
 
-  color: #111111;
+justify-content:center;
 
-  border-color: #d4af37;
 }
-
-body.dark-mode .compare-btn:hover {
-  background: #ffffff;
 
-  border-color: #ffffff;
 }
 
-/* =========================================================
-   TABLET
-========================================================= */
+/*=========================================================
+                MOBILE
+=========================================================*/
 
-@media screen and (max-width: 900px) {
-  .compare-section {
-    padding: 100px 5%;
-  }
+@media(max-width:768px){
 
-  .compare-section .section-title {
-    margin-bottom: 50px;
-  }
-}
+.pricing-final-cta{
 
-/* =========================================================
-   MOBILE
-========================================================= */
+padding:90px 6%;
 
-@media screen and (max-width: 600px) {
-  .compare-section {
-    padding: 80px 20px;
-  }
+}
 
-  .compare-section .section-title h2 {
-    font-size: 30px;
-  }
+.pricing-cta-content h2{
 
-  .compare-section .section-title p {
-    font-size: 13px;
-  }
+font-size:40px;
 
-  .comparison-table-wrapper {
-    border-radius: 10px;
-  }
 }
 
-/* =========================================================
-   PRICING FAQ
-========================================================= */
+.pricing-cta-buttons{
 
-.pricing-faq {
-  padding: 120px 5%;
-  background: #ffffff;
+flex-direction:column;
 
-  transition:
-    background 0.4s ease,
-    color 0.4s ease;
 }
 
-/* =========================================================
-   SECTION HEADER
-========================================================= */
+.pricing-cta-btn{
 
-.pricing-faq .section-title {
-  max-width: 750px;
+width:100%;
 
-  margin: 0 auto 65px;
-
-  text-align: center;
 }
-
-.pricing-faq .section-title span {
-  display: inline-block;
 
-  margin-bottom: 15px;
+.pricing-cta-ring{
 
-  color: #d4af37;
+width:300px;
 
-  font-size: 11px;
+height:300px;
 
-  font-weight: 700;
-
-  letter-spacing: 2px;
 }
-
-.pricing-faq .section-title h2 {
-  margin-bottom: 18px;
 
-  color: #111111;
+.pricing-cta-inner{
 
-  font-size: clamp(32px, 4vw, 48px);
+width:190px;
 
-  line-height: 1.2;
+height:190px;
 
-  font-weight: 600;
 }
 
-.pricing-faq .section-title p {
-  color: #777777;
+.pricing-cta-inner strong{
 
-  font-size: 14px;
+font-size:18px;
 
-  line-height: 1.8;
 }
-
-/* =========================================================
-   FAQ WRAPPER
-========================================================= */
-
-.faq-wrapper {
-  width: 100%;
 
-  max-width: 900px;
-
-  margin: auto;
 }
-
-/* =========================================================
-   FAQ ITEM
-========================================================= */
-
-.faq-item {
-  margin-bottom: 16px;
-
-  background: #ffffff;
 
-  border: 1px solid #e5e5e5;
+/*=========================================================
+                SMALL MOBILE
+=========================================================*/
 
-  border-radius: 10px;
+@media(max-width:480px){
 
-  overflow: hidden;
+.pricing-final-cta{
 
-  transition:
-    border-color 0.3s ease,
-    box-shadow 0.3s ease,
-    background 0.3s ease;
-}
-
-.faq-item:hover {
-  border-color: rgba(212, 175, 55, 0.5);
+padding:80px 20px;
 
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
-
-/* =========================================================
-   FAQ SUMMARY
-========================================================= */
-
-.faq-item summary {
-  position: relative;
 
-  display: flex;
+.pricing-cta-content h2{
 
-  align-items: center;
+font-size:32px;
 
-  justify-content: space-between;
+}
 
-  gap: 20px;
+.pricing-cta-ring{
 
-  padding: 23px 25px;
+width:250px;
 
-  cursor: pointer;
+height:250px;
 
-  list-style: none;
+}
 
-  color: #111111;
+.pricing-cta-inner{
 
-  font-size: 14px;
+width:165px;
 
-  font-weight: 600;
-}
+height:165px;
 
-.faq-item summary::-webkit-details-marker {
-  display: none;
 }
-
-/* =========================================================
-   PLUS ICON
-========================================================= */
 
-.faq-item summary svg {
-  width: 20px;
+.pricing-cta-inner svg{
 
-  height: 20px;
+width:28px;
 
-  flex-shrink: 0;
+height:28px;
 
-  color: #d4af37;
-
-  transition: transform 0.3s ease;
 }
-
-/* Rotate when open */
 
-.faq-item[open] summary svg {
-  transform: rotate(45deg);
-}
+.pricing-cta-inner strong{
 
-/* =========================================================
-   FAQ ANSWER
-========================================================= */
+font-size:15px;
 
-.faq-answer {
-  padding: 0 25px 25px;
 }
 
-.faq-answer p {
-  max-width: 750px;
+}
 
-  margin: 0;
 
-  color: #777777;
 
-  font-size: 13px;
 
-  line-height: 1.9;
-}
-
-/* =========================================================
-   OPEN FAQ
-========================================================= */
-
-.faq-item[open] {
-  border-color: #d4af37;
-}
-
-.faq-item[open] summary {
-  color: #111111;
-}
-
-/* =========================================================
-   DARK MODE
-========================================================= */
-
-body.dark-mode .pricing-faq {
-  background: #080808;
-}
-
-body.dark-mode .pricing-faq .section-title h2 {
-  color: #ffffff;
-}
-
-body.dark-mode .pricing-faq .section-title p {
-  color: #999999;
-}
-
-body.dark-mode .faq-item {
-  background: #111111;
-
-  border-color: #292929;
-}
-
-body.dark-mode .faq-item:hover {
-  border-color: rgba(212, 175, 55, 0.6);
-
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-body.dark-mode .faq-item summary {
-  color: #ffffff;
-}
-
-body.dark-mode .faq-answer p {
-  color: #999999;
-}
-
-body.dark-mode .faq-item[open] {
-  border-color: #d4af37;
-}
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media screen and (max-width: 900px) {
-  .pricing-faq {
-    padding: 100px 5%;
-  }
-
-  .pricing-faq .section-title {
-    margin-bottom: 50px;
-  }
-}
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media screen and (max-width: 600px) {
-  .pricing-faq {
-    padding: 80px 20px;
-  }
-
-  .pricing-faq .section-title h2 {
-    font-size: 30px;
-  }
-
-  .pricing-faq .section-title p {
-    font-size: 13px;
-  }
-
-  .faq-item summary {
-    padding: 20px;
-
-    font-size: 13px;
-  }
-
-  .faq-answer {
-    padding: 0 20px 20px;
-  }
-
-  .faq-answer p {
-    font-size: 12px;
-  }
-}
-
-
-
-/* =========================================================
-   PRICING FINAL CTA
-========================================================= */
-
-.pricing-final-cta {
-  position: relative;
-  width: 100%;
-
-  padding: 110px 5%;
-
-  background: #111111;
-  color: #ffffff;
-
-  overflow: hidden;
-
-  transition:
-    background 0.4s ease,
-    color 0.4s ease;
-}
-
-
-/* =========================================================
-   CTA CONTAINER
-========================================================= */
-
-.pricing-cta-container {
-  position: relative;
-  z-index: 2;
-
-  width: 100%;
-  max-width: 1400px;
-
-  margin: 0 auto;
-
-  display: grid;
-
-  grid-template-columns:
-    minmax(0, 1.2fr)
-    minmax(360px, 0.8fr);
-
-  align-items: center;
-
-  gap: 70px;
-}
-
-
-/* =========================================================
-   LEFT CONTENT
-========================================================= */
-
-.pricing-cta-content {
-  width: 100%;
-  max-width: 750px;
-}
-
-
-/* =========================================================
-   CTA TAG
-========================================================= */
-
-.pricing-cta-tag {
-  display: block;
-
-  margin-bottom: 22px;
-
-  color: #d4af37;
-
-  font-size: 11px;
-  font-weight: 700;
-
-  letter-spacing: 4px;
-
-  text-transform: uppercase;
-}
-
-
-/* =========================================================
-   HEADING
-========================================================= */
-
-.pricing-cta-content h2 {
-  margin: 0 0 25px;
-
-  color: #ffffff;
-
-  font-size: clamp(
-    42px,
-    5vw,
-    68px
-  );
-
-  line-height: 1.08;
-
-  font-weight: 600;
-
-  letter-spacing: -2px;
-}
-
-
-.pricing-cta-content h2 span {
-  display: block;
-
-  color: #d4af37;
-}
-
-
-/* =========================================================
-   DESCRIPTION
-========================================================= */
-
-.pricing-cta-content p {
-  max-width: 680px;
-
-  margin: 0 0 38px;
-
-  color: #aaaaaa;
-
-  font-size: 15px;
-
-  line-height: 1.8;
-}
-
-
-/* =========================================================
-   BUTTON WRAPPER
-========================================================= */
-
-.pricing-cta-buttons {
-  display: flex;
-
-  align-items: center;
-
-  gap: 16px;
-
-  flex-wrap: wrap;
-}
-
-
-/* =========================================================
-   COMMON BUTTON
-========================================================= */
-
-.pricing-cta-btn {
-  display: inline-flex;
-
-  align-items: center;
-  justify-content: center;
-
-  gap: 12px;
-
-  min-height: 54px;
-
-  padding: 15px 25px;
-
-  border-radius: 5px;
-
-  text-decoration: none;
-
-  font-size: 12px;
-
-  font-weight: 600;
-
-  transition:
-    transform 0.3s ease,
-    background 0.3s ease,
-    color 0.3s ease,
-    border-color 0.3s ease;
-}
-
-
-/* =========================================================
-   BUTTON ICON
-========================================================= */
-
-.pricing-cta-btn svg {
-  width: 17px;
-  height: 17px;
-
-  transition:
-    transform 0.3s ease;
-}
-
-
-/* =========================================================
-   PRIMARY BUTTON
-========================================================= */
-
-.pricing-cta-btn.primary {
-  background: #d4af37;
-
-  color: #111111;
-
-  border: 1px solid #d4af37;
-}
-
-
-.pricing-cta-btn.primary:hover {
-  background: #ffffff;
-
-  color: #111111;
-
-  border-color: #ffffff;
-
-  transform: translateY(-4px);
-}
-
-
-.pricing-cta-btn.primary:hover svg {
-  transform: translate(
-    4px,
-    -4px
-  );
-}
-
-
-/* =========================================================
-   SECONDARY BUTTON
-========================================================= */
-
-.pricing-cta-btn.secondary {
-  background: transparent;
-
-  color: #ffffff;
-
-  border:
-    1px solid
-    rgba(
-      255,
-      255,
-      255,
-      0.35
-    );
-}
-
-
-.pricing-cta-btn.secondary:hover {
-  background: #d4af37;
-
-  color: #111111;
-
-  border-color: #d4af37;
-
-  transform: translateY(-4px);
-}
-
-
-.pricing-cta-btn.secondary:hover svg {
-  transform: translateX(4px);
-}
-
-
-/* =========================================================
-   RIGHT VISUAL
-========================================================= */
-
-.pricing-cta-visual {
-  width: 100%;
-
-  min-height: 420px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-}
-
-
-/* =========================================================
-   OUTER CIRCLE
-========================================================= */
-
-.pricing-cta-ring {
-  position: relative;
-
-  width: 360px;
-  height: 360px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  border:
-    1px solid
-    rgba(
-      212,
-      175,
-      55,
-      0.4
-    );
-
-  border-radius: 50%;
-}
-
-
-/* =========================================================
-   ROTATING INNER RING
-========================================================= */
-
-.pricing-cta-ring::before {
-  content: "";
-
-  position: absolute;
-
-  inset: 25px;
-
-  border:
-    1px dashed
-    rgba(
-      212,
-      175,
-      55,
-      0.35
-    );
-
-  border-radius: 50%;
-
-  animation:
-    pricingCtaRotate
-    25s
-    linear
-    infinite;
-}
-
-
-@keyframes pricingCtaRotate {
-
-  from {
-    transform:
-      rotate(0deg);
-  }
-
-  to {
-    transform:
-      rotate(360deg);
-  }
-
-}
-
-
-/* =========================================================
-   INNER GOLD CIRCLE
-========================================================= */
-
-.pricing-cta-inner {
-  position: relative;
-
-  z-index: 2;
-
-  width: 220px;
-  height: 220px;
-
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: center;
-
-  justify-content: center;
-
-  text-align: center;
-
-  background: #d4af37;
-
-  color: #111111;
-
-  border-radius: 50%;
-
-  box-shadow:
-    0 20px 60px
-    rgba(
-      212,
-      175,
-      55,
-      0.2
-    );
-}
-
-
-/* =========================================================
-   INNER ICON
-========================================================= */
-
-.pricing-cta-inner svg {
-  width: 34px;
-  height: 34px;
-
-  margin-bottom: 15px;
-}
-
-
-/* =========================================================
-   INNER TEXT
-========================================================= */
-
-.pricing-cta-inner strong {
-  display: block;
-
-  font-size: 20px;
-
-  line-height: 1.2;
-
-  font-weight: 700;
-
-  letter-spacing: 1px;
-}
-
-
-.pricing-cta-inner strong span {
-  display: block;
-}
-
-
-/* =========================================================
-   LIGHT MODE
-========================================================= */
-
-body:not(.dark-mode) .pricing-final-cta {
-  background: #f7f7f7;
-
-  color: #111111;
-}
-
-
-body:not(.dark-mode)
-.pricing-cta-content h2 {
-  color: #111111;
-}
-
-
-body:not(.dark-mode)
-.pricing-cta-content p {
-  color: #666666;
-}
-
-
-body:not(.dark-mode)
-.pricing-cta-btn.secondary {
-  background: transparent;
-
-  color: #111111;
-
-  border-color: #111111;
-}
-
-
-body:not(.dark-mode)
-.pricing-cta-btn.secondary:hover {
-  background: #111111;
-
-  color: #ffffff;
-
-  border-color: #111111;
-}
-
-
-/* =========================================================
-   DARK MODE
-========================================================= */
-
-body.dark-mode .pricing-final-cta {
-  background: #080808;
-
-  color: #ffffff;
-}
-
-
-body.dark-mode
-.pricing-cta-content h2 {
-  color: #ffffff;
-}
-
-
-body.dark-mode
-.pricing-cta-content p {
-  color: #999999;
-}
-
-
-body.dark-mode
-.pricing-cta-btn.secondary {
-  background: transparent;
-
-  color: #ffffff;
-
-  border-color:
-    rgba(
-      255,
-      255,
-      255,
-      0.3
-    );
-}
-
-
-body.dark-mode
-.pricing-cta-btn.secondary:hover {
-  background: #d4af37;
-
-  color: #111111;
-
-  border-color: #d4af37;
-}
-
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media screen and (max-width: 1100px) {
-
-  .pricing-final-cta {
-    padding: 90px 5%;
-  }
-
-
-  .pricing-cta-container {
-    grid-template-columns: 1fr;
-
-    gap: 50px;
-  }
-
-
-  .pricing-cta-content {
-    max-width: 850px;
-
-    margin: 0 auto;
-
-    text-align: center;
-  }
-
-
-  .pricing-cta-content p {
-    margin-left: auto;
-
-    margin-right: auto;
-  }
-
-
-  .pricing-cta-buttons {
-    justify-content: center;
-  }
-
-
-  .pricing-cta-visual {
-    min-height: 380px;
-  }
-
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media screen and (max-width: 768px) {
-
-  .pricing-final-cta {
-    padding: 80px 20px;
-  }
-
-
-  .pricing-cta-content h2 {
-    font-size: 40px;
-
-    letter-spacing: -1px;
-  }
-
-
-  .pricing-cta-content p {
-    font-size: 14px;
-  }
-
-
-  .pricing-cta-buttons {
-    flex-direction: column;
-
-    width: 100%;
-  }
-
-
-  .pricing-cta-btn {
-    width: 100%;
-  }
-
-
-  .pricing-cta-visual {
-    min-height: 320px;
-  }
-
-
-  .pricing-cta-ring {
-    width: 290px;
-
-    height: 290px;
-  }
-
-
-  .pricing-cta-inner {
-    width: 190px;
-
-    height: 190px;
-  }
-
-
-  .pricing-cta-inner strong {
-    font-size: 17px;
-  }
-
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media screen and (max-width: 480px) {
-
-  .pricing-final-cta {
-    padding: 70px 18px;
-  }
-
-
-  .pricing-cta-content h2 {
-    font-size: 34px;
-  }
-
-
-  .pricing-cta-ring {
-    width: 250px;
-
-    height: 250px;
-  }
-
-
-  .pricing-cta-inner {
-    width: 165px;
-
-    height: 165px;
-  }
-
-
-  .pricing-cta-inner svg {
-    width: 28px;
-
-    height: 28px;
-
-    margin-bottom: 10px;
-  }
-
-
-  .pricing-cta-inner strong {
-    font-size: 15px;
-  }
-
-}
-/* =========================================================
-   PRICING HERO — LIGHT MODE
-========================================================= */
-
-.pricing-hero {
-  background: #f7f7f7 !important;
-  color: #111111 !important;
-  transition:
-    background 0.4s ease,
-    color 0.4s ease;
-}
-
-.pricing-hero span {
-  color: #d4af37 !important;
-}
-
-.pricing-hero h1 {
-  color: #111111 !important;
-}
-
-.pricing-hero p {
-  color: #666666 !important;
-}
-
-/* =========================================================
-   PRICING CARDS — LIGHT MODE
-========================================================= */
-
-.pricing {
-  background: #f8f8f8 !important;
-}
-
-.price-card {
-  background: #ffffff !important;
-  color: #111111 !important;
-  border-color: #e5e7eb !important;
-}
-
-.price-card h3 {
-  color: #111111 !important;
-}
-
-.price-card p,
-.price-card li {
-  color: #666666 !important;
-}
-
-.price span {
-  color: #666666 !important;
-}
-
-/* =========================================================
-   COMPARISON SECTION — LIGHT MODE
-========================================================= */
-
-.compare-section {
-  background: #f8f8f8 !important;
-}
-
-.section-title h2 {
-  color: #111111 !important;
-}
-
-.section-title p {
-  color: #666666 !important;
-}
-
-.compare-form,
-.comparison-table {
-  background: #ffffff !important;
-}
-
-.compare-form h3 {
-  color: #111111 !important;
-}
-
-.input-group label {
-  color: #111111 !important;
-}
-
-.input-group select {
-  background: #ffffff !important;
-  color: #111111 !important;
-}
-
-/* =========================================================
-   FAQ — LIGHT MODE FIX
-========================================================= */
-
-body:not(.dark-mode) .faq-section {
-  background-color: #f8f8f8 !important;
-  color: #111111 !important;
-}
-
-body:not(.dark-mode) .faq-section .section-title h2 {
-  color: #111111 !important;
-}
-
-body:not(.dark-mode) .faq-section .section-title p {
-  color: #666666 !important;
-}
-
-body:not(.dark-mode) .faq-section .section-title span {
-  color: #d4af37 !important;
-}
-
-body:not(.dark-mode) .faq-section .faq-wrapper details {
-  background-color: #ffffff !important;
-  color: #111111 !important;
-  border-color: #e5e7eb !important;
-}
-
-body:not(.dark-mode) .faq-section .faq-wrapper summary {
-  background-color: #ffffff !important;
-  color: #111111 !important;
-}
-
-body:not(.dark-mode) .faq-section .faq-wrapper details p {
-  background-color: #ffffff !important;
-  color: #666666 !important;
-}
-
-
-/* =========================================================
-   FAQ — DARK MODE
-========================================================= */
-
-body.dark-mode .faq-section {
-  background-color: #080808 !important;
-  color: #ffffff !important;
-}
-
-body.dark-mode .faq-section .section-title h2 {
-  color: #ffffff !important;
-}
-
-body.dark-mode .faq-section .section-title p {
-  color: #999999 !important;
-}
-
-body.dark-mode .faq-section .section-title span {
-  color: #d4af37 !important;
-}
-
-body.dark-mode .faq-section .faq-wrapper details {
-  background-color: #111111 !important;
-  color: #ffffff !important;
-  border-color: #292929 !important;
-}
-
-body.dark-mode .faq-section .faq-wrapper summary {
-  background-color: #111111 !important;
-  color: #ffffff !important;
-}
-
-body.dark-mode .faq-section .faq-wrapper details p {
-  background-color: #111111 !important;
-  color: #999999 !important;
-}
-
-
-/* =========================================================
-   DARK MODE
-========================================================= */
-
-body.dark-mode {
-  background: #080808;
-  color: #ffffff;
-}
-
-/* =========================================================
-   PRICING HERO — DARK MODE
-========================================================= */
-
-body.dark-mode .pricing-hero {
-  background: #080808 !important;
-  color: #ffffff !important;
-}
-
-body.dark-mode .pricing-hero h1 {
-  color: #ffffff !important;
-}
-
-body.dark-mode .pricing-hero p {
-  color: #999999 !important;
-}
-
-body.dark-mode .pricing-hero span {
-  color: #d4af37 !important;
-}
-
-/* =========================================================
-   PRICING CARDS — DARK MODE
-========================================================= */
-
-body.dark-mode .pricing {
-  background: #080808 !important;
-}
-
-body.dark-mode .price-card {
-  background: #111111 !important;
-  color: #ffffff !important;
-  border-color: #252525 !important;
-}
-
-body.dark-mode .price-card h3 {
-  color: #ffffff !important;
-}
-
-body.dark-mode .price-card p,
-body.dark-mode .price-card li {
-  color: #999999 !important;
-}
-
-body.dark-mode .price span {
-  color: #999999 !important;
-}
-
-/* =========================================================
-   COMPARISON — DARK MODE
-========================================================= */
-
-body.dark-mode .compare-section {
-  background: #080808 !important;
-}
-
-body.dark-mode .section-title h2 {
-  color: #ffffff !important;
-}
-
-body.dark-mode .section-title p {
-  color: #999999 !important;
-}
-
-body.dark-mode .compare-form,
-body.dark-mode .comparison-table {
-  background: #111111 !important;
-}
-
-body.dark-mode .compare-form h3 {
-  color: #ffffff !important;
-}
-
-body.dark-mode .input-group label {
-  color: #ffffff !important;
-}
-
-body.dark-mode .input-group select {
-  background: #151515 !important;
-  color: #ffffff !important;
-  border-color: #333333 !important;
-}
-
-body.dark-mode tbody tr:nth-child(even) {
-  background: #151515 !important;
-}
-
-body.dark-mode tbody td:first-child {
-  color: #ffffff !important;
-}
-
-/* =========================================================
-   FAQ — DARK MODE
-========================================================= */
-
-body.dark-mode .faq-section {
-  background: #080808 !important;
-}
-
-body.dark-mode .faq-wrapper details {
-  background: #111111 !important;
-  border-color: #292929 !important;
-}
-
-body.dark-mode summary {
-  color: #ffffff !important;
-}
-
-body.dark-mode details p {
-  color: #999999 !important;
-}
