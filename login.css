@@ -1210,4 +1210,9 @@ margin-top: 10px;
   border-radius: 14px;
 }
 
-
+.login-mobile-icon {
+    font-size: 18px;
+    color: #d4af37;
+    margin-right: 8px;
+    vertical-align: middle;
+}

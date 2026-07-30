@@ -1,0 +1,1081 @@
+/* =========================================================
+                    GOOGLE FONT
+========================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+
+/* =========================================================
+                    GLOBAL RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f7f7f7;
+    color: #111111;
+    overflow-x: hidden;
+
+    transition:
+        background 0.4s ease,
+        color 0.4s ease;
+}
+
+
+/* =========================================================
+                    PAGE CONTROLS
+========================================================= */
+
+.page-controls {
+
+    position: fixed;
+
+    top: 25px;
+    right: 30px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    z-index: 9999;
+}
+
+
+/* =========================================================
+                    CONTROL BUTTON
+========================================================= */
+
+.control-btn {
+
+    width: 44px;
+    height: 44px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #111111;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.control-btn:hover {
+
+    background: #d4af37;
+
+    border-color: #d4af37;
+
+    color: #111111;
+
+    transform: translateY(-3px);
+}
+
+.control-btn svg {
+
+    width: 18px;
+    height: 18px;
+}
+
+
+/* =========================================================
+                    RTL BUTTON
+========================================================= */
+
+.rtl-btn {
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+                    MAIN PAGE
+========================================================= */
+
+.terms-page {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding:
+
+        65px
+        0
+        40px;
+
+}
+
+
+/* =========================================================
+                    LOGO
+========================================================= */
+
+.terms-logo {
+
+    width: fit-content;
+
+    margin: 0 auto 45px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.terms-logo img {
+
+    width: 210px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================================
+                    HEADING
+========================================================= */
+
+.terms-heading {
+
+    max-width: 850px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+                    TAG
+========================================================= */
+
+.terms-tag {
+
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: #d4af37;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+                    MAIN TITLE
+========================================================= */
+
+.terms-heading h1 {
+
+    color: #111111;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+                    LAST UPDATED
+========================================================= */
+
+.last-updated {
+
+    display: block;
+
+    color: #888888;
+
+    font-size: 13px;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================================
+                    INTRO TEXT
+========================================================= */
+
+.terms-heading p {
+
+    max-width: 780px;
+
+    margin: 0 auto;
+
+    color: #666666;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+}
+
+
+/* =========================================================
+                    CONTENT
+========================================================= */
+
+.terms-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+}
+
+
+/* =========================================================
+                    TERMS CARD
+========================================================= */
+
+.terms-card {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    width: 100%;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.04);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* =========================================================
+                    CARD HOVER
+========================================================= */
+
+.terms-card:hover {
+
+    transform: translateY(-4px);
+
+    border-color: rgba(212, 175, 55, 0.45);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+                    CARD ICON
+========================================================= */
+
+.terms-card-icon {
+
+    width: 52px;
+    height: 52px;
+
+    min-width: 52px;
+
+    border-radius: 12px;
+
+    background: #d4af37;
+
+    color: #111111;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.35s ease;
+}
+
+.terms-card-icon svg {
+
+    width: 23px;
+    height: 23px;
+
+    stroke-width: 2;
+}
+
+
+/* =========================================================
+                    SECONDARY ICON
+========================================================= */
+
+.terms-card-icon.secondary {
+
+    background: #111111;
+
+    color: #d4af37;
+}
+
+
+/* =========================================================
+                    ICON HOVER
+========================================================= */
+
+.terms-card:hover .terms-card-icon {
+
+    transform: rotate(-4deg) scale(1.05);
+}
+
+
+/* =========================================================
+                    CARD CONTENT
+========================================================= */
+
+.terms-card-content {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+                    CARD HEADING
+========================================================= */
+
+.terms-card-content h3 {
+
+    color: #111111;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    margin-bottom: 9px;
+}
+
+
+/* =========================================================
+                    CARD TEXT
+========================================================= */
+
+.terms-card-content p {
+
+    color: #666666;
+
+    font-size: 14px;
+
+    line-height: 1.85;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+                    STRONG TEXT
+========================================================= */
+
+.terms-card-content strong {
+
+    color: #111111;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+                    FOOTER
+========================================================= */
+
+.terms-footer {
+
+    margin-top: 55px;
+
+    padding: 25px 0;
+
+    border-top: 1px solid #dddddd;
+
+    text-align: center;
+}
+
+.terms-footer p {
+
+    color: #777777;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+.terms-footer strong {
+
+    color: #d4af37;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+                    DARK MODE
+========================================================= */
+
+body.dark-mode {
+
+    background: #111111;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+                    DARK CONTROLS
+========================================================= */
+
+body.dark-mode .control-btn {
+
+    background: #1c1c1c;
+
+    border-color: #333333;
+
+    color: #ffffff;
+}
+
+body.dark-mode .control-btn:hover {
+
+    background: #d4af37;
+
+    border-color: #d4af37;
+
+    color: #111111;
+}
+
+
+/* =========================================================
+                    DARK HEADING
+========================================================= */
+
+body.dark-mode .terms-heading h1 {
+
+    color: #ffffff;
+}
+
+body.dark-mode .terms-heading p {
+
+    color: #bdbdbd;
+}
+
+body.dark-mode .last-updated {
+
+    color: #888888;
+}
+
+
+/* =========================================================
+                    DARK CARDS
+========================================================= */
+
+body.dark-mode .terms-card {
+
+    background: #181818;
+
+    border-color: #292929;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .terms-card:hover {
+
+    border-color: rgba(212, 175, 55, 0.45);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+                    DARK CARD CONTENT
+========================================================= */
+
+body.dark-mode .terms-card-content h3 {
+
+    color: #ffffff;
+}
+
+body.dark-mode .terms-card-content p {
+
+    color: #bdbdbd;
+}
+
+body.dark-mode .terms-card-content strong {
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+                    DARK SECONDARY ICON
+========================================================= */
+
+body.dark-mode .terms-card-icon.secondary {
+
+    background: #d4af37;
+
+    color: #111111;
+}
+
+
+/* =========================================================
+                    DARK FOOTER
+========================================================= */
+
+body.dark-mode .terms-footer {
+
+    border-color: #303030;
+}
+
+body.dark-mode .terms-footer p {
+
+    color: #999999;
+}
+
+
+/* =========================================================
+                    RTL
+========================================================= */
+
+html.rtl-mode {
+
+    direction: rtl;
+}
+
+html.rtl-mode .terms-page {
+
+    direction: rtl;
+}
+
+html.rtl-mode .terms-card {
+
+    direction: rtl;
+}
+
+html.rtl-mode .terms-card-content {
+
+    text-align: right;
+}
+
+html.rtl-mode .terms-heading {
+
+    direction: rtl;
+}
+
+html.rtl-mode .terms-footer {
+
+    direction: rtl;
+}
+
+html.rtl-mode .page-controls {
+
+    right: auto;
+
+    left: 30px;
+}
+
+
+/* =========================================================
+                    LARGE TABLET
+                    1025px - 1200px
+========================================================= */
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    .terms-page {
+
+        width: 88%;
+
+    }
+
+    .terms-heading h1 {
+
+        font-size: 38px;
+
+    }
+
+}
+
+
+/* =========================================================
+                    IPAD PRO
+                    821px - 1024px
+========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+    .page-controls {
+
+        top: 20px;
+
+        right: 22px;
+
+    }
+
+    html.rtl-mode .page-controls {
+
+        right: auto;
+
+        left: 22px;
+
+    }
+
+    .terms-page {
+
+        width: 88%;
+
+        padding-top: 60px;
+
+    }
+
+    .terms-logo {
+
+        margin-bottom: 40px;
+
+    }
+
+    .terms-logo img {
+
+        width: 195px;
+
+    }
+
+    .terms-heading {
+
+        margin-bottom: 45px;
+
+    }
+
+    .terms-heading h1 {
+
+        font-size: 36px;
+
+    }
+
+    .terms-heading p {
+
+        font-size: 14px;
+
+    }
+
+    .terms-card {
+
+        padding: 27px;
+
+    }
+
+}
+
+
+/* =========================================================
+                    IPAD MINI
+                    768px - 820px
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+    .page-controls {
+
+        top: 18px;
+
+        right: 20px;
+
+    }
+
+    html.rtl-mode .page-controls {
+
+        right: auto;
+
+        left: 20px;
+
+    }
+
+    .terms-page {
+
+        width: 90%;
+
+        padding-top: 55px;
+
+    }
+
+    .terms-logo {
+
+        margin-bottom: 38px;
+
+    }
+
+    .terms-logo img {
+
+        width: 185px;
+
+    }
+
+    .terms-heading {
+
+        margin-bottom: 40px;
+
+    }
+
+    .terms-heading h1 {
+
+        font-size: 34px;
+
+    }
+
+    .terms-heading p {
+
+        font-size: 14px;
+
+        line-height: 1.8;
+
+    }
+
+    .terms-content {
+
+        gap: 18px;
+
+    }
+
+    .terms-card {
+
+        padding: 25px;
+
+        gap: 20px;
+
+    }
+
+    .terms-card-icon {
+
+        width: 50px;
+
+        height: 50px;
+
+        min-width: 50px;
+
+    }
+
+}
+
+
+/* =========================================================
+                    SAMSUNG GALAXY S8+
+                    360px - 740px
+========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+    .page-controls {
+
+        position: absolute;
+
+        top: 18px;
+
+        right: 15px;
+
+        gap: 7px;
+
+    }
+
+    html.rtl-mode .page-controls {
+
+        right: auto;
+
+        left: 15px;
+
+    }
+
+    .control-btn {
+
+        width: 38px;
+
+        height: 38px;
+
+    }
+
+    .control-btn svg {
+
+        width: 16px;
+
+        height: 16px;
+
+    }
+
+    .terms-page {
+
+        width: 90%;
+
+        padding-top: 75px;
+
+        padding-bottom: 25px;
+
+    }
+
+    .terms-logo {
+
+        margin-bottom: 35px;
+
+    }
+
+    .terms-logo img {
+
+        width: 165px;
+
+    }
+
+    .terms-heading {
+
+        margin-bottom: 35px;
+
+    }
+
+    .terms-tag {
+
+        font-size: 10px;
+
+        letter-spacing: 1.7px;
+
+    }
+
+    .terms-heading h1 {
+
+        font-size: 28px;
+
+        line-height: 1.3;
+
+        margin-bottom: 10px;
+
+    }
+
+    .last-updated {
+
+        font-size: 11px;
+
+        margin-bottom: 18px;
+
+    }
+
+    .terms-heading p {
+
+        font-size: 13px;
+
+        line-height: 1.8;
+
+    }
+
+    .terms-content {
+
+        gap: 15px;
+
+    }
+
+    .terms-card {
+
+        flex-direction: column;
+
+        gap: 16px;
+
+        padding: 22px;
+
+        border-radius: 12px;
+
+    }
+
+    .terms-card-icon {
+
+        width: 45px;
+
+        height: 45px;
+
+        min-width: 45px;
+
+        border-radius: 10px;
+
+    }
+
+    .terms-card-icon svg {
+
+        width: 20px;
+
+        height: 20px;
+
+    }
+
+    .terms-card-content h3 {
+
+        font-size: 16px;
+
+        margin-bottom: 7px;
+
+    }
+
+    .terms-card-content p {
+
+        font-size: 13px;
+
+        line-height: 1.8;
+
+    }
+
+    .terms-footer {
+
+        margin-top: 40px;
+
+        padding: 20px 0;
+
+    }
+
+    .terms-footer p {
+
+        font-size: 12px;
+
+    }
+
+}
+
+
+/* =========================================================
+                    SMALL MOBILE
+                    BELOW 360px
+========================================================= */
+
+@media screen and (max-width: 359px) {
+
+    .page-controls {
+
+        position: absolute;
+
+        top: 15px;
+
+        right: 12px;
+
+        gap: 6px;
+
+    }
+
+    html.rtl-mode .page-controls {
+
+        right: auto;
+
+        left: 12px;
+
+    }
+
+    .control-btn {
+
+        width: 36px;
+
+        height: 36px;
+
+    }
+
+    .terms-page {
+
+        width: 92%;
+
+        padding-top: 70px;
+
+    }
+
+    .terms-logo img {
+
+        width: 150px;
+
+    }
+
+    .terms-heading h1 {
+
+        font-size: 25px;
+
+    }
+
+    .terms-heading p {
+
+        font-size: 12px;
+
+    }
+
+    .terms-card {
+
+        padding: 18px;
+
+    }
+
+    .terms-card-content h3 {
+
+        font-size: 15px;
+
+    }
+
+    .terms-card-content p {
+
+        font-size: 12px;
+
+    }
+
+}
+
+
+/* =========================================================
+                    ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        scroll-behavior: auto !important;
+
+        transition: none !important;
+
+        animation: none !important;
+
+    }
+
+}

@@ -933,7 +933,7 @@
 .philosophy-heading span {
   display: block;
 
-  color: #777777;
+  color: #c49f25;
 
   font-weight: 300;
 }
@@ -3547,20 +3547,23 @@ body.dark-mode .process-section{
 
 }
 
-.section-tag{
+  .section-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
 
-    display:inline-block;
+    color: #d4af37;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
-    color:#d4af37;
-
-    font-size:13px;
-
-    font-weight:600;
-
-    letter-spacing:4px;
-
-    margin-bottom:22px;
-
+.section-tag::before{
+    content: "";
+    width: 55px;
+    height: 2px;
+    background: #d4af37;
 }
 
 .process-top h2{
@@ -4947,6 +4950,30 @@ html.rtl-mode .testimonial-stars{
   text-transform: uppercase;
 
   margin-bottom: 25px;
+}
+
+.cta-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #d4af37;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.cta-tag::before{
+    content: "";
+
+    width: 55px;
+    height: 2px;
+
+    background: #d4af37;
+
+    display: inline-block;
 }
 
 .cta-container h2 {

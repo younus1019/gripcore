@@ -332,7 +332,7 @@ header {
 
   gap: 8px;
 
-  min-height: 45px;
+  /* min-height: 40px; */
 
   padding: 10px 20px;
 
@@ -346,7 +346,7 @@ header {
 
   text-decoration: none;
 
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
 
   white-space: nowrap;
@@ -354,13 +354,15 @@ header {
   transition: 0.3s ease;
 }
 
-.login i {
-  width: 17px;
-  height: 17px;
 
-  color: #111111;
 
-  transition: 0.3s ease;
+.login svg {
+  width: 20px;
+  height: 20px;
+
+  stroke-width: 2.2;
+
+  flex-shrink: 0;
 }
 
 .login:hover {
@@ -383,7 +385,7 @@ header {
    HIDDEN ON DESKTOP
 ========================================================= */
 
-.mobile-login-item {
+.mobile-login {
   display: none;
 }
 
@@ -826,11 +828,11 @@ header {
 
   /* MOBILE LOGIN */
 
-  .mobile-login-item {
+  .mobile-login {
     display: block;
   }
 
-  .mobile-login-item a {
+  .mobile-login a {
     display: flex !important;
 
     align-items: center;
@@ -852,7 +854,7 @@ header {
     font-weight: 600;
   }
 
-  .mobile-login-item a::after {
+  .mobile-login a::after {
     display: none !important;
   }
 
@@ -1060,11 +1062,11 @@ header {
 
   /* MOBILE LOGIN */
 
-  .mobile-login-item {
+  .mobile-login {
     display: block;
   }
 
-  .mobile-login-item a {
+  .mobile-login a {
     display: flex !important;
 
     align-items: center;
@@ -1086,7 +1088,7 @@ header {
     font-weight: 600;
   }
 
-  .mobile-login-item a::after {
+  .mobile-login a::after {
     display: none !important;
   }
 
@@ -1245,11 +1247,11 @@ header {
 
   /* MOBILE LOGIN */
 
-  .mobile-login-item {
+.mobile-login {
     display: block;
   }
 
-  .mobile-login-item a {
+  .mobile-login a {
     display: flex !important;
 
     align-items: center;
@@ -1271,7 +1273,7 @@ header {
     font-weight: 600;
   }
 
-  .mobile-login-item a::after {
+  .mobile-login a::after {
     display: none !important;
   }
 
@@ -1418,11 +1420,11 @@ header {
 
   /* LOGIN */
 
-  .mobile-login-item {
+ .mobile-login {
     display: block;
   }
 
-  .mobile-login-item a {
+  .mobile-login a {
     display: flex !important;
 
     justify-content: center;
@@ -1489,7 +1491,7 @@ body.dark-mode .menu {
   background: #111111;
 }
 
-body.dark-mode .mobile-login-item a {
+body.dark-mode .mobile-login a {
   color: #111111 !important;
 }
 
@@ -1636,4 +1638,55 @@ html.rtl-mode .menu > li > a::after {
 
     color: #d4af37 !important;
   }
+}
+
+
+
+/* =========================================================
+        CONTACT EXTRA PAGE LINKS
+========================================================= */
+
+.footer-col > li{
+    list-style:none;
+    margin-bottom:10px;
+}
+
+.footer-col > li a{
+    display:inline-block;
+
+    color:#666666;
+    font-size:14px;
+    font-weight:500;
+
+    text-decoration:none;
+
+    transition:0.3s ease;
+}
+
+.footer-col > li a:hover{
+    color:#d4af37;
+    padding-left:6px;
+}
+
+
+/* =========================================================
+                    DARK MODE
+========================================================= */
+
+body.dark-mode .footer-col > li a{
+    color:#c8c8c8;
+}
+
+body.dark-mode .footer-col > li a:hover{
+    color:#d4af37;
+}
+
+
+/* =========================================================
+                        RTL
+========================================================= */
+
+html.rtl-mode .footer-col > li a:hover{
+    padding-left:0;
+    padding-right:6px;
 }

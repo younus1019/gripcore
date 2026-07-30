@@ -483,40 +483,43 @@ html {
 
   text-align: center;
 }
-
 .services-eyebrow {
-  justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 
-  margin-bottom: 25px;
+    margin-bottom: 25px;
+
+    color: #d4af37;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.services-eyebrow span {
+    width: 55px;
+    height: 2px;
+    background: #d4af37;
+    border-radius: 50px;
 }
 
 .services-header h2 {
-  font-size: clamp(42px, 5vw, 72px);
-
-  line-height: 1.05;
-
-  letter-spacing: -2px;
-
-  margin-bottom: 25px;
+    font-size: clamp(42px, 5vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+    color: #111111;
 }
 
 .services-header h2 span {
-  display: block;
-
-  color: #d4af37;
+    color: #d4af37;
 }
+ 
+ 
 
-.services-header p {
-  max-width: 600px;
 
-  margin: auto;
-
-  color: #999999;
-
-  font-size: 15px;
-
-  line-height: 1.8;
-}
 
 /* =========================================
         SERVICES GRID
@@ -1240,6 +1243,30 @@ body.dark-mode .featured-badge {
 
   line-height: 1.9;
 
+}
+
+.section-eyebrow,
+.premium-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #d4af37;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.section-eyebrow span,
+.premium-eyebrow span {
+    display: block;
+    width: 55px;
+    height: 2px;
+    background: #d4af37;
+    border-radius: 50px;
 }
 
 

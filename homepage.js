@@ -184,25 +184,30 @@ if (statsSection) {
 // RTL MODE TOGGLE
 // =========================================
 
-const rtlBtn = document.getElementById("rtlBtn");
+document.addEventListener("DOMContentLoaded", function () {
+  const rtlBtn = document.getElementById("rtlBtn");
 
-rtlBtn.addEventListener("click", function () {
-  // Toggle RTL direction
-  document.documentElement.classList.toggle("rtl-mode");
-
-  // Check if RTL is active
-  const isRTL = document.documentElement.classList.contains("rtl-mode");
-
-  // Change HTML direction
-  if (isRTL) {
-    document.documentElement.setAttribute("dir", "rtl");
-
-    rtlBtn.title = "LTR Mode";
-  } else {
-    document.documentElement.setAttribute("dir", "ltr");
-
-    rtlBtn.title = "RTL Mode";
+  if (!rtlBtn) {
+    console.warn("rtlBtn not found");
+    return;
   }
+
+  rtlBtn.addEventListener("click", function () {
+    // Toggle RTL direction
+    document.documentElement.classList.toggle("rtl-mode");
+
+    // Check if RTL is active
+    const isRTL = document.documentElement.classList.contains("rtl-mode");
+
+    // Change HTML direction
+    if (isRTL) {
+      document.documentElement.setAttribute("dir", "rtl");
+      rtlBtn.title = "LTR Mode";
+    } else {
+      document.documentElement.setAttribute("dir", "ltr");
+      rtlBtn.title = "RTL Mode";
+    }
+  });
 });
 
 /* =========================================

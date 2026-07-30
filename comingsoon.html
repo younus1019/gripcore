@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Coming Soon | GripCore</title>
+
+    <link
+        rel="icon"
+        href="images/logo-light.png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="comingsoon.css"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!--=================================================
+                        CONTROLS
+    ==================================================-->
+
+    <div class="page-controls">
+
+        <!-- Dark Mode -->
+
+        <button
+            id="darkModeToggle"
+            class="control-btn"
+            type="button"
+            title="Dark Mode"
+        >
+
+            <i class="fa-solid fa-moon"></i>
+
+        </button>
+
+
+        <!-- RTL -->
+
+        <button
+            id="rtlToggle"
+            class="control-btn"
+            type="button"
+            title="RTL Mode"
+        >
+
+            RTL
+
+        </button>
+
+    </div>
+
+
+
+    <!--=================================================
+                    COMING SOON PAGE
+    ==================================================-->
+
+    <main class="coming-soon-page">
+
+
+        <section class="coming-soon-card">
+
+
+            <!--=================================================
+                            LOGO
+            ==================================================-->
+
+            <div
+                class="coming-logo"
+                id="comingLogoLink"
+            >
+
+                <img
+                    id="comingLogo"
+                    src="images/logo-light.png"
+                    alt="GripCore Logo"
+                >
+
+            </div>
+
+
+
+            <!--=================================================
+                        ROCKET ICON
+            ==================================================-->
+
+            <div class="coming-icon">
+
+                <i class="fa-solid fa-rocket"></i>
+
+            </div>
+
+
+
+            <!--=================================================
+                        SMALL LABEL
+            ==================================================-->
+
+            <span class="coming-label">
+                GRIPCORE
+            </span>
+
+
+
+            <!--=================================================
+                        MAIN HEADING
+            ==================================================-->
+
+            <h1>
+                Coming Soon
+            </h1>
+
+
+
+            <!--=================================================
+                        SUB HEADING
+            ==================================================-->
+
+            <h2>
+                Something Powerful Is On The Way
+            </h2>
+
+
+
+            <!--=================================================
+                        DESCRIPTION
+            ==================================================-->
+
+            <p class="coming-description">
+
+                We're working on something special for your
+                driving experience. Stay tuned for exciting
+                updates and fresh automotive content.
+
+            </p>
+
+
+
+            <!--=================================================
+                        COUNTDOWN
+            ==================================================-->
+
+            <div class="countdown">
+
+
+                <!-- DAYS -->
+
+                <div class="countdown-box">
+
+                    <strong id="days">
+                        29
+                    </strong>
+
+                    <span>
+                        DAYS
+                    </span>
+
+                </div>
+
+
+                <div class="countdown-separator">
+                    :
+                </div>
+
+
+                <!-- HOURS -->
+
+                <div class="countdown-box">
+
+                    <strong id="hours">
+                        23
+                    </strong>
+
+                    <span>
+                        HOURS
+                    </span>
+
+                </div>
+
+
+                <div class="countdown-separator">
+                    :
+                </div>
+
+
+                <!-- MINUTES -->
+
+                <div class="countdown-box">
+
+                    <strong id="minutes">
+                        59
+                    </strong>
+
+                    <span>
+                        MINS
+                    </span>
+
+                </div>
+
+
+                <div class="countdown-separator">
+                    :
+                </div>
+
+
+                <!-- SECONDS -->
+
+                <div class="countdown-box">
+
+                    <strong id="seconds">
+                        45
+                    </strong>
+
+                    <span>
+                        SECS
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!--=================================================
+                        EMAIL NOTIFICATION
+            ==================================================-->
+
+            <form
+                class="notify-form"
+                id="notifyForm"
+            >
+
+                <div class="email-wrapper">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="notifyEmail"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="notify-btn"
+                >
+
+                    <i class="fa-regular fa-paper-plane"></i>
+
+                    Notify Me
+
+                </button>
+
+            </form>
+
+
+
+            <!--=================================================
+                        NOTIFICATION MESSAGE
+            ==================================================-->
+
+            <p
+                class="notify-message"
+                id="notifyMessage"
+            ></p>
+
+
+
+            <!--=================================================
+                        BACK TO HOME
+            ==================================================-->
+
+            <a
+                href="index.html"
+                class="home-btn"
+            >
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back To Home
+
+            </a>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!--=================================================
+                        JAVASCRIPT
+    ==================================================-->
+
+    <script src="comingsoon.js"></script>
+
+
+</body>
+
+</html>

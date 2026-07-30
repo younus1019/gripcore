@@ -1,0 +1,737 @@
+/*=========================================================
+                    GOOGLE FONT
+=========================================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+
+/*=========================================================
+                    GLOBAL RESET
+=========================================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    background: #ffffff;
+    color: #111111;
+
+    overflow-x: hidden;
+
+    transition:
+        background 0.4s ease,
+        color 0.4s ease;
+}
+
+
+/*=========================================================
+                    PAGE CONTROLS
+=========================================================*/
+
+.page-controls {
+    position: fixed;
+
+    top: 25px;
+    right: 30px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    z-index: 9999;
+}
+
+
+/*=========================================================
+                    CONTROL BUTTON
+=========================================================*/
+
+.control-btn {
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #f2f2f2;
+    color: #111111;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.control-btn:hover {
+    background: #d4af37;
+    color: #111111;
+
+    transform: translateY(-3px);
+}
+
+.control-btn i {
+    font-size: 17px;
+}
+
+
+/*=========================================================
+                    ERROR PAGE
+=========================================================*/
+
+.error-page {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px 20px 50px;
+}
+
+
+/*=========================================================
+                    ERROR CARD
+=========================================================*/
+
+.error-card {
+    width: 100%;
+    max-width: 700px;
+
+    padding: 55px 50px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.08);
+
+    transition:
+        background 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/*=========================================================
+                    LOGO
+=========================================================*/
+
+.logo {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 200px;
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/*=========================================================
+                    ERROR ICON
+=========================================================*/
+
+.error-icon {
+    width: 78px;
+    height: 78px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: #d4af37;
+    color: #111111;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s ease;
+}
+
+.error-icon:hover {
+    transform: translateY(-4px);
+}
+
+.error-icon i {
+    font-size: 34px;
+}
+
+
+/*=========================================================
+                    404 NUMBER
+=========================================================*/
+
+.error-card h1 {
+    color: #111111;
+
+    font-size: 100px;
+    font-weight: 800;
+
+    line-height: 1;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 10px;
+
+    transition: color 0.4s ease;
+}
+
+
+/*=========================================================
+                    ERROR TITLE
+=========================================================*/
+
+.error-card h3 {
+    color: #111111;
+
+    font-size: 25px;
+    font-weight: 600;
+
+    margin-bottom: 14px;
+
+    transition: color 0.4s ease;
+}
+
+
+/*=========================================================
+                    DESCRIPTION
+=========================================================*/
+
+.error-card > p {
+    max-width: 500px;
+
+    margin: 0 auto 30px;
+
+    color: #666666;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    transition: color 0.4s ease;
+}
+
+
+/*=========================================================
+                    HOME BUTTON
+=========================================================*/
+
+.home-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    min-height: 48px;
+
+    padding: 0 26px;
+
+    background: #d4af37;
+
+    border: 2px solid #d4af37;
+
+    border-radius: 50px;
+
+    color: #111111;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.35s ease;
+}
+
+.home-btn:hover {
+    background: #111111;
+
+    border-color: #111111;
+
+    color: #d4af37;
+
+    transform: translateY(-3px);
+}
+
+.home-btn i {
+    font-size: 14px;
+}
+
+
+/*=========================================================
+                SAMSUNG GALAXY S8+
+                360px - 740px
+=========================================================*/
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+    .page-controls {
+        top: 15px;
+        right: 15px;
+
+        gap: 8px;
+    }
+
+
+    .control-btn {
+        width: 40px;
+        height: 40px;
+
+        font-size: 11px;
+    }
+
+
+    .control-btn i {
+        font-size: 15px;
+    }
+
+
+    .error-page {
+        padding: 85px 15px 35px;
+    }
+
+
+    .error-card {
+        max-width: 100%;
+
+        padding: 40px 20px;
+
+        border-radius: 17px;
+    }
+
+
+    .logo {
+        margin-bottom: 25px;
+    }
+
+
+    .logo img {
+        width: 165px;
+    }
+
+
+    .error-icon {
+        width: 60px;
+        height: 60px;
+
+        margin-bottom: 16px;
+    }
+
+
+    .error-icon i {
+        font-size: 27px;
+    }
+
+
+    .error-card h1 {
+        font-size: 70px;
+
+        letter-spacing: -2px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .error-card h3 {
+        font-size: 20px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .error-card > p {
+        font-size: 13px;
+
+        line-height: 1.75;
+
+        margin-bottom: 25px;
+    }
+
+
+    .home-btn {
+        min-height: 46px;
+
+        padding: 0 22px;
+
+        font-size: 13px;
+    }
+
+}
+
+
+/*=========================================================
+                    IPAD MINI
+                    768px - 820px
+=========================================================*/
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+    .page-controls {
+        top: 20px;
+        right: 22px;
+    }
+
+
+    .error-page {
+        padding: 90px 25px 45px;
+    }
+
+
+    .error-card {
+        max-width: 650px;
+
+        padding: 50px 40px;
+    }
+
+
+    .logo img {
+        width: 185px;
+    }
+
+
+    .error-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .error-card h1 {
+        font-size: 86px;
+    }
+
+
+    .error-card h3 {
+        font-size: 22px;
+    }
+
+}
+
+
+/*=========================================================
+                    IPAD PRO
+                    821px - 1024px
+=========================================================*/
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+    .page-controls {
+        top: 20px;
+        right: 25px;
+    }
+
+
+    .error-page {
+        padding: 90px 30px 45px;
+    }
+
+
+    .error-card {
+        max-width: 680px;
+
+        padding: 52px 45px;
+    }
+
+
+    .logo img {
+        width: 190px;
+    }
+
+
+    .error-icon {
+        width: 74px;
+        height: 74px;
+    }
+
+
+    .error-card h1 {
+        font-size: 92px;
+    }
+
+}
+
+
+/*=========================================================
+                    NEST HUB
+                    1024px x 600px
+=========================================================*/
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+    .page-controls {
+        top: 18px;
+        right: 20px;
+    }
+
+
+    .error-page {
+        padding: 75px 20px 30px;
+    }
+
+
+    .error-card {
+        max-width: 620px;
+
+        padding: 35px 40px;
+    }
+
+
+    .logo {
+        margin-bottom: 18px;
+    }
+
+
+    .logo img {
+        width: 160px;
+    }
+
+
+    .error-icon {
+        width: 55px;
+        height: 55px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .error-icon i {
+        font-size: 25px;
+    }
+
+
+    .error-card h1 {
+        font-size: 68px;
+
+        margin-bottom: 6px;
+    }
+
+
+    .error-card h3 {
+        font-size: 20px;
+
+        margin-bottom: 7px;
+    }
+
+
+    .error-card > p {
+        font-size: 13px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .home-btn {
+        min-height: 44px;
+    }
+
+}
+
+
+/*=========================================================
+                    DARK MODE
+=========================================================*/
+
+body.dark-mode {
+    background: #111111;
+
+    color: #ffffff;
+}
+
+
+/*=========================================================
+                DARK MODE CONTROLS
+=========================================================*/
+
+body.dark-mode .control-btn {
+    background: #242424;
+
+    color: #ffffff;
+}
+
+body.dark-mode .control-btn:hover {
+    background: #d4af37;
+
+    color: #111111;
+}
+
+
+/*=========================================================
+                    DARK MODE CARD
+=========================================================*/
+
+body.dark-mode .error-card {
+    background: #181818;
+
+    border-color: #2b2b2b;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+
+/*=========================================================
+                    DARK MODE TEXT
+=========================================================*/
+
+body.dark-mode .error-card h1,
+body.dark-mode .error-card h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .error-card > p {
+    color: #bdbdbd;
+}
+
+
+/*=========================================================
+                    DARK MODE ERROR ICON
+=========================================================*/
+
+body.dark-mode .error-icon {
+    background: #d4af37;
+
+    color: #111111;
+}
+
+
+/*=========================================================
+                    RTL
+=========================================================*/
+
+html.rtl-mode {
+    direction: rtl;
+}
+
+html.rtl-mode .error-page {
+    direction: rtl;
+}
+
+html.rtl-mode .error-card {
+    direction: rtl;
+}
+
+
+/*=========================================================
+                    RTL CONTROLS
+=========================================================*/
+
+html.rtl-mode .page-controls {
+    right: auto;
+    left: 30px;
+}
+
+
+/*=========================================================
+                    RTL MOBILE
+=========================================================*/
+
+@media screen and (max-width: 767px) {
+
+    html.rtl-mode .page-controls {
+        right: auto;
+        left: 15px;
+    }
+
+}
+
+/*=========================================================
+                    FIXED 404 PAGE
+=========================================================*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+}
+
+
+/*=========================================================
+                    ERROR PAGE
+=========================================================*/
+
+.error-page {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+
+/*=========================================================
+                    ERROR CARD
+=========================================================*/
+
+.error-card {
+    width: min(700px, calc(100% - 30px));
+
+    max-height: calc(100vh - 40px);
+    max-height: calc(100dvh - 40px);
+
+    padding: 45px 40px;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.08);
+}
