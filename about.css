@@ -250,7 +250,7 @@
   letter-spacing: 5px;
   text-transform: uppercase;
 
-  text-align: center;
+  text-align: left;
 }
 
 .section-tag::before {
