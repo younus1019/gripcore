@@ -1611,7 +1611,7 @@ body.dark-mode .automotive-header p{
    ICON
 ========================================= */
 
-.automotive-icon {
+/* .automotive-icon {
   width: 52px;
 
   height: 52px;
@@ -1642,12 +1642,59 @@ body.dark-mode .automotive-header p{
 
 /* Icon Hover */
 
-.automotive-card:hover .automotive-icon {
+/* .automotive-card:hover .automotive-icon {
   background: #d4af37;
 
   color: #111111;
 
   border-color: #d4af37;
+} */ 
+
+/* =========================================
+   ICON
+========================================= */
+
+.automotive-icon{
+    width:70px;
+    height:70px;
+
+    border:1px solid rgba(212,175,55,.45);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#d4af37;
+
+    transition:.4s ease;
+}
+
+/* Font Awesome Icons */
+
+.automotive-icon i{
+    font-size:32px;
+    transition:.4s ease;
+}
+
+/* Lucide Icons (if you use them later) */
+
+.automotive-icon svg{
+    width:32px;
+    height:32px;
+    stroke-width:2;
+}
+
+/* Hover */
+
+.automotive-card:hover .automotive-icon{
+    background:#d4af37;
+    border-color:#d4af37;
+    color:#111;
+}
+
+.automotive-card:hover .automotive-icon i,
+.automotive-card:hover .automotive-icon svg{
+    transform:scale(1.1);
 }
 
 /* =========================================

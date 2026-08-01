@@ -1334,22 +1334,15 @@ body.rtl .contact-info-card:hover .contact-info-link svg {
 
 
 .contact-form-map-container {
-
   width: 100%;
-
   max-width: 1400px;
-
   margin: auto;
 
   display: grid;
-
-  grid-template-columns:
-    1fr 1fr;
-
+  grid-template-columns: 1fr 1fr;
   gap: 80px;
 
-  align-items: start;
-
+  align-items: center;   /* Change start → center */
 }
 
 
