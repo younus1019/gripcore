@@ -236,9 +236,9 @@
 }
 
 .section-tag {
-  display: flex;
+  display: inline-flex;      /* change flex to inline-flex */
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* keep content to the left */
 
   gap: 18px;
 
@@ -250,21 +250,23 @@
   letter-spacing: 5px;
   text-transform: uppercase;
 
-  text-align: left;
+  margin-bottom: 25px;
 }
 
 .section-tag::before {
   content: "";
 
   width: 70px;
-  height: 1px;
+  height: 2px;
 
   background: #d4af37;
 
-  display: block;
+  display: inline-block;
 
   flex-shrink: 0;
 }
+
+
 
 
 /* =========================================
