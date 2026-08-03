@@ -1408,98 +1408,82 @@ body.dark-mode .stat-item span {
         SECTION HEADER
 =========================================================*/
 
-.automotive-header{
+.automotive-header {
+  width: 100%;
 
-    width:100%;
+  max-width: 800px;
 
-    max-width:800px;
+  margin: 0 auto 80px;
 
-    margin:0 auto 80px;
-
-    text-align:center;
-
+  text-align: center;
 }
 
-.automotive-eyebrow{
+.automotive-eyebrow {
+  display: flex;
 
-    display:flex;
+  justify-content: center;
 
-    justify-content:center;
+  align-items: center;
 
-    align-items:center;
+  gap: 14px;
 
-    gap:14px;
+  color: #d4af37;
 
-    color:#d4af37;
+  font-size: 13px;
 
-    font-size:13px;
+  font-weight: 600;
 
-    font-weight:600;
+  letter-spacing: 4px;
 
-    letter-spacing:4px;
-
-    margin-bottom:22px;
-
+  margin-bottom: 22px;
 }
 
-.automotive-eyebrow span{
+.automotive-eyebrow span {
+  width: 40px;
 
-    width:40px;
+  height: 2px;
 
-    height:2px;
-
-    background:#d4af37;
-
+  background: #d4af37;
 }
 
-.automotive-header h2{
+.automotive-header h2 {
+  font-size: 64px;
 
-    font-size:64px;
+  line-height: 1.15;
 
-    line-height:1.15;
+  font-weight: 300;
 
-    font-weight:300;
+  color: #111;
 
-    color:#111;
-
-    margin-bottom:28px;
-
+  margin-bottom: 28px;
 }
 
-.automotive-header h2 span{
+.automotive-header h2 span {
+  display: block;
 
-    display:block;
+  color: #d4af37;
 
-    color:#d4af37;
-
-    font-weight:700;
-
+  font-weight: 700;
 }
 
-.automotive-header p{
+.automotive-header p {
+  max-width: 700px;
 
-    max-width:700px;
+  margin: auto;
 
-    margin:auto;
+  color: #666;
 
-    color:#666;
+  font-size: 17px;
 
-    font-size:17px;
-
-    line-height:1.9;
-
+  line-height: 1.9;
 }
 
-body.dark-mode .automotive-header h2{
-
-    color:#fff;
-
+body.dark-mode .automotive-header h2 {
+  color: #fff;
 }
 
-body.dark-mode .automotive-header p{
-
-    color:#b8b8b8;
-
+body.dark-mode .automotive-header p {
+  color: #b8b8b8;
 }
 
 /* =========================================
@@ -1648,53 +1632,53 @@ body.dark-mode .automotive-header p{
   color: #111111;
 
   border-color: #d4af37;
-} */ 
+} */
 
 /* =========================================
    ICON
 ========================================= */
 
-.automotive-icon{
-    width:70px;
-    height:70px;
+.automotive-icon {
+  width: 70px;
+  height: 70px;
 
-    border:1px solid rgba(212,175,55,.45);
+  border: 1px solid rgba(212, 175, 55, 0.45);
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    color:#d4af37;
+  color: #d4af37;
 
-    transition:.4s ease;
+  transition: 0.4s ease;
 }
 
 /* Font Awesome Icons */
 
-.automotive-icon i{
-    font-size:32px;
-    transition:.4s ease;
+.automotive-icon i {
+  font-size: 32px;
+  transition: 0.4s ease;
 }
 
 /* Lucide Icons (if you use them later) */
 
-.automotive-icon svg{
-    width:32px;
-    height:32px;
-    stroke-width:2;
+.automotive-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke-width: 2;
 }
 
 /* Hover */
 
-.automotive-card:hover .automotive-icon{
-    background:#d4af37;
-    border-color:#d4af37;
-    color:#111;
+.automotive-card:hover .automotive-icon {
+  background: #d4af37;
+  border-color: #d4af37;
+  color: #111;
 }
 
 .automotive-card:hover .automotive-icon i,
-.automotive-card:hover .automotive-icon svg{
-    transform:scale(1.1);
+.automotive-card:hover .automotive-icon svg {
+  transform: scale(1.1);
 }
 
 /* =========================================
@@ -2004,6 +1988,7 @@ body.dark-mode .automotive-bottom p {
     justify-content: center;
   }
 }
+
 /* =========================================
         HOW IT WORKS
 ========================================= */
@@ -2494,7 +2479,6 @@ body.dark-mode .process-cta {
     font-size: 80px;
   }
 }
-
 
 /* =========================================
    PREMIUM TYRE FINDER
@@ -3219,104 +3203,88 @@ body.dark-mode .result-content p {
         PRICING HEADER
 =========================================================*/
 
-.pricing-header{
+.pricing-header {
+  width: 100%;
 
-    width:100%;
+  max-width: 800px;
 
-    max-width:800px;
+  margin: 0 auto 80px;
 
-    margin:0 auto 80px;
-
-    text-align:center;
-
+  text-align: center;
 }
 
-.pricing-eyebrow{
+.pricing-eyebrow {
+  display: flex;
 
-    display:flex;
+  justify-content: center;
 
-    justify-content:center;
+  align-items: center;
 
-    align-items:center;
+  gap: 14px;
 
-    gap:14px;
+  color: #d4af37;
 
-    color:#d4af37;
+  font-size: 13px;
 
-    font-size:13px;
+  font-weight: 600;
 
-    font-weight:600;
+  letter-spacing: 4px;
 
-    letter-spacing:4px;
+  text-transform: uppercase;
 
-    text-transform:uppercase;
-
-    margin-bottom:22px;
-
+  margin-bottom: 22px;
 }
 
-.pricing-eyebrow span{
+.pricing-eyebrow span {
+  width: 40px;
 
-    width:40px;
+  height: 2px;
 
-    height:2px;
-
-    background:#d4af37;
-
+  background: #d4af37;
 }
 
-.pricing-header h2{
+.pricing-header h2 {
+  font-size: 64px;
 
-    font-size:64px;
+  font-weight: 300;
 
-    font-weight:300;
+  line-height: 1.15;
 
-    line-height:1.15;
+  color: #111;
 
-    color:#111;
-
-    margin-bottom:28px;
-
+  margin-bottom: 28px;
 }
 
-.pricing-header h2 span{
+.pricing-header h2 span {
+  display: block;
 
-    display:block;
+  color: #d4af37;
 
-    color:#d4af37;
-
-    font-weight:700;
-
+  font-weight: 700;
 }
 
-.pricing-header p{
+.pricing-header p {
+  max-width: 700px;
 
-    max-width:700px;
+  margin: auto;
 
-    margin:auto;
+  color: #666;
 
-    color:#666;
+  font-size: 17px;
 
-    font-size:17px;
-
-    line-height:1.9;
-
+  line-height: 1.9;
 }
 
 /*=========================================================
         DARK MODE
 =========================================================*/
 
-body.dark-mode .pricing-header h2{
-
-    color:#fff;
-
+body.dark-mode .pricing-header h2 {
+  color: #fff;
 }
 
-body.dark-mode .pricing-header p{
-
-    color:#b8b8b8;
-
+body.dark-mode .pricing-header p {
+  color: #b8b8b8;
 }
 
 /* =========================================
@@ -3917,108 +3885,93 @@ body.dark-mode .pricing-note p {
   position: relative;
   z-index: 2;
 }
+
 /*=========================================================
         GALLERY HEADER
 =========================================================*/
 
-.gallery-header{
+.gallery-header {
+  width: 100%;
 
-    width:100%;
+  max-width: 800px;
 
-    max-width:800px;
+  margin: 0 auto 80px;
 
-    margin:0 auto 80px;
-
-    text-align:center;
-
+  text-align: center;
 }
 
-.gallery-eyebrow{
+.gallery-eyebrow {
+  display: flex;
 
-    display:flex;
+  justify-content: center;
 
-    justify-content:center;
+  align-items: center;
 
-    align-items:center;
+  gap: 14px;
 
-    gap:14px;
+  color: #d4af37;
 
-    color:#d4af37;
+  font-size: 13px;
 
-    font-size:13px;
+  font-weight: 600;
 
-    font-weight:600;
+  letter-spacing: 4px;
 
-    letter-spacing:4px;
+  text-transform: uppercase;
 
-    text-transform:uppercase;
-
-    margin-bottom:22px;
-
+  margin-bottom: 22px;
 }
 
-.gallery-eyebrow span{
+.gallery-eyebrow span {
+  width: 40px;
 
-    width:40px;
+  height: 2px;
 
-    height:2px;
-
-    background:#d4af37;
-
+  background: #d4af37;
 }
 
-.gallery-header h2{
+.gallery-header h2 {
+  font-size: 64px;
 
-    font-size:64px;
+  font-weight: 300;
 
-    font-weight:300;
+  line-height: 1.15;
 
-    line-height:1.15;
+  color: #111;
 
-    color:#111;
-
-    margin-bottom:28px;
-
+  margin-bottom: 28px;
 }
 
-.gallery-header h2 span{
+.gallery-header h2 span {
+  display: block;
 
-    display:block;
+  color: #d4af37;
 
-    color:#d4af37;
-
-    font-weight:700;
-
+  font-weight: 700;
 }
 
-.gallery-header p{
+.gallery-header p {
+  max-width: 700px;
 
-    max-width:700px;
+  margin: auto;
 
-    margin:auto;
+  color: #666;
 
-    color:#666;
+  font-size: 17px;
 
-    font-size:17px;
-
-    line-height:1.9;
-
+  line-height: 1.9;
 }
 
 /*=========================================================
         DARK MODE
 =========================================================*/
 
-body.dark-mode .gallery-header h2{
-
-    color:#ffffff;
-
+body.dark-mode .gallery-header h2 {
+  color: #ffffff;
 }
 
-body.dark-mode .gallery-header p{
-
-    color:#b8b8b8;
-
+body.dark-mode .gallery-header p {
+  color: #b8b8b8;
 }
 
 /* =========================================
@@ -4411,10 +4364,7 @@ body.dark-mode .gallery-header p {
   .gallery-grid {
     grid-template-columns: 1fr 1fr;
 
-    grid-template-rows:
-      400px
-      300px
-      300px;
+    grid-template-rows: 400px 300px 300px;
   }
 
   /* BIG IMAGE */
@@ -4558,6 +4508,7 @@ body.dark-mode .gallery-header p {
     font-size: 20px;
   }
 }
+
 /* =========================================
         TESTIMONIAL SECTION
 ========================================= */
@@ -4611,8 +4562,6 @@ body.dark-mode .gallery-header p {
 
   margin: auto;
 }
-
-
 
 /* =========================================
         TESTIMONIAL HEADER - CENTER
@@ -5079,10 +5028,8 @@ body:not(.dark-mode) .testimonial-buttons button {
 body:not(.dark-mode) .testimonial-buttons button:hover {
   color: #111111;
 
-
   background: #d4af37;
 }
-
 
 /* =========================================
    PREMIUM CTA SECTION
@@ -5313,7 +5260,8 @@ body:not(.dark-mode) .testimonial-buttons button:hover {
 
   transform: translateX(5px);
 }
-.cta-secondary{
+
+.cta-secondary {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -5330,23 +5278,23 @@ body:not(.dark-mode) .testimonial-buttons button:hover {
   font-size: 13px;
   font-weight: 600;
 
-  transition: all .35s ease;
+  transition: all 0.35s ease;
 }
 
-.cta-secondary i{
+.cta-secondary i {
   color: #d4af37;
-  transition: all .35s ease;
+  transition: all 0.35s ease;
 }
 
-.cta-secondary:hover{
+.cta-secondary:hover {
   background: #d4af37;
   border-color: #d4af37;
   color: #111111;
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(212,175,55,.35);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.35);
 }
 
-.cta-secondary:hover i{
+.cta-secondary:hover i {
   color: #111111;
 }
 

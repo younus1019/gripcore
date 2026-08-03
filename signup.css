@@ -4,7 +4,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-
 /* =========================================
    RESET
 ========================================= */
@@ -15,18 +14,15 @@
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
-
 
 html,
 body {
   width: 100%;
   min-height: 100%;
 }
-
 
 body {
   font-family: "Poppins", sans-serif;
@@ -43,7 +39,6 @@ body {
     background 0.4s ease,
     color 0.4s ease;
 }
-
 
 /* =========================================
    TOP CONTROLS
@@ -63,7 +58,6 @@ body {
 
   z-index: 100;
 }
-
 
 .control-btn {
   width: 42px;
@@ -91,12 +85,10 @@ body {
     transform 0.3s ease;
 }
 
-
 .control-btn svg {
   width: 17px;
   height: 17px;
 }
-
 
 .control-btn:hover {
   background: #d4af37;
@@ -107,7 +99,6 @@ body {
 
   transform: translateY(-2px);
 }
-
 
 /* =========================================
    SIGNUP PAGE
@@ -136,8 +127,8 @@ body {
 }
 
 .signup-page {
-    align-items: flex-start;
-    padding-top: 10px;
+  align-items: flex-start;
+  padding-top: 10px;
 }
 
 /* =========================================
@@ -170,7 +161,6 @@ body {
     box-shadow 0.4s ease;
 }
 
-
 /* =========================================
    LOGO
 ========================================= */
@@ -196,7 +186,6 @@ body {
 
   display: block;
 }
-
 
 /* =========================================
    SIGNUP HEADER
@@ -289,7 +278,6 @@ body {
   line-height: 1.45;
 }
 
-
 /* =========================================
    SIGNUP FORM
 ========================================= */
@@ -297,7 +285,6 @@ body {
 .signup-form {
   width: 100%;
 }
-
 
 /* =========================================
    FORM ROW
@@ -313,7 +300,6 @@ body {
   gap: 12px;
 }
 
-
 /* =========================================
    FORM GROUP
 ========================================= */
@@ -323,7 +309,6 @@ body {
 
   margin-bottom: 9px;
 }
-
 
 .form-group label {
   display: block;
@@ -337,7 +322,6 @@ body {
   font-weight: 600;
 }
 
-
 /* =========================================
    INPUT BOX
 ========================================= */
@@ -347,7 +331,6 @@ body {
 
   width: 100%;
 }
-
 
 .input-box > svg {
   position: absolute;
@@ -366,7 +349,6 @@ body {
 
   z-index: 2;
 }
-
 
 .input-box input {
   width: 100%;
@@ -395,21 +377,17 @@ body {
     box-shadow 0.3s ease;
 }
 
-
 .input-box input::placeholder {
   color: #aaaaaa;
 }
-
 
 .input-box input:focus {
   background: #ffffff;
 
   border-color: #d4af37;
 
-  box-shadow:
-    0 0 0 3px rgba(212, 175, 55, 0.08);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.08);
 }
-
 
 /* =========================================
    PASSWORD TOGGLE
@@ -441,17 +419,14 @@ body {
   z-index: 3;
 }
 
-
 .password-toggle svg {
   width: 16px;
   height: 16px;
 }
 
-
 .password-toggle:hover {
   color: #d4af37;
 }
-
 
 /* =========================================
    TERMS
@@ -460,7 +435,6 @@ body {
 .terms-row {
   margin: 2px 0 10px;
 }
-
 
 .checkbox-label {
   display: flex;
@@ -478,7 +452,6 @@ body {
   cursor: pointer;
 }
 
-
 .checkbox-label input {
   width: 15px;
   height: 15px;
@@ -490,7 +463,6 @@ body {
   cursor: pointer;
 }
 
-
 .checkbox-label a {
   color: #d4af37;
 
@@ -499,11 +471,9 @@ body {
   text-decoration: none;
 }
 
-
 .checkbox-label a:hover {
   text-decoration: underline;
 }
-
 
 /* =========================================
    SUBMIT BUTTON
@@ -544,14 +514,12 @@ body {
     transform 0.3s ease;
 }
 
-
 .signup-submit svg {
   width: 16px;
   height: 16px;
 
   transition: transform 0.3s ease;
 }
-
 
 .signup-submit:hover {
   background: #d4af37;
@@ -563,11 +531,9 @@ body {
   transform: translateY(-2px);
 }
 
-
 .signup-submit:hover svg {
   transform: translateX(3px);
 }
-
 
 /* =========================================
    DIVIDER
@@ -585,7 +551,6 @@ body {
   margin: 12px 0;
 }
 
-
 .auth-divider span {
   flex: 1;
 
@@ -593,7 +558,6 @@ body {
 
   background: #eeeeee;
 }
-
 
 .auth-divider p {
   color: #999999;
@@ -606,7 +570,6 @@ body {
 
   white-space: nowrap;
 }
-
 
 /* =========================================
    SOCIAL BUTTONS
@@ -621,7 +584,6 @@ body {
 
   gap: 12px;
 }
-
 
 .social-btn {
   width: 100%;
@@ -658,12 +620,10 @@ body {
     transform 0.3s ease;
 }
 
-
 .social-btn svg {
   width: 16px;
   height: 16px;
 }
-
 
 .social-btn:hover {
   border-color: #d4af37;
@@ -672,7 +632,6 @@ body {
 
   transform: translateY(-2px);
 }
-
 
 /* =========================================
    LOGIN LINK
@@ -688,7 +647,6 @@ body {
   font-size: 10px;
 }
 
-
 .login-link a {
   color: #d4af37;
 
@@ -697,11 +655,9 @@ body {
   text-decoration: none;
 }
 
-
 .login-link a:hover {
   text-decoration: underline;
 }
-
 
 /* =========================================
    DARK MODE
@@ -713,31 +669,25 @@ body.dark-mode {
   color: #ffffff;
 }
 
-
 body.dark-mode .signup-card {
   background: #111111;
 
   border-color: #242424;
 
-  box-shadow:
-    0 25px 70px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
 }
-
 
 body.dark-mode .signup-header h1 {
   color: #ffffff;
 }
 
-
 body.dark-mode .signup-header p {
   color: #999999;
 }
 
-
 body.dark-mode .form-group label {
   color: #dddddd;
 }
-
 
 body.dark-mode .input-box input {
   background: #181818;
@@ -747,18 +697,15 @@ body.dark-mode .input-box input {
   color: #ffffff;
 }
 
-
 body.dark-mode .input-box input:focus {
   background: #1d1d1d;
 
   border-color: #d4af37;
 }
 
-
 body.dark-mode .input-box input::placeholder {
   color: #777777;
 }
-
 
 body.dark-mode .social-btn {
   background: #181818;
@@ -768,13 +715,11 @@ body.dark-mode .social-btn {
   color: #dddddd;
 }
 
-
 body.dark-mode .social-btn:hover {
   border-color: #d4af37;
 
   color: #d4af37;
 }
-
 
 body.dark-mode .control-btn {
   background: #181818;
@@ -784,16 +729,13 @@ body.dark-mode .control-btn {
   color: #ffffff;
 }
 
-
 body.dark-mode .auth-divider span {
   background: #2b2b2b;
 }
 
-
 body.dark-mode .checkbox-label {
   color: #999999;
 }
-
 
 /* =========================================
    RTL
@@ -803,13 +745,11 @@ body.rtl {
   direction: rtl;
 }
 
-
 body.rtl .auth-controls {
   right: auto;
 
   left: 25px;
 }
-
 
 body.rtl .input-box > svg {
   left: auto;
@@ -817,13 +757,11 @@ body.rtl .input-box > svg {
   right: 14px;
 }
 
-
 body.rtl .input-box input {
   padding-left: 43px;
 
   padding-right: 43px;
 }
-
 
 body.rtl .password-toggle {
   right: auto;
@@ -831,24 +769,20 @@ body.rtl .password-toggle {
   left: 13px;
 }
 
-
 body.rtl .signup-header,
 body.rtl .form-group,
 body.rtl .terms-row {
   text-align: right;
 }
 
-
 /* =========================================
    TABLET
 ========================================= */
 
 @media (max-width: 768px) {
-
   .signup-page {
     padding: 15px;
   }
-
 
   .signup-card {
     max-width: 680px;
@@ -856,25 +790,20 @@ body.rtl .terms-row {
     padding: 22px 30px;
   }
 
-
   .signup-header h1 {
     font-size: 25px;
   }
-
 }
-
 
 /* =========================================
    MOBILE
 ========================================= */
 
 @media (max-width: 600px) {
-
   html,
   body {
     overflow: hidden;
   }
-
 
   .auth-controls {
     top: 12px;
@@ -884,26 +813,22 @@ body.rtl .terms-row {
     gap: 8px;
   }
 
-
   body.rtl .auth-controls {
     right: auto;
 
     left: 15px;
   }
 
-
   .control-btn {
     width: 38px;
     height: 38px;
   }
-
 
   .signup-page {
     height: 100vh;
 
     padding: 10px;
   }
-
 
   .signup-card {
     max-width: 100%;
@@ -917,21 +842,17 @@ body.rtl .terms-row {
     overflow: hidden;
   }
 
-
   .signup-logo {
     margin-bottom: 4px;
   }
-
 
   .signup-logo img {
     width: 125px;
   }
 
-
   .signup-header {
     margin-bottom: 10px;
   }
-
 
   .signup-tag {
     font-size: 8px;
@@ -939,11 +860,9 @@ body.rtl .terms-row {
     letter-spacing: 2.5px;
   }
 
-
   .signup-header h1 {
     font-size: 22px;
   }
-
 
   .signup-header p {
     font-size: 9px;
@@ -951,18 +870,15 @@ body.rtl .terms-row {
     line-height: 1.4;
   }
 
-
   .form-row {
     grid-template-columns: 1fr;
 
     gap: 0;
   }
 
-
   .form-group {
     margin-bottom: 8px;
   }
-
 
   .form-group label {
     font-size: 9px;
@@ -970,13 +886,11 @@ body.rtl .terms-row {
     margin-bottom: 3px;
   }
 
-
   .input-box input {
     height: 39px;
 
     font-size: 10px;
   }
-
 
   .input-box > svg {
     width: 15px;
@@ -985,20 +899,17 @@ body.rtl .terms-row {
     left: 12px;
   }
 
-
   body.rtl .input-box > svg {
     left: auto;
 
     right: 12px;
   }
 
-
   .input-box input {
     padding-left: 38px;
 
     padding-right: 38px;
   }
-
 
   body.rtl .input-box input {
     padding-left: 38px;
@@ -1006,11 +917,9 @@ body.rtl .terms-row {
     padding-right: 38px;
   }
 
-
   .password-toggle {
     right: 11px;
   }
-
 
   body.rtl .password-toggle {
     right: auto;
@@ -1018,11 +927,9 @@ body.rtl .terms-row {
     left: 11px;
   }
 
-
   .terms-row {
     margin: 2px 0 8px;
   }
-
 
   .checkbox-label {
     font-size: 9px;
@@ -1030,12 +937,10 @@ body.rtl .terms-row {
     gap: 6px;
   }
 
-
   .checkbox-label input {
     width: 14px;
     height: 14px;
   }
-
 
   .signup-submit {
     height: 40px;
@@ -1043,13 +948,11 @@ body.rtl .terms-row {
     font-size: 10px;
   }
 
-
   .auth-divider {
     gap: 9px;
 
     margin: 10px 0;
   }
-
 
   .auth-divider p {
     font-size: 8px;
@@ -1057,13 +960,11 @@ body.rtl .terms-row {
     letter-spacing: 1px;
   }
 
-
   .social-buttons {
     grid-template-columns: 1fr;
 
     gap: 6px;
   }
-
 
   .social-btn {
     height: 36px;
@@ -1071,61 +972,49 @@ body.rtl .terms-row {
     font-size: 10px;
   }
 
-
   .login-link {
     margin-top: 7px;
 
     font-size: 9px;
   }
-
 }
-
 
 /* =========================================
    VERY SMALL MOBILE
 ========================================= */
 
 @media (max-width: 400px) {
-
   .signup-card {
     padding: 15px;
 
     border-radius: 18px;
   }
 
-
   .signup-logo img {
     width: 115px;
   }
-
 
   .signup-header h1 {
     font-size: 20px;
   }
 
-
   .signup-header p {
     font-size: 8px;
   }
-
 
   .form-group {
     margin-bottom: 6px;
   }
 
-
   .input-box input {
     height: 37px;
   }
-
 
   .signup-submit {
     height: 38px;
   }
 
-
   .social-btn {
     height: 34px;
   }
-
 }
