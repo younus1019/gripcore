@@ -4,7 +4,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-
 /* =========================================================
    GLOBAL RESET
 ========================================================= */
@@ -25,7 +24,6 @@ body {
   color: #111111;
   overflow-x: hidden;
 }
-
 
 /* =========================================================
    HEADER
@@ -48,7 +46,6 @@ header {
   transition: 0.3s ease;
 }
 
-
 /* =========================================================
    NAVBAR
 ========================================================= */
@@ -65,7 +62,6 @@ header {
 
   position: relative;
 }
-
 
 /* =========================================================
    LOGO
@@ -93,7 +89,6 @@ header {
   object-fit: contain;
 }
 
-
 /* =========================================================
    MAIN MENU
 ========================================================= */
@@ -109,7 +104,6 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /* =========================================================
    MENU ITEMS
@@ -136,7 +130,6 @@ header {
 
   transition: 0.3s ease;
 }
-
 
 /* =========================================================
    MENU HOVER UNDERLINE
@@ -266,7 +259,6 @@ header {
   padding-left: 26px;
 }
 
-
 /* =========================================================
    RIGHT MENU
 ========================================================= */
@@ -279,7 +271,6 @@ header {
 
   flex-shrink: 0;
 }
-
 
 /* =========================================================
    ICON BUTTONS
@@ -315,7 +306,6 @@ header {
   transform: translateY(-3px);
 }
 
-
 /* =========================================================
    LOGIN BUTTON — DESKTOP
 ========================================================= */
@@ -324,7 +314,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 
   gap: 8px;
 
@@ -350,10 +339,6 @@ header {
   transition: 0.3s ease;
 }
 
-
-
-
-
 .login:hover {
   background: #111111;
 
@@ -367,7 +352,6 @@ header {
 .login:hover i {
   color: #d4af37;
 }
-
 
 /* =========================================================
    MOBILE MENU BUTTON
@@ -403,7 +387,6 @@ header {
   color: #d4af37;
 }
 
-
 /* =========================================================
    FOOTER
 ========================================================= */
@@ -433,10 +416,7 @@ header {
   gap: 45px;
 
   align-items: start;
-
-  
 }
-
 
 /* =========================================================
    FOOTER LOGO
@@ -453,7 +433,6 @@ header {
   display: block;
 }
 
-
 /* =========================================================
    FOOTER TEXT
 ========================================================= */
@@ -468,7 +447,6 @@ header {
   margin-bottom: 12px;
 }
 
-
 /* =========================================================
    FOOTER HEADINGS
 ========================================================= */
@@ -482,7 +460,6 @@ header {
 
   margin-bottom: 20px;
 }
-
 
 /* =========================================================
    FOOTER LINKS
@@ -515,7 +492,6 @@ header {
   padding-left: 6px;
 }
 
-
 /* =========================================================
    FOOTER CONTACT
 ========================================================= */
@@ -537,7 +513,6 @@ header {
 
   margin-top: 4px;
 }
-
 
 /* =========================================================
    SOCIAL ICONS
@@ -578,7 +553,6 @@ header {
   transform: translateY(-4px);
 }
 
-
 /* =========================================================
    FOOTER BOTTOM
 ========================================================= */
@@ -611,7 +585,6 @@ header {
   color: #d4af37;
 }
 
-
 /* =========================================================
    FOOTER BOTTOM LINKS
 ========================================================= */
@@ -642,7 +615,6 @@ header {
   color: #aaaaaa;
 }
 
-
 /* =========================================================
    MOBILE LOGIN
    (single source of truth — hidden by default,
@@ -653,7 +625,6 @@ header {
   display: none;
 }
 
-
 /* =========================================================
    PHONES
    0px - 740px
@@ -663,7 +634,6 @@ header {
 ========================================================= */
 
 @media screen and (max-width: 740px) {
-
   header {
     height: 70px;
 
@@ -894,14 +864,12 @@ header {
   }
 }
 
-
 /* =========================================================
    IPAD MINI
    768px - 820px
 ========================================================= */
 
 @media screen and (min-width: 768px) and (max-width: 820px) {
-
   header {
     height: 80px;
 
@@ -1076,14 +1044,12 @@ header {
   }
 }
 
-
 /* =========================================================
    IPAD PRO 11"
    821px - 1024px
 ========================================================= */
 
 @media screen and (min-width: 821px) and (max-width: 1024px) {
-
   header {
     height: 80px;
 
@@ -1253,7 +1219,6 @@ header {
   }
 }
 
-
 /* =========================================================
    NEST HUB
    1024px x 600px
@@ -1262,7 +1227,6 @@ header {
 ========================================================= */
 
 @media screen and (min-width: 1024px) and (max-width: 1024px) and (max-height: 600px) {
-
   header {
     height: 75px;
 
@@ -1322,7 +1286,6 @@ header {
     padding: 12px 20px !important;
   }
 }
-
 
 /* =========================================================
    DARK MODE
@@ -1411,7 +1374,6 @@ body.dark-mode .footer-bottom-links a {
   color: #aaaaaa;
 }
 
-
 /* =========================================================
    RTL MODE
 ========================================================= */
@@ -1444,13 +1406,11 @@ html.rtl-mode .menu > li > a::after {
   right: 0;
 }
 
-
 /* =========================================================
    RTL MOBILE MENU
 ========================================================= */
 
 @media screen and (max-width: 1024px) {
-
   html.rtl-mode .menu {
     left: auto;
 
@@ -1466,7 +1426,6 @@ html.rtl-mode .menu > li > a::after {
   }
 }
 
-
 /* =========================================================
    MOBILE / TABLET
    (single source of truth for hiding the desktop login
@@ -1474,7 +1433,6 @@ html.rtl-mode .menu > li > a::after {
 ========================================================= */
 
 @media screen and (max-width: 1024px) {
-
   .right-menu .login {
     display: none;
   }
@@ -1515,55 +1473,58 @@ html.rtl-mode .menu > li > a::after {
   }
 }
 
-
-
 /* =========================================================
         CONTACT EXTRA PAGE LINKS
 ========================================================= */
 
-.footer-col > li{
-    list-style:none;
-    margin-bottom:10px;
+.footer-col > li {
+  list-style: none;
+  margin-bottom: 10px;
 }
 
-.footer-col > li a{
-    display:inline-block;
+.footer-col > li a {
+  display: inline-block;
 
-    color:#666666;
-    font-size:14px;
-    font-weight:500;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 500;
 
-    text-decoration:none;
+  text-decoration: none;
 
-    transition:0.3s ease;
+  transition: 0.3s ease;
 }
 
-.footer-col > li a:hover{
-    color:#d4af37;
-    padding-left:6px;
+.footer-col > li a:hover {
+  color: #d4af37;
+  padding-left: 6px;
 }
-
 
 /* =========================================================
                     DARK MODE
 ========================================================= */
 
-body.dark-mode .footer-col > li a{
-    color:#c8c8c8;
+body.dark-mode .footer-col > li a {
+  color: #c8c8c8;
 }
 
-body.dark-mode .footer-col > li a:hover{
-    color:#d4af37;
+body.dark-mode .footer-col > li a:hover {
+  color: #d4af37;
 }
-
-
-
 
 /* =========================================================
                         RTL
 ========================================================= */
 
-html.rtl-mode .footer-col > li a:hover{
-    padding-left:0;
-    padding-right:6px;
+html.rtl-mode .footer-col > li a:hover {
+  padding-left: 0;
+  padding-right: 6px;
+}
+
+
+#rtlBtn i{
+    transition:transform .35s ease;
+}
+
+#rtlBtn.rtl-active i{
+    transform:rotate(180deg);
 }

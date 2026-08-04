@@ -1,5 +1,12 @@
+// =========================================
+// LOAD SAVED SETTINGS
+// =========================================
 
+const savedTheme = localStorage.getItem("theme");
 
+if (savedTheme === "dark") {
+  document.body.classList.add("dark-mode");
+}
 
 // =========================================
 // LOAD NAVBAR
@@ -10,13 +17,16 @@ fetch("../components/navbar.html")
     if (!response.ok) {
       throw new Error("Navbar could not be loaded");
     }
+
     return response.text();
   })
   .then((data) => {
     document.getElementById("navbar").innerHTML = data;
 
     initializeNavbar();
+
     setActiveNavLink();
+
     updateTheme();
   })
   .catch((error) => console.error(error));
@@ -30,12 +40,14 @@ fetch("../components/footer.html")
     if (!response.ok) {
       throw new Error("Footer could not be loaded");
     }
+
     return response.text();
   })
   .then((data) => {
     document.getElementById("footer").innerHTML = data;
 
     initializeFooter();
+
     updateTheme();
   })
   .catch((error) => console.error(error));
@@ -64,7 +76,8 @@ function updateTheme() {
     if (footerLogo) footerLogo.src = "../images/logo-light.png";
 
     if (darkModeBtn) {
-      darkModeBtn.innerHTML = '<i class="fa-solid fa-circle-half-stroke"></i>';
+      darkModeBtn.innerHTML =
+        '<i class="fa-solid fa-circle-half-stroke"></i>';
       darkModeBtn.title = "Dark Mode";
     }
   }
@@ -92,16 +105,13 @@ function initializeNavbar() {
   // MOBILE DROPDOWN
   // ==========================
 
-  const dropdownLinks = document.querySelectorAll(".dropdown > a");
-
-  dropdownLinks.forEach((link) => {
+  document.querySelectorAll(".dropdown > a").forEach((link) => {
     link.addEventListener("click", function (e) {
       if (window.innerWidth <= 1024) {
         e.preventDefault();
 
         const parent = this.parentElement;
 
-        // Close other dropdowns
         document.querySelectorAll(".dropdown").forEach((item) => {
           if (item !== parent) {
             item.classList.remove("active");
@@ -122,6 +132,13 @@ function initializeNavbar() {
   if (darkModeBtn) {
     darkModeBtn.addEventListener("click", () => {
       document.body.classList.toggle("dark-mode");
+
+      if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+      } else {
+        localStorage.setItem("theme", "light");
+      }
+
       updateTheme();
     });
   }
@@ -144,7 +161,8 @@ function initializeNavbar() {
     rtlBtn.addEventListener("click", () => {
       document.documentElement.classList.toggle("rtl-mode");
 
-      const isRTL = document.documentElement.classList.contains("rtl-mode");
+      const isRTL =
+        document.documentElement.classList.contains("rtl-mode");
 
       if (isRTL) {
         document.documentElement.setAttribute("dir", "rtl");
@@ -163,20 +181,16 @@ function initializeNavbar() {
 // SET ACTIVE NAV LINK
 // =========================================
 
-// =========================================
-// SET ACTIVE NAV LINK
-// =========================================
-
 function setActiveNavLink() {
-  let currentPage = window.location.pathname.split("/").pop();
 
-  console.log("Current Page:", currentPage);
+  let currentPage = window.location.pathname.split("/").pop();
 
   if (currentPage === "" || currentPage === "/") {
     currentPage = "index.html";
   }
 
   document.querySelectorAll(".menu a").forEach((link) => {
+
     link.classList.remove("active");
 
     const href = link.getAttribute("href");
@@ -185,24 +199,26 @@ function setActiveNavLink() {
 
     const linkPage = href.split("/").pop();
 
-    console.log("Link Page:", linkPage);
-
     if (linkPage === currentPage) {
-      console.log("MATCH FOUND");
 
       link.classList.add("active");
 
       const dropdown = link.closest(".dropdown");
 
       if (dropdown) {
+
         const parentLink = dropdown.querySelector(":scope > a");
 
         if (parentLink) {
           parentLink.classList.add("active");
         }
+
       }
+
     }
+
   });
+
 }
 
 // =========================================
@@ -210,9 +226,49 @@ function setActiveNavLink() {
 // =========================================
 
 function initializeFooter() {
+
   const footerLogo = document.getElementById("footerLogo");
 
   if (footerLogo) {
-    console.log("Footer loaded successfully");
+
+    if (document.body.classList.contains("dark-mode")) {
+      footerLogo.src = "../images/logo-dark.png";
+    } else {
+      footerLogo.src = "../images/logo-light.png";
+    }
+
   }
+
 }
+
+// =========================================
+// WINDOW RESIZE
+// =========================================
+
+window.addEventListener("resize", () => {
+
+  const menu = document.querySelector(".menu");
+
+  if (window.innerWidth > 1024 && menu) {
+    menu.classList.remove("active");
+  }
+
+});
+
+// =========================================
+// PAGE LOADED
+// =========================================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+  } else {
+    document.body.classList.remove("dark-mode");
+  }
+
+  updateTheme();
+
+});
