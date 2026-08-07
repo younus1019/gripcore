@@ -2411,15 +2411,39 @@ body.dark-mode .process-cta {
     padding: 80px 0;
   }
 
+  .process-header {
+    max-width: 100%;
+
+    margin-left: 0;
+
+    margin-bottom: 60px;
+
+    text-align: center;
+}
+
+.process-eyebrow{
+    margin-left: 0;
+
+    justify-content: center;
+}
+
   .process-container {
     width: 88%;
   }
 
-  .process-header h2 {
+  /* .process-header h2 {
     font-size: 55px;
 
     letter-spacing: -2px;
-  }
+  } */
+
+  .process-header h2{
+    text-align: center;
+
+    font-size: 52px;
+
+    letter-spacing: -2px;
+}
 
   .process-timeline {
     grid-template-columns: 1fr;
@@ -2434,6 +2458,12 @@ body.dark-mode .process-cta {
 
     gap: 20px;
   }
+
+  .process-header p{
+    margin: 0 auto;
+
+    text-align: center;
+}
 
   .process-step-top {
     flex-direction: column;
@@ -3150,8 +3180,8 @@ body.dark-mode .result-content p {
 ========================================= */
 
 .pricing-section {
-  width: 100%;
-  padding: 120px 6%;
+  /* width: 100%; */
+  padding: 120px 8%;
   background: #ffffff;
   color: #111111;
   position: relative;
@@ -3294,6 +3324,10 @@ body.dark-mode .pricing-header p {
 .pricing-grid {
   width: 100%;
 
+  max-width: 1450px;   /* Adjust this value */
+
+  margin: 0 auto;
+
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
@@ -3302,7 +3336,6 @@ body.dark-mode .pricing-header p {
 
   align-items: stretch;
 }
-
 /* =========================================
    PRICING CARD
 ========================================= */

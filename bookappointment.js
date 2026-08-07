@@ -2,248 +2,216 @@
    GRIPCORE BOOK APPOINTMENT JS
 ========================================================= */
 
-
 /* =========================================================
-   LUCIDE ICONS
+   DOM LOADED
 ========================================================= */
 
-document.addEventListener("DOMContentLoaded", function () {
-
+document.addEventListener("DOMContentLoaded", () => {
   // Initialize Lucide Icons
   lucide.createIcons();
 
+  // Apply Saved Theme
+  loadTheme();
+
+  // Apply Saved RTL
+  loadRTL();
 });
 
-
 /* =========================================================
-   DARK / LIGHT MODE
-   + LOGO SWITCHING
+   ELEMENTS
 ========================================================= */
 
-const themeToggle =
-  document.getElementById("themeToggle");
+const themeToggle = document.getElementById("themeToggle");
 
+const rtlToggle = document.getElementById("rtlToggle");
 
-// Get Book Appointment Page Logo
-const pageLogo =
-  document.getElementById("pageLogo");
+const pageLogo = document.getElementById("pageLogo");
 
+/* =========================================================
+   UPDATE THEME UI
+========================================================= */
 
-// Make sure theme button exists
-if (themeToggle) {
+function updateTheme() {
+  const isDark = document.body.classList.contains("dark-mode");
 
-  themeToggle.addEventListener("click", function () {
+  // ==========================
+  // LOGO
+  // ==========================
 
-    // Toggle Light Mode
-    document.body.classList.toggle("light-mode");
+  if (pageLogo) {
+    pageLogo.src = isDark
+      ? "../images/logo-dark.png"
+      : "../images/logo-light.png";
+  }
 
-    // Toggle Dark Mode
-    document.body.classList.toggle("dark-mode");
+  // ==========================
+  // BUTTON ICON
+  // ==========================
 
-
-    // Check Current Mode
-    const isLightMode =
-      document.body.classList.contains("light-mode");
-
-
-    // =========================================
-    // CHANGE LOGO
-    // =========================================
-
-    if (pageLogo) {
-
-      if (isLightMode) {
-
-        // Light Mode Logo
-        pageLogo.src = "../images/logo-light.png";
-
-      } else {
-
-        // Dark Mode Logo
-        pageLogo.src = "../images/logo-dark.png";
-
-      }
-
-    }
-
-
-    // =========================================
-    // CHANGE THEME ICON
-    // =========================================
-
-    themeToggle.innerHTML = isLightMode
+  if (themeToggle) {
+    themeToggle.innerHTML = isDark
       ? '<i data-lucide="sun"></i>'
       : '<i data-lucide="moon"></i>';
+  }
 
-
-    // Reinitialize Lucide Icons
-    lucide.createIcons();
-
-
-    // =========================================
-    // SAVE THEME
-    // =========================================
-
-    localStorage.setItem(
-      "gripcoreTheme",
-      isLightMode ? "light" : "dark"
-    );
-
-  });
-
+  lucide.createIcons();
 }
-
 
 /* =========================================================
-   LOAD SAVED DARK / LIGHT MODE
+   LOAD SAVED THEME
 ========================================================= */
 
-const savedTheme =
-  localStorage.getItem("gripcoreTheme");
+function loadTheme() {
+  const savedTheme = localStorage.getItem("theme");
 
-
-if (savedTheme === "dark") {
-
-  // Enable Dark Mode
-  document.body.classList.add("dark-mode");
-
-  document.body.classList.remove("light-mode");
-
-
-  // Change Logo
-  if (pageLogo) {
-
-    pageLogo.src =
-      "../images/logo-dark.png";
-
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+    document.body.classList.remove("light-mode");
+  } else {
+    document.body.classList.add("light-mode");
+    document.body.classList.remove("dark-mode");
   }
 
-
-  // Change Icon
-  if (themeToggle) {
-
-    themeToggle.innerHTML =
-      '<i data-lucide="moon"></i>';
-
-  }
-
-} else {
-
-  // Default Light Mode
-  document.body.classList.add("light-mode");
-
-  document.body.classList.remove("dark-mode");
-
-
-  // Change Logo
-  if (pageLogo) {
-
-    pageLogo.src =
-      "../images/logo-light.png";
-
-  }
-
-
-  // Change Icon
-  if (themeToggle) {
-
-    themeToggle.innerHTML =
-      '<i data-lucide="sun"></i>';
-
-  }
-
+  updateTheme();
 }
 
+/* =========================================================
+   DARK MODE TOGGLE
+========================================================= */
 
-// Reinitialize Icons
-lucide.createIcons();
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("light-mode");
 
+    const isDark = document.body.classList.contains("dark-mode");
+
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+
+    updateTheme();
+  });
+}
+
+/* =========================================================
+   LOAD RTL
+========================================================= */
+
+function loadRTL() {
+  const savedRTL = localStorage.getItem("rtlMode");
+
+  if (savedRTL === "true") {
+    document.body.classList.add("rtl");
+
+    document.documentElement.setAttribute("dir", "rtl");
+  } else {
+    document.body.classList.remove("rtl");
+
+    document.documentElement.setAttribute("dir", "ltr");
+  }
+}
 
 /* =========================================================
    RTL TOGGLE
 ========================================================= */
 
-const rtlToggle =
-  document.getElementById("rtlToggle");
-
-
 if (rtlToggle) {
-
-  rtlToggle.addEventListener("click", function () {
-
-    // Toggle RTL
+  rtlToggle.addEventListener("click", () => {
     document.body.classList.toggle("rtl");
 
+    const isRTL = document.body.classList.contains("rtl");
 
-    // Check RTL
-    const isRTL =
-      document.body.classList.contains("rtl");
+    document.documentElement.setAttribute("dir", isRTL ? "rtl" : "ltr");
 
-
-    // Change Direction
-    document.documentElement.dir =
-      isRTL ? "rtl" : "ltr";
-
-
-    // Save RTL Preference
-    localStorage.setItem(
-      "gripcoreRTL",
-      isRTL ? "true" : "false"
-    );
-
+    localStorage.setItem("rtlMode", isRTL);
   });
-
-}
-
-
-/* =========================================================
-   LOAD SAVED RTL MODE
-========================================================= */
-
-const savedRTL =
-  localStorage.getItem("gripcoreRTL");
-
-
-if (savedRTL === "true") {
-
-  document.body.classList.add("rtl");
-
-  document.documentElement.dir = "rtl";
-
-} else {
-
-  document.body.classList.remove("rtl");
-
-  document.documentElement.dir = "ltr";
-
-}
-
-
-/* =========================================================
+} /* =========================================================
    APPOINTMENT FORM
 ========================================================= */
 
-const appointmentForm =
-  document.getElementById("appointmentForm");
-
+const appointmentForm = document.getElementById("appointmentForm");
 
 if (appointmentForm) {
+  appointmentForm.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-  appointmentForm.addEventListener(
-    "submit",
-    function (event) {
+    // =====================================
+    // GET FORM VALUES
+    // =====================================
 
-      event.preventDefault();
+    const fullName = document.getElementById("fullName")?.value.trim();
 
+    const phone = document.getElementById("phone")?.value.trim();
 
-      alert(
-        "Your appointment request has been submitted successfully!"
-      );
+    const email = document.getElementById("email")?.value.trim();
 
+    const vehicle = document.getElementById("vehicle")?.value.trim();
 
-      appointmentForm.reset();
+    const service = document.getElementById("service")?.value;
 
+    const appointmentDate = document.getElementById("appointmentDate")?.value;
+
+    const appointmentTime = document.getElementById("appointmentTime")?.value;
+
+    // =====================================
+    // BASIC VALIDATION
+    // =====================================
+
+    if (
+      !fullName ||
+      !phone ||
+      !email ||
+      !vehicle ||
+      !service ||
+      !appointmentDate ||
+      !appointmentTime
+    ) {
+      alert("Please fill in all required fields.");
+
+      return;
     }
-  );
 
+    // =====================================
+    // SUCCESS
+    // =====================================
+
+    alert("Your appointment has been booked successfully!");
+
+    appointmentForm.reset();
+  });
 }
+
+/* =========================================================
+   REINITIALIZE LUCIDE ICONS
+========================================================= */
+
+window.addEventListener("load", () => {
+  updateTheme();
+
+  loadRTL();
+
+  lucide.createIcons();
+});
+
+/* =========================================================
+   WINDOW RESIZE
+========================================================= */
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 1024) {
+    document.body.classList.remove("menu-open");
+  }
+});
+
+/* =========================================================
+   PAGE SHOW (BACK/FORWARD CACHE SUPPORT)
+========================================================= */
+
+window.addEventListener("pageshow", () => {
+  loadTheme();
+
+  loadRTL();
+});
+
+/* =========================================================
+   END OF FILE
+========================================================= */
