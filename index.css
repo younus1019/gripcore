@@ -5356,7 +5356,7 @@ body:not(.dark-mode) .testimonial-buttons button:hover {
 
   gap: 8px;
 
-  color: #666666;
+  /* color: #666666; */
 
   font-size: 12px;
 }
@@ -5366,6 +5366,7 @@ body:not(.dark-mode) .testimonial-buttons button:hover {
 
   font-size: 14px;
 }
+
 
 /* =========================================
    DARK MODE
@@ -5405,9 +5406,15 @@ body.dark-mode .cta-trust {
   border-color: #333333;
 }
 
-body.dark-mode .trust-item {
+/* body.dark-mode .trust-item {
   color: #aaaaaa;
-}
+} */
+
+/* body.dark-mode .trust-item {
+  color: #d0d0d0;
+} */
+
+
 
 /* =========================================
    TABLET
@@ -5550,10 +5557,22 @@ html.rtl-mode .fa-arrow-right {
   font-size: 14px;
 }
 
-.trust-item span {
+/* .trust-item span {
   display: inline-block;
   color: #333333;
   font-size: 12px;
   font-weight: 500;
   white-space: nowrap;
+} */
+
+.trust-item span {
+  display: inline-block;
+  color: #666666;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+body.dark-mode .trust-item span {
+  color: #cccccc;
 }

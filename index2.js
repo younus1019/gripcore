@@ -494,7 +494,7 @@ const processTitle = document.getElementById("processTitle");
 
 const processData = [
   {
-    image: "images/alo wheels 1.jpg",
+    image: "images/alo wheels 6.jpg",
     title: "BOOK APPOINTMENT",
   },
 
@@ -636,43 +636,32 @@ counters.forEach((counter) => observer.observe(counter));
 
 const glows = document.querySelectorAll(".cta-glow");
 
-window.addEventListener("mousemove",(e)=>{
+window.addEventListener("mousemove", (e) => {
+  const x = e.clientX / window.innerWidth;
 
-    const x = e.clientX / window.innerWidth;
+  const y = e.clientY / window.innerHeight;
 
-    const y = e.clientY / window.innerHeight;
+  glows.forEach((glow, index) => {
+    const speed = (index + 1) * 20;
 
-    glows.forEach((glow,index)=>{
-
-        const speed = (index+1)*20;
-
-        glow.style.transform =
-        `translate(${x*speed}px,${y*speed}px)`;
-
-    });
-
+    glow.style.transform = `translate(${x * speed}px,${y * speed}px)`;
+  });
 });
 
 /*=========================================================
             BUTTON RIPPLE
 =========================================================*/
 
-const buttons=document.querySelectorAll(".cta-btn");
+const buttons = document.querySelectorAll(".cta-btn");
 
-buttons.forEach(button=>{
+buttons.forEach((button) => {
+  button.addEventListener("mouseenter", () => {
+    button.style.transform = "translateY(-8px) scale(1.03)";
+  });
 
-    button.addEventListener("mouseenter",()=>{
-
-        button.style.transform="translateY(-8px) scale(1.03)";
-
-    });
-
-    button.addEventListener("mouseleave",()=>{
-
-        button.style.transform="translateY(0) scale(1)";
-
-    });
-
+  button.addEventListener("mouseleave", () => {
+    button.style.transform = "translateY(0) scale(1)";
+  });
 });
 
 /*=========================================================
@@ -683,25 +672,15 @@ const darkModeBtn = document.getElementById("darkModeBtn");
 const headerLogo = document.getElementById("headerLogo");
 
 darkModeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
 
-    document.body.classList.toggle("dark-mode");
+  if (document.body.classList.contains("dark-mode")) {
+    headerLogo.src = "images/logo-dark.png";
 
-    if(document.body.classList.contains("dark-mode")){
+    darkModeBtn.innerHTML = '<i class="fa-regular fa-sun"></i>';
+  } else {
+    headerLogo.src = "images/logo-light.png";
 
-        headerLogo.src = "images/logo-dark.png";
-
-        darkModeBtn.innerHTML =
-        '<i class="fa-regular fa-sun"></i>';
-
-    }
-
-    else{
-
-        headerLogo.src = "images/logo-light.png";
-
-        darkModeBtn.innerHTML =
-        '<i class="fa-regular fa-moon"></i>';
-
-    }
-
+    darkModeBtn.innerHTML = '<i class="fa-regular fa-moon"></i>';
+  }
 });
