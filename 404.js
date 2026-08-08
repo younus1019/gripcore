@@ -1,317 +1,98 @@
+/* ======================= PAGE LOAD ======================= */
 
-/*=========================================================
-                    404 PAGE JAVASCRIPT
-=========================================================*/
- 
- 
-/*=========================================================
-                    PAGE LOAD
-=========================================================*/
- 
-document.addEventListener("DOMContentLoaded", function () {
- 
-    initialize404Page();
- 
-});
- 
- 
-/*=========================================================
-                    INITIALIZE 404 PAGE
-=========================================================*/
- 
+document.addEventListener("DOMContentLoaded", initialize404Page);
+
+/* ======================= INITIALIZE PAGE ======================= */
+
 function initialize404Page() {
- 
-    const darkModeToggle =
-        document.getElementById("darkModeToggle");
- 
-    const rtlToggle =
-        document.getElementById("rtlToggle");
- 
-    const errorLogoLink =
-        document.getElementById("errorLogoLink");
- 
- 
-    /*=====================================================
-                    LOAD DARK MODE
-                    (same key as main.js: "theme")
-    =====================================================*/
- 
-    const savedTheme =
-        localStorage.getItem("theme");
- 
- 
-    if (savedTheme === "dark") {
- 
-        document.body.classList.add("dark-mode");
- 
-    } else {
- 
-        document.body.classList.remove("dark-mode");
- 
-    }
- 
- 
-    /*=====================================================
-                    LOAD RTL MODE
-    =====================================================*/
- 
-    const savedRTL =
-        localStorage.getItem("rtlMode");
- 
- 
-    if (savedRTL === "true") {
- 
-        document.documentElement.classList.add("rtl-mode");
- 
-        document.documentElement.setAttribute(
-            "dir",
-            "rtl"
-        );
- 
-    } else {
- 
-        document.documentElement.classList.remove(
-            "rtl-mode"
-        );
- 
-        document.documentElement.setAttribute(
-            "dir",
-            "ltr"
-        );
- 
-    }
- 
- 
-    /*=====================================================
-                    UPDATE CONTROLS
-    =====================================================*/
- 
-    updateDarkModeIcon();
- 
-    updateRTLButton();
- 
-    updateErrorLogo();
- 
- 
-    /*=====================================================
-                    DARK MODE BUTTON
-    =====================================================*/
- 
-    if (darkModeToggle) {
- 
-        darkModeToggle.addEventListener(
-            "click",
-            function () {
- 
-                document.body.classList.toggle(
-                    "dark-mode"
-                );
- 
- 
-                const isDarkMode =
-                    document.body.classList.contains(
-                        "dark-mode"
-                    );
- 
- 
-                localStorage.setItem(
-                    "theme",
-                    isDarkMode ? "dark" : "light"
-                );
- 
- 
-                updateDarkModeIcon();
- 
-                updateErrorLogo();
- 
-            }
-        );
- 
-    }
- 
- 
-    /*=====================================================
-                    RTL BUTTON
-    =====================================================*/
- 
-    if (rtlToggle) {
- 
-        rtlToggle.addEventListener(
-            "click",
-            function () {
- 
-                document.documentElement.classList.toggle(
-                    "rtl-mode"
-                );
- 
- 
-                const isRTL =
-                    document.documentElement.classList.contains(
-                        "rtl-mode"
-                    );
- 
- 
-                if (isRTL) {
- 
-                    document.documentElement.setAttribute(
-                        "dir",
-                        "rtl"
-                    );
- 
-                    localStorage.setItem(
-                        "rtlMode",
-                        "true"
-                    );
- 
-                } else {
- 
-                    document.documentElement.setAttribute(
-                        "dir",
-                        "ltr"
-                    );
- 
-                    localStorage.setItem(
-                        "rtlMode",
-                        "false"
-                    );
- 
-                }
- 
- 
-                updateRTLButton();
- 
-            }
-        );
- 
-    }
- 
- 
-    /*=====================================================
-                    LOGO CLICK
-    =====================================================*/
- 
-    if (errorLogoLink) {
- 
-        errorLogoLink.addEventListener(
-            "click",
-            function () {
- 
-                window.location.href =
-                    "index.html";
- 
-            }
-        );
- 
-    }
- 
+  const darkModeToggle = document.getElementById("darkModeToggle");
+  const rtlToggle = document.getElementById("rtlToggle");
+  const errorLogoLink = document.getElementById("errorLogoLink");
+
+  const savedTheme = localStorage.getItem("theme");
+
+  document.body.classList.toggle("dark-mode", savedTheme === "dark");
+
+  const savedRTL = localStorage.getItem("rtlMode");
+  const isRTL = savedRTL === "true";
+
+  document.documentElement.classList.toggle("rtl-mode", isRTL);
+  document.documentElement.setAttribute("dir", isRTL ? "rtl" : "ltr");
+
+  updateDarkModeIcon();
+  updateRTLButton();
+  updateErrorLogo();
+
+  if (darkModeToggle) {
+    darkModeToggle.addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+
+      const isDarkMode = document.body.classList.contains("dark-mode");
+
+      localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+
+      updateDarkModeIcon();
+      updateErrorLogo();
+    });
+  }
+
+  if (rtlToggle) {
+    rtlToggle.addEventListener("click", function () {
+      document.documentElement.classList.toggle("rtl-mode");
+
+      const isRTL = document.documentElement.classList.contains("rtl-mode");
+
+      document.documentElement.setAttribute("dir", isRTL ? "rtl" : "ltr");
+
+      localStorage.setItem("rtlMode", String(isRTL));
+
+      updateRTLButton();
+    });
+  }
+
+  if (errorLogoLink) {
+    errorLogoLink.addEventListener("click", function () {
+      window.location.href = "index.html";
+    });
+  }
 }
- 
- 
-/*=========================================================
-                    DARK MODE ICON
-=========================================================*/
- 
+
+/* ======================= DARK MODE ICON ======================= */
+
 function updateDarkModeIcon() {
- 
-    const darkModeToggle =
-        document.getElementById("darkModeToggle");
- 
- 
-    if (!darkModeToggle) return;
- 
- 
-    const isDarkMode =
-        document.body.classList.contains(
-            "dark-mode"
-        );
- 
- 
-    if (isDarkMode) {
- 
-        darkModeToggle.innerHTML =
-            '<i class="fa-solid fa-sun"></i>';
- 
-        darkModeToggle.title =
-            "Light Mode";
- 
-    } else {
- 
-        darkModeToggle.innerHTML =
-            '<i class="fa-solid fa-moon"></i>';
- 
-        darkModeToggle.title =
-            "Dark Mode";
- 
-    }
- 
+  const darkModeToggle = document.getElementById("darkModeToggle");
+
+  if (!darkModeToggle) return;
+
+  const isDarkMode = document.body.classList.contains("dark-mode");
+
+  darkModeToggle.innerHTML = isDarkMode
+    ? '<i class="fa-solid fa-sun"></i>'
+    : '<i class="fa-solid fa-moon"></i>';
+
+  darkModeToggle.title = isDarkMode ? "Light Mode" : "Dark Mode";
 }
- 
- 
-/*=========================================================
-                    RTL BUTTON
-=========================================================*/
- 
+
+/* ======================= RTL BUTTON ======================= */
+
 function updateRTLButton() {
- 
-    const rtlToggle =
-        document.getElementById("rtlToggle");
- 
- 
-    if (!rtlToggle) return;
- 
- 
-    const isRTL =
-        document.documentElement.classList.contains(
-            "rtl-mode"
-        );
- 
- 
-    if (isRTL) {
- 
-        rtlToggle.textContent = "LTR";
- 
-        rtlToggle.title = "LTR Mode";
- 
-    } else {
- 
-        rtlToggle.textContent = "RTL";
- 
-        rtlToggle.title = "RTL Mode";
- 
-    }
- 
+  const rtlToggle = document.getElementById("rtlToggle");
+
+  if (!rtlToggle) return;
+
+  const isRTL = document.documentElement.classList.contains("rtl-mode");
+
+  rtlToggle.title = isRTL ? "LTR Mode" : "RTL Mode";
 }
- 
- 
-/*=========================================================
-                    UPDATE ERROR LOGO
-=========================================================*/
- 
+
+/* ======================= UPDATE LOGO ======================= */
+
 function updateErrorLogo() {
- 
-    const errorLogo =
-        document.getElementById("errorLogo");
- 
- 
-    if (!errorLogo) return;
- 
- 
-    const isDarkMode =
-        document.body.classList.contains(
-            "dark-mode"
-        );
- 
- 
-    if (isDarkMode) {
- 
-        errorLogo.src =
-            "images/logo-dark.png";
- 
-    } else {
- 
-        errorLogo.src =
-            "images/logo-light.png";
- 
-    }
- 
+  const errorLogo = document.getElementById("errorLogo");
+
+  if (!errorLogo) return;
+
+  const isDarkMode = document.body.classList.contains("dark-mode");
+
+  errorLogo.src = isDarkMode ? "images/logo-dark.png" : "images/logo-light.png";
 }

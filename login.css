@@ -485,9 +485,6 @@ body {
   text-decoration: underline;
 }
 
-
-
-
 /* =========================================
    LOGIN BUTTON
 ========================================= */
@@ -745,44 +742,54 @@ body.dark-mode .social-btn:hover {
 
   border-color: #d4af37;
 }
+/* =========================================================
+   HIDE BROWSER DEFAULT PASSWORD REVEAL ICON
+========================================================= */
 
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+input[type="password"]::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+}
 /* =========================================
-   RTL
-========================================= */
 
-body.rtl {
+   RTL
+
+========================================= */
+html.rtl-mode {
   direction: rtl;
 }
 
-body.rtl .login-controls {
+/* MOVE RTL + DARK MODE BUTTONS TO LEFT */
+html.rtl-mode .login-controls {
   right: auto;
-
   left: 30px;
 }
 
-body.rtl .input-wrapper > svg {
+/* MOVE INPUT ICON TO RIGHT */
+html.rtl-mode .input-wrapper > svg {
   left: auto;
-
   right: 16px;
 }
 
-body.rtl .input-wrapper input {
-  padding-left: 45px;
-
-  padding-right: 45px;
-}
-
-body.rtl .password-toggle {
+/* PASSWORD EYE TO LEFT */
+html.rtl-mode .password-toggle {
   right: auto;
-
   left: 15px;
 }
 
-body.rtl .label-row {
+/* LABEL / FORGOT PASSWORD */
+html.rtl-mode .label-row {
   flex-direction: row-reverse;
 }
 
-body.rtl .remember-me {
+/* REMEMBER ME */
+html.rtl-mode .remember-me {
   flex-direction: row-reverse;
 }
 

@@ -668,61 +668,119 @@ body.dark-mode .price-card-content ul li{
     background:#111;
     color:#fff;
 }
+/* =========================================================
+   Samsung Galaxy S8+
+   360px - 740px
+========================================================= */
 
-/*=========================================================
-                TABLET
-=========================================================*/
+@media screen and (min-width: 360px) and (max-width: 740px) {
 
-@media(max-width:1100px){
+  .gripcore-pricing-section {
+    padding: 80px 20px;
+  }
 
-.gripcore-pricing-grid{
-grid-template-columns:repeat(2,1fr);
-}
+  .gripcore-pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
 
-.gripcore-price-card.featured{
-transform:none;
-}
+  .gripcore-price-card {
+    padding: 35px 28px;
+  }
 
-}
-
-/*=========================================================
-                MOBILE
-=========================================================*/
-
-@media(max-width:768px){
-
-.gripcore-pricing-section{
-padding:90px 6%;
-}
-
-.gripcore-pricing-grid{
-grid-template-columns:1fr;
-gap:25px;
-}
-
-.gripcore-price-card{
-padding:35px 28px;
-}
+  .gripcore-price-card.featured {
+    transform: none;
+  }
 
 }
 
-/*=========================================================
-                SMALL MOBILE
-=========================================================*/
 
-@media(max-width:480px){
+/* =========================================================
+   iPad Mini
+   768px - 820px
+========================================================= */
 
-.gripcore-pricing-section{
-padding:80px 20px;
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+  .gripcore-pricing-section {
+    padding: 100px 6%;
+  }
+
+  .gripcore-pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .gripcore-price-card.featured {
+    transform: none;
+  }
+
+  /* THIRD CARD CENTER */
+  .gripcore-price-card:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 12.5px);
+  }
+
 }
 
-.pricing-section-header h2{
-font-size:32px;
+
+/* =========================================================
+   iPad Pro 11"
+   821px - 1024px
+========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+  .gripcore-pricing-section {
+    padding: 100px 6%;
+  }
+
+  .gripcore-pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .gripcore-price-card.featured {
+    transform: none;
+  }
+
+  /* THIRD CARD CENTER */
+  .gripcore-price-card:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 15px);
+  }
+
 }
 
-.price-card-content h3{
-font-size:24px;
-}
+
+/* =========================================================
+   Nest Hub
+   1024px x 600px
+========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+  .gripcore-pricing-section {
+    padding: 70px 6%;
+  }
+
+  .gripcore-pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .gripcore-price-card.featured {
+    transform: none;
+  }
+
+  /* THIRD CARD PERFECTLY CENTER */
+  .gripcore-price-card:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 12.5px);
+  }
 
 }
 

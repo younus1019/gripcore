@@ -24,9 +24,7 @@ fetch("../components/navbar.html")
     document.getElementById("navbar").innerHTML = data;
 
     initializeNavbar();
-
     setActiveNavLink();
-
     updateTheme();
   })
   .catch((error) => console.error(error));
@@ -47,7 +45,6 @@ fetch("../components/footer.html")
     document.getElementById("footer").innerHTML = data;
 
     initializeFooter();
-
     updateTheme();
   })
   .catch((error) => console.error(error));
@@ -64,20 +61,31 @@ function updateTheme() {
   const isDark = document.body.classList.contains("dark-mode");
 
   if (isDark) {
-    if (headerLogo) headerLogo.src = "../images/logo-dark.png";
-    if (footerLogo) footerLogo.src = "../images/logo-dark.png";
+    if (headerLogo) {
+      headerLogo.src = "../images/logo-dark.png";
+    }
+
+    if (footerLogo) {
+      footerLogo.src = "../images/logo-dark.png";
+    }
 
     if (darkModeBtn) {
       darkModeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+
       darkModeBtn.title = "Light Mode";
     }
   } else {
-    if (headerLogo) headerLogo.src = "../images/logo-light.png";
-    if (footerLogo) footerLogo.src = "../images/logo-light.png";
+    if (headerLogo) {
+      headerLogo.src = "../images/logo-light.png";
+    }
+
+    if (footerLogo) {
+      footerLogo.src = "../images/logo-light.png";
+    }
 
     if (darkModeBtn) {
-      darkModeBtn.innerHTML =
-        '<i class="fa-solid fa-circle-half-stroke"></i>';
+      darkModeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+
       darkModeBtn.title = "Dark Mode";
     }
   }
@@ -88,9 +96,9 @@ function updateTheme() {
 // =========================================
 
 function initializeNavbar() {
-  // ==========================
+  // =========================================
   // MOBILE MENU
-  // ==========================
+  // =========================================
 
   const menuBtn = document.querySelector(".menu-btn");
   const menu = document.querySelector(".menu");
@@ -101,9 +109,9 @@ function initializeNavbar() {
     });
   }
 
-  // ==========================
+  // =========================================
   // MOBILE DROPDOWN
-  // ==========================
+  // =========================================
 
   document.querySelectorAll(".dropdown > a").forEach((link) => {
     link.addEventListener("click", function (e) {
@@ -123,9 +131,9 @@ function initializeNavbar() {
     });
   });
 
-  // ==========================
+  // =========================================
   // DARK MODE
-  // ==========================
+  // =========================================
 
   const darkModeBtn = document.getElementById("darkModeBtn");
 
@@ -143,9 +151,9 @@ function initializeNavbar() {
     });
   }
 
-  // ==========================
+  // =========================================
   // RTL MODE
-  // ==========================
+  // =========================================
 
   const rtlBtn = document.getElementById("rtlBtn");
 
@@ -161,8 +169,7 @@ function initializeNavbar() {
     rtlBtn.addEventListener("click", () => {
       document.documentElement.classList.toggle("rtl-mode");
 
-      const isRTL =
-        document.documentElement.classList.contains("rtl-mode");
+      const isRTL = document.documentElement.classList.contains("rtl-mode");
 
       if (isRTL) {
         document.documentElement.setAttribute("dir", "rtl");
@@ -182,7 +189,6 @@ function initializeNavbar() {
 // =========================================
 
 function setActiveNavLink() {
-
   let currentPage = window.location.pathname.split("/").pop();
 
   if (currentPage === "" || currentPage === "/") {
@@ -190,7 +196,6 @@ function setActiveNavLink() {
   }
 
   document.querySelectorAll(".menu a").forEach((link) => {
-
     link.classList.remove("active");
 
     const href = link.getAttribute("href");
@@ -200,25 +205,19 @@ function setActiveNavLink() {
     const linkPage = href.split("/").pop();
 
     if (linkPage === currentPage) {
-
       link.classList.add("active");
 
       const dropdown = link.closest(".dropdown");
 
       if (dropdown) {
-
         const parentLink = dropdown.querySelector(":scope > a");
 
         if (parentLink) {
           parentLink.classList.add("active");
         }
-
       }
-
     }
-
   });
-
 }
 
 // =========================================
@@ -226,19 +225,15 @@ function setActiveNavLink() {
 // =========================================
 
 function initializeFooter() {
-
   const footerLogo = document.getElementById("footerLogo");
 
   if (footerLogo) {
-
     if (document.body.classList.contains("dark-mode")) {
       footerLogo.src = "../images/logo-dark.png";
     } else {
       footerLogo.src = "../images/logo-light.png";
     }
-
   }
-
 }
 
 // =========================================
@@ -246,13 +241,11 @@ function initializeFooter() {
 // =========================================
 
 window.addEventListener("resize", () => {
-
   const menu = document.querySelector(".menu");
 
   if (window.innerWidth > 1024 && menu) {
     menu.classList.remove("active");
   }
-
 });
 
 // =========================================
@@ -260,7 +253,6 @@ window.addEventListener("resize", () => {
 // =========================================
 
 document.addEventListener("DOMContentLoaded", () => {
-
   const savedTheme = localStorage.getItem("theme");
 
   if (savedTheme === "dark") {
@@ -270,5 +262,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   updateTheme();
-
 });

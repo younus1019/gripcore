@@ -1,433 +1,298 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
 
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-      <link rel="icon" type="image/png" sizes="184x184" href="images/logo-light.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="184x184"
+      href="images/logo-light.png"
+    />
 
     <title>Terms & Conditions | GripCore</title>
 
-    <link rel="icon" href="images/logo-light.png">
+    <link rel="icon" href="images/logo-light.png" />
 
-    <link rel="stylesheet" href="terms&conditions.css">
+    <link rel="stylesheet" href="terms&conditions.css" />
 
     <!-- Poppins -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- =====================================================
                          PAGE CONTROLS
     ====================================================== -->
 
     <div class="page-controls">
+      <button
+        id="darkModeToggle"
+        class="control-btn"
+        type="button"
+        title="Dark Mode"
+      >
+        <i data-lucide="moon"></i>
+      </button>
 
-        <button
-            id="darkModeToggle"
-            class="control-btn"
-            type="button"
-            title="Dark Mode"
-        >
-            <i data-lucide="moon"></i>
-        </button>
+      <button
+        id="rtlToggle"
+        class="control-btn rtl-btn"
+        type="button"
+        title="RTL Mode"
+      >
+        <!-- <i data-lucide="arrow-left-right"></i> -->
 
-
-        <button
-            id="rtlToggle"
-            class="control-btn rtl-btn"
-            type="button"
-            title="RTL Mode"
-        >
-            <!-- <i data-lucide="arrow-left-right"></i> -->
-
-             <i data-lucide="arrow-left-right"></i>
-        </button>
-
+        <i data-lucide="arrow-left-right"></i>
+      </button>
     </div>
-
 
     <!-- =====================================================
                        TERMS PAGE
     ====================================================== -->
 
     <main class="terms-page">
-
-
-        <!-- =================================================
+      <!-- =================================================
                             LOGO
         ================================================== -->
 
-        <div
-            class="terms-logo"
-            onclick="window.location.href='index.html'"
-        >
+      <div class="terms-logo" onclick="window.location.href = 'index.html'">
+        <img id="termsLogo" src="images/logo-light.png" alt="GripCore Logo" />
+      </div>
 
-            <img
-                id="termsLogo"
-                src="images/logo-light.png"
-                alt="GripCore Logo"
-            >
-
-        </div>
-
-
-        <!-- =================================================
+      <!-- =================================================
                          PAGE HEADING
         ================================================== -->
 
-        <div class="terms-heading">
+      <div class="terms-heading">
+        <span class="terms-tag"> GRIPCORE </span>
 
-            <span class="terms-tag">
-                GRIPCORE
-            </span>
+        <h1>Terms & Conditions</h1>
 
-            <h1>
-                Terms & Conditions
-            </h1>
+        <span class="last-updated"> Last Updated : July 30, 2026 </span>
 
-            <span class="last-updated">
-                Last Updated : July 30, 2026
-            </span>
+        <p>
+          These Terms & Conditions explain the rules and guidelines for using
+          GripCore's website, tyre services, wheel alignment, wheel balancing,
+          vehicle inspection, bookings, and related automotive services.
+        </p>
+      </div>
 
-            <p>
-                These Terms & Conditions explain the rules and
-                guidelines for using GripCore's website, tyre
-                services, wheel alignment, wheel balancing,
-                vehicle inspection, bookings, and related
-                automotive services.
-            </p>
-
-        </div>
-
-
-        <!-- =================================================
+      <!-- =================================================
                          TERMS CONTENT
         ================================================== -->
 
-        <div class="terms-content">
-
-
-            <!-- CARD 1 -->
-
-            <div class="terms-card">
-
-                <div class="terms-card-icon">
-
-                    <i data-lucide="file-check-2"></i>
-
-                </div>
-
-                <div class="terms-card-content">
-
-                    <h3>
-                        Acceptance of Terms
-                    </h3>
-
-                    <p>
-                        By accessing the GripCore website or using
-                        our services, you agree to comply with these
-                        Terms & Conditions. If you do not agree with
-                        any part of these terms, please discontinue
-                        using our website and services.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- CARD 2 -->
-
-            <div class="terms-card">
-
-                <div class="terms-card-icon secondary">
-
-                    <i data-lucide="car"></i>
-
-                </div>
-
-                <div class="terms-card-content">
-
-                    <h3>
-                        Our Automotive Services
-                    </h3>
-
-                    <p>
-                        GripCore provides automotive services including
-                        tyre replacement, wheel alignment, wheel
-                        balancing, puncture repair, nitrogen filling,
-                        vehicle inspection, and other related services.
-                        Service availability may vary by location.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- CARD 3 -->
-
-            <div class="terms-card">
-
-                <div class="terms-card-icon">
-
-                    <i data-lucide="calendar-check"></i>
-
-                </div>
-
-                <div class="terms-card-content">
-
-                    <h3>
-                        Bookings & Appointments
-                    </h3>
-
-                    <p>
-                        Customers may request appointments through
-                        the GripCore website or other available
-                        booking channels. Appointment requests are
-                        subject to availability and are confirmed
-                        only after successful confirmation by GripCore.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- CARD 4 -->
-
-            <div class="terms-card">
-
-                <div class="terms-card-icon secondary">
-
-                    <i data-lucide="credit-card"></i>
-
-                </div>
-
-                <div class="terms-card-content">
-
-                    <h3>
-                        Payments
-                    </h3>
-
-                    <p>
-                        Payment for services or products must be made
-                        according to the applicable pricing displayed
-                        or communicated by GripCore. Prices may vary
-                        depending on the selected product, vehicle,
-                        service, or additional work required.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- CARD 5 -->
-
-            <div class="terms-card">
-
-                <div class="terms-card-icon">
-
-                    <i data-lucide="shield-check"></i>
-
-                </div>
-
-                <div class="terms-card-content">
-
-                    <h3>
-                        Vehicle Safety & Responsibility
-                    </h3>
-
-                    <p>
-                        Customers are responsible for providing accurate
-                        vehicle information and informing GripCore about
-                        any known vehicle issues. Customers should follow
-                        all safety recommendations provided by our
-                        technicians after completing a service.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- CARD 6 -->
-
-            <div class="terms-card">
-
-                <div class="terms-card-icon secondary">
-
-                    <i data-lucide="x-circle"></i>
-
-                </div>
-
-                <div class="terms-card-content">
-
-                    <h3>
-                        Cancellation & Rescheduling
-                    </h3>
-
-                    <p>
-                        Customers may cancel or reschedule appointments
-                        according to GripCore's applicable booking
-                        policies. Availability of alternative appointment
-                        times is subject to our service schedule.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- CARD 7 -->
-
-            <div class="terms-card">
-
-                <div class="terms-card-icon">
-
-                    <i data-lucide="package-check"></i>
-
-                </div>
-
-                <div class="terms-card-content">
-
-                    <h3>
-                        Products & Tyres
-                    </h3>
-
-                    <p>
-                        Product availability, tyre brands, sizes,
-                        specifications, and pricing may change without
-                        prior notice. Customers should verify product
-                        compatibility with their vehicle before purchase
-                        or installation.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- CARD 8 -->
-
-            <div class="terms-card">
-
-                <div class="terms-card-icon secondary">
-
-                    <i data-lucide="copyright"></i>
-
-                </div>
-
-                <div class="terms-card-content">
-
-                    <h3>
-                        Intellectual Property
-                    </h3>
-
-                    <p>
-                        All GripCore logos, branding, website content,
-                        graphics, images, text, and other materials are
-                        protected by applicable intellectual property
-                        rights. They may not be copied, reproduced, or
-                        distributed without permission.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- CARD 9 -->
-
-            <div class="terms-card">
-
-                <div class="terms-card-icon">
-
-                    <i data-lucide="refresh-cw"></i>
-
-                </div>
-
-                <div class="terms-card-content">
-
-                    <h3>
-                        Changes to These Terms
-                    </h3>
-
-                    <p>
-                        GripCore may update or modify these Terms &
-                        Conditions when necessary. Any updated version
-                        will replace the previous version once published
-                        on this website.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- CARD 10 -->
-
-            <div class="terms-card">
-
-                <div class="terms-card-icon secondary">
-
-                    <i data-lucide="mail"></i>
-
-                </div>
-
-                <div class="terms-card-content">
-
-                    <h3>
-                        Contact Us
-                    </h3>
-
-                    <p>
-                        If you have questions regarding these Terms &
-                        Conditions, please contact GripCore through
-                        our official contact channels.
-                    </p>
-
-                </div>
-
-            </div>
-
-
+      <div class="terms-content">
+        <!-- CARD 1 -->
+
+        <div class="terms-card">
+          <div class="terms-card-icon">
+            <i data-lucide="file-check-2"></i>
+          </div>
+
+          <div class="terms-card-content">
+            <h3>Acceptance of Terms</h3>
+
+            <p>
+              By accessing the GripCore website or using our services, you agree
+              to comply with these Terms & Conditions. If you do not agree with
+              any part of these terms, please discontinue using our website and
+              services.
+            </p>
+          </div>
         </div>
 
+        <!-- CARD 2 -->
 
-        <!-- =================================================
+        <div class="terms-card">
+          <div class="terms-card-icon secondary">
+            <i data-lucide="car"></i>
+          </div>
+
+          <div class="terms-card-content">
+            <h3>Our Automotive Services</h3>
+
+            <p>
+              GripCore provides automotive services including tyre replacement,
+              wheel alignment, wheel balancing, puncture repair, nitrogen
+              filling, vehicle inspection, and other related services. Service
+              availability may vary by location.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="terms-card">
+          <div class="terms-card-icon">
+            <i data-lucide="calendar-check"></i>
+          </div>
+
+          <div class="terms-card-content">
+            <h3>Bookings & Appointments</h3>
+
+            <p>
+              Customers may request appointments through the GripCore website or
+              other available booking channels. Appointment requests are subject
+              to availability and are confirmed only after successful
+              confirmation by GripCore.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+
+        <div class="terms-card">
+          <div class="terms-card-icon secondary">
+            <i data-lucide="credit-card"></i>
+          </div>
+
+          <div class="terms-card-content">
+            <h3>Payments</h3>
+
+            <p>
+              Payment for services or products must be made according to the
+              applicable pricing displayed or communicated by GripCore. Prices
+              may vary depending on the selected product, vehicle, service, or
+              additional work required.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+
+        <div class="terms-card">
+          <div class="terms-card-icon">
+            <i data-lucide="shield-check"></i>
+          </div>
+
+          <div class="terms-card-content">
+            <h3>Vehicle Safety & Responsibility</h3>
+
+            <p>
+              Customers are responsible for providing accurate vehicle
+              information and informing GripCore about any known vehicle issues.
+              Customers should follow all safety recommendations provided by our
+              technicians after completing a service.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 6 -->
+
+        <div class="terms-card">
+          <div class="terms-card-icon secondary">
+            <i data-lucide="x-circle"></i>
+          </div>
+
+          <div class="terms-card-content">
+            <h3>Cancellation & Rescheduling</h3>
+
+            <p>
+              Customers may cancel or reschedule appointments according to
+              GripCore's applicable booking policies. Availability of
+              alternative appointment times is subject to our service schedule.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 7 -->
+
+        <div class="terms-card">
+          <div class="terms-card-icon">
+            <i data-lucide="package-check"></i>
+          </div>
+
+          <div class="terms-card-content">
+            <h3>Products & Tyres</h3>
+
+            <p>
+              Product availability, tyre brands, sizes, specifications, and
+              pricing may change without prior notice. Customers should verify
+              product compatibility with their vehicle before purchase or
+              installation.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 8 -->
+
+        <div class="terms-card">
+          <div class="terms-card-icon secondary">
+            <i data-lucide="copyright"></i>
+          </div>
+
+          <div class="terms-card-content">
+            <h3>Intellectual Property</h3>
+
+            <p>
+              All GripCore logos, branding, website content, graphics, images,
+              text, and other materials are protected by applicable intellectual
+              property rights. They may not be copied, reproduced, or
+              distributed without permission.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 9 -->
+
+        <div class="terms-card">
+          <div class="terms-card-icon">
+            <i data-lucide="refresh-cw"></i>
+          </div>
+
+          <div class="terms-card-content">
+            <h3>Changes to These Terms</h3>
+
+            <p>
+              GripCore may update or modify these Terms & Conditions when
+              necessary. Any updated version will replace the previous version
+              once published on this website.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 10 -->
+
+        <div class="terms-card">
+          <div class="terms-card-icon secondary">
+            <i data-lucide="mail"></i>
+          </div>
+
+          <div class="terms-card-content">
+            <h3>Contact Us</h3>
+
+            <p>
+              If you have questions regarding these Terms & Conditions, please
+              contact GripCore through our official contact channels.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- =================================================
                             FOOTER
         ================================================== -->
 
-        <footer class="terms-footer">
-
-            <p>
-                © 2026
-                <strong>GripCore</strong>.
-                All Rights Reserved.
-            </p>
-
-        </footer>
-
-
+      <footer class="terms-footer">
+        <p>
+          © 2026
+          <strong>GripCore</strong>. All Rights Reserved.
+        </p>
+      </footer>
     </main>
-
 
     <!-- =====================================================
                          JAVASCRIPT
@@ -440,8 +305,5 @@
     <script>
       lucide.createIcons();
     </script>
-
-
-</body>
-
+  </body>
 </html>
