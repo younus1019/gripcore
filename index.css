@@ -244,6 +244,7 @@ body {
 }
 
 .primary-btn:hover {
+  background-color: white;
   box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4);
 }
 
@@ -1031,9 +1032,9 @@ body {
 
   padding: 15px 25px;
 
-  background: #111111;
+  background: #d4af37;
 
-  color: #ffffff;
+  color: #080808;
 
   text-decoration: none;
 
@@ -1049,7 +1050,7 @@ body {
 }
 
 .about-btn:hover {
-  background: #d4af37;
+  background: #f7f6f4;
 
   color: #111111;
 
@@ -1166,12 +1167,6 @@ body.dark-mode .feature-item p {
 
 body.dark-mode .feature-icon {
   background: #222222;
-}
-
-body.dark-mode .about-btn {
-  background: #ffffff;
-
-  color: #111111;
 }
 
 body.dark-mode .floating-service-card {
@@ -1337,7 +1332,7 @@ body.dark-mode .stat-item span {
 
 .automotive-services {
   width: 100%;
-  padding: 120px 6%;
+  padding: 60px 6%;
 
   background: #ffffff;
   color: #111111;
@@ -1806,7 +1801,9 @@ body.dark-mode .automotive-header p {
 
   border: 1px solid #d4af37;
 
-  color: #d4af37;
+  background: #d4af37;
+
+  color: #111111;
 
   text-decoration: none;
 
@@ -1828,7 +1825,7 @@ body.dark-mode .automotive-header p {
 }
 
 .automotive-cta:hover {
-  background: #d4af37;
+  background: #ffffff;
 
   color: #111111;
 }
@@ -1996,7 +1993,7 @@ body.dark-mode .automotive-bottom p {
 .process-section {
   position: relative;
 
-  padding: 140px 0;
+  padding: 100px 0;
 
   background: #ffffff;
 
@@ -2419,13 +2416,13 @@ body.dark-mode .process-cta {
     margin-bottom: 60px;
 
     text-align: center;
-}
+  }
 
-.process-eyebrow{
+  .process-eyebrow {
     margin-left: 0;
 
     justify-content: center;
-}
+  }
 
   .process-container {
     width: 88%;
@@ -2437,13 +2434,13 @@ body.dark-mode .process-cta {
     letter-spacing: -2px;
   } */
 
-  .process-header h2{
+  .process-header h2 {
     text-align: center;
 
     font-size: 52px;
 
     letter-spacing: -2px;
-}
+  }
 
   .process-timeline {
     grid-template-columns: 1fr;
@@ -2459,11 +2456,11 @@ body.dark-mode .process-cta {
     gap: 20px;
   }
 
-  .process-header p{
+  .process-header p {
     margin: 0 auto;
 
     text-align: center;
-}
+  }
 
   .process-step-top {
     flex-direction: column;
@@ -2925,10 +2922,10 @@ body.dark-mode .process-cta {
 }
 
 .find-tyre-btn:hover {
-  background: #111111;
+  background: #ffffff;
 
-  color: #ffffff;
-
+  color: #000000;
+  border: 1px solid #d4af37;
   transform: translateY(-3px);
 }
 
@@ -3324,7 +3321,7 @@ body.dark-mode .pricing-header p {
 .pricing-grid {
   width: 100%;
 
-  max-width: 1450px;   /* Adjust this value */
+  max-width: 1450px; /* Adjust this value */
 
   margin: 0 auto;
 
@@ -3644,7 +3641,7 @@ body.dark-mode .pricing-header p {
 }
 
 .pricing-btn:hover {
-  background: #d4af37;
+  background: #fffefe;
 
   color: #111111;
 }
@@ -3662,9 +3659,9 @@ body.dark-mode .pricing-header p {
 }
 
 .pricing-card.featured .pricing-btn:hover {
-  background: #111111;
+  background: #ffffff;
 
-  color: #ffffff;
+  color: #050505;
 }
 
 /* =========================================
@@ -5263,9 +5260,9 @@ body:not(.dark-mode) .testimonial-buttons button:hover {
 
   padding: 16px 28px;
 
-  background: #111111;
+  background: #d4af37;
 
-  color: #ffffff;
+  color: #111111;
 
   text-decoration: none;
 
@@ -5277,15 +5274,16 @@ body:not(.dark-mode) .testimonial-buttons button:hover {
 }
 
 .cta-primary i {
-  color: #d4af37;
+  color: #020202;
 
   transition: 0.3s;
 }
 
 .cta-primary:hover {
-  background: #d4af37;
-
+  background: #fffffe;
+  border: 1px solid #d4af37;
   color: #111111;
+  transform: translateY(-3px);
 }
 
 .cta-primary:hover i {
@@ -5302,7 +5300,6 @@ body:not(.dark-mode) .testimonial-buttons button:hover {
   padding: 15px 25px;
 
   border: 1px solid #dddddd;
-  border-radius: 50px;
 
   background: transparent;
   color: #111111;
@@ -5367,7 +5364,6 @@ body:not(.dark-mode) .testimonial-buttons button:hover {
   font-size: 14px;
 }
 
-
 /* =========================================
    DARK MODE
 ========================================= */
@@ -5413,8 +5409,6 @@ body.dark-mode .cta-trust {
 /* body.dark-mode .trust-item {
   color: #d0d0d0;
 } */
-
-
 
 /* =========================================
    TABLET

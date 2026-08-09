@@ -82,9 +82,8 @@
     transparent
   );
 
-  pointer-events:auto; 
+  pointer-events: auto;
 }
-
 
 .blog-hero-line-one {
   height: 350px;
@@ -545,17 +544,17 @@ body.dark-mode .blog-hero-content > p {
 }
 
 .section-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .section-eyebrow span {
-    display: block;
-    width: 55px;
-    height: 2px;
-    background: #d4af37;
-    border-radius: 50px;
+  display: block;
+  width: 55px;
+  height: 2px;
+  background: #d4af37;
+  border-radius: 50px;
 }
 
 /* =========================================================
@@ -637,8 +636,6 @@ body.dark-mode .blog-hero-content > p {
 /* =========================================================
         CONTENT
 ========================================================= */
-
-
 
 .featured-blog-content {
   display: flex;
@@ -793,7 +790,7 @@ body.dark-mode .blog-hero-content > p {
 
   color: #888888;
 
-  font-size: 10px
+  font-size: 10px;
 }
 
 /* =========================================================
@@ -2601,7 +2598,6 @@ body.rtl .insights-btn:hover svg {
   }
 }
 
-
 /* =========================================================
         PREMIUM BLOG CTA
 ========================================================= */
@@ -2809,7 +2805,7 @@ body.rtl .insights-btn:hover svg {
 
   color: #111111;
 
-  border-color: #ffffff;
+  border-color: #d4af37;
 
   transform: translateY(-4px);
 }
@@ -2821,15 +2817,13 @@ body.rtl .insights-btn:hover svg {
 /* SECONDARY */
 
 .blog-cta-btn.secondary {
-  background: transparent;
-
   color: #ffffff;
 
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .blog-cta-btn.secondary:hover {
-  background: #ffffff;
+  background: #d4af37;
 
   color: #111111;
 
@@ -3030,12 +3024,8 @@ body:not(.dark-mode) .blog-cta-btn.secondary {
   border-color: rgba(17, 17, 17, 0.25);
 }
 
-body:not(.dark-mode) .blog-cta-btn.secondary:hover {
-  background: #111111;
-
-  color: #ffffff;
-
-  border-color: #111111;
+body.dark-mode.blog-cta-btn.secondary:hover {
+  background-color: #d4af37;
 }
 
 body:not(.dark-mode) .blog-cta-badge {

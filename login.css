@@ -118,7 +118,7 @@ body {
 
   color: #111111;
 
-  border: 1px solid #e5e5e5;
+  border: 1px solid #d4af37;
 
   border-radius: 50%;
 
@@ -501,9 +501,9 @@ body {
 
   gap: 12px;
 
-  background: #111111;
+  background: #d4af37;
 
-  color: #ffffff;
+  color: #111111;
 
   border: 1px solid #111111;
 
@@ -531,7 +531,7 @@ body {
 }
 
 .login-btn:hover {
-  background: #d4af37;
+  background: white;
 
   color: #111111;
 
@@ -728,13 +728,15 @@ body.dark-mode .custom-checkbox {
 body.dark-mode .login-divider span {
   background: #292929;
 }
-
+body.dark-mode .login-btn {
+  border: 1px solid #d4af37;
+}
 body.dark-mode .social-btn {
   background: #151515;
 
   color: #ffffff;
 
-  border-color: #2c2c2c;
+  border-color: #d4af37;
 }
 
 body.dark-mode .social-btn:hover {

@@ -289,7 +289,7 @@ header {
 
   background: #f1f1f1;
 
-  border: 1px solid #e5e5e5;
+  border: 1px solid #d4af37;
 
   color: #111111;
 
@@ -325,12 +325,11 @@ header {
 
   border: 2px solid #d4af37;
 
-  border-radius: 50px;
-
   background: #d4af37;
 
-  color: #111111;
+  color: #111;
 
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.25);
   text-decoration: none;
 
   font-size: 15px;
@@ -342,13 +341,9 @@ header {
 }
 
 .login:hover {
-  background: #111111;
+  background: #ffffff;
 
-  border-color: #d4af37;
-
-  color: #d4af37;
-
-  transform: translateY(-2px);
+  transform: translateY(-4px);
 }
 
 .login:hover i {
@@ -1376,8 +1371,6 @@ body.dark-mode .footer-bottom-links a {
   color: #aaaaaa;
 }
 
-
-
 /* =========================================================
    RTL MODE
 ========================================================= */
@@ -1524,11 +1517,10 @@ html.rtl-mode .footer-col > li a:hover {
   padding-right: 6px;
 }
 
-
-#rtlBtn i{
-    transition:transform .35s ease;
+#rtlBtn i {
+  transition: transform 0.35s ease;
 }
 
-#rtlBtn.rtl-active i{
-    transform:rotate(180deg);
+#rtlBtn.rtl-active i {
+  transform: rotate(180deg);
 }

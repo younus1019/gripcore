@@ -19,7 +19,6 @@
   margin: auto;
 }
 
-
 /* =========================================
    COMMON
 ========================================= */
@@ -54,7 +53,6 @@
   color: #d4af37;
 }
 
-
 /* =========================================
    HERO
 ========================================= */
@@ -82,13 +80,12 @@
 .about-hero-overlay {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.45),
-      rgba(0, 0, 0, 0.8)
-    );
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.8)
+  );
 }
 
 .about-hero-content {
@@ -125,7 +122,6 @@
   font-size: 17px;
   line-height: 1.9;
 }
-
 
 .about-tag {
   display: flex;
@@ -236,7 +232,7 @@
 }
 
 .section-tag {
-  display: inline-flex;      /* change flex to inline-flex */
+  display: inline-flex; /* change flex to inline-flex */
   align-items: center;
   justify-content: flex-start; /* keep content to the left */
 
@@ -265,9 +261,6 @@
 
   flex-shrink: 0;
 }
-
-
-
 
 /* =========================================
    PRECISION
@@ -349,7 +342,6 @@
   font-size: 30px;
   margin-top: 10px;
 }
-
 
 /* =========================================
    APPROACH
@@ -434,7 +426,6 @@
   color: #aaa;
 }
 
-
 /* =========================================
    WHY GRIPCORE
 ========================================= */
@@ -481,8 +472,6 @@
   color: #d4af37;
 }
 
-
-
 /* =========================================
    CTA
 ========================================= */
@@ -518,7 +507,7 @@
   justify-content: center;
   gap: 10px;
   padding: 16px 30px;
-  border-radius: 50px;
+
   text-decoration: none;
   font-weight: 600;
   transition: 0.4s;
@@ -536,13 +525,14 @@
 
 .about-btn:hover {
   transform: translateY(-5px);
+  background-color: #fff;
+  border: 1px solid #d4af37;
 }
 
 .about-btn.secondary:hover {
-  background: #111;
-  color: #fff;
+  background: #d4af37;
+  color: #111;
 }
-
 
 /* =========================================
    DARK MODE
@@ -608,7 +598,6 @@ body.dark-mode .about-btn.secondary:hover {
   color: #111;
 }
 
-
 /* =========================================
    RTL
 ========================================= */
@@ -624,13 +613,11 @@ body.rtl .story-highlight {
   border-right: 3px solid #d4af37;
 }
 
-
 /* =========================================
    TABLET
 ========================================= */
 
 @media (max-width: 991px) {
-
   .about-hero-content h1 {
     font-size: 55px;
   }
@@ -654,16 +641,13 @@ body.rtl .story-highlight {
   .about-cta h2 {
     font-size: 44px;
   }
-
 }
-
 
 /* =========================================
    MOBILE
 ========================================= */
 
 @media (max-width: 768px) {
-
   .about-hero {
     min-height: 600px;
   }
@@ -716,7 +700,6 @@ body.rtl .story-highlight {
   .about-btn {
     width: 100%;
   }
-
 }
 
 /* =========================================

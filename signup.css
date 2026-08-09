@@ -499,11 +499,11 @@ body {
 }
 
 .signup-submit:hover {
-  background: #111111;
+  background: white;
 
   border-color: #111111;
 
-  color: #ffffff;
+  color: #111111;
 
   transform: translateY(-2px);
 }
@@ -672,6 +672,20 @@ body.dark-mode .input-box input:focus {
 
   border-color: #d4af37;
 }
+body.dark-mode .signup-submit {
+  background: #d4af37;
+  border-color: #d4af37;
+  color: #111111;
+}
+body.dark-mode.signup-submit:hover {
+  background: white;
+
+  border-color: #111111;
+
+  color: #111111;
+
+  transform: translateY(-2px);
+}
 
 body.dark-mode .custom-checkbox {
   background: #181818;
@@ -692,7 +706,7 @@ body.dark-mode .social-btn {
 
   color: #dddddd;
 
-  border-color: #303030;
+  border-color: #d4af37;
 }
 
 body.dark-mode .social-btn:hover {
