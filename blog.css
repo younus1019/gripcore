@@ -835,9 +835,9 @@ body.dark-mode .blog-hero-content > p {
 
   padding: 15px 22px;
 
-  background: #111111;
+  background: #d4af37;
 
-  color: #ffffff;
+  color: #111111;
 
   text-decoration: none;
 
@@ -861,7 +861,8 @@ body.dark-mode .blog-hero-content > p {
 }
 
 .featured-blog-btn:hover {
-  background: #d4af37;
+  background: #ffffff;
+  border: 1px solid #d4af37;
 
   color: #111111;
 
@@ -2353,6 +2354,8 @@ body.rtl .blog-article-link svg {
 
   color: #111111;
 
+  border: 1px solid #d4af37;
+
   transform: translateY(-3px);
 }
 
@@ -3065,7 +3068,7 @@ body.dark-mode .blog-cta-btn.secondary {
 }
 
 body.dark-mode .blog-cta-btn.secondary:hover {
-  background: #ffffff;
+  background: #d4af37;
 
   color: #111111;
 }

@@ -266,7 +266,7 @@ body {
 
     border: 2px solid #d4af37;
 
-    border-radius: 50px;
+    
 
     color: #111111;
 
@@ -279,11 +279,11 @@ body {
 }
 
 .home-btn:hover {
-    background: #111111;
+    background: white;
 
-    border-color: #111111;
+    border-color: #d4af37;
 
-    color: #d4af37;
+    color: #111111;
 
     transform: translateY(-3px);
 }

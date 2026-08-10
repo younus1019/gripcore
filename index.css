@@ -5379,13 +5379,13 @@ body.dark-mode .cta-content p {
 }
 
 body.dark-mode .cta-primary {
-  background: #ffffff;
+  background: #d4af37;
 
   color: #111111;
 }
 
 body.dark-mode .cta-primary:hover {
-  background: #d4af37;
+  background: white;
 }
 
 body.dark-mode .cta-secondary {

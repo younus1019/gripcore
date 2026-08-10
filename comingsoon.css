@@ -518,12 +518,12 @@ body {
 
     padding: 0 24px;
 
-    background: #111111;
-    border: 2px solid #111111;
+    background: #d4af37;
+    border: 2px solid #d4af37;
 
-    border-radius: 50px;
+    
 
-    color: #ffffff;
+    color: #111111;
 
     text-decoration: none;
 
@@ -534,7 +534,7 @@ body {
 }
 
 .home-btn:hover {
-    background: #d4af37;
+    background: white;
     border-color: #d4af37;
 
     color: #111111;

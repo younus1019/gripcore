@@ -39,8 +39,8 @@ html {
 
 .section-tag {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
 
   gap: 18px;
 
@@ -5003,7 +5003,7 @@ body:not(.dark-mode) .testimonial-stat span {
   margin-top: 5px;
 
   border: none;
-  border-radius: 10px;
+  
 
   background: #d4af37;
   color: #111111;
@@ -5028,8 +5028,9 @@ body:not(.dark-mode) .testimonial-stat span {
 }
 
 .appointment-submit:hover {
-  background: #111111;
-  color: #ffffff;
+  background: white;
+  color: #111111;
+  border: 1px solid #d4af37;
 
   transform: translateY(-4px);
 

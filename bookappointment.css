@@ -535,6 +535,7 @@ body {
   background: #ffffff;
 
   border-color: #ffffff;
+  border: 1px solid #d4af37;
 
   transform: translateY(-3px);
 }

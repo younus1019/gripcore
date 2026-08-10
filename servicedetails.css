@@ -1,13 +1,7 @@
-* =========================================================
-   GRIPCORE SERVICE DETAILS PAGE
-   PREMIUM HERO SECTION
-   LIGHT MODE DEFAULT
-========================================================= */
- 
 /* =========================================================
    GLOBAL RESET
 ========================================================= */
- 
+
 * {
   margin: 0;
   padding: 0;
@@ -256,8 +250,6 @@ body {
 
   border: 1px solid #d4af37;
 
-  border-radius: 50px;
-
   text-decoration: none;
 
   font-size: 12px;
@@ -310,8 +302,6 @@ body {
 
   border: 1px solid rgba(255, 255, 255, 0.4);
 
-  border-radius: 50px;
-
   text-decoration: none;
 
   font-size: 12px;
@@ -335,11 +325,9 @@ body {
 }
 
 .service-secondary-btn:hover {
-  background: #ffffff;
+  background: #d4af37;
 
   color: #111111;
-
-  border-color: #ffffff;
 
   transform: translateY(-3px);
 }
@@ -630,8 +618,6 @@ body {
     font-size: 12px;
   }
 }
-
-
 
 /* =========================================================
    SERVICE DETAIL SECTIONS
@@ -1012,7 +998,7 @@ body {
   justify-content: center;
   gap: 8px;
   padding: 12px 24px;
-  border-radius: 50px;
+
   border: none;
   background: #d4af37;
   color: #111111;
@@ -1027,8 +1013,9 @@ body {
 }
 
 .appointment-submit-btn:hover {
-  background: #111111;
-  color: #ffffff;
+  background: #fcfbfa;
+  color: #0e0d0d;
+  border: 1px solid #d4af37;
   transform: translateY(-2px);
 }
 
@@ -1172,10 +1159,8 @@ body.dark-mode .form-group textarea {
   border-color: #303030;
 }
 
-
 /* Samsung Galaxy S8+ */
 @media screen and (min-width: 360px) and (max-width: 740px) {
-
   /* HERO */
   .service-details-hero {
     min-height: 900px;
@@ -1191,7 +1176,7 @@ body.dark-mode .form-group textarea {
 
   .service-hero-container {
     width: 90%;
-    grid-template-columns: 1fr;       /* stack hero content + side */
+    grid-template-columns: 1fr; /* stack hero content + side */
     gap: 50px;
     padding: 110px 0 90px;
   }
@@ -1256,7 +1241,7 @@ body.dark-mode .form-group textarea {
 
   .service-detail-container {
     width: 90%;
-    grid-template-columns: 1fr;       /* stack image + text */
+    grid-template-columns: 1fr; /* stack image + text */
     gap: 40px;
   }
 
@@ -1265,7 +1250,7 @@ body.dark-mode .form-group textarea {
   }
 
   .service-detail-features {
-    grid-template-columns: 1fr;       /* features in one column */
+    grid-template-columns: 1fr; /* features in one column */
   }
 
   /* APPOINTMENT */
@@ -1275,7 +1260,7 @@ body.dark-mode .form-group textarea {
 
   .appointment-container {
     width: 90%;
-    grid-template-columns: 1fr;       /* stack text + form */
+    grid-template-columns: 1fr; /* stack text + form */
     gap: 40px;
   }
 
@@ -1294,7 +1279,6 @@ body.dark-mode .form-group textarea {
 
 /* iPad Mini */
 @media screen and (min-width: 768px) and (max-width: 820px) {
-
   /* HERO */
   .service-details-hero {
     min-height: 850px;
@@ -1302,7 +1286,7 @@ body.dark-mode .form-group textarea {
 
   .service-hero-container {
     width: 90%;
-    grid-template-columns: 1fr;          /* stack hero columns */
+    grid-template-columns: 1fr; /* stack hero columns */
     gap: 60px;
     padding: 120px 0 100px;
   }
@@ -1337,7 +1321,7 @@ body.dark-mode .form-group textarea {
 
   .service-detail-container {
     width: 90%;
-    grid-template-columns: 1fr;          /* stack image + text */
+    grid-template-columns: 1fr; /* stack image + text */
     gap: 50px;
   }
 
@@ -1352,7 +1336,7 @@ body.dark-mode .form-group textarea {
 
   .appointment-container {
     width: 90%;
-    grid-template-columns: 1fr;          /* stack text + form */
+    grid-template-columns: 1fr; /* stack text + form */
     gap: 50px;
   }
 
@@ -1362,7 +1346,6 @@ body.dark-mode .form-group textarea {
 }
 /* iPad Pro 11" */
 @media screen and (min-width: 821px) and (max-width: 1024px) {
-
   /* HERO */
   .service-details-hero {
     min-height: 860px;
@@ -1370,7 +1353,7 @@ body.dark-mode .form-group textarea {
 
   .service-hero-container {
     width: 90%;
-    grid-template-columns: 1fr;          /* stack hero */
+    grid-template-columns: 1fr; /* stack hero */
     gap: 70px;
     padding: 120px 0 100px;
   }
@@ -1386,7 +1369,7 @@ body.dark-mode .form-group textarea {
 
   .service-detail-container {
     width: 90%;
-    grid-template-columns: 1fr;          /* stack image + text */
+    grid-template-columns: 1fr; /* stack image + text */
     gap: 55px;
   }
 
@@ -1401,13 +1384,12 @@ body.dark-mode .form-group textarea {
 
   .appointment-container {
     width: 90%;
-    grid-template-columns: 1fr;          /* stack text + form */
+    grid-template-columns: 1fr; /* stack text + form */
     gap: 55px;
   }
 }
 /* Nest Hub */
 @media screen and (width: 1024px) and (height: 600px) {
-
   /* HERO */
   .service-details-hero {
     min-height: 700px;
@@ -1415,7 +1397,7 @@ body.dark-mode .form-group textarea {
 
   .service-hero-container {
     width: 90%;
-    grid-template-columns: 1.3fr 0.7fr;  /* keep two columns */
+    grid-template-columns: 1.3fr 0.7fr; /* keep two columns */
     gap: 50px;
     padding: 90px 0 80px;
   }
@@ -1440,7 +1422,7 @@ body.dark-mode .form-group textarea {
 
   .service-detail-container {
     width: 90%;
-    grid-template-columns: 1.1fr 0.9fr;  /* still side‑by‑side */
+    grid-template-columns: 1.1fr 0.9fr; /* still side‑by‑side */
     gap: 50px;
   }
 
