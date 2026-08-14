@@ -1357,14 +1357,17 @@ body {
     bottom: 7px;
   }
 }
-/*=========================================================
-                PRICING SECTION
-=========================================================*/
+/* =========================================================
+                    PRICING SECTION
+========================================================= */
 
 .gripcore-pricing-section {
-  padding: 120px 8%;
-  background: #ffffff;
   position: relative;
+
+  padding: 120px 8%;
+
+  background: #ffffff;
+
   overflow: hidden;
 }
 
@@ -1374,406 +1377,648 @@ body.dark-mode .gripcore-pricing-section {
 
 .gripcore-pricing-section::before {
   content: "";
+
   position: absolute;
   top: -250px;
   left: -250px;
+
   width: 500px;
   height: 500px;
+
   border-radius: 50%;
+
   background: rgba(212, 175, 55, 0.08);
+
   filter: blur(90px);
 }
 
-/*=========================================================
-                CONTAINER
-=========================================================*/
+
+/* =========================================================
+                        CONTAINER
+========================================================= */
 
 .pricing-container {
-  max-width: 1400px;
-  margin: auto;
   position: relative;
   z-index: 2;
+
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-/*=========================================================
-                TITLE
-=========================================================*/
+
+/* =========================================================
+                    SECTION HEADER
+========================================================= */
 
 .pricing-section-header {
   max-width: 760px;
   margin: 0 auto 70px;
+
   text-align: center;
 }
 
 .pricing-eyebrow {
+  margin-bottom: 20px;
+
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+
   gap: 14px;
+
   color: #d4af37;
+
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .pricing-eyebrow span {
   width: 55px;
   height: 2px;
-  background: #d4af37;
+
+  flex-shrink: 0;
+
   border-radius: 30px;
+
+  background: #d4af37;
 }
 
 .pricing-section-header h2 {
-  font-size: clamp(40px, 5vw, 60px);
-  color: #111;
-  margin-bottom: 20px;
-  line-height: 1.15;
-}
+  margin: 0 0 20px;
 
-body.dark-mode .pricing-section-header h2 {
-  color: #fff;
+  color: #111111;
+
+  font-size: clamp(40px, 5vw, 60px);
+  line-height: 1.15;
 }
 
 .pricing-section-header h2 strong {
   display: block;
+
   color: #d4af37;
 }
 
 .pricing-section-header p {
+  margin: 0;
+
+  color: #666666;
+
   font-size: 15px;
-  color: #666;
   line-height: 1.9;
 }
 
-body.dark-mode .pricing-section-header p {
-  color: #999;
+body.dark-mode .pricing-section-header h2 {
+  color: #ffffff;
 }
 
-/*=========================================================
-                GRID
-=========================================================*/
+body.dark-mode .pricing-section-header p {
+  color: #a5a5a5;
+}
+
+
+/* =========================================================
+                    PRICING GRID
+========================================================= */
 
 .gripcore-pricing-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+
   gap: 30px;
 }
 
-/*=========================================================
-                CARD
-=========================================================*/
+
+/* =========================================================
+                    PRICING CARD
+========================================================= */
 
 .gripcore-price-card {
   position: relative;
-  background: #fff;
-  border: 1px solid #ececec;
-  border-radius: 18px;
+
+  min-width: 0;
+  height: 100%;
   padding: 45px 35px;
-  transition: 0.4s;
+
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-}
 
-body.dark-mode .gripcore-price-card {
-  background: #151515;
-  border-color: #282828;
+  border: 1px solid #ececec;
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  transform: none;
+
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
 }
 
 .gripcore-price-card:hover {
-  transform: translateY(-10px);
   border-color: #d4af37;
+
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+
+  transform: translateY(-8px);
+}
+
+body.dark-mode .gripcore-price-card {
+  border-color: #282828;
+
+  background: #151515;
 }
 
 body.dark-mode .gripcore-price-card:hover {
+  border-color: #d4af37;
+
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
 }
 
-/*=========================================================
-                FEATURED
-=========================================================*/
+
+/* =========================================================
+              FEATURED CARD — SAME HEIGHT
+========================================================= */
 
 .gripcore-price-card.featured {
+  height: 100%;
+
   border: 2px solid #d4af37;
-  transform: translateY(-12px);
+
+  transform: none;
 }
 
 .gripcore-price-card.featured:hover {
-  transform: translateY(-18px);
+  transform: translateY(-8px);
 }
 
-/*=========================================================
-                BADGE
-=========================================================*/
+
+/* =========================================================
+                    POPULAR BADGE
+========================================================= */
 
 .popular-badge {
   position: absolute;
   top: 22px;
   right: 22px;
-  background: #d4af37;
-  color: #111;
+  z-index: 3;
+
   padding: 8px 16px;
+
   border-radius: 30px;
+
+  color: #111111;
+  background: #d4af37;
+
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-/*=========================================================
-                ICON
-=========================================================*/
+
+/* =========================================================
+                        ICON
+========================================================= */
 
 .price-card-icon {
   width: 70px;
   height: 70px;
-  border-radius: 50%;
-  background: #faf6e8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #faf6e8;
+}
+
+.price-card-icon svg {
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  color: #d4af37;
 }
 
 body.dark-mode .price-card-icon {
   background: #201d12;
 }
 
-.price-card-icon svg {
-  width: 30px;
-  height: 30px;
-  color: #d4af37;
-}
 
-/*=========================================================
-                CONTENT
-=========================================================*/
+/* =========================================================
+                    CARD CONTENT
+========================================================= */
+
+.price-card-content {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
 
 .price-card-label {
   display: block;
+  margin-bottom: 10px;
+
   color: #d4af37;
+
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
-  margin-bottom: 10px;
 }
 
 .price-card-content h3 {
+  min-height: 38px;
+  margin: 0 0 15px;
+
+  color: #111111;
+
   font-size: 30px;
-  margin-bottom: 15px;
-  color: #111;
+  line-height: 1.25;
 }
 
 body.dark-mode .price-card-content h3 {
-  color: #fff;
+  color: #ffffff;
 }
 
 .price-card-description {
-  color: #666;
+  min-height: 86px;
+  margin: 0 0 28px;
+
+  color: #666666;
+
+  font-size: 15px;
   line-height: 1.9;
-  margin-bottom: 28px;
 }
 
 body.dark-mode .price-card-description {
-  color: #999;
+  color: #a5a5a5;
 }
 
-/*=========================================================
-                DIVIDER
-=========================================================*/
+
+/* =========================================================
+                        DIVIDER
+========================================================= */
 
 .price-card-divider {
   width: 100%;
   height: 1px;
+  margin: 0 0 25px;
+
+  flex-shrink: 0;
+
   background: #ececec;
-  margin: 25px 0;
 }
 
 body.dark-mode .price-card-divider {
   background: #2d2d2d;
 }
 
-/*=========================================================
-                FEATURES
-=========================================================*/
+
+/* =========================================================
+                    FEATURE LIST
+========================================================= */
 
 .price-card-content ul {
-  list-style: none;
-  padding: 0;
+  min-height: 130px;
   margin: 0 0 35px;
+  padding: 0;
+
+  flex: 1;
+
+  list-style: none;
 }
 
 .price-card-content ul li {
+  margin-bottom: 16px;
+
   display: flex;
   align-items: center;
+
   gap: 12px;
-  margin-bottom: 16px;
-  color: #555;
+
+  color: #555555;
+
   font-size: 14px;
+  line-height: 1.5;
+}
+
+.price-card-content ul li:last-child {
+  margin-bottom: 0;
+}
+
+.price-card-content ul li svg {
+  width: 18px;
+  min-width: 18px;
+  height: 18px;
+
+  flex-shrink: 0;
+
+  color: #d4af37;
 }
 
 body.dark-mode .price-card-content ul li {
   color: #bdbdbd;
 }
 
-.price-card-content ul li svg {
-  width: 18px;
-  height: 18px;
-  color: #d4af37;
-}
 
-/*=========================================================
-                BUTTON
-=========================================================*/
+/* =========================================================
+               BUTTONS — SAME HEIGHT/POSITION
+========================================================= */
 
 .pricing-btn {
-  margin-top: auto;
+  width: 100%;
   height: 55px;
-  border-radius: 6px;
-  display: flex;
-  justify-content: center;
+  min-height: 55px;
+  margin-top: auto;
+  padding: 0 20px;
+
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
   gap: 10px;
-  background: white;
-  color: #111111;
+
   border: 1px solid #d4af37;
-  text-decoration: none;
+  border-radius: 6px;
+
+  color: #111111;
+  background: #ffffff;
+
   font-size: 12px;
   font-weight: 700;
-  transition: 0.35s;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+
+  transition:
+    color 0.35s ease,
+    background 0.35s ease,
+    transform 0.35s ease;
 }
 
 .pricing-btn svg {
   width: 18px;
+  min-width: 18px;
   height: 18px;
-  transition: 0.35s;
+
+  flex-shrink: 0;
+
+  transition: transform 0.35s ease;
 }
 
 .pricing-btn:hover {
+  color: #111111;
   background: #d4af37;
-  color: #111;
+
   transform: translateY(-4px);
 }
 
 .pricing-btn:hover svg {
-  transform: translateX(4px);
+  transform: translate(4px, -4px);
 }
 
-/* Featured Button */
+
+/* Featured button */
 
 .featured-btn {
+  color: #111111;
   background: #d4af37;
-  color: #111;
 }
 
 .featured-btn:hover {
-  background: white;
   color: #111111;
+  background: #ffffff;
 }
+
+
+/* Dark-mode buttons */
+
+body.dark-mode .pricing-btn {
+  color: #ffffff;
+  background: transparent;
+}
+
+body.dark-mode .pricing-btn:hover {
+  color: #111111;
+  background: #d4af37;
+}
+
+body.dark-mode .featured-btn {
+  color: #111111;
+  background: #d4af37;
+}
+
+body.dark-mode .featured-btn:hover {
+  color: #111111;
+  background: #ffffff;
+}
+
+
 /* =========================================================
-   Samsung Galaxy S8+
-   360px - 740px
+                  SAMSUNG GALAXY S8+
+                  360px – 740px
 ========================================================= */
 
 @media screen and (min-width: 360px) and (max-width: 740px) {
+
   .gripcore-pricing-section {
     padding: 80px 20px;
   }
 
+  .pricing-section-header {
+    margin-bottom: 45px;
+  }
+
+  .pricing-eyebrow {
+    gap: 8px;
+
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+
+  .pricing-eyebrow span {
+    width: 28px;
+  }
+
+  .pricing-section-header h2 {
+    font-size: 38px;
+  }
+
+  .pricing-section-header p {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
   .gripcore-pricing-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+
     gap: 25px;
   }
 
-  .gripcore-price-card {
-    padding: 35px 28px;
-  }
-
+  .gripcore-price-card,
   .gripcore-price-card.featured {
+    height: auto;
+    min-height: 590px;
+    padding: 35px 28px;
+
     transform: none;
   }
+
+  .gripcore-price-card.featured:hover {
+    transform: translateY(-8px);
+  }
+
+  .price-card-description {
+    min-height: 75px;
+  }
+
+  .price-card-content ul {
+    min-height: 130px;
+  }
+
 }
 
+
 /* =========================================================
-   iPad Mini
-   768px - 820px
+                        IPAD MINI
+                        768px – 820px
 ========================================================= */
 
 @media screen and (min-width: 768px) and (max-width: 820px) {
+
   .gripcore-pricing-section {
     padding: 100px 6%;
   }
 
   .gripcore-pricing-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
     gap: 25px;
   }
 
+  .gripcore-price-card,
   .gripcore-price-card.featured {
+    min-height: 650px;
+
     transform: none;
   }
 
-  /* THIRD CARD CENTER */
   .gripcore-price-card:nth-child(3) {
+    width: calc(50% - 12.5px);
+
     grid-column: 1 / -1;
     justify-self: center;
-    width: calc(50% - 12.5px);
   }
+
 }
 
+
 /* =========================================================
-   iPad Pro 11"
-   821px - 1024px
+                    IPAD PRO 11"
+                    821px – 1024px
 ========================================================= */
 
 @media screen and (min-width: 821px) and (max-width: 1024px) {
+
   .gripcore-pricing-section {
     padding: 100px 6%;
   }
 
   .gripcore-pricing-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
     gap: 30px;
   }
 
+  .gripcore-price-card,
   .gripcore-price-card.featured {
+    min-height: 650px;
+
     transform: none;
   }
 
-  /* THIRD CARD CENTER */
   .gripcore-price-card:nth-child(3) {
+    width: calc(50% - 15px);
+
     grid-column: 1 / -1;
     justify-self: center;
-    width: calc(50% - 15px);
   }
+
 }
 
+
 /* =========================================================
-   Nest Hub
-   1024px x 600px
+                        NEST HUB
+                        1024px × 600px
 ========================================================= */
 
 @media screen and (width: 1024px) and (height: 600px) {
+
   .gripcore-pricing-section {
-    padding: 70px 6%;
+    padding: 70px 5%;
+  }
+
+  .pricing-section-header {
+    margin-bottom: 45px;
   }
 
   .gripcore-pricing-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
   }
 
+  .gripcore-price-card,
   .gripcore-price-card.featured {
+    min-height: 630px;
+    padding: 32px 24px;
+
     transform: none;
   }
 
-  /* THIRD CARD PERFECTLY CENTER */
   .gripcore-price-card:nth-child(3) {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: calc(50% - 12.5px);
+    width: auto;
+
+    grid-column: auto;
+    justify-self: stretch;
   }
+
+  .price-card-content h3 {
+    min-height: 63px;
+
+    font-size: 25px;
+  }
+
+  .price-card-description {
+    min-height: 110px;
+
+    font-size: 13px;
+  }
+
+  .price-card-content ul {
+    min-height: 150px;
+  }
+
+  .price-card-content ul li {
+    font-size: 12px;
+  }
+
 }
 
 /*=========================================================

@@ -2052,10 +2052,12 @@ body.rtl .blog-article-link svg {
   width: 100%;
 }
 
+
+
 /* =========================================================
         FEATURED CARD
 ========================================================= */
-
+/* 
 .insight-card.featured {
   background: linear-gradient(145deg, #1d1d1d, #111111);
 
@@ -2084,13 +2086,50 @@ body.rtl .blog-article-link svg {
   letter-spacing: 1.5px;
 
   transform: rotate(45deg);
+} */
+
+/* =========================================================
+                    FEATURED TAG
+========================================================= */
+
+.insight-card.featured {
+  border-color: rgba(212, 175, 55, 0.35);
+
+  background: linear-gradient(
+    145deg,
+    #1d1d1d,
+    #111111
+  );
+}
+
+.insight-card.featured::after {
+  content: "FEATURED";
+
+  position: absolute;
+  top: 20px;
+  right: -38px;
+  z-index: 3;
+
+  width: 135px;
+  padding: 7px 0;
+
+  color: #111111;
+  background: #d4af37;
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 1;
+  text-align: center;
+
+  transform: rotate(45deg);
 }
 
 /* =========================================================
         CARD TOP
 ========================================================= */
 
-.insight-card-top {
+/* .insight-card-top {
   display: flex;
 
   align-items: center;
@@ -2136,8 +2175,70 @@ body.rtl .blog-article-link svg {
 
 .insight-card:hover .insight-icon {
   transform: rotate(10deg) scale(1.08);
+} */
+
+
+/* =========================================================
+                      CARD TOP
+========================================================= */
+
+.insight-card-top {
+  position: relative;
+  z-index: 2;
+
+  min-height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
 }
 
+.insight-number {
+  color: #666666;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* Leave room for the Featured ribbon */
+
+.insight-card.featured .insight-card-top {
+  padding-right: 20px;
+}
+
+.insight-icon {
+  width: 52px;
+  min-width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #111111;
+  background: #d4af37;
+
+  transition: transform 0.5s ease;
+}
+
+.insight-icon svg {
+  width: 21px;
+  height: 21px;
+
+  display: block;
+  margin: 0;
+
+  stroke-width: 2;
+}
+
+.insight-card:hover .insight-icon {
+  transform: rotate(10deg) scale(1.08);
+}
 /* =========================================================
         CARD CONTENT
 ========================================================= */

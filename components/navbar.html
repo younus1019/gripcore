@@ -1,12 +1,21 @@
 <header>
   <nav class="navbar">
+
     <!-- LOGO -->
+
     <a href="index.html" class="logo">
-      <img id="headerLogo" src="images/logo-light.png" alt="GripCore Logo" />
+      <img
+        id="headerLogo"
+        src="images/logo-light.png"
+        alt="GripCore Logo"
+      />
     </a>
 
+
     <!-- MAIN NAVIGATION -->
+
     <ul class="menu">
+
       <li class="dropdown">
         <a href="index.html">
           Home
@@ -14,10 +23,16 @@
         </a>
 
         <ul class="dropdown-menu">
-          <li><a href="index.html">Home 1</a></li>
-          <li><a href="index2.html">Home 2</a></li>
+          <li>
+            <a href="index.html">Home 1</a>
+          </li>
+
+          <li>
+            <a href="index2.html">Home 2</a>
+          </li>
         </ul>
       </li>
+
 
       <li>
         <a href="about.html">About</a>
@@ -39,34 +54,75 @@
         <a href="contact.html">Contact</a>
       </li>
 
-      <!-- MOBILE LOGIN -->
-      <li class="mobile-login">
-        <a href="login.html" class="mobile-login-btn">
-          <i data-lucide="log-in"></i>
-          Login
+
+      <!-- MOBILE BOOK A SERVICE -->
+
+      <li class="mobile-service">
+        <a
+          href="bookappointment.html"
+          class="mobile-service-btn"
+        >
+          <i data-lucide="calendar-check"></i>
+          Book a Service
         </a>
       </li>
+
     </ul>
 
+
     <!-- RIGHT SIDE BUTTONS -->
+
     <div class="right-menu">
+
       <!-- RTL -->
-      <button id="rtlBtn" class="icon-btn" title="RTL Mode">
-    <i class="fa-solid fa-exchange"></i>
+
+      <button
+        id="rtlBtn"
+        class="icon-btn"
+        type="button"
+        title="RTL Mode"
+        aria-label="Toggle RTL mode"
+      >
+        <i class="fa-solid fa-right-left"></i>
       </button>
+
 
       <!-- DARK MODE -->
-      <button id="darkModeBtn" class="icon-btn" title="Dark Mode">
-        <i class="fa-solid fa-cloud-moon"></i>
+
+      <button
+        id="darkModeBtn"
+        class="icon-btn"
+        type="button"
+        title="Dark Mode"
+        aria-label="Toggle dark mode"
+      >
+        <i class="fa-solid fa-moon"></i>
       </button>
 
-      <!-- DESKTOP LOGIN -->
-      <a href="login.html" class="login"> Login </a>
+
+      <!-- DESKTOP BOOK A SERVICE -->
+
+      <a
+        href="bookappointment.html"
+        class="navbar-service-btn"
+      >
+        <i data-lucide="calendar-check"></i>
+        Book a Service
+      </a>
+
 
       <!-- MOBILE MENU -->
-      <button class="menu-btn" id="menuToggle" type="button">
+
+      <button
+        class="menu-btn"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+      >
         <i class="fa-solid fa-bars"></i>
       </button>
+
     </div>
+
   </nav>
 </header>
