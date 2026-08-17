@@ -17,7 +17,6 @@ body {
   background: #080808;
 }
 
-
 /* =========================================================
    MAIN PAGE
 ========================================================= */
@@ -41,7 +40,6 @@ body {
     background 0.4s ease,
     color 0.4s ease;
 }
-
 
 /* =========================================================
    DECORATIVE SHAPES
@@ -86,7 +84,6 @@ body {
 
   background: rgba(212, 175, 55, 0.03);
 }
-
 
 /* =========================================================
    TOP CONTROLS
@@ -142,7 +139,6 @@ body {
   height: 17px;
 }
 
-
 /* =========================================================
    APPOINTMENT CARD
 ========================================================= */
@@ -164,14 +160,12 @@ body {
 
   border-radius: 18px;
 
-  box-shadow:
-    0 30px 100px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.5);
 
   transition:
     background 0.4s ease,
     border-color 0.4s ease;
 }
-
 
 /* =========================================================
    LOGO
@@ -192,7 +186,6 @@ body {
 
   object-fit: contain;
 }
-
 
 /* =========================================================
    HEADING
@@ -246,7 +239,6 @@ body {
   line-height: 1.7;
 }
 
-
 /* =========================================================
    FORM SECTION TITLE
 ========================================================= */
@@ -280,7 +272,6 @@ body {
   font-weight: 600;
 }
 
-
 /* =========================================================
    FORM ROW
 ========================================================= */
@@ -294,7 +285,6 @@ body {
 
   margin-bottom: 17px;
 }
-
 
 /* =========================================================
    INPUT GROUP
@@ -317,7 +307,6 @@ body {
 
   font-weight: 500;
 }
-
 
 /* =========================================================
    INPUT BOX
@@ -346,8 +335,7 @@ body {
 .input-box:focus-within {
   border-color: #d4af37;
 
-  box-shadow:
-    0 0 0 3px rgba(212, 175, 55, 0.08);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.08);
 }
 
 .input-box svg {
@@ -396,7 +384,6 @@ body {
   color: #ffffff;
 }
 
-
 /* =========================================================
    TEXTAREA
 ========================================================= */
@@ -422,8 +409,7 @@ body {
 .textarea-box:focus-within {
   border-color: #d4af37;
 
-  box-shadow:
-    0 0 0 3px rgba(212, 175, 55, 0.08);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.08);
 }
 
 .textarea-box svg {
@@ -463,7 +449,6 @@ body {
   color: #777777;
 }
 
-
 /* =========================================================
    TERMS
 ========================================================= */
@@ -494,7 +479,6 @@ body {
 
   cursor: pointer;
 }
-
 
 /* =========================================================
    SUBMIT BUTTON
@@ -530,7 +514,9 @@ body {
 
   transition: 0.3s ease;
 }
-
+body.dark-mode input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
 .appointment-submit:hover {
   background: #ffffff;
 
@@ -550,7 +536,6 @@ body {
 .appointment-submit:hover svg {
   transform: translate(3px, -3px);
 }
-
 
 /* =========================================================
    LOGIN
@@ -578,7 +563,6 @@ body {
   text-decoration: underline;
 }
 
-
 /* =========================================================
    LIGHT MODE
 ========================================================= */
@@ -592,8 +576,7 @@ body.light-mode .appointment-card {
 
   border-color: #e5e5e5;
 
-  box-shadow:
-    0 25px 70px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
 }
 
 body.light-mode .appointment-heading h1 {
@@ -652,7 +635,6 @@ body.light-mode .appointment-control-btn {
   border-color: #dddddd;
 }
 
-
 /* =========================================================
    RTL
 ========================================================= */
@@ -689,13 +671,11 @@ body.rtl .appointment-submit svg {
   transform: rotate(180deg);
 }
 
-
 /* =========================================================
    TABLET
 ========================================================= */
 
 @media screen and (max-width: 768px) {
-
   .appointment-page {
     padding: 80px 18px 30px;
   }
@@ -713,16 +693,13 @@ body.rtl .appointment-submit svg {
   body.rtl .appointment-controls {
     left: 20px;
   }
-
 }
-
 
 /* =========================================================
    MOBILE
 ========================================================= */
 
 @media screen and (max-width: 600px) {
-
   .appointment-page {
     padding: 75px 15px 25px;
   }
@@ -759,7 +736,6 @@ body.rtl .appointment-submit svg {
     width: 38px;
     height: 38px;
   }
-
 }
 
 /* =========================================
