@@ -1,6 +1,4 @@
-// =========================================
-// LOAD NAVBAR
-// =========================================
+
 
 fetch("../components/navbar.html")
   .then((response) => {
@@ -22,9 +20,7 @@ fetch("../components/navbar.html")
   });
 
 
-// =========================================
-// LOAD FOOTER
-// =========================================
+
 
 fetch("../components/footer.html")
   .then((response) => {
@@ -44,9 +40,7 @@ fetch("../components/footer.html")
   });
 
 
-// =========================================
-// NAVBAR
-// =========================================
+
 
 function initializeNavbar() {
 
@@ -70,7 +64,7 @@ function initializeNavbar() {
   }
 
 
-  // DARK MODE
+
 
   const darkModeBtn =
     document.getElementById("darkModeBtn");
@@ -89,7 +83,7 @@ function initializeNavbar() {
   }
 
 
-  // RTL
+
 
   const rtlBtn =
     document.getElementById("rtlBtn");
@@ -131,9 +125,7 @@ function initializeNavbar() {
 }
 
 
-// =========================================
-// UPDATE THEME
-// =========================================
+
 
 function updateTheme() {
 
@@ -209,8 +201,6 @@ function updateTheme() {
 
 }
 
-// =========================================
-// LUCIDE ICONS
-// =========================================
+
 
 lucide.createIcons();

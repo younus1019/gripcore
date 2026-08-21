@@ -1,13 +1,8 @@
-/* =========================================================
-        TYRE FINDER FUNCTIONALITY
-========================================================= */
+
 
 document.addEventListener("DOMContentLoaded", function () {
 
 
-  /* =======================================================
-        INITIALIZE LUCIDE ICONS
-  ======================================================= */
 
   if (typeof lucide !== "undefined") {
 
@@ -17,9 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  /* =======================================================
-        GET ELEMENTS
-  ======================================================= */
+
 
   const tyreFinderForm =
     document.getElementById("tyreFinderForm");
@@ -38,9 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  /* =======================================================
-        FORM SUBMIT
-  ======================================================= */
+
 
   if (tyreFinderForm) {
 
@@ -62,9 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-        /* =================================================
-              VALIDATION
-        ================================================= */
+       
 
         if (
           !brand ||
@@ -102,9 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-        /* =================================================
-              SUCCESS RESULT
-        ================================================= */
+        
 
         const brandName =
           tyreBrand.options[

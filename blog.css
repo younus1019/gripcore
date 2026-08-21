@@ -1,6 +1,4 @@
-/* =========================================================
-        PREMIUM BLOG HERO
-========================================================= */
+
 
 .blog-hero {
   position: relative;
@@ -19,9 +17,7 @@
     color 0.4s ease;
 }
 
-/* =========================================================
-        HERO BACKGROUND
-========================================================= */
+
 
 .blog-hero-bg {
   position: absolute;
@@ -45,9 +41,7 @@
   transform: scale(1.07);
 }
 
-/* =========================================================
-        HERO OVERLAY
-========================================================= */
+
 
 .blog-hero-overlay {
   position: absolute;
@@ -64,9 +58,7 @@
   );
 }
 
-/* =========================================================
-        DECORATIVE LINES
-========================================================= */
+
 
 .blog-hero-line {
   position: absolute;
@@ -99,9 +91,7 @@
   right: 30%;
 }
 
-/* =========================================================
-        HERO CONTAINER
-========================================================= */
+
 
 .blog-hero-container {
   position: relative;
@@ -122,9 +112,7 @@
   justify-content: space-between;
 }
 
-/* =========================================================
-        HERO CONTENT
-========================================================= */
+
 
 .blog-hero-content {
   max-width: 780px;
@@ -132,9 +120,7 @@
   padding: 100px 0 80px;
 }
 
-/* =========================================================
-        EYEBROW
-========================================================= */
+
 
 .blog-eyebrow {
   display: inline-flex;
@@ -163,9 +149,7 @@
   background: #d4af37;
 }
 
-/* =========================================================
-        HERO HEADING
-========================================================= */
+
 
 .blog-hero-content h1 {
   margin: 0 0 28px;
@@ -189,9 +173,7 @@
   color: #d4af37;
 }
 
-/* =========================================================
-        HERO DESCRIPTION
-========================================================= */
+
 
 .blog-hero-content > p {
   max-width: 650px;
@@ -205,9 +187,7 @@
   line-height: 1.9;
 }
 
-/* =========================================================
-        HERO META
-========================================================= */
+
 
 .blog-hero-meta {
   display: flex;
@@ -249,9 +229,7 @@
   background: rgba(255, 255, 255, 0.25);
 }
 
-/* =========================================================
-        SCROLL INDICATOR
-========================================================= */
+
 
 .blog-scroll-indicator {
   position: absolute;
@@ -296,23 +274,13 @@
   }
 }
 
-/* =========================================================
-        LIGHT MODE
-========================================================= */
 
 body:not(.dark-mode) .blog-hero {
   background: #f7f7f7;
 }
 
-/*
-  The image and dark overlay remain intentionally visible
-  in light mode because this is a photographic hero section.
-  The content stays white for premium contrast.
-*/
 
-/* =========================================================
-        DARK MODE
-========================================================= */
+
 
 body.dark-mode .blog-hero {
   background: #080808;
@@ -336,9 +304,7 @@ body.dark-mode .blog-hero-content > p {
   color: #aaaaaa;
 }
 
-/* =========================================================
-        TABLET
-========================================================= */
+
 
 @media screen and (max-width: 991px) {
   .blog-hero {
@@ -376,9 +342,6 @@ body.dark-mode .blog-hero-content > p {
   }
 }
 
-/* =========================================================
-        MOBILE
-========================================================= */
 
 @media screen and (max-width: 768px) {
   .blog-hero {
@@ -442,9 +405,7 @@ body.dark-mode .blog-hero-content > p {
   }
 }
 
-/* =========================================================
-        SMALL MOBILE
-========================================================= */
+
 
 @media screen and (max-width: 480px) {
   .blog-hero {
@@ -481,9 +442,7 @@ body.dark-mode .blog-hero-content > p {
   }
 }
 
-/* =========================================================
-        PREMIUM FEATURED BLOG
-========================================================= */
+
 
 .featured-blog-section {
   position: relative;
@@ -499,9 +458,7 @@ body.dark-mode .blog-hero-content > p {
     color 0.4s ease;
 }
 
-/* =========================================================
-        CONTAINER
-========================================================= */
+
 
 .featured-blog-container {
   width: 100%;
@@ -510,9 +467,7 @@ body.dark-mode .blog-hero-content > p {
   margin: auto;
 }
 
-/* =========================================================
-        SECTION INTRO
-========================================================= */
+
 
 .featured-blog-heading {
   display: flex;
@@ -557,9 +512,7 @@ body.dark-mode .blog-hero-content > p {
   border-radius: 50px;
 }
 
-/* =========================================================
-        FEATURED CARD
-========================================================= */
+
 
 .featured-blog-card {
   display: grid;
@@ -584,9 +537,7 @@ body.dark-mode .blog-hero-content > p {
   transform: translateY(-6px);
 }
 
-/* =========================================================
-        IMAGE
-========================================================= */
+
 
 .featured-blog-image {
   position: relative;
@@ -610,9 +561,7 @@ body.dark-mode .blog-hero-content > p {
   transform: scale(1.06);
 }
 
-/* =========================================================
-        IMAGE LABEL
-========================================================= */
+
 
 .featured-blog-image-label {
   position: absolute;
@@ -633,9 +582,7 @@ body.dark-mode .blog-hero-content > p {
   letter-spacing: 2px;
 }
 
-/* =========================================================
-        CONTENT
-========================================================= */
+
 
 .featured-blog-content {
   display: flex;
@@ -644,9 +591,7 @@ body.dark-mode .blog-hero-content > p {
 
   padding: 45px 50px;
 }
-/* =========================================================
-        META
-========================================================= */
+
 
 .featured-blog-meta {
   display: flex;
@@ -671,16 +616,7 @@ body.dark-mode .blog-hero-content > p {
   font-size: 1rem;
 }
 
-/* .featured-blog-divider {
-  width: 25px;
-  height: 1px;
 
-  background: #d4af37;
-} */
-
-/* =========================================================
-        TITLE
-========================================================= */
 
 .featured-blog-content h2 {
   max-width: 600px;
@@ -704,9 +640,7 @@ body.dark-mode .blog-hero-content > p {
   color: #d4af37;
 }
 
-/* =========================================================
-        DESCRIPTION
-========================================================= */
+
 
 .featured-blog-content > p {
   max-width: 580px;
@@ -720,9 +654,7 @@ body.dark-mode .blog-hero-content > p {
   line-height: 1.9;
 }
 
-/* =========================================================
-        ARTICLE INFO
-========================================================= */
+
 
 .featured-blog-info {
   display: flex;
@@ -742,9 +674,7 @@ body.dark-mode .blog-hero-content > p {
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* =========================================================
-        AUTHOR
-========================================================= */
+
 
 .featured-author {
   display: flex;
@@ -793,9 +723,7 @@ body.dark-mode .blog-hero-content > p {
   font-size: 10px;
 }
 
-/* =========================================================
-        DATE
-========================================================= */
+
 
 .featured-blog-date {
   display: flex;
@@ -816,9 +744,7 @@ body.dark-mode .blog-hero-content > p {
   color: #d4af37;
 }
 
-/* =========================================================
-        READ BUTTON
-========================================================= */
+
 
 .featured-blog-btn {
   display: inline-flex;
@@ -873,9 +799,7 @@ body.dark-mode .blog-hero-content > p {
   transform: translate(4px, -4px);
 }
 
-/* =========================================================
-        DARK MODE
-========================================================= */
+
 
 body.dark-mode .featured-blog-section {
   background: #0e0e0e;
@@ -927,9 +851,7 @@ body.dark-mode .featured-blog-btn:hover {
   color: #111111;
 }
 
-/* =========================================================
-        TABLET
-========================================================= */
+
 
 @media screen and (max-width: 991px) {
   .featured-blog-section {
@@ -949,9 +871,7 @@ body.dark-mode .featured-blog-btn:hover {
   }
 }
 
-/* =========================================================
-        MOBILE
-========================================================= */
+
 
 @media screen and (max-width: 768px) {
   .featured-blog-section {
@@ -1000,9 +920,7 @@ body.dark-mode .featured-blog-btn:hover {
   }
 }
 
-/* =========================================================
-        SMALL MOBILE
-========================================================= */
+
 
 @media screen and (max-width: 480px) {
   .featured-blog-section {
@@ -1026,9 +944,7 @@ body.dark-mode .featured-blog-btn:hover {
   }
 }
 
-/* =========================================================
-        PREMIUM BLOG DISCOVER / FILTER
-========================================================= */
+
 
 .blog-discover-section {
   position: relative;
@@ -1051,9 +967,7 @@ body.dark-mode .featured-blog-btn:hover {
   margin: auto;
 }
 
-/* =========================================================
-        HEADER
-========================================================= */
+
 
 .blog-discover-header {
   display: flex;
@@ -1107,9 +1021,7 @@ body.dark-mode .featured-blog-btn:hover {
   line-height: 1.9;
 }
 
-/* =========================================================
-        FILTER BAR
-========================================================= */
+
 
 .blog-filter-bar {
   display: flex;
@@ -1133,9 +1045,7 @@ body.dark-mode .featured-blog-btn:hover {
     border-color 0.4s ease;
 }
 
-/* =========================================================
-        SEARCH
-========================================================= */
+
 
 .blog-search-box {
   position: relative;
@@ -1193,9 +1103,7 @@ body.dark-mode .featured-blog-btn:hover {
   border-color: #d4af37;
 }
 
-/* =========================================================
-        CATEGORY FILTER
-========================================================= */
+
 
 .blog-category-filter {
   display: flex;
@@ -1251,9 +1159,7 @@ body.dark-mode .featured-blog-btn:hover {
   color: #ffffff;
 }
 
-/* =========================================================
-        RESULTS HEADER
-========================================================= */
+
 
 .blog-results-header {
   display: flex;
@@ -1289,9 +1195,7 @@ body.dark-mode .featured-blog-btn:hover {
   background: #e5e5e5;
 }
 
-/* =========================================================
-        ARTICLES GRID
-========================================================= */
+
 
 .blog-articles-grid {
   display: grid;
@@ -1301,9 +1205,7 @@ body.dark-mode .featured-blog-btn:hover {
   gap: 30px;
 }
 
-/* =========================================================
-        ARTICLE CARD
-========================================================= */
+
 
 .blog-article-card {
   position: relative;
@@ -1328,9 +1230,7 @@ body.dark-mode .featured-blog-btn:hover {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
 }
 
-/* =========================================================
-        ARTICLE IMAGE
-========================================================= */
+
 
 .blog-article-image {
   position: relative;
@@ -1355,9 +1255,7 @@ body.dark-mode .featured-blog-btn:hover {
   transform: scale(1.07);
 }
 
-/* =========================================================
-        ARTICLE CATEGORY
-========================================================= */
+
 
 .blog-article-category {
   position: absolute;
@@ -1378,17 +1276,13 @@ body.dark-mode .featured-blog-btn:hover {
   letter-spacing: 1.5px;
 }
 
-/* =========================================================
-        ARTICLE CONTENT
-========================================================= */
+
 
 .blog-article-content {
   padding: 30px;
 }
 
-/* =========================================================
-        ARTICLE META
-========================================================= */
+
 
 .blog-article-meta {
   display: flex;
@@ -1419,9 +1313,7 @@ body.dark-mode .featured-blog-btn:hover {
   color: #d4af37;
 }
 
-/* =========================================================
-        ARTICLE TITLE
-========================================================= */
+
 
 .blog-article-content h3 {
   margin: 0 0 15px;
@@ -1441,9 +1333,7 @@ body.dark-mode .featured-blog-btn:hover {
   color: #d4af37;
 }
 
-/* =========================================================
-        ARTICLE DESCRIPTION
-========================================================= */
+
 
 .blog-article-content > p {
   margin: 0 0 25px;
@@ -1455,9 +1345,7 @@ body.dark-mode .featured-blog-btn:hover {
   line-height: 1.8;
 }
 
-/* =========================================================
-        ARTICLE LINK
-========================================================= */
+
 
 .blog-article-link {
   display: inline-flex;
@@ -1494,9 +1382,7 @@ body.dark-mode .featured-blog-btn:hover {
   transform: translate(4px, -4px);
 }
 
-/* =========================================================
-        NO RESULTS
-========================================================= */
+
 
 .blog-no-results {
   display: none;
@@ -1553,9 +1439,7 @@ body.dark-mode .featured-blog-btn:hover {
   font-size: 13px;
 }
 
-/* =========================================================
-        FILTER ANIMATION
-========================================================= */
+
 
 .blog-article-card.hide {
   display: none;
@@ -1579,9 +1463,7 @@ body.dark-mode .featured-blog-btn:hover {
   }
 }
 
-/* =========================================================
-        DARK MODE
-========================================================= */
+
 
 body.dark-mode .blog-discover-section {
   background: #080808;
@@ -1685,9 +1567,7 @@ body.dark-mode .blog-no-results p {
   color: #999999;
 }
 
-/* =========================================================
-        RTL
-========================================================= */
+
 
 body.rtl .blog-search-box svg {
   left: auto;
@@ -1723,9 +1603,7 @@ body.rtl .blog-article-link svg {
   transform: scaleX(-1);
 }
 
-/* =========================================================
-        TABLET
-========================================================= */
+
 
 @media screen and (max-width: 1100px) {
   .blog-filter-bar {
@@ -1747,9 +1625,7 @@ body.rtl .blog-article-link svg {
   }
 }
 
-/* =========================================================
-        MOBILE
-========================================================= */
+
 
 @media screen and (max-width: 768px) {
   .blog-discover-section {
@@ -1801,9 +1677,7 @@ body.rtl .blog-article-link svg {
   }
 }
 
-/* =========================================================
-        SMALL MOBILE
-========================================================= */
+
 
 @media screen and (max-width: 480px) {
   .blog-discover-section {
@@ -1837,9 +1711,7 @@ body.rtl .blog-article-link svg {
   }
 }
 
-/* =========================================================
-        PREMIUM AUTOMOTIVE INSIGHTS
-========================================================= */
+
 
 .automotive-insights {
   position: relative;
@@ -1869,9 +1741,7 @@ body.rtl .blog-article-link svg {
   margin: auto;
 }
 
-/* =========================================================
-        DECORATIVE ORBITS
-========================================================= */
+
 
 .insights-orbit {
   position: absolute;
@@ -1905,9 +1775,7 @@ body.rtl .blog-article-link svg {
   border-color: rgba(212, 175, 55, 0.08);
 }
 
-/* =========================================================
-        HEADER
-========================================================= */
+
 
 .automotive-insights-header {
   display: flex;
@@ -1983,9 +1851,7 @@ body.rtl .blog-article-link svg {
   line-height: 1.9;
 }
 
-/* =========================================================
-        INSIGHTS GRID
-========================================================= */
+
 
 .insights-grid {
   display: grid;
@@ -1995,9 +1861,7 @@ body.rtl .blog-article-link svg {
   gap: 20px;
 }
 
-/* =========================================================
-        INSIGHT CARD
-========================================================= */
+
 
 .insight-card {
   position: relative;
@@ -2054,44 +1918,6 @@ body.rtl .blog-article-link svg {
 
 
 
-/* =========================================================
-        FEATURED CARD
-========================================================= */
-/* 
-.insight-card.featured {
-  background: linear-gradient(145deg, #1d1d1d, #111111);
-
-  border-color: rgba(212, 175, 55, 0.35);
-}
-
-.insight-card.featured::after {
-  content: "FEATURED";
-
-  position: absolute;
-
-  top: 25px;
-
-  right: -35px;
-
-  padding: 7px 40px;
-
-  background: #d4af37;
-
-  color: #111111;
-
-  font-size: 8px;
-
-  font-weight: 700;
-
-  letter-spacing: 1.5px;
-
-  transform: rotate(45deg);
-} */
-
-/* =========================================================
-                    FEATURED TAG
-========================================================= */
-
 .insight-card.featured {
   border-color: rgba(212, 175, 55, 0.35);
 
@@ -2125,62 +1951,7 @@ body.rtl .blog-article-link svg {
   transform: rotate(45deg);
 }
 
-/* =========================================================
-        CARD TOP
-========================================================= */
 
-/* .insight-card-top {
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-}
-
-.insight-number {
-  color: #666666;
-
-  font-size: 12px;
-
-  font-weight: 600;
-
-  letter-spacing: 2px;
-}
-
-.insight-icon {
-  width: 52px;
-
-  height: 52px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  background: #d4af37;
-
-  color: #111111;
-
-  border-radius: 50%;
-
-  transition: transform 0.5s ease;
-}
-
-.insight-icon svg {
-  width: 21px;
-
-  height: 21px;
-}
-
-.insight-card:hover .insight-icon {
-  transform: rotate(10deg) scale(1.08);
-} */
-
-
-/* =========================================================
-                      CARD TOP
-========================================================= */
 
 .insight-card-top {
   position: relative;
@@ -2203,7 +1974,7 @@ body.rtl .blog-article-link svg {
   letter-spacing: 2px;
 }
 
-/* Leave room for the Featured ribbon */
+
 
 .insight-card.featured .insight-card-top {
   padding-right: 20px;
@@ -2239,9 +2010,7 @@ body.rtl .blog-article-link svg {
 .insight-card:hover .insight-icon {
   transform: rotate(10deg) scale(1.08);
 }
-/* =========================================================
-        CARD CONTENT
-========================================================= */
+
 
 .insight-card-content {
   margin-top: 50px;
@@ -2287,9 +2056,7 @@ body.rtl .blog-article-link svg {
   line-height: 1.8;
 }
 
-/* =========================================================
-        CARD FOOTER
-========================================================= */
+
 
 .insight-card-footer {
   display: flex;
@@ -2329,9 +2096,7 @@ body.rtl .blog-article-link svg {
   transform: translate(4px, -4px);
 }
 
-/* =========================================================
-        BOTTOM EXPERT CTA
-========================================================= */
+
 
 .insights-bottom {
   display: flex;
@@ -2464,9 +2229,7 @@ body.rtl .blog-article-link svg {
   transform: translate(3px, -3px);
 }
 
-/* =========================================================
-        LIGHT MODE
-========================================================= */
+
 
 body:not(.dark-mode) .automotive-insights {
   background: #f7f7f7;
@@ -2526,9 +2289,7 @@ body:not(.dark-mode) .insights-bottom-content p {
   color: #777777;
 }
 
-/* =========================================================
-        DARK MODE
-========================================================= */
+
 
 body.dark-mode .automotive-insights {
   background: #111111;
@@ -2552,9 +2313,7 @@ body.dark-mode .insights-bottom {
   border-color: rgba(255, 255, 255, 0.08);
 }
 
-/* =========================================================
-        RTL
-========================================================= */
+
 
 body.rtl .automotive-insights-header {
   direction: rtl;
@@ -2584,9 +2343,7 @@ body.rtl .insights-btn:hover svg {
   transform: scaleX(-1) translate(3px, -3px);
 }
 
-/* =========================================================
-        TABLET
-========================================================= */
+
 
 @media screen and (max-width: 1100px) {
   .automotive-insights {
@@ -2614,9 +2371,7 @@ body.rtl .insights-btn:hover svg {
   }
 }
 
-/* =========================================================
-        MOBILE
-========================================================= */
+
 
 @media screen and (max-width: 768px) {
   .automotive-insights {
@@ -2670,9 +2425,7 @@ body.rtl .insights-btn:hover svg {
   }
 }
 
-/* =========================================================
-        SMALL MOBILE
-========================================================= */
+
 
 @media screen and (max-width: 480px) {
   .automotive-insights {
@@ -2702,9 +2455,6 @@ body.rtl .insights-btn:hover svg {
   }
 }
 
-/* =========================================================
-        PREMIUM BLOG CTA
-========================================================= */
 
 .premium-blog-cta {
   position: relative;
@@ -2742,9 +2492,6 @@ body.rtl .insights-btn:hover svg {
   gap: 80px;
 }
 
-/* =========================================================
-        DECORATIVE ORBITS
-========================================================= */
 
 .blog-cta-orbit {
   position: absolute;
@@ -2778,9 +2525,7 @@ body.rtl .insights-btn:hover svg {
   border-color: rgba(212, 175, 55, 0.08);
 }
 
-/* =========================================================
-        CTA CONTENT
-========================================================= */
+
 
 .blog-cta-content {
   max-width: 750px;
@@ -2844,9 +2589,7 @@ body.rtl .insights-btn:hover svg {
   line-height: 1.9;
 }
 
-/* =========================================================
-        CTA BUTTONS
-========================================================= */
+
 
 .blog-cta-buttons {
   display: flex;
@@ -2894,7 +2637,7 @@ body.rtl .insights-btn:hover svg {
   transition: transform 0.3s ease;
 }
 
-/* PRIMARY */
+
 
 .blog-cta-btn.primary {
   background: #d4af37;
@@ -2918,7 +2661,7 @@ body.rtl .insights-btn:hover svg {
   transform: translateY(-2px);
 }
 
-/* SECONDARY */
+
 
 .blog-cta-btn.secondary {
   color: #ffffff;
@@ -2940,9 +2683,7 @@ body.rtl .insights-btn:hover svg {
   transform: translate(4px, -4px);
 }
 
-/* =========================================================
-        CTA VISUAL
-========================================================= */
+
 
 .blog-cta-visual {
   position: relative;
@@ -3050,9 +2791,7 @@ body.rtl .insights-btn:hover svg {
   height: 48px;
 }
 
-/* =========================================================
-        FLOATING BADGE
-========================================================= */
+
 
 .blog-cta-badge {
   position: absolute;
@@ -3108,9 +2847,7 @@ body.rtl .insights-btn:hover svg {
   font-size: 10px;
 }
 
-/* =========================================================
-        LIGHT MODE
-========================================================= */
+
 
 body:not(.dark-mode) .premium-blog-cta {
   background: #f7f7f7;
@@ -3148,9 +2885,7 @@ body:not(.dark-mode) .blog-cta-badge span {
   color: #777777;
 }
 
-/* =========================================================
-        DARK MODE
-========================================================= */
+
 
 body.dark-mode .premium-blog-cta {
   background: #111111;
@@ -3184,9 +2919,7 @@ body.dark-mode .blog-cta-badge strong {
   color: #ffffff;
 }
 
-/* =========================================================
-        RTL
-========================================================= */
+
 
 body.rtl .premium-blog-cta-container {
   direction: rtl;
@@ -3216,9 +2949,7 @@ body.rtl .blog-cta-btn.secondary:hover svg {
   transform: scaleX(-1) translate(4px, -4px);
 }
 
-/* =========================================================
-        TABLET
-========================================================= */
+
 
 @media screen and (max-width: 1000px) {
   .premium-blog-cta {
@@ -3244,9 +2975,7 @@ body.rtl .blog-cta-btn.secondary:hover svg {
   }
 }
 
-/* =========================================================
-        MOBILE
-========================================================= */
+
 
 @media screen and (max-width: 768px) {
   .premium-blog-cta {
@@ -3302,9 +3031,7 @@ body.rtl .blog-cta-btn.secondary:hover svg {
   }
 }
 
-/* =========================================================
-        SMALL MOBILE
-========================================================= */
+
 
 @media screen and (max-width: 480px) {
   .premium-blog-cta {

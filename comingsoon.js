@@ -1,11 +1,7 @@
-/*=========================================================
-                    COMING SOON JS
-=========================================================*/
+
 
 document.addEventListener("DOMContentLoaded", function () {
-  /*=====================================================
-                        ELEMENTS
-  =====================================================*/
+  
 
   const darkModeToggle = document.getElementById("darkModeToggle");
 
@@ -27,15 +23,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const notifyMessage = document.getElementById("notifyMessage");
 
-  /*=====================================================
-                      DARK MODE
-  =====================================================*/
 
   const savedTheme = localStorage.getItem("theme");
 
-  /*-----------------------------------------------------
-                  LOAD SAVED THEME
-  -----------------------------------------------------*/
+
 
   if (savedTheme === "dark") {
     document.body.classList.add("dark-mode");
@@ -63,9 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  /*-----------------------------------------------------
-                    DARK MODE TOGGLE
-  -----------------------------------------------------*/
+
 
   if (darkModeToggle) {
     darkModeToggle.addEventListener("click", function () {
@@ -73,9 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const isDark = document.body.classList.contains("dark-mode");
 
-      /*---------------------------------------------
-                      DARK MODE
-      ---------------------------------------------*/
+    
 
       if (isDark) {
         localStorage.setItem("theme", "dark");
@@ -88,9 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         darkModeToggle.title = "Light Mode";
       } else {
-        /*---------------------------------------------
-                        LIGHT MODE
-        ---------------------------------------------*/
+       
 
         localStorage.setItem("theme", "light");
 
@@ -105,15 +90,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  /*=====================================================
-                        RTL MODE
-  =====================================================*/
+ 
 
   const savedRTL = localStorage.getItem("rtlMode");
 
-  /*-----------------------------------------------------
-                    LOAD SAVED RTL
-  -----------------------------------------------------*/
+
 
   if (savedRTL === "true") {
     document.documentElement.classList.add("rtl-mode");
@@ -137,9 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  /*-----------------------------------------------------
-                      RTL TOGGLE
-  -----------------------------------------------------*/
+ 
 
   if (rtlToggle) {
     rtlToggle.addEventListener("click", function () {
@@ -147,9 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const isRTL = document.documentElement.classList.contains("rtl-mode");
 
-      /*---------------------------------------------
-                        RTL MODE
-      ---------------------------------------------*/
+      
 
       if (isRTL) {
         document.documentElement.setAttribute("dir", "rtl");
@@ -160,9 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         localStorage.setItem("rtlMode", "true");
       } else {
-        /*---------------------------------------------
-                        LTR MODE
-        ---------------------------------------------*/
+        
 
         document.documentElement.setAttribute("dir", "ltr");
 
@@ -175,14 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  /*=====================================================
-                        COUNTDOWN
-  =====================================================*/
-
-  /*
-    Change this date when you want
-    the website to launch.
-  */
+ 
 
   const launchDate = new Date("August 15, 2026 00:00:00").getTime();
 
@@ -191,9 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const distance = launchDate - now;
 
-    /*---------------------------------------------
-                LAUNCH DATE REACHED
-    ---------------------------------------------*/
+   
 
     if (distance <= 0) {
       if (countdownDays) {
@@ -215,9 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    /*---------------------------------------------
-                    CALCULATE TIME
-    ---------------------------------------------*/
+
 
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
@@ -229,9 +193,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    /*---------------------------------------------
-                    DISPLAY COUNTDOWN
-    ---------------------------------------------*/
+
 
     if (countdownDays) {
       countdownDays.textContent = String(days).padStart(2, "0");
@@ -250,17 +212,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  /*-----------------------------------------------------
-                    START COUNTDOWN
-  -----------------------------------------------------*/
+ 
 
   updateCountdown();
 
   setInterval(updateCountdown, 1000);
 
-  /*=====================================================
-                        NOTIFY ME
-  =====================================================*/
+ 
 
   if (notifyForm) {
     notifyForm.addEventListener("submit", function (event) {
@@ -268,9 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const email = emailInput ? emailInput.value.trim() : "";
 
-      /*-----------------------------------------
-                        EMPTY EMAIL
-        -----------------------------------------*/
+     
 
       if (email === "") {
         if (notifyMessage) {
@@ -280,9 +236,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      /*-----------------------------------------
-                    EMAIL VALIDATION
-        -----------------------------------------*/
+     
 
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -294,18 +248,14 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      /*-----------------------------------------
-                    SUCCESS MESSAGE
-        -----------------------------------------*/
+   
 
       if (notifyMessage) {
         notifyMessage.textContent =
           "Thank you! We'll notify you when we launch.";
       }
 
-      /*-----------------------------------------
-                      CLEAR INPUT
-        -----------------------------------------*/
+    
 
       if (emailInput) {
         emailInput.value = "";

@@ -1,25 +1,18 @@
-/* =========================================================
-   GRIPCORE BOOK APPOINTMENT JS
-========================================================= */
 
-/* =========================================================
-   DOM LOADED
-========================================================= */
+
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Initialize Lucide Icons
+
   lucide.createIcons();
 
-  // Apply Saved Theme
+  
   loadTheme();
 
-  // Apply Saved RTL
+ 
   loadRTL();
 });
 
-/* =========================================================
-   ELEMENTS
-========================================================= */
+
 
 const themeToggle = document.getElementById("themeToggle");
 
@@ -27,16 +20,12 @@ const rtlToggle = document.getElementById("rtlToggle");
 
 const pageLogo = document.getElementById("pageLogo");
 
-/* =========================================================
-   UPDATE THEME UI
-========================================================= */
+
 
 function updateTheme() {
   const isDark = document.body.classList.contains("dark-mode");
 
-  // ==========================
-  // LOGO
-  // ==========================
+ 
 
   if (pageLogo) {
     pageLogo.src = isDark
@@ -44,9 +33,7 @@ function updateTheme() {
       : "../images/logo-light.png";
   }
 
-  // ==========================
-  // BUTTON ICON
-  // ==========================
+  
 
   if (themeToggle) {
     themeToggle.innerHTML = isDark
@@ -57,9 +44,7 @@ function updateTheme() {
   lucide.createIcons();
 }
 
-/* =========================================================
-   LOAD SAVED THEME
-========================================================= */
+
 
 function loadTheme() {
   const savedTheme = localStorage.getItem("theme");
@@ -75,9 +60,7 @@ function loadTheme() {
   updateTheme();
 }
 
-/* =========================================================
-   DARK MODE TOGGLE
-========================================================= */
+
 
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
@@ -92,9 +75,7 @@ if (themeToggle) {
   });
 }
 
-/* =========================================================
-   LOAD RTL
-========================================================= */
+
 
 function loadRTL() {
   const savedRTL = localStorage.getItem("rtlMode");
@@ -110,9 +91,7 @@ function loadRTL() {
   }
 }
 
-/* =========================================================
-   RTL TOGGLE
-========================================================= */
+
 
 if (rtlToggle) {
   rtlToggle.addEventListener("click", () => {
@@ -124,9 +103,7 @@ if (rtlToggle) {
 
     localStorage.setItem("rtlMode", isRTL);
   });
-} /* =========================================================
-   APPOINTMENT FORM
-========================================================= */
+} 
 
 const appointmentForm = document.getElementById("appointmentForm");
 
@@ -134,9 +111,7 @@ if (appointmentForm) {
   appointmentForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    // =====================================
-    // GET FORM VALUES
-    // =====================================
+   
 
     const fullName = document.getElementById("fullName")?.value.trim();
 
@@ -152,9 +127,7 @@ if (appointmentForm) {
 
     const appointmentTime = document.getElementById("appointmentTime")?.value;
 
-    // =====================================
-    // BASIC VALIDATION
-    // =====================================
+    
 
     if (
       !fullName ||
@@ -170,9 +143,7 @@ if (appointmentForm) {
       return;
     }
 
-    // =====================================
-    // SUCCESS
-    // =====================================
+
 
     alert("Your appointment has been booked successfully!");
 
@@ -180,9 +151,7 @@ if (appointmentForm) {
   });
 }
 
-/* =========================================================
-   REINITIALIZE LUCIDE ICONS
-========================================================= */
+
 
 window.addEventListener("load", () => {
   updateTheme();
@@ -192,9 +161,7 @@ window.addEventListener("load", () => {
   lucide.createIcons();
 });
 
-/* =========================================================
-   WINDOW RESIZE
-========================================================= */
+
 
 window.addEventListener("resize", () => {
   if (window.innerWidth > 1024) {
@@ -202,9 +169,7 @@ window.addEventListener("resize", () => {
   }
 });
 
-/* =========================================================
-   PAGE SHOW (BACK/FORWARD CACHE SUPPORT)
-========================================================= */
+
 
 window.addEventListener("pageshow", () => {
   loadTheme();
@@ -212,6 +177,4 @@ window.addEventListener("pageshow", () => {
   loadRTL();
 });
 
-/* =========================================================
-   END OF FILE
-========================================================= */
+

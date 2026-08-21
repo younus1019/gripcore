@@ -1,6 +1,4 @@
-// =========================================
-// PREMIUM HERO SLIDER
-// =========================================
+
 
 const heroSlides = document.querySelectorAll(".hero-slide");
 
@@ -18,26 +16,24 @@ let heroTimer;
 
 const totalHeroSlides = heroSlides.length;
 
-// =========================================
-// SHOW SLIDE
-// =========================================
+
 
 function showHeroSlide(index) {
-  // Remove active from all slides
+
 
   heroSlides.forEach((slide) => {
     slide.classList.remove("active");
   });
 
-  // Add active to current slide
+  
 
   heroSlides[index].classList.add("active");
 
-  // Update counter
+  
 
   currentSlideNumber.textContent = String(index + 1).padStart(2, "0");
 
-  // Restart progress animation
+  
 
   progressBar.style.animation = "none";
 
@@ -46,9 +42,7 @@ function showHeroSlide(index) {
   progressBar.style.animation = "progressAnimation 5s linear";
 }
 
-// =========================================
-// NEXT SLIDE
-// =========================================
+
 
 function nextHeroSlide() {
   currentHeroSlide++;
@@ -62,9 +56,7 @@ function nextHeroSlide() {
   restartHeroTimer();
 }
 
-// =========================================
-// PREVIOUS SLIDE
-// =========================================
+
 
 function previousHeroSlide() {
   currentHeroSlide--;
@@ -78,9 +70,7 @@ function previousHeroSlide() {
   restartHeroTimer();
 }
 
-// =========================================
-// AUTO SLIDER
-// =========================================
+
 
 function startHeroTimer() {
   heroTimer = setInterval(() => {
@@ -94,9 +84,7 @@ function startHeroTimer() {
   }, 5000);
 }
 
-// =========================================
-// RESTART TIMER
-// =========================================
+
 
 function restartHeroTimer() {
   clearInterval(heroTimer);
@@ -104,25 +92,19 @@ function restartHeroTimer() {
   startHeroTimer();
 }
 
-// =========================================
-// BUTTON EVENTS
-// =========================================
+
 
 nextHeroBtn.addEventListener("click", nextHeroSlide);
 
 prevHeroBtn.addEventListener("click", previousHeroSlide);
 
-// =========================================
-// START SLIDER
-// =========================================
+
 
 showHeroSlide(0);
 
 startHeroTimer();
 
-// =========================================
-// ANIMATED STATISTICS
-// =========================================
+
 
 const statNumbers = document.querySelectorAll(".stat-item strong");
 
@@ -156,9 +138,7 @@ function animateStats() {
   });
 }
 
-// =========================================
-// INTERSECTION OBSERVER
-// =========================================
+
 
 const statsSection = document.querySelector(".about-stats");
 
@@ -180,9 +160,7 @@ if (statsSection) {
   statsObserver.observe(statsSection);
 }
 
-// =========================================
-// RTL MODE TOGGLE
-// =========================================
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const rtlBtn = document.getElementById("rtlBtn");
@@ -193,13 +171,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   rtlBtn.addEventListener("click", function () {
-    // Toggle RTL direction
+  
     document.documentElement.classList.toggle("rtl-mode");
 
-    // Check if RTL is active
+  
     const isRTL = document.documentElement.classList.contains("rtl-mode");
 
-    // Change HTML direction
+    
     if (isRTL) {
       document.documentElement.setAttribute("dir", "rtl");
       rtlBtn.title = "LTR Mode";
@@ -210,9 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/* =========================================
-   TYRE FINDER
-========================================= */
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const findTyreBtn = document.getElementById("findTyreBtn");
@@ -229,15 +205,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const resultText = document.getElementById("resultText");
 
-  /* Stop if Tyre Finder is not on this page */
+ 
 
   if (!findTyreBtn || !vehicleType || !tyreBrand || !tyreSize || !resultBox) {
     return;
   }
 
-  /* =========================================
-     FIND TYRE BUTTON
-  ========================================= */
+ 
 
   findTyreBtn.addEventListener("click", () => {
     const selectedVehicle = vehicleType.value;
@@ -246,9 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const selectedSize = tyreSize.value;
 
-    /* =========================================
-       VALIDATION
-    ========================================= */
+    
 
     if (selectedVehicle === "" || selectedBrand === "" || selectedSize === "") {
       resultBox.classList.add("show");
@@ -261,23 +233,16 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    /* =========================================
-       FORMAT BRAND NAME
-    ========================================= */
+   
 
     const brandName =
       selectedBrand.charAt(0).toUpperCase() + selectedBrand.slice(1);
 
-    /* =========================================
-       FORMAT VEHICLE NAME
-    ========================================= */
+   
 
     const vehicleName =
       selectedVehicle.charAt(0).toUpperCase() + selectedVehicle.slice(1);
 
-    /* =========================================
-       DISPLAY RESULT
-    ========================================= */
 
     resultTitle.textContent = `${brandName} Tyres — ${selectedSize}`;
 
@@ -285,9 +250,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     resultBox.classList.add("show");
 
-    /* =========================================
-       SCROLL RESULT INTO VIEW
-    ========================================= */
 
     setTimeout(() => {
       resultBox.scrollIntoView({
@@ -298,9 +260,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-/* =========================================
-   SERVICE CENTER GALLERY LIGHTBOX
-========================================= */
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const galleryButtons = document.querySelectorAll(".gallery-view");
@@ -313,9 +273,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const lightboxClose = document.getElementById("lightboxClose");
 
-  /* =====================================
-     OPEN LIGHTBOX
-  ====================================== */
+
 
   galleryButtons.forEach((button) => {
     button.addEventListener("click", (event) => {
@@ -337,9 +295,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* =====================================
-     CLOSE LIGHTBOX
-  ====================================== */
+ 
 
   function closeLightbox() {
     lightbox.classList.remove("active");
@@ -349,9 +305,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   lightboxClose.addEventListener("click", closeLightbox);
 
-  /* =====================================
-     CLOSE WHEN CLICKING OUTSIDE IMAGE
-  ====================================== */
+
 
   lightbox.addEventListener("click", (event) => {
     if (event.target === lightbox) {
@@ -359,9 +313,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  /* =====================================
-     ESC KEY
-  ====================================== */
+ 
 
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && lightbox.classList.contains("active")) {

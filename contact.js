@@ -1,6 +1,4 @@
-/* =========================================================
-   PREMIUM CONTACT FORM VALIDATION
-========================================================= */
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const contactForm = document.getElementById("contactForm");
@@ -15,9 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const successMessage = document.getElementById("contactFormSuccess");
 
-  /* =======================================================
-     VALIDATION FUNCTIONS
-  ======================================================= */
+ 
 
   function showError(input, message) {
     const formGroup = input.closest(".contact-form-group");
@@ -39,9 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     error.textContent = "";
   }
 
-  /* =======================================================
-     NAME VALIDATION
-  ======================================================= */
+
 
   function validateName() {
     const name = nameInput.value.trim();
@@ -63,9 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return true;
   }
 
-  /* =======================================================
-     EMAIL VALIDATION
-  ======================================================= */
+
 
   function validateEmail() {
     const email = emailInput.value.trim();
@@ -89,9 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return true;
   }
 
-  /* =======================================================
-     PHONE VALIDATION
-  ======================================================= */
+ 
 
   function validatePhone() {
     const phone = phoneInput.value.trim();
@@ -115,9 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return true;
   }
 
-  /* =======================================================
-     SERVICE VALIDATION
-  ======================================================= */
+
 
   function validateService() {
     if (serviceInput.value === "") {
@@ -131,9 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return true;
   }
 
-  /* =======================================================
-     MESSAGE VALIDATION
-  ======================================================= */
+ 
 
   function validateMessage() {
     const message = messageInput.value.trim();
@@ -155,9 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return true;
   }
 
-  /* =======================================================
-     REAL-TIME VALIDATION
-  ======================================================= */
+
 
   nameInput.addEventListener("blur", validateName);
 
@@ -169,9 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   messageInput.addEventListener("blur", validateMessage);
 
-  /* =======================================================
-     FORM SUBMIT
-  ======================================================= */
+ 
 
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -193,9 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
       isServiceValid &&
       isMessageValid;
 
-    /* ================================================
-         INVALID FORM
-      ================================================= */
+   
 
     if (!isFormValid) {
       const firstError = contactForm.querySelector(".contact-form-group.error");
@@ -207,17 +187,15 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    /* ================================================
-         SUCCESS
-      ================================================= */
+  
 
     successMessage.classList.add("show");
 
-    /* Reset Form */
+
 
     contactForm.reset();
 
-    /* Clear Any Previous Errors */
+   
 
     contactForm.querySelectorAll(".contact-form-group").forEach((group) => {
       group.classList.remove("error");
@@ -229,10 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    /* ================================================
-         HIDE SUCCESS MESSAGE
-         AFTER 5 SECONDS
-      ================================================= */
+    
 
     setTimeout(() => {
       successMessage.classList.remove("show");
@@ -253,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const isActive = item.classList.contains("active");
 
-      // Close all FAQs
+     
       faqItems.forEach((faq) => {
         faq.classList.remove("active");
 
@@ -261,7 +236,6 @@ document.addEventListener("DOMContentLoaded", () => {
           .setAttribute("aria-expanded", "false");
       });
 
-      // Open clicked FAQ
       if (!isActive) {
 
         item.classList.add("active");

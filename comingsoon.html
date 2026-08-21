@@ -18,13 +18,12 @@
 
     <link rel="stylesheet" href="comingsoon.css" />
 
-    <!-- Font Awesome -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
 
-    <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -32,12 +31,8 @@
   </head>
 
   <body>
-    <!--=================================================
-                        CONTROLS
-    ==================================================-->
 
     <div class="page-controls">
-      <!-- Dark Mode -->
 
       <button
         id="darkModeToggle"
@@ -48,22 +43,16 @@
         <i class="fa-solid fa-moon"></i>
       </button>
 
-      <!-- RTL -->
 
       <button id="rtlToggle" class="control-btn" type="button" title="RTL Mode">
         <i class="fa-solid fa-right-left"></i>;
       </button>
     </div>
 
-    <!--=================================================
-                    COMING SOON PAGE
-    ==================================================-->
 
     <main class="coming-soon-page">
       <section class="coming-soon-card">
-        <!--=================================================
-                            LOGO
-            ==================================================-->
+
 
         <div class="coming-logo" id="comingLogoLink">
           <img
@@ -73,47 +62,27 @@
           />
         </div>
 
-        <!--=================================================
-                        ROCKET ICON
-            ==================================================-->
 
         <div class="coming-icon">
           <i class="fa-solid fa-rocket"></i>
         </div>
 
-        <!--=================================================
-                        SMALL LABEL
-            ==================================================-->
 
         <span class="coming-label"> GRIPCORE </span>
 
-        <!--=================================================
-                        MAIN HEADING
-            ==================================================-->
 
         <h1>Coming Soon</h1>
 
-        <!--=================================================
-                        SUB HEADING
-            ==================================================-->
 
         <h2>Something Powerful Is On The Way</h2>
 
-        <!--=================================================
-                        DESCRIPTION
-            ==================================================-->
 
         <p class="coming-description">
           We're working on something special for your driving experience. Stay
           tuned for exciting updates and fresh automotive content.
         </p>
 
-        <!--=================================================
-                        COUNTDOWN
-            ==================================================-->
-
         <div class="countdown">
-          <!-- DAYS -->
 
           <div class="countdown-box">
             <strong id="days"> 29 </strong>
@@ -123,7 +92,6 @@
 
           <div class="countdown-separator">:</div>
 
-          <!-- HOURS -->
 
           <div class="countdown-box">
             <strong id="hours"> 23 </strong>
@@ -133,7 +101,6 @@
 
           <div class="countdown-separator">:</div>
 
-          <!-- MINUTES -->
 
           <div class="countdown-box">
             <strong id="minutes"> 59 </strong>
@@ -143,8 +110,6 @@
 
           <div class="countdown-separator">:</div>
 
-          <!-- SECONDS -->
-
           <div class="countdown-box">
             <strong id="seconds"> 45 </strong>
 
@@ -152,9 +117,6 @@
           </div>
         </div>
 
-        <!--=================================================
-                        EMAIL NOTIFICATION
-            ==================================================-->
 
         <form class="notify-form" id="notifyForm">
           <div class="email-wrapper">
@@ -176,15 +138,8 @@
           </button>
         </form>
 
-        <!--=================================================
-                        NOTIFICATION MESSAGE
-            ==================================================-->
 
         <p class="notify-message" id="notifyMessage"></p>
-
-        <!--=================================================
-                        BACK TO HOME
-            ==================================================-->
 
         <a href="index.html" class="home-btn">
           <i class="fa-solid fa-arrow-left"></i>
@@ -194,10 +149,7 @@
       </section>
     </main>
 
-    <!--=================================================
-                        JAVASCRIPT
-    ==================================================-->
 
-    <script src="comingsoon.js"></script>
+    <script src="comingsoon.js" defer></script>
   </body>
 </html>

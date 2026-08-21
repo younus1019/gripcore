@@ -1,8 +1,8 @@
-/* ======================= PAGE LOAD ======================= */
+
 
 document.addEventListener("DOMContentLoaded", initialize404Page);
 
-/* ======================= INITIALIZE PAGE ======================= */
+
 
 function initialize404Page() {
   const darkModeToggle = document.getElementById("darkModeToggle");
@@ -57,7 +57,7 @@ function initialize404Page() {
   }
 }
 
-/* ======================= DARK MODE ICON ======================= */
+
 
 function updateDarkModeIcon() {
   const darkModeToggle = document.getElementById("darkModeToggle");
@@ -73,7 +73,7 @@ function updateDarkModeIcon() {
   darkModeToggle.title = isDarkMode ? "Light Mode" : "Dark Mode";
 }
 
-/* ======================= RTL BUTTON ======================= */
+
 
 function updateRTLButton() {
   const rtlToggle = document.getElementById("rtlToggle");
@@ -85,7 +85,7 @@ function updateRTLButton() {
   rtlToggle.title = isRTL ? "LTR Mode" : "RTL Mode";
 }
 
-/* ======================= UPDATE LOGO ======================= */
+
 
 function updateErrorLogo() {
   const errorLogo = document.getElementById("errorLogo");

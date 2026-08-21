@@ -1,10 +1,4 @@
-/* =========================================================
-                    TERMS PAGE JAVASCRIPT
-========================================================= */
 
-/* =========================================================
-                        DOM READY
-========================================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
   initializeLucideIcons();
@@ -12,9 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initializeRTL();
 });
 
-/* =========================================================
-                      LUCIDE ICONS
-========================================================= */
+
 
 function initializeLucideIcons() {
   if (typeof lucide !== "undefined") {
@@ -22,9 +14,7 @@ function initializeLucideIcons() {
   }
 }
 
-/* =========================================================
-                        DARK MODE
-========================================================= */
+
 
 function initializeDarkMode() {
   const darkModeToggle = document.getElementById("darkModeToggle");
@@ -33,9 +23,7 @@ function initializeDarkMode() {
 
   if (!darkModeToggle) return;
 
-  /* -----------------------------------------
-                  LOAD SAVED THEME
-  ----------------------------------------- */
+ 
 
   const savedTheme = localStorage.getItem("theme");
 
@@ -47,9 +35,7 @@ function initializeDarkMode() {
 
   updateDarkMode();
 
-  /* -----------------------------------------
-                  TOGGLE DARK MODE
-  ----------------------------------------- */
+ 
 
   darkModeToggle.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
@@ -61,15 +47,13 @@ function initializeDarkMode() {
     updateDarkMode();
   });
 
-  /* -----------------------------------------
-                  UPDATE ICON + LOGO
-  ----------------------------------------- */
+  
 
   function updateDarkMode() {
     const isDark = document.body.classList.contains("dark-mode");
 
     if (isDark) {
-      /* Dark mode: show sun icon */
+    
 
       darkModeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
 
@@ -79,7 +63,7 @@ function initializeDarkMode() {
         termsLogo.src = "images/logo-dark.png";
       }
     } else {
-      /* Light mode: show moon icon */
+     
 
       darkModeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
 
@@ -92,18 +76,14 @@ function initializeDarkMode() {
   }
 }
 
-/* =========================================================
-                          RTL MODE
-========================================================= */
+
 
 function initializeRTL() {
   const rtlToggle = document.getElementById("rtlToggle");
 
   if (!rtlToggle) return;
 
-  /* -----------------------------------------
-                    LOAD SAVED RTL
-  ----------------------------------------- */
+
 
   const savedRTL = localStorage.getItem("rtlMode");
 
@@ -119,9 +99,7 @@ function initializeRTL() {
 
   updateRTLButton();
 
-  /* -----------------------------------------
-                      TOGGLE RTL
-  ----------------------------------------- */
+  
 
   rtlToggle.addEventListener("click", function () {
     document.documentElement.classList.toggle("rtl-mode");
@@ -141,9 +119,7 @@ function initializeRTL() {
     updateRTLButton();
   });
 
-  /* -----------------------------------------
-                    RTL BUTTON ICON
-  ----------------------------------------- */
+ 
 
   function updateRTLButton() {
     const isRTL = document.documentElement.classList.contains("rtl-mode");

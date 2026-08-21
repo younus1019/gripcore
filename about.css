@@ -1,6 +1,4 @@
-/* =========================================
-   ABOUT PAGE
-========================================= */
+
 .about-hero,
 .about-story,
 .precision-section,
@@ -19,9 +17,7 @@
   margin: auto;
 }
 
-/* =========================================
-   COMMON
-========================================= */
+
 
 .section-tag {
   display: inline-block;
@@ -53,9 +49,7 @@
   color: #d4af37;
 }
 
-/* =========================================
-   HERO
-========================================= */
+
 
 .about-hero {
   position: relative;
@@ -154,9 +148,7 @@
   flex-shrink: 0;
 }
 
-/* =========================================
-   OUR STORY
-========================================= */
+
 
 .about-story {
   padding: 140px 0;
@@ -232,9 +224,9 @@
 }
 
 .section-tag {
-  display: inline-flex; /* change flex to inline-flex */
+  display: inline-flex; 
   align-items: center;
-  justify-content: flex-start; /* keep content to the left */
+  justify-content: flex-start; 
 
   gap: 18px;
 
@@ -262,9 +254,7 @@
   flex-shrink: 0;
 }
 
-/* =========================================
-   PRECISION
-========================================= */
+
 
 .precision-section {
   padding: 140px 0;
@@ -343,9 +333,7 @@
   margin-top: 10px;
 }
 
-/* =========================================
-   APPROACH
-========================================= */
+
 
 .approach-section {
   padding: 140px 5%;
@@ -426,9 +414,7 @@
   color: #aaa;
 }
 
-/* =========================================
-   WHY GRIPCORE
-========================================= */
+
 
 .why-section {
   padding: 140px 0;
@@ -472,9 +458,6 @@
   color: #d4af37;
 }
 
-/* =========================================
-   CTA
-========================================= */
 
 .about-cta {
   padding: 140px 20px;
@@ -534,9 +517,6 @@
   color: #111;
 }
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 body.dark-mode .about-story,
 body.dark-mode .approach-section,
@@ -598,9 +578,7 @@ body.dark-mode .about-btn.secondary:hover {
   color: #111;
 }
 
-/* =========================================
-   RTL
-========================================= */
+
 
 body.rtl .about-container,
 body.rtl .precision-container,
@@ -613,9 +591,7 @@ body.rtl .story-highlight {
   border-right: 3px solid #d4af37;
 }
 
-/* =========================================
-   TABLET
-========================================= */
+
 
 @media (max-width: 991px) {
   .about-hero-content h1 {
@@ -643,9 +619,7 @@ body.rtl .story-highlight {
   }
 }
 
-/* =========================================
-   MOBILE
-========================================= */
+
 
 @media (max-width: 768px) {
   .about-hero {
@@ -702,9 +676,7 @@ body.rtl .story-highlight {
   }
 }
 
-/* =========================================
-   ABOUT CTA - DARK MODE FIX
-========================================= */
+
 
 body.dark-mode .about-cta {
   background: #080808;

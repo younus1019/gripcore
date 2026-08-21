@@ -1,6 +1,4 @@
-// =========================================
-// HOME 2 CINEMATIC HERO PARALLAX
-// =========================================
+
 
 const cinematicHero = document.querySelector(".cinematic-hero");
 
@@ -14,19 +12,19 @@ if (cinematicHero) {
 
     const y = (event.clientY / window.innerHeight - 0.5) * 2;
 
-    // Move background image
+  
 
     heroImage.style.transform = `scale(1.08)
          translate(${x * -10}px,
                    ${y * -10}px)`;
 
-    // Move content slightly
+  
 
     heroContent.style.transform = `translate(${x * 5}px,
                    ${y * 5}px)`;
   });
 
-  // Reset when mouse leaves
+  
 
   cinematicHero.addEventListener("mouseleave", function () {
     heroImage.style.transform = "scale(1.08)";
@@ -35,9 +33,7 @@ if (cinematicHero) {
   });
 }
 
-// =========================================
-// THE PHILOSOPHY — SCROLL ANIMATION
-// =========================================
+
 
 const philosophySection = document.querySelector(".philosophy-section");
 
@@ -59,9 +55,7 @@ if (philosophySection) {
   philosophyObserver.observe(philosophySection);
 }
 
-// =========================================
-// PHILOSOPHY — MOUSE PARALLAX
-// =========================================
+
 
 const philosophyVisual = document.querySelector(".philosophy-visual");
 
@@ -86,9 +80,7 @@ if (philosophyVisual && philosophyImage) {
   });
 }
 
-// =========================================
-// PRECISION LAB — SCROLL REVEAL
-// =========================================
+
 
 const precisionLab = document.querySelector(".precision-lab");
 
@@ -110,9 +102,7 @@ if (precisionLab) {
   precisionObserver.observe(precisionLab);
 }
 
-// =========================================
-// PRECISION LAB — HOTSPOTS
-// =========================================
+
 
 const hotspots = document.querySelectorAll(".precision-hotspot");
 
@@ -122,13 +112,13 @@ hotspots.forEach((hotspot) => {
   hotspot.addEventListener("click", () => {
     const target = hotspot.dataset.target;
 
-    // Remove active
+    
 
     panels.forEach((panel) => {
       panel.classList.remove("active");
     });
 
-    // Activate selected panel
+  
 
     const selectedPanel = document.getElementById(target);
 
@@ -144,9 +134,7 @@ hotspots.forEach((hotspot) => {
   });
 });
 
-// =========================================
-// PRECISION LAB — IMAGE PARALLAX
-// =========================================
+
 
 const precisionStage = document.querySelector(".precision-stage");
 
@@ -172,19 +160,15 @@ if (precisionStage && precisionImage) {
   });
 }
 
-// =========================================
-// GRIPCORE EXPERIENCE
-// =========================================
 
-// Initialize Lucide Icons
+
+
 
 if (typeof lucide !== "undefined") {
   lucide.createIcons();
 }
 
-// =========================================
-// SCROLL REVEAL
-// =========================================
+
 
 const experienceSection = document.querySelector(".experience-section");
 
@@ -206,9 +190,7 @@ if (experienceSection) {
   experienceObserver.observe(experienceSection);
 }
 
-// =========================================
-// EXPERIENCE STEPS
-// =========================================
+
 
 const experienceSteps = document.querySelectorAll(".experience-step");
 
@@ -216,17 +198,16 @@ const experienceProgress = document.querySelector(".experience-progress span");
 
 experienceSteps.forEach((step, index) => {
   step.addEventListener("click", () => {
-    // Remove active state
+   
 
     experienceSteps.forEach((item) => {
       item.classList.remove("active");
     });
 
-    // Add active state
 
     step.classList.add("active");
 
-    // Update progress
+   
 
     if (experienceProgress) {
       const progress = ((index + 1) / experienceSteps.length) * 100;
@@ -236,9 +217,7 @@ experienceSteps.forEach((step, index) => {
   });
 });
 
-// =========================================
-// IMAGE MOUSE PARALLAX
-// =========================================
+
 
 const experienceVisual = document.querySelector(".experience-visual");
 
@@ -246,8 +225,7 @@ const experienceImage = document.querySelector(".experience-image");
 
 if (experienceVisual && experienceImage) {
   experienceVisual.addEventListener("mousemove", (event) => {
-    // Disable on touch devices
-
+  
     if (window.innerWidth <= 768) {
       return;
     }
@@ -270,19 +248,15 @@ if (experienceVisual && experienceImage) {
   });
 }
 
-// =========================================
-// GRIPCORE DIFFERENCE
-// =========================================
 
-// Initialize Lucide Icons
+
+
 
 if (typeof lucide !== "undefined") {
   lucide.createIcons();
 }
 
-// =========================================
-// FEATURE INTERACTION
-// =========================================
+
 
 const differenceFeatures = document.querySelectorAll(".difference-feature");
 
@@ -296,9 +270,7 @@ differenceFeatures.forEach((feature) => {
   });
 });
 
-// =========================================
-// PERFORMANCE BAR ANIMATION
-// =========================================
+
 
 const differenceSection = document.querySelector(".difference-section");
 
@@ -328,9 +300,7 @@ if (differenceSection && metricBars.length) {
   differenceObserver.observe(differenceSection);
 }
 
-// =========================================
-// MOUSE SPOTLIGHT EFFECT
-// =========================================
+
 
 differenceFeatures.forEach((feature) => {
   feature.addEventListener("mousemove", (event) => {
@@ -357,9 +327,7 @@ differenceFeatures.forEach((feature) => {
   });
 });
 
-// =========================================================
-// THE ART OF PRECISION — SCROLL ANIMATION
-// =========================================================
+
 
 const precisionShowcase = document.querySelector(".precision-showcase");
 
@@ -381,17 +349,13 @@ if (precisionShowcase) {
   precisionObserver.observe(precisionShowcase);
 }
 
-// =========================================================
-// LUCIDE ICONS
-// =========================================================
+
 
 if (typeof lucide !== "undefined") {
   lucide.createIcons();
 }
 
-// ======================================================
-// BEFORE / AFTER COMPARISON SLIDER
-// ======================================================
+
 
 const compareWrapper = document.querySelector(".compare-wrapper");
 const beforeWrapper = document.querySelector(".compare-before-wrapper");
@@ -414,34 +378,33 @@ if (compareWrapper && beforeWrapper && slider) {
     slider.style.left = position + "px";
   }
 
-  // Mouse Down
+  
   slider.addEventListener("mousedown", () => {
     isDragging = true;
   });
 
-  // Mouse Up
+ 
   window.addEventListener("mouseup", () => {
     isDragging = false;
   });
 
-  // Mouse Move
   window.addEventListener("mousemove", (e) => {
     if (!isDragging) return;
 
     moveSlider(e.clientX);
   });
 
-  // Touch Start
+ 
   slider.addEventListener("touchstart", () => {
     isDragging = true;
   });
 
-  // Touch End
+ 
   window.addEventListener("touchend", () => {
     isDragging = false;
   });
 
-  // Touch Move
+
   window.addEventListener("touchmove", (e) => {
     if (!isDragging) return;
 
@@ -449,9 +412,7 @@ if (compareWrapper && beforeWrapper && slider) {
   });
 }
 
-// ======================================================
-// AUTO DEMO
-// ======================================================
+
 
 window.addEventListener("load", () => {
   if (!compareWrapper) return;
@@ -482,9 +443,7 @@ if (typeof lucide !== "undefined") {
   lucide.createIcons();
 }
 
-// =========================================================
-// PREMIUM PROCESS EXPERIENCE
-// =========================================================
+
 
 const processItems = document.querySelectorAll(".process-item");
 
@@ -521,9 +480,7 @@ const processData = [
 
 let currentProcess = 0;
 
-// ==========================================
-// CHANGE STEP
-// ==========================================
+
 
 function changeProcess(index) {
   currentProcess = index;
@@ -549,9 +506,7 @@ function changeProcess(index) {
   }, 250);
 }
 
-// ==========================================
-// CLICK EVENT
-// ==========================================
+
 
 processItems.forEach((item, index) => {
   item.addEventListener("click", () => {
@@ -559,9 +514,7 @@ processItems.forEach((item, index) => {
   });
 });
 
-// ==========================================
-// AUTO SLIDER
-// ==========================================
+
 
 setInterval(() => {
   currentProcess++;
@@ -573,17 +526,13 @@ setInterval(() => {
   changeProcess(currentProcess);
 }, 4000);
 
-// ==========================================
-// LUCIDE
-// ==========================================
+
 
 if (typeof lucide !== "undefined") {
   lucide.createIcons();
 }
 
-/*=========================================================
-            PREMIUM CTA COUNTER
-=========================================================*/
+
 
 const counters = document.querySelectorAll(".counter");
 
@@ -630,9 +579,7 @@ const observer = new IntersectionObserver(
 
 counters.forEach((counter) => observer.observe(counter));
 
-/*=========================================================
-            FLOATING GLOW
-=========================================================*/
+
 
 const glows = document.querySelectorAll(".cta-glow");
 
@@ -648,9 +595,7 @@ window.addEventListener("mousemove", (e) => {
   });
 });
 
-/*=========================================================
-            BUTTON RIPPLE
-=========================================================*/
+
 
 const buttons = document.querySelectorAll(".cta-btn");
 
@@ -664,9 +609,6 @@ buttons.forEach((button) => {
   });
 });
 
-/*=========================================================
-                DARK MODE
-=========================================================*/
 
 const darkModeBtn = document.getElementById("darkModeBtn");
 const headerLogo = document.getElementById("headerLogo");

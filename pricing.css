@@ -1,6 +1,4 @@
-/* =========================================================
-                PRICING INTRO HERO
-========================================================= */
+
 
 .pricing-intro-hero {
   position: relative;
@@ -33,9 +31,7 @@ body.dark-mode .pricing-intro-hero {
     linear-gradient(135deg, #050505, #121212);
 }
 
-/* =========================================================
-                    BACKGROUND GRID
-========================================================= */
+
 
 .pricing-intro-grid {
   position: absolute;
@@ -88,9 +84,7 @@ body.dark-mode .pricing-intro-hero {
   }
 }
 
-/* =========================================================
-                        CONTAINER
-========================================================= */
+
 
 .pricing-intro-container {
   position: relative;
@@ -107,9 +101,7 @@ body.dark-mode .pricing-intro-hero {
   gap: 100px;
 }
 
-/* =========================================================
-                      LEFT CONTENT
-========================================================= */
+
 
 .pricing-intro-content {
   max-width: 720px;
@@ -129,9 +121,7 @@ body.dark-mode .pricing-intro-hero {
   }
 }
 
-/* =========================================================
-                          TAG
-========================================================= */
+
 
 .pricing-intro-tag {
   margin-bottom: 25px;
@@ -180,9 +170,7 @@ body.dark-mode .pricing-intro-hero {
   }
 }
 
-/* =========================================================
-                         HEADING
-========================================================= */
+
 
 .pricing-intro-content h1 {
   margin: 0 0 28px;
@@ -229,9 +217,7 @@ body.dark-mode .pricing-intro-content h1 {
   color: #ffffff;
 }
 
-/* =========================================================
-                       DESCRIPTION
-========================================================= */
+
 
 .pricing-intro-content > p {
   max-width: 620px;
@@ -247,9 +233,7 @@ body.dark-mode .pricing-intro-content > p {
   color: #aaaaaa;
 }
 
-/* =========================================================
-                         BENEFITS
-========================================================= */
+
 
 .pricing-intro-benefits {
   margin-bottom: 38px;
@@ -283,9 +267,6 @@ body.dark-mode .pricing-benefit {
   color: #dddddd;
 }
 
-/* =========================================================
-                         BUTTONS
-========================================================= */
 
 .pricing-intro-actions {
   display: flex;
@@ -403,9 +384,7 @@ body.dark-mode .pricing-intro-btn.secondary {
   color: #ffffff;
 }
 
-/* =========================================================
-                    RIGHT VISUAL AREA
-========================================================= */
+
 
 .pricing-intro-visual {
   min-height: 600px;
@@ -439,9 +418,7 @@ body.dark-mode .pricing-intro-btn.secondary {
   place-items: center;
 }
 
-/* =========================================================
-                        ORBIT CIRCLES
-========================================================= */
+
 
 .orbit-circle {
   position: absolute;
@@ -489,9 +466,7 @@ body.dark-mode .pricing-intro-btn.secondary {
   }
 }
 
-/* =========================================================
-                        ANIMATED WHEEL
-========================================================= */
+
 
 .animated-wheel {
   position: relative;
@@ -618,9 +593,7 @@ body.dark-mode .pricing-intro-btn.secondary {
   height: 25px;
 }
 
-/* =========================================================
-                  FLOATING SERVICE ITEMS
-========================================================= */
+
 
 .service-float {
   position: absolute;
@@ -728,9 +701,7 @@ body.dark-mode .service-float span {
   }
 }
 
-/* =========================================================
-                    QUALITY BADGE
-========================================================= */
+
 
 .service-quality-badge {
   position: absolute;
@@ -783,9 +754,7 @@ body.dark-mode .service-float span {
   }
 }
 
-/* =========================================================
-                    MOVING ROAD LINES
-========================================================= */
+
 
 .pricing-road-lines {
   position: absolute;
@@ -833,9 +802,7 @@ body.dark-mode .service-float span {
     opacity: 0;
   }
 }
-/* =========================================================
-                    GLOBAL RESPONSIVE FIX
-========================================================= */
+
 
 *,
 *::before,
@@ -856,9 +823,7 @@ body {
   min-width: 0;
 }
 
-/* =========================================================
-                  SAMSUNG GALAXY S8+
-========================================================= */
+
 
 @media screen and (min-width: 360px) and (max-width: 740px) {
   .pricing-intro-hero {
@@ -880,7 +845,7 @@ body {
     gap: 35px;
   }
 
-  /* CONTENT */
+
 
   .pricing-intro-content {
     width: 100%;
@@ -891,7 +856,7 @@ body {
     text-align: center;
   }
 
-  /* TAG */
+
 
   .pricing-intro-tag {
     width: 100%;
@@ -921,7 +886,7 @@ body {
     flex-shrink: 0;
   }
 
-  /* HEADING */
+ 
 
   .pricing-intro-content h1 {
     width: 100%;
@@ -945,7 +910,7 @@ body {
     overflow-wrap: break-word;
   }
 
-  /* DESCRIPTION */
+
 
   .pricing-intro-content > p {
     width: 100%;
@@ -957,7 +922,7 @@ body {
     line-height: 1.75;
   }
 
-  /* BENEFITS */
+ 
 
   .pricing-intro-benefits {
     width: 100%;
@@ -983,7 +948,7 @@ body {
     flex-shrink: 0;
   }
 
-  /* BUTTONS */
+
 
   .pricing-intro-actions {
     width: 100%;
@@ -1004,7 +969,7 @@ body {
     font-size: 10px;
   }
 
-  /* VISUAL */
+  
 
   .pricing-intro-visual {
     position: relative;
@@ -1030,7 +995,7 @@ body {
     transform-origin: center;
   }
 
-  /* ROAD LINES */
+
 
   .pricing-road-lines {
     bottom: 12px;
@@ -1043,9 +1008,7 @@ body {
   }
 }
 
-/* =========================================================
-                        IPAD MINI
-========================================================= */
+
 
 @media screen and (min-width: 768px) and (max-width: 820px) {
   .pricing-intro-hero {
@@ -1066,7 +1029,7 @@ body {
     gap: 50px;
   }
 
-  /* CONTENT */
+ 
 
   .pricing-intro-content {
     width: 100%;
@@ -1104,7 +1067,7 @@ body {
     gap: 20px;
   }
 
-  /* VISUAL */
+
 
   .pricing-intro-visual {
     position: relative;
@@ -1134,9 +1097,7 @@ body {
   }
 }
 
-/* =========================================================
-                    IPAD PRO 11"
-========================================================= */
+
 
 @media screen and (min-width: 821px) and (max-width: 1024px) {
   .pricing-intro-hero {
@@ -1157,7 +1118,7 @@ body {
     gap: 55px;
   }
 
-  /* CONTENT */
+
 
   .pricing-intro-content {
     width: 100%;
@@ -1195,7 +1156,7 @@ body {
     gap: 22px;
   }
 
-  /* VISUAL */
+ 
 
   .pricing-intro-visual {
     position: relative;
@@ -1225,9 +1186,7 @@ body {
   }
 }
 
-/* =========================================================
-                        NEST HUB
-========================================================= */
+
 
 @media screen and (width: 1024px) and (height: 600px) {
   .pricing-intro-hero {
@@ -1250,7 +1209,7 @@ body {
     gap: 25px;
   }
 
-  /* CONTENT */
+  
 
   .pricing-intro-content {
     width: 100%;
@@ -1295,7 +1254,7 @@ body {
     line-height: 1.6;
   }
 
-  /* BENEFITS */
+  
 
   .pricing-intro-benefits {
     gap: 10px;
@@ -1311,7 +1270,7 @@ body {
     height: 14px;
   }
 
-  /* BUTTONS */
+  
 
   .pricing-intro-actions {
     flex-direction: row;
@@ -1328,7 +1287,7 @@ body {
     font-size: 8px;
   }
 
-  /* VISUAL */
+ 
 
   .pricing-intro-visual {
     position: relative;
@@ -1357,9 +1316,7 @@ body {
     bottom: 7px;
   }
 }
-/* =========================================================
-                    PRICING SECTION
-========================================================= */
+
 
 .gripcore-pricing-section {
   position: relative;
@@ -1393,9 +1350,7 @@ body.dark-mode .gripcore-pricing-section {
 }
 
 
-/* =========================================================
-                        CONTAINER
-========================================================= */
+
 
 .pricing-container {
   position: relative;
@@ -1407,9 +1362,6 @@ body.dark-mode .gripcore-pricing-section {
 }
 
 
-/* =========================================================
-                    SECTION HEADER
-========================================================= */
 
 .pricing-section-header {
   max-width: 760px;
@@ -1479,9 +1431,7 @@ body.dark-mode .pricing-section-header p {
 }
 
 
-/* =========================================================
-                    PRICING GRID
-========================================================= */
+
 
 .gripcore-pricing-grid {
   display: grid;
@@ -1492,9 +1442,7 @@ body.dark-mode .pricing-section-header p {
 }
 
 
-/* =========================================================
-                    PRICING CARD
-========================================================= */
+
 
 .gripcore-price-card {
   position: relative;
@@ -1542,9 +1490,7 @@ body.dark-mode .gripcore-price-card:hover {
 }
 
 
-/* =========================================================
-              FEATURED CARD — SAME HEIGHT
-========================================================= */
+
 
 .gripcore-price-card.featured {
   height: 100%;
@@ -1559,9 +1505,7 @@ body.dark-mode .gripcore-price-card:hover {
 }
 
 
-/* =========================================================
-                    POPULAR BADGE
-========================================================= */
+
 
 .popular-badge {
   position: absolute;
@@ -1582,9 +1526,6 @@ body.dark-mode .gripcore-price-card:hover {
 }
 
 
-/* =========================================================
-                        ICON
-========================================================= */
 
 .price-card-icon {
   width: 70px;
@@ -1616,9 +1557,7 @@ body.dark-mode .price-card-icon {
 }
 
 
-/* =========================================================
-                    CARD CONTENT
-========================================================= */
+
 
 .price-card-content {
   width: 100%;
@@ -1669,9 +1608,7 @@ body.dark-mode .price-card-description {
 }
 
 
-/* =========================================================
-                        DIVIDER
-========================================================= */
+
 
 .price-card-divider {
   width: 100%;
@@ -1688,9 +1625,7 @@ body.dark-mode .price-card-divider {
 }
 
 
-/* =========================================================
-                    FEATURE LIST
-========================================================= */
+
 
 .price-card-content ul {
   min-height: 130px;
@@ -1735,9 +1670,7 @@ body.dark-mode .price-card-content ul li {
 }
 
 
-/* =========================================================
-               BUTTONS — SAME HEIGHT/POSITION
-========================================================= */
+
 
 .pricing-btn {
   width: 100%;
@@ -1794,7 +1727,7 @@ body.dark-mode .price-card-content ul li {
 }
 
 
-/* Featured button */
+
 
 .featured-btn {
   color: #111111;
@@ -1807,7 +1740,7 @@ body.dark-mode .price-card-content ul li {
 }
 
 
-/* Dark-mode buttons */
+
 
 body.dark-mode .pricing-btn {
   color: #ffffff;
@@ -1830,10 +1763,7 @@ body.dark-mode .featured-btn:hover {
 }
 
 
-/* =========================================================
-                  SAMSUNG GALAXY S8+
-                  360px – 740px
-========================================================= */
+
 
 @media screen and (min-width: 360px) and (max-width: 740px) {
 
@@ -1895,10 +1825,7 @@ body.dark-mode .featured-btn:hover {
 }
 
 
-/* =========================================================
-                        IPAD MINI
-                        768px – 820px
-========================================================= */
+
 
 @media screen and (min-width: 768px) and (max-width: 820px) {
 
@@ -1929,10 +1856,7 @@ body.dark-mode .featured-btn:hover {
 }
 
 
-/* =========================================================
-                    IPAD PRO 11"
-                    821px – 1024px
-========================================================= */
+
 
 @media screen and (min-width: 821px) and (max-width: 1024px) {
 
@@ -1963,10 +1887,7 @@ body.dark-mode .featured-btn:hover {
 }
 
 
-/* =========================================================
-                        NEST HUB
-                        1024px × 600px
-========================================================= */
+
 
 @media screen and (width: 1024px) and (height: 600px) {
 
@@ -2021,9 +1942,7 @@ body.dark-mode .featured-btn:hover {
 
 }
 
-/*=========================================================
-                COMPARE SERVICES
-=========================================================*/
+
 
 .compare-section {
   padding: 120px 8%;
@@ -2048,24 +1967,17 @@ body.dark-mode .compare-section {
   filter: blur(90px);
 }
 
-/* .compare-container{
-    max-width:1400px;
-    margin:auto;
-    position:relative;
-    z-index:2;
-} */
+
 
 .compare-container {
   width: 100%;
-  max-width: 1200px; /* was 1400px */
+  max-width: 1200px; 
   margin: 0 auto;
   position: relative;
   z-index: 2;
 }
 
-/*=========================================================
-                SECTION TITLE
-=========================================================*/
+
 
 .compare-section .section-title {
   max-width: 760px;
@@ -2114,9 +2026,7 @@ body.dark-mode .compare-section .section-title p {
   color: #999;
 }
 
-/*=========================================================
-                TABLE WRAPPER
-=========================================================*/
+
 
 .comparison-table-wrapper {
   background: #fff;
@@ -2131,15 +2041,7 @@ body.dark-mode .comparison-table-wrapper {
   border-color: #292929;
 }
 
-/*=========================================================
-                TABLE
-=========================================================*/
 
-/* .comparison-table{
-    width:100%;
-    min-width:950px;
-    border-collapse:collapse;
-} */
 
 .comparison-table {
   width: 100%;
@@ -2147,9 +2049,7 @@ body.dark-mode .comparison-table-wrapper {
   border-collapse: collapse;
 }
 
-/*=========================================================
-                HEADER
-=========================================================*/
+
 
 .comparison-table thead {
   background: #111;
@@ -2165,9 +2065,7 @@ body.dark-mode .comparison-table-wrapper {
   text-transform: uppercase;
 }
 
-/*=========================================================
-                BODY
-=========================================================*/
+
 
 .comparison-table td {
   padding: 24px;
@@ -2197,9 +2095,7 @@ body.dark-mode .comparison-table tbody tr:hover {
   border-bottom: none;
 }
 
-/*=========================================================
-                SERVICE NAME
-=========================================================*/
+
 
 .service-name {
   display: flex;
@@ -2219,9 +2115,7 @@ body.dark-mode .service-name {
   color: #d4af37;
 }
 
-/*=========================================================
-                BADGE
-=========================================================*/
+
 
 .recommended {
   display: inline-block;
@@ -2239,9 +2133,7 @@ body.dark-mode .recommended {
   color: #d4af37;
 }
 
-/*=========================================================
-                BUTTON
-=========================================================*/
+
 
 .compare-btn {
   display: inline-flex;
@@ -2284,9 +2176,7 @@ body.dark-mode .compare-btn:hover {
   background: #fff;
 }
 
-/*=========================================================
-                TABLET
-=========================================================*/
+
 
 @media (max-width: 992px) {
   .compare-section {
@@ -2298,9 +2188,7 @@ body.dark-mode .compare-btn:hover {
   }
 }
 
-/*=========================================================
-                MOBILE
-=========================================================*/
+
 
 @media (max-width: 768px) {
   .compare-section {
@@ -2316,9 +2204,7 @@ body.dark-mode .compare-btn:hover {
   }
 }
 
-/*=========================================================
-                SMALL MOBILE
-=========================================================*/
+
 
 @media (max-width: 480px) {
   .compare-section {
@@ -2330,9 +2216,6 @@ body.dark-mode .compare-btn:hover {
   }
 }
 
-/*=========================================================
-                    PRICING FAQ
-=========================================================*/
 
 .pricing-faq {
   padding: 120px 8%;
@@ -2357,9 +2240,7 @@ body.dark-mode .pricing-faq {
   filter: blur(90px);
 }
 
-/*=========================================================
-                    CONTAINER
-=========================================================*/
+
 
 .pricing-faq .container {
   max-width: 1000px;
@@ -2368,9 +2249,7 @@ body.dark-mode .pricing-faq {
   z-index: 2;
 }
 
-/*=========================================================
-                    SECTION TITLE
-=========================================================*/
+
 
 .pricing-faq .section-title {
   max-width: 760px;
@@ -2419,9 +2298,7 @@ body.dark-mode .pricing-faq .section-title p {
   color: #999;
 }
 
-/*=========================================================
-                    FAQ WRAPPER
-=========================================================*/
+
 
 .faq-wrapper {
   display: flex;
@@ -2429,9 +2306,7 @@ body.dark-mode .pricing-faq .section-title p {
   gap: 18px;
 }
 
-/*=========================================================
-                    FAQ ITEM
-=========================================================*/
+
 
 .faq-item {
   background: #fff;
@@ -2456,9 +2331,7 @@ body.dark-mode .faq-item:hover {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
 }
 
-/*=========================================================
-                    SUMMARY
-=========================================================*/
+
 
 .faq-item summary {
   list-style: none;
@@ -2481,9 +2354,7 @@ body.dark-mode .faq-item summary {
   display: none;
 }
 
-/*=========================================================
-                    ICON
-=========================================================*/
+
 
 .faq-item summary svg {
   width: 22px;
@@ -2497,9 +2368,7 @@ body.dark-mode .faq-item summary {
   transform: rotate(45deg);
 }
 
-/*=========================================================
-                    ANSWER
-=========================================================*/
+
 
 .faq-answer {
   padding: 0 28px 28px;
@@ -2515,9 +2384,7 @@ body.dark-mode .faq-answer p {
   color: #999;
 }
 
-/*=========================================================
-                    OPEN STATE
-=========================================================*/
+
 
 .faq-item[open] {
   border-color: #d4af37;
@@ -2531,9 +2398,7 @@ body.dark-mode .faq-item[open] summary {
   color: #fff;
 }
 
-/*=========================================================
-                    TABLET
-=========================================================*/
+
 
 @media (max-width: 992px) {
   .pricing-faq {
@@ -2541,9 +2406,7 @@ body.dark-mode .faq-item[open] summary {
   }
 }
 
-/*=========================================================
-                    MOBILE
-=========================================================*/
+
 
 @media (max-width: 768px) {
   .pricing-faq {
@@ -2564,9 +2427,7 @@ body.dark-mode .faq-item[open] summary {
   }
 }
 
-/*=========================================================
-                    SMALL MOBILE
-=========================================================*/
+
 
 @media (max-width: 480px) {
   .pricing-faq {
@@ -2582,9 +2443,7 @@ body.dark-mode .faq-item[open] summary {
   }
 }
 
-/*=========================================================
-                FINAL CTA
-=========================================================*/
+
 
 .pricing-final-cta {
   position: relative;
@@ -2613,9 +2472,7 @@ body:not(.dark-mode) .pricing-final-cta {
   filter: blur(90px);
 }
 
-/*=========================================================
-                CONTAINER
-=========================================================*/
+
 
 .pricing-cta-container {
   position: relative;
@@ -2629,9 +2486,7 @@ body:not(.dark-mode) .pricing-final-cta {
   align-items: center;
 }
 
-/*=========================================================
-                CONTENT
-=========================================================*/
+
 
 .pricing-cta-content {
   max-width: 720px;
@@ -2689,9 +2544,7 @@ body:not(.dark-mode) .pricing-cta-content p {
   color: #666;
 }
 
-/*=========================================================
-                BUTTONS
-=========================================================*/
+
 
 .pricing-cta-buttons {
   display: flex;
@@ -2726,7 +2579,7 @@ body:not(.dark-mode) .pricing-cta-content p {
   transition: 0.35s;
 }
 
-/* Primary */
+
 
 .pricing-cta-btn.primary {
   background: #d4af37;
@@ -2744,7 +2597,7 @@ body:not(.dark-mode) .pricing-cta-content p {
   transform: translateX(4px);
 }
 
-/* Secondary */
+
 
 .pricing-cta-btn.secondary {
   border: 1px solid rgba(255, 255, 255, 0.35);
@@ -2763,9 +2616,7 @@ body:not(.dark-mode) .pricing-cta-btn.secondary {
   transform: translateY(-4px);
 }
 
-/*=========================================================
-                RIGHT SIDE
-=========================================================*/
+
 
 .pricing-cta-visual {
   display: flex;
@@ -2845,9 +2696,7 @@ body:not(.dark-mode) .pricing-cta-btn.secondary {
   display: block;
 }
 
-/*=========================================================
-                TABLET
-=========================================================*/
+
 
 @media (max-width: 1100px) {
   .pricing-final-cta {
@@ -2871,9 +2720,7 @@ body:not(.dark-mode) .pricing-cta-btn.secondary {
   }
 }
 
-/*=========================================================
-                MOBILE
-=========================================================*/
+
 
 @media (max-width: 768px) {
   .pricing-final-cta {
@@ -2909,9 +2756,7 @@ body:not(.dark-mode) .pricing-cta-btn.secondary {
   }
 }
 
-/*=========================================================
-                SMALL MOBILE
-=========================================================*/
+
 
 @media (max-width: 480px) {
   .pricing-final-cta {

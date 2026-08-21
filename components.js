@@ -1,6 +1,4 @@
-// =========================================
-// LOAD SAVED SETTINGS
-// =========================================
+
 
 const savedTheme = localStorage.getItem("theme");
 
@@ -8,9 +6,6 @@ if (savedTheme === "dark") {
   document.body.classList.add("dark-mode");
 }
 
-// =========================================
-// LOAD NAVBAR
-// =========================================
 
 fetch("../components/navbar.html")
   .then((response) => {
@@ -29,9 +24,7 @@ fetch("../components/navbar.html")
   })
   .catch((error) => console.error(error));
 
-// =========================================
-// LOAD FOOTER
-// =========================================
+
 
 fetch("../components/footer.html")
   .then((response) => {
@@ -49,9 +42,7 @@ fetch("../components/footer.html")
   })
   .catch((error) => console.error(error));
 
-// =========================================
-// UPDATE THEME
-// =========================================
+
 
 function updateTheme() {
   const headerLogo = document.getElementById("headerLogo");
@@ -91,14 +82,10 @@ function updateTheme() {
   }
 }
 
-// =========================================
-// INITIALIZE NAVBAR
-// =========================================
+
 
 function initializeNavbar() {
-  // =========================================
-  // MOBILE MENU
-  // =========================================
+ 
 
   const menuBtn = document.querySelector(".menu-btn");
   const menu = document.querySelector(".menu");
@@ -109,9 +96,7 @@ function initializeNavbar() {
     });
   }
 
-  // =========================================
-  // MOBILE DROPDOWN
-  // =========================================
+  
 
   document.querySelectorAll(".dropdown > a").forEach((link) => {
     link.addEventListener("click", function (e) {
@@ -131,9 +116,7 @@ function initializeNavbar() {
     });
   });
 
-  // =========================================
-  // DARK MODE
-  // =========================================
+
 
   const darkModeBtn = document.getElementById("darkModeBtn");
 
@@ -151,9 +134,7 @@ function initializeNavbar() {
     });
   }
 
-  // =========================================
-  // RTL MODE
-  // =========================================
+
 
   const rtlBtn = document.getElementById("rtlBtn");
 
@@ -184,9 +165,7 @@ function initializeNavbar() {
   }
 }
 
-// =========================================
-// SET ACTIVE NAV LINK
-// =========================================
+
 
 function setActiveNavLink() {
   let currentPage = window.location.pathname.split("/").pop();
@@ -220,9 +199,7 @@ function setActiveNavLink() {
   });
 }
 
-// =========================================
-// INITIALIZE FOOTER
-// =========================================
+
 
 function initializeFooter() {
   const footerLogo = document.getElementById("footerLogo");
@@ -236,9 +213,7 @@ function initializeFooter() {
   }
 }
 
-// =========================================
-// WINDOW RESIZE
-// =========================================
+
 
 window.addEventListener("resize", () => {
   const menu = document.querySelector(".menu");
@@ -248,9 +223,7 @@ window.addEventListener("resize", () => {
   }
 });
 
-// =========================================
-// PAGE LOADED
-// =========================================
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme");

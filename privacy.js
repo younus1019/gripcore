@@ -1,19 +1,11 @@
-/* =========================================================
-                  PRIVACY PAGE JAVASCRIPT
-========================================================= */
 
-/* =========================================================
-                        DOM READY
-========================================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
   initializeDarkMode();
   initializeRTL();
 });
 
-/* =========================================================
-                        DARK MODE
-========================================================= */
+
 
 function initializeDarkMode() {
   const darkModeToggle = document.getElementById("darkModeToggle");
@@ -22,9 +14,7 @@ function initializeDarkMode() {
 
   if (!darkModeToggle) return;
 
-  /* -----------------------------------------
-                  LOAD SAVED MODE
-  ----------------------------------------- */
+ 
 
   const savedTheme = localStorage.getItem("theme");
 
@@ -36,9 +26,7 @@ function initializeDarkMode() {
 
   updateDarkMode();
 
-  /* -----------------------------------------
-                    TOGGLE MODE
-  ----------------------------------------- */
+ 
 
   darkModeToggle.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
@@ -50,17 +38,13 @@ function initializeDarkMode() {
     updateDarkMode();
   });
 
-  /* -----------------------------------------
-                      UPDATE
-  ----------------------------------------- */
+ 
 
   function updateDarkMode() {
     const isDarkMode = document.body.classList.contains("dark-mode");
 
     if (isDarkMode) {
-      /* ==============================
-                  DARK MODE
-      ============================== */
+      
 
       if (privacyLogo) {
         privacyLogo.src = "images/logo-dark.png";
@@ -70,9 +54,7 @@ function initializeDarkMode() {
 
       darkModeToggle.title = "Light Mode";
     } else {
-      /* ==============================
-                  LIGHT MODE
-      ============================== */
+      
 
       if (privacyLogo) {
         privacyLogo.src = "images/logo-light.png";
@@ -85,18 +67,14 @@ function initializeDarkMode() {
   }
 }
 
-/* =========================================================
-                          RTL MODE
-========================================================= */
+
 
 function initializeRTL() {
   const rtlToggle = document.getElementById("rtlToggle");
 
   if (!rtlToggle) return;
 
-  /* -----------------------------------------
-                  LOAD SAVED RTL
-  ----------------------------------------- */
+  
 
   const savedRTL = localStorage.getItem("rtlMode");
 
@@ -112,9 +90,7 @@ function initializeRTL() {
 
   updateRTLButton();
 
-  /* -----------------------------------------
-                    TOGGLE RTL
-  ----------------------------------------- */
+  
 
   rtlToggle.addEventListener("click", function () {
     document.documentElement.classList.toggle("rtl-mode");
@@ -134,9 +110,7 @@ function initializeRTL() {
     updateRTLButton();
   });
 
-  /* -----------------------------------------
-                  RTL BUTTON ICON
-  ----------------------------------------- */
+  
 
   function updateRTLButton() {
     const isRTL = document.documentElement.classList.contains("rtl-mode");

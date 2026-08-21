@@ -1,6 +1,4 @@
-/* =========================================================
-   PREMIUM BLOG SEARCH + CATEGORY FILTER
-========================================================= */
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("blogSearch");
@@ -15,9 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let activeCategory = "all";
 
-  /* =======================================================
-     FILTER ARTICLES
-  ======================================================= */
+
 
   function filterArticles() {
     const searchValue = searchInput.value.toLowerCase().trim();
@@ -31,17 +27,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const articleText = article.textContent.toLowerCase();
 
-      /* CATEGORY CHECK */
+   
 
       const categoryMatch =
         activeCategory === "all" || category === activeCategory;
 
-      /* SEARCH CHECK */
 
       const searchMatch =
         title.includes(searchValue) || articleText.includes(searchValue);
 
-      /* FINAL RESULT */
+   
 
       if (categoryMatch && searchMatch) {
         article.classList.remove("hide");
@@ -56,15 +51,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    /* =====================================================
-       UPDATE RESULT COUNT
-    ====================================================== */
+    
 
     resultsCount.textContent = visibleCount;
 
-    /* =====================================================
-       SHOW / HIDE NO RESULTS
-    ====================================================== */
+  
 
     if (visibleCount === 0) {
       noResults.classList.add("show");
@@ -73,51 +64,42 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  /* =======================================================
-     CATEGORY BUTTONS
-  ======================================================= */
+
 
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      /* REMOVE ACTIVE */
+      
 
       filterButtons.forEach((btn) => {
         btn.classList.remove("active");
       });
 
-      /* ADD ACTIVE */
+  
 
       button.classList.add("active");
 
-      /* GET CATEGORY */
+     
 
       activeCategory = button.dataset.filter;
 
-      /* FILTER */
+   
 
       filterArticles();
     });
   });
 
-  /* =======================================================
-     SEARCH INPUT
-  ======================================================= */
+ 
 
   if (searchInput) {
     searchInput.addEventListener("input", filterArticles);
   }
 
-  /* =======================================================
-     INITIAL LOAD
-  ======================================================= */
+  
 
   filterArticles();
 });
 
 
-/* =========================================================
-   NEWSLETTER FORM
-========================================================= */
 
 const newsletterForm =
   document.getElementById("newsletterForm");
@@ -142,7 +124,6 @@ if (newsletterForm) {
         newsletterEmail.value.trim();
 
 
-      /* EMAIL VALIDATION */
 
       const emailPattern =
         /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -166,17 +147,17 @@ if (newsletterForm) {
       newsletterEmail.setCustomValidity("");
 
 
-      /* SHOW SUCCESS */
+     
 
       newsletterMessage.classList.add("show");
 
 
-      /* CLEAR INPUT */
+   
 
       newsletterEmail.value = "";
 
 
-      /* HIDE MESSAGE AFTER 5 SECONDS */
+     
 
       setTimeout(() => {
 

@@ -1,13 +1,7 @@
-/* =========================================================
-                    GOOGLE FONT
-========================================================= */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 
-/* =========================================================
-                    GLOBAL RESET
-========================================================= */
+
 
 * {
     margin: 0;
@@ -34,9 +28,7 @@ body {
 }
 
 
-/* =========================================================
-                    PAGE CONTROLS
-========================================================= */
+
 
 .page-controls {
     position: fixed;
@@ -87,9 +79,7 @@ body {
 }
 
 
-/* =========================================================
-                    PRIVACY PAGE
-========================================================= */
+
 
 .privacy-page {
     width: 100%;
@@ -101,9 +91,7 @@ body {
 }
 
 
-/* =========================================================
-                    PRIVACY LOGO
-========================================================= */
+
 
 .privacy-logo {
     width: fit-content;
@@ -129,9 +117,7 @@ body {
 }
 
 
-/* =========================================================
-                    HEADING
-========================================================= */
+
 
 .privacy-heading {
     max-width: 850px;
@@ -184,9 +170,7 @@ body {
 }
 
 
-/* =========================================================
-                    PRIVACY CONTENT
-========================================================= */
+
 
 .privacy-content {
     display: flex;
@@ -196,9 +180,7 @@ body {
 }
 
 
-/* =========================================================
-                    PRIVACY CARD
-========================================================= */
+
 
 .privacy-card {
     width: 100%;
@@ -232,9 +214,7 @@ body {
 }
 
 
-/* =========================================================
-                    CARD ICON
-========================================================= */
+
 
 .privacy-card-icon {
     width: 55px;
@@ -270,9 +250,7 @@ body {
 }
 
 
-/* =========================================================
-                    CARD CONTENT
-========================================================= */
+
 
 .privacy-card-content {
     flex: 1;
@@ -300,9 +278,7 @@ body {
 }
 
 
-/* =========================================================
-                    PRIVACY FOOTER
-========================================================= */
+
 
 .privacy-footer {
     margin-top: 65px;
@@ -325,9 +301,7 @@ body {
 }
 
 
-/* =========================================================
-                    DARK MODE
-========================================================= */
+
 
 body.dark-mode {
     background: #111111;
@@ -335,7 +309,7 @@ body.dark-mode {
 }
 
 
-/* Controls */
+
 
 body.dark-mode .control-btn {
     background: #222222;
@@ -348,7 +322,7 @@ body.dark-mode .control-btn:hover {
 }
 
 
-/* Heading */
+
 
 body.dark-mode .privacy-heading h1 {
     color: #ffffff;
@@ -363,7 +337,7 @@ body.dark-mode .last-updated {
 }
 
 
-/* Cards */
+
 
 body.dark-mode .privacy-card {
     background: #181818;
@@ -392,7 +366,7 @@ body.dark-mode .privacy-card-content strong {
 }
 
 
-/* Footer */
+
 
 body.dark-mode .privacy-footer {
     border-top-color: #303030;
@@ -403,9 +377,7 @@ body.dark-mode .privacy-footer p {
 }
 
 
-/* =========================================================
-                    RTL MODE
-========================================================= */
+
 
 html.rtl-mode {
     direction: rtl;
@@ -429,10 +401,7 @@ html.rtl-mode .page-controls {
 }
 
 
-/* =========================================================
-                    MOBILE
-                    360px - 767px
-========================================================= */
+
 
 @media screen and (min-width: 360px) and (max-width: 767px) {
 
@@ -456,14 +425,14 @@ html.rtl-mode .page-controls {
     }
 
 
-    /* PAGE */
+    
 
     .privacy-page {
         padding: 70px 18px 0;
     }
 
 
-    /* LOGO */
+    
 
     .privacy-logo {
         margin-bottom: 35px;
@@ -474,7 +443,7 @@ html.rtl-mode .page-controls {
     }
 
 
-    /* HEADING */
+    
 
     .privacy-heading {
         margin-bottom: 40px;
@@ -502,7 +471,7 @@ html.rtl-mode .page-controls {
     }
 
 
-    /* CARDS */
+    
 
     .privacy-content {
         gap: 15px;
@@ -544,7 +513,7 @@ html.rtl-mode .page-controls {
     }
 
 
-    /* FOOTER */
+    
 
     .privacy-footer {
         margin-top: 45px;
@@ -557,7 +526,7 @@ html.rtl-mode .page-controls {
     }
 
 
-    /* RTL */
+    
 
     html.rtl-mode .page-controls {
         right: auto;
@@ -567,10 +536,7 @@ html.rtl-mode .page-controls {
 }
 
 
-/* =========================================================
-                    TABLET
-                    768px - 1024px
-========================================================= */
+
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -617,10 +583,7 @@ html.rtl-mode .page-controls {
 }
 
 
-/* =========================================================
-                    SMALL DEVICES
-                    BELOW 360px
-========================================================= */
+
 
 @media screen and (max-width: 359px) {
 

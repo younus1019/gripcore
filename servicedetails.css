@@ -1,7 +1,3 @@
-/* =========================================================
-   GLOBAL RESET
-========================================================= */
-
 * {
   margin: 0;
   padding: 0;
@@ -18,9 +14,7 @@ body {
   color: #111111;
 }
 
-/* =========================================================
-   SERVICE DETAILS HERO
-========================================================= */
+
 
 .service-details-hero {
   position: relative;
@@ -35,9 +29,7 @@ body {
   background: #111111;
 }
 
-/* =========================================================
-   HERO BACKGROUND IMAGE
-========================================================= */
+
 
 .service-hero-image {
   position: absolute;
@@ -60,9 +52,7 @@ body {
   animation: heroZoom 12s ease-in-out infinite alternate;
 }
 
-/* =========================================================
-   HERO IMAGE ZOOM
-========================================================= */
+
 
 @keyframes heroZoom {
   from {
@@ -74,9 +64,7 @@ body {
   }
 }
 
-/* =========================================================
-   HERO OVERLAY
-========================================================= */
+
 
 .service-hero-overlay {
   position: absolute;
@@ -93,9 +81,7 @@ body {
   );
 }
 
-/* =========================================================
-   HERO CONTAINER
-========================================================= */
+
 
 .service-hero-container {
   position: relative;
@@ -118,9 +104,7 @@ body {
   align-items: center;
 }
 
-/* =========================================================
-   HERO CONTENT
-========================================================= */
+
 
 .service-hero-content {
   max-width: 760px;
@@ -128,9 +112,7 @@ body {
   animation: heroContentReveal 1s ease forwards;
 }
 
-/* =========================================================
-   HERO CONTENT ANIMATION
-========================================================= */
+
 
 @keyframes heroContentReveal {
   from {
@@ -144,9 +126,7 @@ body {
   }
 }
 
-/* =========================================================
-   HERO EYEBROW
-========================================================= */
+
 
 .service-hero-eyebrow {
   display: flex;
@@ -173,9 +153,7 @@ body {
   background: #d4af37;
 }
 
-/* =========================================================
-   HERO HEADING
-========================================================= */
+
 
 .service-hero-content h1 {
   margin-bottom: 28px;
@@ -197,9 +175,7 @@ body {
   color: #d4af37;
 }
 
-/* =========================================================
-   HERO DESCRIPTION
-========================================================= */
+
 
 .service-hero-content > p {
   max-width: 680px;
@@ -215,9 +191,7 @@ body {
   font-weight: 300;
 }
 
-/* =========================================================
-   HERO ACTIONS
-========================================================= */
+
 
 .service-hero-actions {
   display: flex;
@@ -229,9 +203,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* =========================================================
-   PRIMARY BUTTON
-========================================================= */
+
 
 .service-primary-btn {
   display: inline-flex;
@@ -281,9 +253,7 @@ body {
   transform: translateY(3px);
 }
 
-/* =========================================================
-   SECONDARY BUTTON
-========================================================= */
+
 
 .service-secondary-btn {
   display: inline-flex;
@@ -336,9 +306,7 @@ body {
   transform: translate(3px, -3px);
 }
 
-/* =========================================================
-   HERO SIDE INFORMATION
-========================================================= */
+
 
 .service-hero-side {
   display: flex;
@@ -352,9 +320,7 @@ body {
   border-left: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-/* =========================================================
-   HERO SIDE ITEM
-========================================================= */
+
 
 .hero-side-item {
   display: flex;
@@ -374,7 +340,7 @@ body {
   border-bottom: none;
 }
 
-/* Number */
+
 
 .hero-side-item > span {
   color: #d4af37;
@@ -386,7 +352,7 @@ body {
   letter-spacing: 1px;
 }
 
-/* Side Title */
+
 
 .hero-side-item strong {
   display: block;
@@ -400,7 +366,7 @@ body {
   font-weight: 500;
 }
 
-/* Side Description */
+
 
 .hero-side-item p {
   color: #bdbdbd;
@@ -410,9 +376,7 @@ body {
   line-height: 1.7;
 }
 
-/* =========================================================
-   SCROLL INDICATOR
-========================================================= */
+
 
 .service-hero-scroll {
   position: absolute;
@@ -449,9 +413,7 @@ body {
   animation: scrollArrow 1.8s ease-in-out infinite;
 }
 
-/* =========================================================
-   SCROLL ARROW ANIMATION
-========================================================= */
+
 
 @keyframes scrollArrow {
   0%,
@@ -464,9 +426,7 @@ body {
   }
 }
 
-/* =========================================================
-   TABLET
-========================================================= */
+
 
 @media screen and (max-width: 1050px) {
   .service-details-hero {
@@ -514,9 +474,7 @@ body {
   }
 }
 
-/* =========================================================
-   MOBILE
-========================================================= */
+
 
 @media screen and (max-width: 600px) {
   .service-details-hero {
@@ -601,9 +559,7 @@ body {
   }
 }
 
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
+
 
 @media screen and (max-width: 380px) {
   .service-details-hero {
@@ -619,10 +575,7 @@ body {
   }
 }
 
-/* =========================================================
-   SERVICE DETAIL SECTIONS
-   (WHEEL ALIGNMENT, BALANCING, etc.)
-========================================================= */
+
 
 .service-detail-section {
   width: 100%;
@@ -635,12 +588,12 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.2fr 1fr; /* image left, content right */
+  grid-template-columns: 1.2fr 1fr; 
   gap: 80px;
   align-items: center;
 }
 
-/* reverse layout (wheel-balancing, etc.) */
+
 
 .service-detail-section.service-detail-reverse .service-detail-container {
   grid-template-columns: 1fr 1.2fr;
@@ -654,7 +607,7 @@ body {
   order: 1;
 }
 
-/* image card */
+
 
 .service-detail-image {
   position: relative;
@@ -675,7 +628,7 @@ body {
   transform: scale(1.06);
 }
 
-/* image badge */
+
 
 .service-image-badge {
   position: absolute;
@@ -698,7 +651,7 @@ body {
   color: #d4af37;
 }
 
-/* content column */
+
 
 .service-detail-content {
   max-width: 560px;
@@ -712,7 +665,7 @@ body {
   margin-bottom: 14px;
 }
 
-/* reuse eyebrow style from hero */
+
 
 .section-eyebrow {
   display: inline-flex;
@@ -731,7 +684,7 @@ body {
   background: #d4af37;
 }
 
-/* heading + description */
+
 
 .service-detail-content h2 {
   margin: 0 0 18px;
@@ -754,7 +707,7 @@ body {
   color: #666666;
 }
 
-/* features grid */
+
 
 .service-detail-features {
   display: grid;
@@ -799,7 +752,7 @@ body {
   color: #666666;
 }
 
-/* CTA button (match hero buttons) */
+
 
 .service-detail-btn {
   display: inline-flex;
@@ -827,9 +780,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* =========================================================
-   APPOINTMENT SECTION
-========================================================= */
+
 
 .appointment-section {
   width: 100%;
@@ -847,7 +798,7 @@ body {
   align-items: start;
 }
 
-/* left text */
+
 
 .appointment-content h2 {
   margin: 10px 0 16px;
@@ -912,7 +863,7 @@ body {
   color: #666666;
 }
 
-/* form wrapper */
+
 
 .appointment-form-wrapper {
   background: #ffffff;
@@ -921,7 +872,7 @@ body {
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.12);
 }
 
-/* form header */
+
 
 .appointment-form-header span {
   display: inline-block;
@@ -946,7 +897,7 @@ body {
   color: #666666;
 }
 
-/* form grid */
+
 
 .appointment-form {
   display: grid;
@@ -988,7 +939,7 @@ body {
   box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.15);
 }
 
-/* submit button */
+
 
 .appointment-submit-btn {
   grid-column: 1 / -1;
@@ -1019,7 +970,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* form message */
+
 
 .appointment-form-message {
   grid-column: 1 / -1;
@@ -1028,15 +979,13 @@ body {
   color: #666666;
 }
 
-/* =========================================================
-   RTL SUPPORT
-========================================================= */
+
 
 body.rtl {
   direction: rtl;
 }
 
-/* hero */
+
 
 body.rtl .service-hero-container {
   direction: rtl;
@@ -1054,7 +1003,7 @@ body.rtl .service-hero-actions {
   justify-content: flex-start;
 }
 
-/* hero side */
+
 
 body.rtl .service-hero-side {
   padding-left: 0;
@@ -1063,7 +1012,7 @@ body.rtl .service-hero-side {
   border-right: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-/* service details */
+
 
 body.rtl .service-detail-container,
 body.rtl .appointment-container {
@@ -1075,29 +1024,27 @@ body.rtl .service-image-badge {
   right: 24px;
 }
 
-/* features + highlights */
+
 
 body.rtl .service-feature,
 body.rtl .appointment-highlight {
   flex-direction: row-reverse;
 }
 
-/* =========================================================
-   DARK MODE
-========================================================= */
+
 
 body.dark-mode {
   background: #080808;
   color: #ffffff;
 }
 
-/* hero already dark, just soften text */
+
 
 body.dark-mode .service-hero-content > p {
   color: #d1d1d1;
 }
 
-/* sections */
+
 
 body.dark-mode .service-detail-section {
   background: #050505;
@@ -1119,7 +1066,7 @@ body.dark-mode .service-feature p {
   color: #bdbdbd;
 }
 
-/* appointment */
+
 
 body.dark-mode .appointment-section {
   background: #050505;
@@ -1159,9 +1106,9 @@ body.dark-mode .form-group textarea {
   border-color: #303030;
 }
 
-/* Samsung Galaxy S8+ */
+
 @media screen and (min-width: 360px) and (max-width: 740px) {
-  /* HERO */
+  
   .service-details-hero {
     min-height: 900px;
   }
@@ -1176,7 +1123,7 @@ body.dark-mode .form-group textarea {
 
   .service-hero-container {
     width: 90%;
-    grid-template-columns: 1fr; /* stack hero content + side */
+    grid-template-columns: 1fr; 
     gap: 50px;
     padding: 110px 0 90px;
   }
@@ -1234,14 +1181,14 @@ body.dark-mode .form-group textarea {
     display: none;
   }
 
-  /* SERVICE DETAILS */
+  
   .service-detail-section {
     padding: 80px 0;
   }
 
   .service-detail-container {
     width: 90%;
-    grid-template-columns: 1fr; /* stack image + text */
+    grid-template-columns: 1fr; 
     gap: 40px;
   }
 
@@ -1250,17 +1197,17 @@ body.dark-mode .form-group textarea {
   }
 
   .service-detail-features {
-    grid-template-columns: 1fr; /* features in one column */
+    grid-template-columns: 1fr; 
   }
 
-  /* APPOINTMENT */
+  
   .appointment-section {
     padding: 90px 0;
   }
 
   .appointment-container {
     width: 90%;
-    grid-template-columns: 1fr; /* stack text + form */
+    grid-template-columns: 1fr; 
     gap: 40px;
   }
 
@@ -1277,16 +1224,16 @@ body.dark-mode .form-group textarea {
   }
 }
 
-/* iPad Mini */
+
 @media screen and (min-width: 768px) and (max-width: 820px) {
-  /* HERO */
+  
   .service-details-hero {
     min-height: 850px;
   }
 
   .service-hero-container {
     width: 90%;
-    grid-template-columns: 1fr; /* stack hero columns */
+    grid-template-columns: 1fr; 
     gap: 60px;
     padding: 120px 0 100px;
   }
@@ -1314,14 +1261,14 @@ body.dark-mode .form-group textarea {
     border-right: none;
   }
 
-  /* SERVICE DETAILS */
+  
   .service-detail-section {
     padding: 90px 0;
   }
 
   .service-detail-container {
     width: 90%;
-    grid-template-columns: 1fr; /* stack image + text */
+    grid-template-columns: 1fr; 
     gap: 50px;
   }
 
@@ -1329,14 +1276,14 @@ body.dark-mode .form-group textarea {
     height: 420px;
   }
 
-  /* APPOINTMENT */
+  
   .appointment-section {
     padding: 100px 0;
   }
 
   .appointment-container {
     width: 90%;
-    grid-template-columns: 1fr; /* stack text + form */
+    grid-template-columns: 1fr; 
     gap: 50px;
   }
 
@@ -1344,16 +1291,16 @@ body.dark-mode .form-group textarea {
     margin-top: 20px;
   }
 }
-/* iPad Pro 11" */
+
 @media screen and (min-width: 821px) and (max-width: 1024px) {
-  /* HERO */
+  
   .service-details-hero {
     min-height: 860px;
   }
 
   .service-hero-container {
     width: 90%;
-    grid-template-columns: 1fr; /* stack hero */
+    grid-template-columns: 1fr; 
     gap: 70px;
     padding: 120px 0 100px;
   }
@@ -1362,14 +1309,14 @@ body.dark-mode .form-group textarea {
     font-size: clamp(44px, 5vw, 60px);
   }
 
-  /* SERVICE DETAILS */
+  
   .service-detail-section {
     padding: 100px 0;
   }
 
   .service-detail-container {
     width: 90%;
-    grid-template-columns: 1fr; /* stack image + text */
+    grid-template-columns: 1fr; 
     gap: 55px;
   }
 
@@ -1377,27 +1324,27 @@ body.dark-mode .form-group textarea {
     height: 450px;
   }
 
-  /* APPOINTMENT */
+  
   .appointment-section {
     padding: 110px 0;
   }
 
   .appointment-container {
     width: 90%;
-    grid-template-columns: 1fr; /* stack text + form */
+    grid-template-columns: 1fr; 
     gap: 55px;
   }
 }
-/* Nest Hub */
+
 @media screen and (width: 1024px) and (height: 600px) {
-  /* HERO */
+  
   .service-details-hero {
     min-height: 700px;
   }
 
   .service-hero-container {
     width: 90%;
-    grid-template-columns: 1.3fr 0.7fr; /* keep two columns */
+    grid-template-columns: 1.3fr 0.7fr; 
     gap: 50px;
     padding: 90px 0 80px;
   }
@@ -1415,14 +1362,14 @@ body.dark-mode .form-group textarea {
     gap: 12px;
   }
 
-  /* SERVICE DETAILS */
+  
   .service-detail-section {
     padding: 90px 0;
   }
 
   .service-detail-container {
     width: 90%;
-    grid-template-columns: 1.1fr 0.9fr; /* still side‑by‑side */
+    grid-template-columns: 1.1fr 0.9fr; 
     gap: 50px;
   }
 
@@ -1438,7 +1385,7 @@ body.dark-mode .form-group textarea {
     font-size: 13px;
   }
 
-  /* APPOINTMENT */
+  
   .appointment-section {
     padding: 90px 0;
   }

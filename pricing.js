@@ -1,6 +1,4 @@
-/* =========================================================
-   GRIPCORE PRICING - LUCIDE ICONS
-========================================================= */
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
